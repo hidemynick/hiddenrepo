@@ -1,0 +1,26 @@
+<!-- interfaces / partners (single item) -->
+
+<article class="container spacerTop itemContentInterfaces itemContentPartners">
+	<div class="row">
+		<div class="col-sm-6 col-md-6 col-lg-6 itemContentLeft">
+			$Description
+		</div>
+		<div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 linkBoxTextImg140 itemContentRight">
+			<a class="btn btn-primary white block {% if ($Free[4]=="0")||($Free[4]=="") %} notClickable{% endif %}"{% if ($Free[4]!="0")&&($Free[4]!="") %} href="http://$Free[4]" rel="nofollow" target="_blank"{% endif %} title="$Name[1]"><!--
+				--><span class="block isIcon" style="background-image: url('$SecondPreviewImageURL[1]');"></span><!--
+			--></a>
+			{% if $TechnicalData %}<div class="spacerTop">$TechnicalData</div>{% endif %}
+		</div>
+	</div>
+	
+	{% $CrossSellingType = "Accessory" %}
+	{% if Container_ItemViewCrossSellingItemsList()!="" %}
+		<div class="row spacerTop">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>Referenzen</h3>
+				{% Container_ItemViewCrossSellingItemsList() %}
+			</div>
+		</div>
+	{% endif %}
+</article>
+<!-- debug $ID -->

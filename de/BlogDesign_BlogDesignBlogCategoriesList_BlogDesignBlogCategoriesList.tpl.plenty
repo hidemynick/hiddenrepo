@@ -1,0 +1,7 @@
+
+{% for $_entry in GetBlogDesignBlogCategoriesList() %}{% MapTemplateVars($_entry) %}
+<!-- $ID -->
+<li{% if $IsActive %} class="active"{% endif %}><a href="{% Link_BlogCategory() %}">$BlogCategoryUrlName</a></li>
+{% endfor %}
+
+

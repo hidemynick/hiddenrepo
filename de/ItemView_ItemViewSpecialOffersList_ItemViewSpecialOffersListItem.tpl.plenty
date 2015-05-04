@@ -1,0 +1,18 @@
+<div class="pmContentBoxItem pmVideoBoxesItem">
+        <h3 class="pmh3">
+		<div class="pmTableLayout pmVaMiddle pmFullWidth pmFullHeight">
+			<div>
+				<div>$Name[1]{% if $Name[2]!="" %}<div class="pmVideoBoxesItemSubline">$Name[2]</div>{% endif %}</div>
+			</div>
+		</div>
+	</h3>
+        <div class="relative VideoPreviewImageWrapperSmall">
+            <span class="relative pmVideoBox-200 inlineBlock">
+                <img src="$SecondPreviewImageURL[1]" alt="$Name[1]" />
+                <span class="PlentyVideoOverlayTrigger pmPlay-280" rel="#$ID"></span>
+            </span>
+        </div>	  
+</div>
+ <div id="$ID" class="PlentyVideoOverlayBox">
+        $DescriptionShort
+</div>

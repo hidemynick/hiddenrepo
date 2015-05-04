@@ -1,0 +1,22 @@
+<div class="tableBlock inlineBlock noMargin">
+	<strong class="tableHeadline">$CurrentCategoryName</strong>
+	<div{% if $ItemViewTopSellersList2_EachRow==1 %} class="max-h-xs-4 max-h-sm-4 max-h-md-4 max-h-lg-4 scrollY"{% endif %}>
+		<table class="dataTable priceTable">
+			<tbody>
+{% for $_item in GetItemViewTopSellersList2() %}{% MapTemplateVars($_item) %}
+
+
+				<tr class="id_$ID">
+					<td>$Name[1]</td>
+					<td><b>$Price $Currency</b></td>
+				</tr>
+
+
+
+
+{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
+

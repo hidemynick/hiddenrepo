@@ -1,0 +1,128 @@
+{# footer #}
+
+{% if $Lang=="de" %}
+	<footer class="fullwidth">
+		<div class="container">
+			<div class="footerList">
+				<div class="inlineBlock">
+					<strong>Produkt</strong>
+					<ul>
+						<li><a href="{% Link(526) %}">Was kann plentymarkets?</a></li>
+						<li><a href="{% Link(533) %}">plentymarkets Cloud</a></li>
+						<li><a href="{% Link(534) %}">plentymarkets Enterprise</a></li>
+						<li><a href="{% Link(558) %}">Referenzen</a></li>
+						<li><a href="{% Link(555) %}">Versionen</a></li>
+						<li><a href="/?OrderShow=OrderSystem">Testphase buchen</a></li>
+					</ul>
+				</div>
+				<div class="inlineBlock">
+					<strong>Support</strong>
+					<ul>
+						<li><a href="{% Link(620) %}">Handbuch</a></li>
+						<li><a href="{% Link(545) %}">Webinare</a></li>
+						<li><a href="{% Link(559) %}">Video-Tutorials</a></li>
+						<li><a href="/forum/">Forum</a></li>
+						<li><a href="{% Link(549) %}">Telefon</a></li>
+						<li><a href="{% Link(549) %}">Ticket</a></li>
+					</ul>
+				</div>
+				<div class="inlineBlock">
+					<strong>Unternehmen</strong>
+					<ul>
+						<li><a href="{% Link(521) %}">$CompanyName</a></li>
+						<li><a href="{% Link(522) %}">Team</a></li>
+						<li><a href="{% Link(572) %}">Jobs&thinsp;/&thinsp;Karriere</a></li>
+						<li><a href="{% Link(523) %}">Presse</a></li>
+						<li><a href="{% Link(2169) %}">Kongress</a></li>
+						<li><a href="{% Link(551) %}">Messen</a></li>
+						<li><a href="{% Link(524) %}">Kontakt</a></li>
+					</ul>
+				</div>
+				<div class="inlineBlock">
+					<strong>Kontakt</strong>
+					<ul>
+						<li>Vertrieb <a href="tel:$CompanyFon">$CompanyFon</a></li>
+						<li>Support  <a href="tel:$CompanyHotline">$CompanyHotline</a></li>
+						<li>E-Mail <a href="mailto:$CompanyEmail">$CompanyEmail</a></li>
+					</ul>
+				</div>
+				<div class="inlineBlock">
+					<strong>Social</strong>
+					<ul class="socialList">
+						<li><a class="zocial-facebook transition" href="http://www.facebook.com/plentyMarkets" data-text="facebook" target="_blank">Facebook</a></li>
+						<li><a class="zocial-twitter transition" href="http://twitter.com/#!/plentymarkets" data-text="twitter" target="_blank">Twitter</a></li>
+						<li><a class="zocial-xing transition" href="http://www.xing.com/company/plentymarkets" data-text="xing" target="_blank">Xing</a></li>
+						<li><a class="zocial-rss transition" href="/?ActionCall=WebActionRSS&amp;rss_id=1" data-text="rss" target="_blank">RSS</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<a class="inlineBlock pull-right" href="{% Link_Home() %}"><img class="logoMini" src="/layout/plenty_responsive/img/plentymarkets_logo_aaa_400.png" alt="plentymarkets Logo" /></a>
+				</div>
+			</div>
+			
+			<hr />
+			
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<p class="footerLine pull-left">&copy; Copyright $Year $CompanyName</p>
+					<p class="footerLine pull-right"><a href="{% Link_TermsConditions() %}">AGB</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{% Link_LegalDisclosure() %}">Impressum</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+{% else %}
+	<footer class="fullwidth">
+		<div class="container">
+			<div class="footerList">
+				<div class="inlineBlock">
+					<strong>Product</strong>
+					<ul>
+						<li><a href="{% Link(526) %}">What is plentymarkets capable of?</a></li>
+						<li><a href="{% Link(593) %}">plentymarkets Cloud</a></li>
+						<li><a href="/?OrderShow=OrderSystem">Free trial</a></li>
+					</ul>
+				</div>
+				<div class="inlineBlock">
+					<strong>Support</strong>
+					<ul>
+						<li><a href="{% Link(620) %}">Manual</a></li>
+					</ul>
+				</div>
+				<div class="inlineBlock">
+					<strong>Contact</strong>
+					<ul>
+						<li>Sales <a href="tel:+441895809410">+44 1895.80 94 10</a></li>
+						<li>E-mail <a href="mailto:sales@plentymarkets.co.uk">sales@plentymarkets.co.uk</a></li>
+					</ul>
+				</div>
+				<div class="inlineBlock">
+					<strong>Social</strong>
+					<ul class="socialList">
+						<li><a class="zocial-facebook transition" href="http://www.facebook.com/plentyMarkets" data-text="facebook" target="_blank">Facebook</a></li>
+						<li><a class="zocial-twitter transition" href="http://twitter.com/#!/plentymarkets" data-text="twitter" target="_blank">Twitter</a></li>
+						<li><a class="zocial-xing transition" href="http://www.xing.com/company/plentymarkets" data-text="xing" target="_blank">Xing</a></li>
+						<li><a class="zocial-rss transition" href="/?ActionCall=WebActionRSS&amp;rss_id=1" data-text="rss" target="_blank">RSS</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<a class="inlineBlock pull-right" href="{% Link_Home() %}"><img class="logoMini" src="/layout/plenty_responsive/img/plentymarkets_logo_aaa_400.png" alt="plentymarkets Logo" /></a>
+				</div>
+			</div>
+			
+			<hr />
+			
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<p class="footerLine pull-left">&copy; Copyright $Year plentymarkets Ltd.</p>
+					<p class="footerLine pull-right"><a href="{% Link(31) %}">Terms and conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{% Link(32) %}">Legal disclosure</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+{% endif %}

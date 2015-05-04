@@ -1,0 +1,2 @@
+<td>$Name[1]</td>
+<td><a href="$Name[3]" target="_blank" title="$Name[2]">$Name[2]</a>{% if $DescriptionShort!="" %} <span>$DescriptionShort</span>{% endif %}</td>

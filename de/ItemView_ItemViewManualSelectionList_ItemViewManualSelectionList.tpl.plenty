@@ -1,0 +1,37 @@
+<!-- video -->
+
+<!-- call: <a class="videoOverlayTrigger PlentyVideoOverlayTrigger" data-target="#123"></a> (123 is item id) -->
+
+<script type="text/javascript">
+	if ( frameHtml == undefined ) { var frameHtml = []; }
+	if ( videoUrl == undefined ) { var videoUrl = []; }
+	if ( videoWidth == undefined ) { var videoWidth = []; }
+	if ( videoHeight == undefined ) { var videoHeight = []; }
+</script>
+
+{% for $_item in GetItemViewManualSelectionList() %}{% MapTemplateVars($_item) %}
+
+
+
+
+
+	<div id="$ID" class="PlentyVideoOverlayBox appendIframe">
+		<a class="PlentyOverlayClose pmFramedIcon glyphicon glyphicon-remove">{% if $Lang=="de" %}Schließen{% else %}Close{% endif %}</a>
+		<a class="PlentyOverlayInfoOpen pmFramedIcon glyphicon glyphicon-info-sign">{% if $Lang=="de" %}Informationen einblenden{% else %}Show information{% endif %}</a>
+		<div class="PlentyOverlayInfo none">
+			<h2>$Name[1]</h2>
+			<p> $Description </p>
+			<a class="PlentyOverlayInfoClose pmFramedIcon glyphicon glyphicon-remove">{% if $Lang=="de" %}Schließen{% else %}Close{% endif %}</a>
+		</div>
+	</div>
+						
+	<script type="text/javascript">
+		frameHtml['#$ID'] = '<iframe src="$Free[1]" width="$Free[2]" height="$Free[3]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+		videoUrl['#$ID'] = '$Free[1]';
+		videoWidth['#$ID'] = $Free[2];
+		videoHeight['#$ID'] = $Free[3];
+	</script>
+
+
+
+{% endfor %}

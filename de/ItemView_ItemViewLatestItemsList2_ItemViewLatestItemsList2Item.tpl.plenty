@@ -1,0 +1,10 @@
+
+{% if $CurrentCategoryId[Level2]==475 %}
+<!-- is video -->
+<li class="pmImageTextListItem clearfix">
+	$ItemBranchId
+	<a class="pmSeemlessLink" href="{% Link_Item($ID) %}">$CategoryName[Level3] » $CategoryName[Level4] » $Name[1]</a>
+	<div class="pmHint">$CreationDate</div>
+</li>
+<!-- is video end -->
+{% endif %}

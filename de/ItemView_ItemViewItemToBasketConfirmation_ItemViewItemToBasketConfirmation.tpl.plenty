@@ -1,0 +1,17 @@
+<H2>Artikel wurde in den Warenkorb gelegt</H2>
+
+<p> Sie haben gerade einen Artikel in den Warenkorb gelegt. <br><br> 
+
+
+<table width="100%" border="0" cellspacing="0" bgcolor="#EBEEF1" style=" padding:10px">
+  <tr>
+    <td align="left" valign="middle">
+     <br>
+    </td>
+    <td align="right" valign="middle">
+     <a href="{% Link_Basket() %}"><img alt="py" src="/tpl/de/images_dialog/button/proceed_order.gif" border=0></a>
+    </td>
+  </tr>
+</table>
+  
+<!-- {% Container_ItemViewSingleItem() %} -->

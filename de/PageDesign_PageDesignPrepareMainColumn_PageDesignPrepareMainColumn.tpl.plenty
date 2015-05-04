@@ -1,0 +1,5 @@
+<!-- CurrentCat $CurrentCategoryId -->
+{% if $CurrentCategoryId==523 %}
+	<!-- pressemitteilungen -->
+	{% $ItemViewCategoriesList7_CatLevel2DefaultItemSorting = 0 %}
+{% endif %}

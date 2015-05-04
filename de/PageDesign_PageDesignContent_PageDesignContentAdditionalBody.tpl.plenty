@@ -1,0 +1,1 @@
+lang="$Lang" class="pmBody"{% if ($Dir==955)||($CurrentCategoryId==955)||($CurrentCategoryId==8)||($CurrentCategoryId==241)||($CurrentCategoryId==1300) %} onload="initialize()"{% endif %}

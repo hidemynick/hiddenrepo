@@ -1,0 +1,19 @@
+<!-- topic list hover fix -->
+
+<script type="text/javascript">
+  $(document).ready(function($) {
+    $('.PlentyForumTableFixInvisible').hover(function() { 
+      $(this).parent().prev('.PlentyForumPostRow').addClass('hover'); 
+    }, function() { 
+      $(this).parent().prev('.PlentyForumPostRow').removeClass('hover'); 
+    });
+  });
+</script>
+
+
+<!-- plenty message popup -->
+$FreeVar[16]
+
+
+<!-- add to all templates -->
+$FreeVar[2]

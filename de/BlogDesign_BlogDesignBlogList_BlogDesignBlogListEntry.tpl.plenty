@@ -1,0 +1,16 @@
+
+<article class="blogListItem spacerTop size-3xs">
+	<!-- div class="muted"><span class="blogCategory">$BlogCategory</span></div -->
+	<h2><a href="{% Link_Blog() %}">$BlogTitle</a></h2>
+	<div class="row">
+		<div class="col-sm-3 col-md-3 col-lg-2 blogListImageBox">
+			<div class="imageBox spacerTop size-4xs"><img src="$BlogAuthorImage" alt="Foto $BlogAuthorName" title="$BlogAuthorName" /></div>
+		</div>
+		<div class="col-sm-9 col-md-9 col-lg-10">
+			<p class="muted"><span class="blogInserted">$BlogInserted</span> <span class="blogFrom">{% if $Lang=="de" %}von{% else %}from{% endif %}</span> <span class="blogAuthor">$BlogAuthorName</span></p>
+			$BlogBody
+			<div><a class="btn btn-primary btn-large" href="{% Link_Blog() %}">{% if $Lang=="de" %}weiter lesen...{% else %}read more...{% endif %}</a></div>
+		</div>
+	</div>
+	<hr class="spacerTop" />
+</article>

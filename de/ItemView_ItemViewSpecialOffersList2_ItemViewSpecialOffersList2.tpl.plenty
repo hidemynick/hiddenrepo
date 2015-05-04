@@ -1,0 +1,17 @@
+{% for $_item in GetItemViewSpecialOffersList2() %}{% MapTemplateVars($_item) %}{% if($RowCount == 1 || ($RowCount-1)%$ItemViewSpecialOffersList2_EachRow == 0) %}
+<div class="content-boxes-row">
+{% endif %}
+<div class="content-overview-box">
+    <div class="content-overview-box-top"></div>
+    <div class="content-overview-box-content">
+      <img src="$DescriptionShort" alt="$Name[2] $Name[1]" />
+      <h3 class="content-box-headline">$Name[2] $Name[1]</h3>
+      <span class="content-box-sub-headline">$Name[3]</span>
+    </div>
+    <div class="content-overview-box-bottom"></div>
+  </div>
+{% if($LoopIsLast[1] || $RowCount%$ItemViewSpecialOffersList2_EachRow == 0) %}
+
+  <div class="clear"></div>
+</div>
+{% endif %}{% endfor %}

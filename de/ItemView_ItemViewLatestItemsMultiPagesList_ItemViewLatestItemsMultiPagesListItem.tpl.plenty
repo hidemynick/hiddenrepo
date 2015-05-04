@@ -1,0 +1,22 @@
+{% if ($CurrentCategoryId[Level1]==511)&&($CurrentCategoryId[Level2]==471) %}
+<!-- is video -->
+<li class="pmImageTextListItem clearfix">
+	<a class="pmSeemlessLink" href="{% Link_Item($ID) %}">$Name[1]</a>
+	<!-- div class="pmHint">$ReleaseDate</div -->
+</li>
+<!-- is video end -->
+{% elseif ($CurrentCategoryId[Level1]==511)&&($CurrentCategoryId[Level2]==512) %}
+<!-- is webinare -->
+<li class="pmImageTextListItem clearfix">
+	<div class="pmImageTextListText pmXL fright">
+		<strong>$Name[2]</strong>
+		<p>mit $Name[3]</p>
+	</div>
+	<div class="pmImageTextListImage pmXS fleft">
+		<div class="pmImageTextListImageText pmDate">
+			<span>$Name[1]</span>
+		</div>
+	</div>
+</li>
+<!-- is webinare end -->
+{% endif %}

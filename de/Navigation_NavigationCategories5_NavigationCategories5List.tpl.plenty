@@ -1,0 +1,32 @@
+{% for $_nav in GetNavigationCategories5List() %}
+{% MapTemplateVars($_nav) %}
+{% if($LoopIsFirst[1]) %}
+<!-- free (sublevel) -->
+
+{% endif %}
+
+
+
+	<div class="row spacerTop">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<h3>$CurrentCategoryName</h3>
+		</div>
+	</div>
+	<div class="row spacerTop size-xxs">
+		<ul class="list-unstyled">
+			$setCurrentCategoryAsActive
+			{% Container_ItemViewCategoriesList10() %}					
+			{% ResetCategoryId() %}
+		</ul>
+	</div>
+
+{% if(($CategoryIsOpen || $NavigationCategories5_OpenLevel > $CategoryLevel) && $SubCategoryExists) %}
+{% NavigationCategories5List($CategoryId) %}
+{% endif %}
+
+
+
+{% if($LoopIsLast[1]) %}
+
+{% endif %}
+{% endfor %}

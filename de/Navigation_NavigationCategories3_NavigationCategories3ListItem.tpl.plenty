@@ -1,0 +1,2 @@
+<a href="$CategoryUrl">$CategoryName</a>
+			{% if ($CategoryLevel==1)&&($SubCategoryExists) %}<span class="mobileToggle"></span>{% endif %}

@@ -1,0 +1,21 @@
+<!-- interfaces / partner -->
+
+$CurrentCategoryDescription1 
+
+{% if $CurrentCategoryId[Level1]==519 %}
+	{% $NavigationCategories6_StartLevel = 3 %}
+{% endif %}
+
+<div class="container">
+	{% Container_NavigationCategories6() %}
+</div>
+
+{% for $_item in GetItemViewCategoriesList6() %}{% MapTemplateVars($_item) %}
+
+
+
+
+
+{% endfor %}
+
+$CurrentCategoryDescription2

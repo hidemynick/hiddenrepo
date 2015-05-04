@@ -1,0 +1,9 @@
+<div class="contentpage">
+<h1>Suchergebnis</h1>
+
+<h2>Suchbegriff: <span class="bold">$Request_SearchString</span></h2>
+
+<table border="0" width="100%">
+$ContentSearchRow
+</table>
+</div>

@@ -1,0 +1,44 @@
+{% for $_nav in GetNavigationCategories3List() %}
+{% MapTemplateVars($_nav) %}
+{% if($LoopIsFirst[1]) %}
+<!-- main navigation -->
+
+<ul{% if $CategoryLevel==1 %} class="nav navbar-nav"{% elseif $CategoryLevel==2 %} class="dropdown-menu"{% endif %}>
+
+{% if $CategoryLevel==1 %}<li class="cat-welcome{% if $IsWelcomePage %} active{% endif %}"><a class="glyphicon onlyIcon glyphicon-home" href="{% Link_Home() %}">Home</a></li>{% endif %}
+
+{% endif %}
+<li class="cat-$CategoryId{% if ($CategoryLevel==1)&&($SubCategoryExists) %} dropdown{% endif %}{% if ($CategoryId==517)||($CategoryId==1) %} bigmenu{% endif %}{% if ($CategoryIsCurrent)||($CurrentCategoryId[Level1]==$CategoryId)||($CurrentCategoryId[Level2]==$CategoryId) %} active{% endif %}">
+<a href="$CategoryUrl">$CategoryName</a>
+			{% if ($CategoryLevel==1)&&($SubCategoryExists) %}<span class="mobileToggle"></span>{% endif %}
+{% if(($CategoryIsOpen || $NavigationCategories3_OpenLevel > $CategoryLevel) && $SubCategoryExists) %}
+{% NavigationCategories3List($CategoryId) %}
+{% endif %}
+
+
+	</li>
+	{% if ($Lang=="de")&&($CategoryId==543) %}
+		<li>
+			<a href="{% Link(620) %}">Handbuch</a>
+		</li>
+	{% elseif ($Lang=="en")&&($CategoryId==546) %}
+		<li>
+			<a href="{% Link(620) %}">Manual</a>
+		</li>
+	{% endif %}
+	{% if $Lang=="de" && $CategoryId==551 %}
+		<li>
+			<a href="{% Link_BlogHome() %}">Blog</a>
+		</li>
+	{% elseif $Lang=="en" && $CategoryId==2169 %}
+		<li>
+			<a href="{% Link_BlogHome() %}">Blog</a>
+		</li>
+	{% endif %}
+{% if($LoopIsLast[1]) %}
+
+
+{% if $CategoryLevel==1 %}<li class="orderSystem"><a href="/?OrderShow=OrderSystem" class="testen">{% if $Lang=="de" %}Gratis testen!{% elseif $Lang=="en" %}Free demo{% endif %}</a></li>{% endif %}
+
+</ul>{% endif %}
+{% endfor %}

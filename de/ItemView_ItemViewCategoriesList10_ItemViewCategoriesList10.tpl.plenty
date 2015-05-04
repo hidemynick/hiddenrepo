@@ -1,0 +1,80 @@
+<!-- termine -->
+
+{% if !$IsWelcomePage %}$CurrentCategoryDescription1{% endif %}
+
+{% for $_item in GetItemViewCategoriesList10() %}{% MapTemplateVars($_item) %}<li data-id="$ID">
+		<div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-3">
+				{% $_expirationTime = strtotime($ExpirationDate) %}
+				{% $_releaseTime = strtotime($ReleaseDate) %}
+				{% if date("m", $_releaseTime) == date("m", $_expirationTime) && date("Y", $_releaseTime) == date("Y", $_expirationTime) %}
+					{% $_dateBegin = date("d.", $_releaseTime) %}
+				{% elseif date("m", $_releaseTime) != date("m", $_expirationTime) && date("Y", $_releaseTime) == date("Y", $_expirationTime) %}
+					{% $_dateBegin = date("d.m.", $_releaseTime) %}
+				{% else %}
+					{% $_dateBegin = date("d.m.Y", $_releaseTime) %}
+				{% endif %}
+				<span class="large">
+				{% if $_expirationTime && $_expirationTime!=$_releaseTime %}
+					<span class="dateBegin">$_dateBegin</span>&thinsp;–&thinsp;<span class="dateEnd">{% date("d.m.Y",$_expirationTime) %}</span>
+				{% elseif $_expirationTime && $_expirationTime==$_releaseTime %}
+					<span class="dateBegin">{% date("d.m.Y",$_expirationTime) %}</span>
+				{% else %}
+					&nbsp;
+				{% endif %}
+				
+				{% if $Name[3]!="" && $Model=="webinar" %}
+					<br><span class="small">$Name[3]</span>
+				{% endif %}
+				</span>
+			</div>
+			<div class="col-sm-3 col-md-2 col-lg-2 hidden-xs">
+				{% if $PreviewImageURL[1]!="/layout/pm/images/icon/file_broken.png" || $Model == "webinar" || $Model == "systemschulung" || $Model == "academy" %}
+					<div class="imageBox">
+						{% if $Free[4] %}
+							<a class="basicColor" href="$Free[4]" target="_blank">
+						{% endif %}
+								<img src="{% if $Model=="webinar" || $Model=="systemschulung" %}/documents/category/551/plentymarkets-logo-100.jpg{% elseif $Model=="academy" %}/documents/category/551/plentymarkets-academy-logo-100.jpg{% else %}$SecondPreviewImageURL[1]{% endif %}" alt="Bild $Name[1]" />
+						{% if $Free[4] %}
+							</a>
+						{% endif %}
+					</div>
+				{% else %}
+					&nbsp;
+				{% endif %}
+			</div>
+			<div class="col-sm-6 col-md-7 col-lg-7">
+				{% if $Description || $Free[4] || $Model=="webinar" || $Model=="academy" %}
+					<a class="basicColor" href="{% if $Model=="webinar" %}{% Link(545) %}{% elseif $Model=="academy" %}{% Link(547) %}{% elseif $Free[4] %}$Free[4]{% else %}{% Link_Item($ID) %}{% endif %}"{% if $Free[4] %} target="_blank"{% endif %}>
+				{% endif %}
+				
+				<strong class="large normal">
+					{% if $Model=="webinar" %}Webinar: {% elseif $Model=="academy" %}Academy: {% endif %}$Name[1]
+				</strong>
+				{% if $Name[3]!="" && $Model != "webinar" %} 
+					<span class="location">in $Name[3]</span>
+				{% endif %}
+				{% if $Description || $Free[4] || $Model=="webinar" || $Model=="academy" %}
+					</a>
+				{% endif %}
+				
+				{% if $Name[2]!="" %}
+					<p class="subtitle">{% if $Model=="webinar" %}{% if $Lang=="de" %}Mit {% else %}With {% endif %}{% endif %}$Name[2]</p>
+				{% endif %}
+				
+				{% if $DescriptionShort!="" %}
+					<p class="discriptionShort">$DescriptionShort</p>
+				{% endif %}
+				
+				{% if ($Model=="academy")||($Model=="systemschulung") %}
+					{% if $AvailabilityId==1 %}
+						<p><span class="glyphicon glyphicon-ok color-green dateFollowedByElement"></span><span>{% if $Lang=="de" %}Plätze verfügbar{% else %}available{% endif %}</span></p>
+					{% else %}
+						<p><span class="glyphicon glyphicon-banCircle color-red dateFollowedByElement"></span><span>{% if $Lang=="de" %}ausgebucht{% else %}fully booked{% endif %}</span></p>
+					{% endif %}
+				{% endif %}
+			</div>
+		</div>
+	</li>{% endfor %}
+
+{% if !$IsWelcomePage %}$CurrentCategoryDescription2{% endif %}

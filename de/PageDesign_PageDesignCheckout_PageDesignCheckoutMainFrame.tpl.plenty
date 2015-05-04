@@ -1,0 +1,85 @@
+
+<!-- static navbar -->
+<nav class="navbar navbar-default mainNavigationWrapper" role="navigation">
+	<div class="container">
+		<!-- mobile navbar -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			{% Container_NavigationCategories10() %}
+		</div>
+		
+		<!-- mini navbar, search, main navbar -->
+		<div class="collapse navbar-collapse mainNavigation">
+			
+			<div class="navbarMiniWrapper navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right navbar-mini">
+					<li class="isCongress"><a href="{% Link(2169) %}"><span>{% if $Lang=="de" %}Kongress{% else %}Congress{% endif %}</span> <span>2015</span></a></li>
+					<li><a href="{% Link_Contact() %}">{% if $Lang=="de" %}Kontakt{% else %}Contact{% endif %}</a></li>
+					<li><a href="{% Link_MyAccount() %}">{% if $CustomerID %}{% if $Lang=="de" %}Mein Konto{% else %}My account{% endif %}{% else %}Login{% endif %}</a></li>
+					<li class="dropdown lang-dropdown width-li">
+						{% if $Lang=="de" %}<a class="dropdown-toggle lang-de" href="javascript:void(0);" title="Sprache wählen"><span class="flag"></span>DE <b class="caret"></b></a>
+						{% elseif $Lang=="en" %}<a class="dropdown-toggle lang-en" href="javascript:void(0);" title="Select language"><span class="flag"></span>EN <b class="caret"></b></a>{% endif %}
+						<ul class="dropdown-menu">
+							{% if $Lang=="de" %}<li><a class="lang-en" href="http://www.plentymarkets.co.uk"><span class="flag"></span>EN</a></li>
+							{% elseif $Lang=="en" %}<li><a class="lang-de" href="https://www.plentymarkets.eu"><span class="flag"></span>DE</a></li>{% endif %}
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<form class="navbar-form navbar-right content_search_form" role="search" method="get" name="search_form" action="/">
+				<input type="hidden" value="ContentSearch" name="ToShow" />
+				<div class="form-group navbarInputWrapper"><input type="search" class="form-control" placeholder="{% if $Lang=="de" %}Suchen{% else %}Search{% endif %}" name="Params[SearchParam]"{% if $Request_SearchString!="" %} value="$Request_SearchString"{% endif %} /></div><button class="glyphicon onlyIcon glyphicon-search transition" type="submit">{% if $Lang=="de" %}Los{% else %}Go{% endif %}</button>
+			</form>
+			
+			{% Container_NavigationCategories3() %}
+			
+		</div>
+	</div>
+</nav>
+
+<!-- breadcrumbs -->
+{% if (!$IsWelcomePage)&&($CurrentCategoryId!=574) %}
+	<div class="fullwidth breadcrumbsContainer{% if $CurrentCategoryImageUrl=="" %} inverse{% endif %}">
+		{% Container_NavigationBreadcrumbsList() %}
+	</div>
+{% endif %}
+
+{% if $CurrentCategoryImageUrl!="" %}
+<!-- fullwidth bgimage box -->
+<section class="fullwidth h-sm-5 h-md-5 h-lg-5 bgImgBox bg-$CurrentCategoryURLName inverse">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-md-6 col-lg-6 h-xs-offset-2 h-sm-offset-1 h-md-offset-1 h-lg-offset-3">
+				<h1>$CurrentCategoryShortDescription</h1>
+				<!-- [-IF::[-CurrentCategoryShortDescription]]<p>[-CurrentCategoryShortDescription]</p>[-ENDIF] -->
+			</div>
+		</div>
+	</div>
+</section>
+{% elseif (!$IsWelcomePage)&&($CurrentCategoryId!=574) %}
+<!-- fullwidth color box -->
+<div class="fullwidth colorBox headerBox blue">
+	<div class="colorBoxInner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h1>$CurrentCategoryShortDescription</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+	
+<section class="container checkout">
+	$MainFrame
+</section>
+
+{# footer #}
+{% Container_NavigationCategories9() %}

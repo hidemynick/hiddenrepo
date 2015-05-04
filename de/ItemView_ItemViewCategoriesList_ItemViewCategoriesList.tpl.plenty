@@ -1,0 +1,24 @@
+<!--test -->
+{% for $_item in GetItemViewCategoriesList() %}{% MapTemplateVars($_item) %}{% if($RowCount == 1 || ($RowCount-1)%$ItemViewCategoriesList_EachRow == 0) %}
+
+<div class="row spacerTop">
+{% endif %}
+
+
+{% if $CurrentCategoryId[Level2]==522 %}
+<!-- ### CAT 457 = TEAM ### -->
+ <div class="col-sm-3 col-md-3 col-lg-3 center">
+	<div class="imageBox">
+    	<img class="id-$ID" src="$MiddleSizeImageURL[1]" alt="$Name[1]" />
+    </div>
+    <p class="h4"><b>$Name[2] $Name[1]</b><br>
+    $Name[3]
+    </p>
+</div>
+{% endif %}
+
+{% if($LoopIsLast[1] || $RowCount%$ItemViewCategoriesList_EachRow == 0) %}
+
+</div>
+
+{% endif %}{% endfor %}

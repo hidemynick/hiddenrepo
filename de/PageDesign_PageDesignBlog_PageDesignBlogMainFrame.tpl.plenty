@@ -1,0 +1,115 @@
+<div id="fb-root"></div>
+<script type="text/javascript">
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = '//connect.facebook.net/{% if $Lang=="de" %}de_DE{% else %}en_US{% endif %}/all.js#xfbml=1&appId=193946950665792';
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<!-- static navbar -->
+<nav class="navbar navbar-default mainNavigationWrapper" role="navigation">
+	<div class="container">
+		<!-- mobile navbar -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			{% Container_NavigationCategories10() %}
+		</div>
+		
+		<!-- mini navbar, search, main navbar -->
+		<div class="collapse navbar-collapse mainNavigation">
+			
+			<div class="navbarMiniWrapper navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right navbar-mini">
+					<li class="isCongress"><a href="{% Link(2169) %}"><span>{% if $Lang=="de" %}Kongress{% else %}Congress{% endif %}</span> <span>2015</span></a></li>
+					<li><a href="{% Link_Contact() %}">{% if $Lang=="de" %}Kontakt{% else %}Contact{% endif %}</a></li>
+					<li><a href="{% Link_MyAccount() %}">{% if $CustomerID %}{% if $Lang=="de" %}Mein Konto{% else %}My account{% endif %}{% else %}Login{% endif %}</a></li>
+					<li class="dropdown lang-dropdown width-li">
+						{% if $Lang=="de" %}<a class="dropdown-toggle lang-de" href="javascript:void(0);" title="Sprache wählen"><span class="flag"></span>DE <b class="caret"></b></a>
+						{% elseif $Lang=="en" %}<a class="dropdown-toggle lang-en" href="javascript:void(0);" title="Select language"><span class="flag"></span>EN <b class="caret"></b></a>{% endif %}
+						<ul class="dropdown-menu">
+							{% if $Lang=="de" %}<li><a class="lang-en" href="http://www.plentymarkets.co.uk/blog/"><span class="flag"></span>EN</a></li>
+							{% elseif $Lang=="en" %}<li><a class="lang-de" href="https://www.plentymarkets.eu/blog/"><span class="flag"></span>DE</a></li>{% endif %}
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<form id="search_form" class="navbar-form navbar-right" role="search" method="get" name="search_form" action="/blog/">
+				<input type="hidden" value="Search" name="ToShow" />
+				<input type="hidden" value="0" name="BlogId" />
+				<div class="form-group navbarInputWrapper"><input type="search" class="form-control" placeholder="{% if $Lang=="de" %}Blogsuche{% else %}Blog search{% endif %}" name="S"{% if $Request_SearchString!="" %} value="$Request_SearchString"{% endif %} /></div><button class="glyphicon onlyIcon glyphicon-search transition" type="submit">{% if $Lang=="de" %}Los{% else %}Go{% endif %}</button>
+			</form>
+			
+			{% Container_NavigationCategories3() %}
+			
+		</div>
+	</div>
+</nav>
+
+<!-- breadcrumbs -->
+<div class="fullwidth breadcrumbsContainer inverse">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<ol class="breadcrumbs">
+					<li>{% if $Lang=="de" %}Sie sind hier{% else %}You are here{% endif %}:&nbsp;&nbsp;</li>
+					<li><a href="{% Link_Home() %}">Home</a></li>
+					<li>&nbsp;&nbsp;<span>»</span>&nbsp;&nbsp;<a href="{% Link_BlogHome() %}">Blog</a></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- fullwidth bgimage box -->
+<section class="fullwidth min-h-xs-5 h-sm-5 h-md-5 h-lg-5 bgImgBox bgImgBoxContainer bg-blog inverse">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12{% if $CurrentBlogEntryTitle!="" %} h-xs-offset-1 h-sm-offset-1 h-md-offset-1 h-lg-offset-1{% else %} h-xs-offset-2 h-sm-offset-1 h-md-offset-1 h-lg-offset-3{% endif %} headTxtContainer">
+				<h1 {% if $CurrentBlogEntryTitle!="" %}class="col-sm-12 col-md-12 col-lg-9"{% endif %}>{% if $CurrentBlogEntryTitle!="" %}$CurrentBlogEntryTitle{% elseif $Request_SearchString %}{% if $Lang=="de" %}Blog Suchergebnis für „$Request_SearchString“{% else %}Blog search result for »$Request_SearchString«"{% endif %}{% else %}{% if $Lang=="de" %}<span><span>plentymarkets Blog</span>Immer aktuell.<br>Immer informativ.</span>{% else %}<span><span>plentymarkets Blog</span>Always up-to-date.<br>Always informative.</span>{% endif %}{% endif %}</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container">
+	<div class="row spacerTop">
+		<section class="col-sm-8 col-md-8 col-lg-8">
+			$MainFrame
+		</section>
+		<asside class="col-sm-4 col-md-4 col-lg-4 navbar-right">
+			<h2>{% if $Lang=="de" %}Kategorien{% else %}Categories{% endif %}</h2>
+			<ul class="navigationList">
+				$Container_BlogCategoriesList
+			</ul>
+			{% if $Lang=="de" %}
+				<div class="bgColor coloredBg lightblue colorWhite catchMarginBefore spacerTop">
+					<h3 class="paddingLeftRight">Interessante Videos</h3>
+					<ul class="navigationList">
+						{% SetCategoryId(559) %}
+						{% Container_ItemViewLatestItemsList3ByDate() %}
+						{% ResetCategoryId() %}
+					</ul>
+				</div>
+			{% endif %}
+			<div class="bgColor coloredBg grey colorWhite catchMarginBefore spacerTop">
+				<h3 class="paddingLeftRight">{% if $Lang=="de" %}Blog-Navigation{% else %}Blog navigation{% endif %}</h3>
+				<ul class="navigationList">
+					$Container_BlogArchivesList
+				</ul>
+			</div>
+		</asside>
+	</div>
+</div>
+
+{# footer #}
+{% Container_NavigationCategories9() %}

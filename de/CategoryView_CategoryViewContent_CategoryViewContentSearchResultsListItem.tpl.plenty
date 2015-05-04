@@ -1,0 +1,7 @@
+
+
+
+		<section class="col-sm-12 col-md-10 col-lg-8">
+		    <h3 class="small spacerBottom size-4xs color-blue"><a class="small" href="{% Link_Result() %}">$Name</a></h3>
+		    <p>$Body</p>
+		</section>

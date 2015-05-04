@@ -1,0 +1,6 @@
+<div class="items">
+{% for $_item in GetMiscDatesList() %}{% MapTemplateVars($_item) %}<div style="width:240px;margin-left:auto;margin-right:auto;" class="item">
+    <strong class="pmh2"><a href="{% Link(335) %}">$Date – $Title</a></strong>
+    $Text
+</div>{% endfor %}
+</div>

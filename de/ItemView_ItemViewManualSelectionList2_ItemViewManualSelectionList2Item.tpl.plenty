@@ -1,0 +1,73 @@
+$FormOpenOrder
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<h2>{% if $Lang=="de" %}Sichern Sie sich jetzt Ihr Kongress-Ticket!{% else %}Order your Congress ticket now!{% endif %}</h2>
+			<div class="progressBarScale">
+				<span class="progressBarLabel" style="left: 0;">1500</span>
+				<span class="progressBarLabel" style="left: 33%;">1000</span>
+				<span class="progressBarLabel" style="left: 67%;">500</span>
+				<span class="progressBarLabel" style="left: 100%;">0</span>
+			</div>
+			<div class="progress inverse text-left">
+				{% $_availableTickets = ( $StockList / 1500 * 100 ) %}
+				<div class="progress-bar{% if $StockList <= 100 %} bgColor red{% endif %}" role="progressbar" aria-valuenow="$StockList" aria-valuemin="0" aria-valuemax="1500" style="width: $_availableTickets%;">
+					<span class="progressBarText{% if $StockList < 400 %} outside{% endif %}">
+						<span><span data-calculate="numberTickets">$StockList</span> {% if $Lang=="de" %}Tickets verfügbar{% else %}tickets left{% endif %}</span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<hr>
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+			<div class="imageBox">
+				<img src="$MiddleSizeImageURL[1]" alt="$Name[1]">
+			</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-8 col-md-9 col-lg-6">
+			<p class="bold margin-bottom-xxs">Ticket</p>
+			<p>$DescriptionShort</p>
+			$Description
+		</div>
+		
+		<div class="col-xs-4 col-xs-offset-0 col-sm-2 col-sm-offset-4 col-md-1 col-md-offset-3 col-lg-1 col-lg-offset-0">
+			<p class="bold margin-bottom-xxs">{% if $Lang=="de" %}Anzahl{% else %}Number{% endif %}</p>
+			<div><input class="form-control" type="text" name="ArticleQuantity" value="1" maxlength="3"></div>
+		</div>
+		
+		<div class="col-xs-8 col-sm-6 col-md-8 col-lg-2">
+			<p class="bold margin-bottom-xxs">{% if $Lang=="de" %}Einzelpreis{% else %}Price per ticket{% endif %}</p>
+			<p>
+				<span class="{% if $SavingPercent > 0 %}color-red {% endif %}bold large">$Price $Currency</span>&nbsp;&nbsp;&nbsp;
+				{% if $SavingPercent > 0 %}
+					<br class="visible-lg visible-xs">
+					<del class="large">$RRP $Currency</del>
+				{% endif %}
+				<br>
+				<span class="small color-grey">{% if $Lang=="de" %}zzgl. $VAT % MwSt.{% else %}plus $VAT % VAT{% endif %}</span>
+			</p>
+		</div>
+		{% if $SavingPercent > 0 %}
+		<hr>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<p class="h2 center margin-top-ml">{% if $Lang=="de" %}Jetzt bestellen und {% substr($SavingPercent, 0, -3) %} % Frühbucher&shy;rabatt sichern!{% else %}Order now and save {% substr($SavingPercent, 0, -3) %} %!{% endif %}</p>
+			{% if $Year == 2014 && ( $Month <= 10 || ( $Month == 11 && $Day <= 7 ) ) %}<div class="center"><div id="countdown"></div></div>{% endif %}
+		</div>
+		{% endif %}
+	</div>
+	
+	<hr>
+	
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="center">
+				$TechnicalData
+	            <input class="btn btn-primary btn-large margin-bottom-m margin-top-s" value="{% if $Lang=="de" %}Bestellung starten{% else %}Place order{% endif %}" type="submit">
+			</div>
+		</div>
+	</div>
+$FormCloseOrder

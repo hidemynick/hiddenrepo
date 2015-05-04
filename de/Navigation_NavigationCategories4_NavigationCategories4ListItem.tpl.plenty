@@ -1,0 +1,1 @@
+<a{% if $CategoryIsCurrent %} id="current_page"{% endif %} href="$CategoryUrl" title="$CategoryName">$CategoryName</a>

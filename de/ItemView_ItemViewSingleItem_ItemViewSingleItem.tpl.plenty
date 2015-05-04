@@ -1,0 +1,288 @@
+{#
+<!-- template single article -->
+
+{% if ($CategoryId[Level1]!=457)&&($CategoryId[Level1]!=454)&&($CategoryId[Level2]!=441) %}
+<!-- is not team | is not pressemitteilungen | is not agencies/references -->
+
+	{% if ($Model=="api")||($Model=="agency")||($Model=="consultant")||($Model=="soap-api") %}
+	<!-- is schnittstellen || is agenturen || is consultant || is api (soap) -->
+
+<!-- script for url-tabs -->
+$FreeVar[9]
+
+<!-- [--Request_CategoryText_Level1] -->
+
+{% if ($CurrentCategoryId[Level1]!=376) %}$CurrentCategoryDescription1[Level1]{% endif %}
+
+{% if ($CurrentCategoryId[Level2]!=376)&&($Model!="soap-api")&&($Model!="api")&&($CurrentCategoryId[Level2]!=444) %}$CurrentCategoryDescription1[Level2]{% endif %}<!-- do not show api  -->
+
+<div class="content-margin pmHasTabs pmUrlTabs clearfix">
+
+    {% if ($Model=="soap-api") %}{% SetCategoryId(426) %}{% SetCategoryId(443) %}{% endif %}<!-- is soap api -->
+    {% Container_NavigationCategoriesStepByStepList() %}
+    {% if ($Model=="soap-api") %}{% SetCategoryId(376) %}{% SetCategoryId(376) %}{% endif %}<!-- is soap api -->
+    <div class="css-panes border-shadow-small2">
+        <div class="clearfix">
+
+            <div class="pmArticleBacklinkContainer">
+                <a class="button pm-btn-top-left back pmAppendPageScroll pmLinkToCategory" href="{% Link_CurrentCategory() %}">Zurück zu <span class="pmArticleBacklinkTargetName">$CategoryName[Level2]</span></a>
+            </div>
+
+            {% if ($Model=="api")||($Model=="soap-api") %}<!-- is schnittstellen || is api (soap) -->
+                
+                <div class="pmPageApi pmPageArticleContent">
+
+                    <h1 class="pmh1 pmPageApiHeadline">$Name[1]</h1>
+
+                    <div class="pmPageAgencyDataContainer border-shadow-small">
+                        {% if $Image[1] %}
+                            <div class="pmPageApiImage">{% if $Name[2] %}<a class="pmCreateHrefFromTitle" title="$Name[2]">$PreviewImage[1]</a>{% else %}$PreviewImage[1]{% endif %}</div>
+                        {% endif %}
+                        <div class="pmPageAgencyData">$TechnicalData</div>
+                    </div>
+
+                    <div class="pmPageApiText">$Description</div>
+
+                </div>
+
+            <!-- is schnittstellen || is api (soap) end -->
+            {% elseif ($Model=="agency")||($Model=="consultant") %}<!-- is agenturen || is consultant -->
+
+                <div class="pmPageAgency pmPageArticleContent">
+
+                    <div class="pmPageAgencyDataContainer">
+                         <div class="pmPageAgencyDataSeal border-shadow-small">
+                             {% if ($Model=="agency")&&($Image[1]) %}
+                             	{% if ($CategoryId[Level2]==435) %}<img src="/images/gallery/website/agenturen/plenty_empfiehlt.png" alt="Siegel plentymarkets empfielt" />
+                                {% else %}<img src="/images/gallery/website/agenturen/siegel_zertifizierter_dienstleister_small.png" alt="Siegel Zertifizierter Dienstleister" />{% endif %}
+                             {% elseif ($Model=="consultant")&&($Image[1]) %}<img src="/images/gallery/website/agenturen/siegel_e-commerce-berater_small.png" alt="Siegel E-Commerce-Berater" />
+                             {% endif %}
+                         </div>
+                         <div class="border-shadow-small">
+                             {% if ($Model=="agency")&&($Image[1]) %}<div class="pmPageAgencyImage">$PreviewImage[1]</div>
+                             {% elseif ($Model=="consultant")&&($Image[1]) %}<div class="pmPageConsultantImage"><div class="border-shadow-small"><img src="$SecondPreviewImageURL[1]" alt="$Name[1]" /></div></div>
+                             {% endif %}
+                             <div class="pmPageAgencyData">$TechnicalData</div>
+                         </div>
+                    </div>
+
+                    <div class="pmPageAgencyText">
+                        <h1 class="pmh1 pmPageAgencyHeadline">$Name[1]</h1>
+                        {% if ($Model=="consultant") %}<!-- is consultant -->
+                            <strong class="pmConsultantSubheadline">$Name[3]</strong>
+                        {% endif %}
+                        $Description
+                    </div>
+
+                </div>
+
+                <!-- references -->
+                {% $CrossSellingType = "Accessory" %}
+                {% if Container_ItemViewCrossSellingItemsList() %}
+                    <div class="pmPageAgencyReferencesContainer pmHasFloatedItems relative clearfix">
+                        <h3 class="pmAgencyReferencesHeadline pmh2">Referenzen</h3>
+                        {% Container_ItemViewCrossSellingItemsList() %}
+                    </div>
+                {% endif %}
+
+            <!-- is agenturen end -->
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+
+	{% elseif ($Model=="dummy") %}
+	<!-- do not show article -->
+
+	{% elseif (($CategoryId[Level2]==475)||(($CurrentCategoryId[Level1]==462)&&($CurrentCategoryId[Level2]==510))) %}
+	<!-- is videos / is interviews -->
+		<script type="text/javascript">
+			var videoOverlayAutoplay = true;
+			var videoOverlayCloseLink = '{% Link_CurrentCategory() %}';
+		</script>
+		<{% if $CategoryId[Level1]==445 %}{% Link(362) %}{% else %}{% Container_ItemViewCategoriesList2() %}{% endif %}>
+		
+		<div id="$ID" class="PlentyVideoOverlayBox showToRobots hideFromUser">
+			<a class="PlentyOverlayInfoOpen pmSprite pmIconInfo pmFramedIcon pmNoText">Info</a>
+			<div class="PlentyOverlayInfo showToRobots hideFromUser">
+				<h2>$Name[1]</h2>
+				<p> $Description </p>
+				<a class="PlentyOverlayInfoClose pmSprite pmIconClose pmFramedIcon pmNoText">Close</a>
+			</div>
+			$DescriptionShort
+		</div>
+	
+		<span class="pmHiddenAutoplayTrigger PlentyVideoOverlayTrigger" rel="#$ID">Open Video</span>
+	<!-- is videos / is interviews end -->
+
+	{% elseif ($CategoryId[Level1]==491)&&($CategoryId[Level2]==492) %}
+	<!-- is webinare -->
+		<div class="pmStyle">
+			<div class="clearfix  pmAutoColumnHeight">
+				<div class="pmShadow pmWhite pmTextContainer pmL pmColumn fleft">
+					<h1>plentymarkets Webinar „$Name[2]“</h1>
+					<p>Unser Webinar zum Thema „$Name[2]“ findet am $Name[1] statt und wird von $Name[3] gehalten.</p>
+					<p>Wir freuen uns, wenn wir auch Sie bei unserem Webinar begrüßen dürfen.</p>
+					<hr />
+					<div class="pmIndented pmLimitHeight">
+						<div class="clearfix">
+							<div class="pmIntendedInnerLeft hasButtonRight fleft">
+								<h2>Informationen zu unseren Webinaren</h2>
+							</div>
+							<div class="pmIntendedInnerRight hasButton fright">
+								<a class="button pmM hasFixWidht" href="https://plentymarkets.adobeconnect.com/_a719284344/start1/" target="_blank">zur Anmeldung</a>
+							</div>
+						</div>
+						{% Container_NavigationCategoriesSublevelSelect() %}
+					</div>
+					<hr />
+				</div>
+				<div class="pmShadow pmWhite pmTextContainer pmS pmColumn fright pmHasBgImage isWebinare">
+					<div class="clearfix pmSpacerTop pmMarginBottom">
+						<div class="pmHighlightetContentRight fright">
+							<strong><a class="pmSeemlessLink block" href="{% Link_CurrentCategory() %}">Alle Webinare anzeigen »</a></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- is webinare end -->
+
+	{% elseif ($CategoryId[Level1]==491)&&($CategoryId[Level2]==493) %}
+	<!-- is academy -->
+		<div class="pmStyle">
+			<div class="clearfix  pmAutoColumnHeight">
+				<div class="pmShadow pmWhite pmTextContainer pmL pmColumn fleft">
+					<h1>plentymarkets Academy „$Name[2]“</h1>
+					<p><b>$Name[3]</b></p>
+					<p>Unsere plentymarkets Academy Veranstaltung zum Thema „$Name[2]“ findet am $Name[1] in Kassel statt.</p>
+					<p>Haben wir Ihr Interesse geweckt? Dann melden Sie sich gleich an bei Herrn Tobias Fricke <a href="mailto:tobias.fricke@plentymarkets.com">tobias.fricke@plentymarkets.com</a>! Wir freuen uns, Sie bei unserer Veranstaltung begrüßen zu dürfen.</p>
+					<hr />
+					<div class="pmIndented pmLimitHeight">
+						<h2>Informationen zur plentymarkets Academy</h2>
+						{% Container_NavigationCategoriesSublevelSelect() %}
+					</div>
+					<hr />
+				</div>
+				<div class="pmShadow pmWhite pmTextContainer pmS pmColumn fright pmHasBgImage isAcademy">
+					<div class="clearfix pmSpacerTop pmMarginBottom">
+						<div class="pmHighlightetContentRight fright">
+							<strong><a class="pmSeemlessLink block" href="{% Link_CurrentCategory() %}">Alle Academy Veranstaltungen anzeigen »</a></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- is academy end -->
+
+	{% elseif ($CategoryId[Level1]==491)&&($CategoryId[Level2]==494) %}
+	<!-- is systemschulung -->
+		<div class="pmStyle">
+			<div class="clearfix  pmAutoColumnHeight">
+				<div class="pmShadow pmWhite pmTextContainer pmL pmColumn fleft">
+					<h1>plentymarkets Systemschulung für Einsteiger am $Name[1]</h1>
+					<p>Auch am $Name[1] findet wieder unsere monatliche Systemschulung für Einsteiger in Kassel statt.</p>
+					<p>Haben Sie Interesse? Dann melden Sie sich gleich an! Wir freuen uns, Sie bei unserer Veranstaltung begrüßen zu dürfen.</p>
+					<hr />
+					<div class="pmIndented pmLimitHeight">
+						<div class="clearfix">
+							<div class="pmIntendedInnerLeft hasButtonRight fleft">
+								<h2>Informationen zur Einsteigerschulung</h2>
+							</div>
+							<div class="pmIntendedInnerRight hasButton fright">
+								<a class="button pmM hasFixWidht" href="{% Link_File(327) %}">zur Anmeldung</a>
+							</div>
+						</div>
+						{% Container_NavigationCategoriesSublevelSelect() %}
+					</div>
+					<hr />
+				</div>
+				<div class="pmShadow pmWhite pmTextContainer pmS pmColumn fright pmHasBgImage isSystemschulung">
+					<div class="clearfix pmSpacerTop pmMarginBottom">
+						<div class="pmHighlightetContentRight fright">
+							<strong><a class="pmSeemlessLink block" href="{% Link_CurrentCategory() %}">Weitere Termine anzeigen »</a></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- is systemschulung end -->
+
+	{% elseif ($CategoryId[Level1]==395)&&($CategoryId[Level2]==498) %}
+	<!-- is auszeichnungen -->
+		<div class="pmStyle">
+			<div class="clearfix  pmAutoColumnHeight">
+				<div class="pmShadow pmWhite pmTextContainer pmL pmColumn fleft">
+					<h1>Auszeichung für plentymarkets: $Name[1]</h1>
+					<div class="pmMarginTopLarge"><a{% if $Name[2]!="" %} class="pmCreateHrefFromTitle" title="$Name[2]"{% endif %}><img class="pmShadow pmPadding" src="$SecondPreviewImageURL[1]" alt="$Name[1]" /></a></div>
+					{% if $DescriptionShort!="" %}<p><b>$DescriptionShort</b></p>{% endif %}
+					<p> $Description </p>
+				</div>
+				<div class="pmShadow pmWhite pmTextContainer pmS pmColumn fright pmHasBgImage isAuszeichnungen">
+					<div class="clearfix pmSpacerTop pmMarginBottom">
+						<div class="pmHighlightetContentRight fright">
+							<strong><a class="pmSeemlessLink block" href="{% Link_CurrentCategory() %}">Alle Auszeichnungen anzeigen »</a></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- is auszeichnungen end -->
+
+	{% elseif $ID==1707 %}
+	<!-- is kongressticket -->
+
+
+<div class="border-shadow-small pm-white bubbles clearfix"  style="padding-bottom: 15px;">
+    $FormOpenOrder
+    <h2 class="pmh1-black">$Name[1]</h2>
+
+    <div class="fleft"><img class="border-shadow-small" style="width: 220px;" src="[MiddleSizeImage[1]" alt="$Name[1]" /></div>
+
+    <div class="fright relative" style="width: 675px;">
+
+        <h3 class="pmh2">$DescriptionShort<!-- a class="button" href="{% Link(329) %}" style="margin-left: 10px; vertical-align: middle;">zum Kongress</a --></h3>
+
+        <div>$Description</div>
+
+        <div class="clearfix" style="margin-top: 30px; border-top: 1px solid #f0f0f0; padding-top: 15px;">
+
+            <div class="fleft">
+                <div>Wieviele Tickets möchten Sie kaufen ?</div>
+                <div><input style="width: 40px; margin-bottom: 0;" type="text" name="ArticleQuantity" value="1" size="3" maxlength="3" /></div>
+            </div>
+    
+            <div class="fleft" style="margin-left: 40px;">
+               <div class="pmh1" style="font-size: 200%; line-height: 120%;">$PriceDynamic $Currency</div>
+               <div style="font-size: 85%;">$VATHint $VAT %</div>
+            </div>
+            <input class="formblanc fright button btn-red" style="margin-top: 4px;" value="Kaufen" type="submit" />
+
+        </div>
+    </div>
+    
+    $FormCloseOrder
+</div>
+
+
+
+	{% elseif $ID==258 %}
+	<!-- is verpflegungspauschale systemschulung -->
+
+	{% else %}
+	<!-- standard -->
+
+	{% endif %}
+
+<!-- debug $ID -->
+{% else %}
+[Robots::noindex, follow]
+noindex
+
+
+<!-- debug $ID -->
+{% endif %}
+<!-- debug $ID -->
+#}

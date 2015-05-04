@@ -1,0 +1,12 @@
+<!-- video list in blog -->
+
+{% for $_item in GetItemViewLatestItemsList3() %}{% MapTemplateVars($_item) %}
+
+
+<li>
+	<a href="{% Link_Item($ID) %}">$Name[1]</a>
+</li>
+
+
+{% endfor %}
+

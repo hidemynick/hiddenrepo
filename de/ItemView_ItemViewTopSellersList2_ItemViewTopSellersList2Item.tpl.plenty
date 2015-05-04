@@ -1,0 +1,5 @@
+
+				<tr class="id_$ID">
+					<td>$Name[1]</td>
+					<td><b>$Price $Currency</b></td>
+				</tr>

@@ -1,0 +1,19 @@
+{% for $_nav in GetNavigationCategories8List() %}
+{% MapTemplateVars($_nav) %}
+{% if($LoopIsFirst[1]) %}
+<!-- navigation manual -->
+
+<ul{% if $CategoryLevel==2 %} class="navigationTree"{% endif %}>
+{% endif %}
+<li class="id_$CategoryId{% if $SubCategoryExists %} hasSublevel{% endif %}{% if ($CategoryIsCurrent)||($CategoryIsOpen) %} active{% endif %}">
+{% if $SubCategoryExists %}<span class="openCloseToggle"></span>{% endif %}
+		<a class="treeLink" href="$CategoryUrl">$CategoryName</a>
+{% if(($CategoryIsOpen || $NavigationCategories8_OpenLevel > $CategoryLevel) && $SubCategoryExists) %}
+{% NavigationCategories8List($CategoryId) %}
+{% endif %}
+
+	</li>
+{% if($LoopIsLast[1]) %}
+
+</ul>{% endif %}
+{% endfor %}

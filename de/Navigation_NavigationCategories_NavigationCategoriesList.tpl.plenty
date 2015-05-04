@@ -1,0 +1,14 @@
+{% for $_nav in GetNavigationCategoriesList(6, 2, 999, "content") %}
+	{% if $LoopIsFirst[1] %}
+		<ul class="versionsList list-unstyled">
+	{% endif %}
+			<li>
+				<a class="cat_$_nav->CategoryId basicColor" href="$_nav->CategoryUrl"><b>$_nav->CategoryName</b> — $_nav->CategoryDescription2</a>
+				{% if ( $_nav->CategoryIsOpen || $_nav->NavigationCategories_OpenLevel > $_nav->CategoryLevel ) && $_nav->SubCategoryExists %}
+					{% NavigationCategoriesList($_nav->CategoryId) %}
+				{% endif %}
+			</li>
+	{% if $LoopIsLast[1] %}
+		</ul>
+	{% endif %}
+{% endfor %}

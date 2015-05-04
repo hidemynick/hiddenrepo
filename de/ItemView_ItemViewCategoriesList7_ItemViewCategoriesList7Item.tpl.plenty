@@ -1,0 +1,49 @@
+{% if ($CurrentCategoryId[Level2]==523)&&($RowCount<6) %}<!-- ROWCOUNT Abfrage zeige nur die ersten 5 Pressemitteilungen -->
+<!-- ### CAT 523 = PRESSEMITTEILUNGEN ### -->
+<li class="id_$ID">
+	<div class="row">
+		<div class="col-sm-2 col-md-2 col-lg-2">
+        	<span class="large">$Name[1]</span>
+        </div>
+		<div class="col-sm-10 col-md-10 col-lg-10">
+			<a href="$Name[3]" title="$Name[2]" target="_href"><strong class="p large normal">$Name[2]</strong></a>
+		</div>
+	</div>
+</li>
+{% endif %}
+{% if ($CurrentCategoryId[Level2]==545) %}
+<!-- ### CAT 545=  WEBINARE ### -->
+<li data-id="$ID">
+	<div class="row">
+		<div class="col-sm-3 col-md-3 col-lg-3">
+        	<span class="large">$ReleaseDate</span>
+        </div>
+		<div class="col-sm-9 col-md-9 col-lg-9">
+			<strong class="p large normal">$Name[1]</strong>
+			{% if $Name[2]!="" %}<p class="subtitle">{% if $Model=="webinar" %}{% if $Lang=="de" %}Mit {% else %}With {% endif %}{% endif %}$Name[2]</p>{% endif %}
+			{% if $DescriptionShort!="" %}<p class="discriptionShort">$DescriptionShort</p>{% endif %}
+			{% if $Description!="" %}<p><a class="btn btn-normal btn-primary white" href="{% Link_Item($ID) %}">{% if $Lang=="de" %}Mehr erfahren{% else %}Find out more{% endif %}</a></p>{% endif %}
+		</div>
+	</div>
+</li>
+{% elseif ($CurrentCategoryId[Level2]==546)||($CurrentCategoryId[Level2]==547) %}
+<!-- ### CAT 513&547 = SYSTEMSCHULUNG & ACADEMY ### -->
+<li data-id="$ID">
+	<div class="row">
+		<div class="col-sm-3 col-md-3 col-lg-3">
+	    	<span class="dateFollowedByElement large">$ReleaseDate</span>
+	    	{% if $AvailabilityId==1 %}
+	    		<span class="pmAvailabilityIndicator pmTooltipHtml glyphicon glyphicon-ok color-green" data-text="Plätze verfügbar"></span>
+	    	{% else %}
+	    		<span class="pmAvailabilityIndicator pmTooltipHtml glyphicon glyphicon-banCircle color-red" data-text="ausgebucht"></span>
+	    	{% endif %}
+	    </div>
+		<div class="col-sm-9 col-md-9 col-lg-9">
+			<strong class="p large normal">$Name[1]</strong>
+			{% if $Name[2]!="" %}<p class="subtitle">{% if $Model=="webinar" %}{% if $Lang=="de" %}Mit {% else %}With {% endif %}{% endif %}$Name[2]</p>{% endif %}
+			{% if $DescriptionShort!="" %}<p class="discriptionShort">$DescriptionShort</p>{% endif %}
+			{% if $Description!="" %}<p><a class="btn btn-normal btn-primary white" href="{% Link_Item($ID) %}">{% if $Lang=="de" %}Mehr erfahren{% else %}Find out more{% endif %}</a></p>{% endif %}
+		</div>
+	</div>
+</li>
+{% endif %}

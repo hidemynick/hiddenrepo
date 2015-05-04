@@ -1,0 +1,43 @@
+$HtmlStartTag
+	<head>
+		<title>$HtmlMetaTitle</title>
+		$HtmlHeadLinkCSSTags
+		$HtmlHeadJavaScriptTags
+		$HtmlHeadMetaTags
+		<!-- form labels -->
+
+$FreeVar[18]
+	</head>
+	<body style="min-width: 0;">
+		<a id="top"></a>
+			$PageDesignCustom2MainFrame
+		<a id="bottom"></a>
+		$HtmlBodyOverlays
+		
+	<!-- tracking stuff -->	
+	{% if $WebstoreId==1 %}
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-925311-6', 'auto');
+  			ga('send', 'pageview');
+
+		</script>
+	{% else %}
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-925311-1', 'auto');
+  			ga('send', 'pageview');
+
+		</script>
+	{% endif %}
+	
+	</body>
+</html>

@@ -1,0 +1,37 @@
+
+
+/* blog */
+
+.blogItem img {
+	max-width: 100%;
+}
+@media (max-width: 767px) {
+	.blogListImageBox {
+		display: none;
+	}
+}
+
+
+/* tags */
+
+.PlentyTagLink {
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+	padding: 2px 5px;
+	color: inherit;
+}
+.PlentyTagLink:hover {
+	border-color: #ccc;
+	text-decoration: none;;
+}
+
+
+.fleft {
+	float: left;
+}
+.fright {
+	float: right;
+}
+.clear {
+	clear: both;
+}

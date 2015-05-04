@@ -1,0 +1,4403 @@
+.PlentyWebMyAccount {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* sprite url */
+.pmBackButton > span,
+.pmPlayImage > span,
+.pmSprite,
+.pmStyle button,
+.pmStyle a.button,
+.pmClickableIcon,
+.pmSocialIcon,
+.pmFooterHomeLink,
+.pmAvailabilityIndicator,
+.langDropdown li > a,
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+a:link > span.pmArrowButton,
+a:visited > span.pmArrowButton,
+.button.back,
+a:link > span.pmArrowButton.back,
+a:visited > span.pmArrowButton.back,
+.button.up,
+.theme-default .nivo-directionNav a,
+#actionsfirst a,
+#actionssecond a,
+.pmPopupClose,
+#PlentyMyAccountMyAccount a span.TabCloseButton,
+.PlentyWebshopPopupCloseButton > a,
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a,
+.pmmainnavigation > ul > li  ul > li.dir > a,
+.pmsearch input[type="text"],
+.pmsearch #searchboxbtn,
+.scrollup,
+.linear-scroller-prev > span,
+.linear-scroller-next > span,
+.PlentyOverlayClose,
+.pmVerticalSliderNavi,
+.plentyInfoBox:before {
+	background-image: url(/layout/pm/images/icon/plenty_sprite_2.png);
+	background-repeat: no-repeat;
+}
+
+
+a.button,
+.myaccount button,
+.PlentyWebMyAccount button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+a:link > span.pmArrowButton,
+a:visited > span.pmArrowButton {
+
+    /*background: #eee;  Old browsers */
+    /*background: -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%);  FF3.6+ */
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2)));  Chrome,Safari4+ */
+    /*background: -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);  Chrome10+,Safari5.1+ */
+    /*background: -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); Opera11.10+ */
+    /*background: -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);  IE10+ */
+    /*background: linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);  W3C */
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    border:1px solid #ccc;
+    color:#FFF;
+    padding:2px 30px 2px 15px;
+    cursor:pointer;
+    background-color: #008ebd;
+    background-position: right -452px;
+}
+
+/* standard */
+.PlentyWebMyAccount select {
+margin-bottom: 0;
+height: 23px;
+}
+.PlentyWebMyAccount select.XS {
+width: 50px;
+}
+.PlentyWebMyAccount select.M {
+width: 140px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select {
+    border: 1px solid #ccc;
+    height: 25px;
+    padding: 4px;
+    outline: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #777;
+    margin: 0;
+    width: 200px;
+    max-width: 100%;
+    /*display: block;*/
+    margin-bottom: 20px;
+    margin-right:10px;
+    background-color:#f1f1f1;
+font-size: 12px;
+}
+
+select,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select {
+padding: 2px 2px 2px 0;
+/*color: #404040;*/
+width: auto;
+}
+
+
+/* focus */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select:focus {
+    border-color: #aaa;
+    color: #444;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow:  0 0 3px rgba(0,0,0,.2);
+    background-color:#e1edc5;
+    background-color:white;
+}
+
+/* hover */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+select:hover,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select:hover,
+input[type="text"].hover,
+input[type="password"].hover,
+input[type="email"].hover,
+textarea.hover,
+select.hover {
+    border-color: #aaa;
+    color: #444;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow:  0 0 3px rgba(0,0,0,.2);
+}
+
+textarea {
+    min-height: 60px;
+resize: vertical;
+}
+
+
+.PlentyWebMyAccountSearchContainer input[type="text"], .PlentyWebMyAccountSearchContainer select {
+    margin-right: 5px !important;
+}
+
+
+.pmh1,
+#PlentyWebMyAccountMyAccountTitleContainerTitle {
+    font-size:18px;
+    color:#008ebd;
+    line-height:42px;
+    font-weight:bold;
+
+}
+.border-shadow-small,
+.pmContentBox,
+#PlentyMyAccountMyAccount,
+.PlentyWebMyAccountCustomerEventsData,
+.PlentyWebMyAccountDomainsSystemContainer .PlentyWebMyAccountTabHeaderContainer,
+.plentyWebOrderSystemSpecificationsTextBottom,
+.pmShadow {
+    border:solid 2px #ffffff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 6px #cccccc;
+    -webkit-box-shadow: 0px 0px 6px #cccccc;
+    box-shadow: 0px 0px 6px #cccccc;
+    margin-bottom:15px;
+}
+/* ie style lteie8 */
+.lteie8 .border-shadow-small,
+.lteie8 .pmContentBox,
+.lteie8 #PlentyMyAccountMyAccount,
+.lteie8 .PlentyWebMyAccountCustomerEventsData,
+.lteie8 .PlentyWebMyAccountDomainsSystemContainer .PlentyWebMyAccountTabHeaderContainer,
+.pmBoxShadow {
+border: 2px solid #ddd;
+}
+
+.border-shadow-small2,
+.border-shadow-small3,
+.PlentyGuiPane > form.PlentyAjaxForm,
+.PlentyWebMyAccountTicketsNewTicket,
+.PlentyWebMyAccountOrderOverview > .PlentyWebMyAccountTabHeaderContainer,
+#PlentyWebMyAccountTicketSystemNew,
+.PlentyWebMyAccountTabPane {
+    border: none;
+    -moz-border-radius: 0px 5px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 5px 5px 5px;
+    -moz-box-shadow: 0px 0px 6px #cccccc;
+    -webkit-box-shadow: 0px 0px 6px #cccccc;
+    box-shadow: 0px 0px 6px #cccccc;
+    margin-bottom: 15px;
+    z-index: 99;
+    position: relative;
+}
+.PlentyGuiPane > form.PlentyAjaxForm,
+.PlentyWebMyAccountTicketsNewTicket,
+.PlentyWebMyAccountOrderOverview > .PlentyWebMyAccountTabHeaderContainer,
+#PlentyWebMyAccountTicketSystemNew,
+.PlentyWebMyAccountTabPane {
+margin-bottom: 10px;
+background-color: #fff;
+}
+.PlentyWebMyAccountItemContainerContent > .clearfix > .pmOneThird {
+    width: 281px;
+}
+.PlentyWebMyAccountItemContainerContent > .clearfix > .pmOneThird + .pmOneThird {
+    margin-left: 12px;
+}
+/* POPUP */
+
+/* popup container (includes myaccount popup) */
+
+.pmPopup,
+.PlentyWebMyAccountPopupContainer,
+.PlentyWebMyAccountAdviceContainer,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer,
+.ui-datepicker,
+.PlentyWebshopPopup {
+display: none;
+position: absolute;
+z-index: 10000;
+background: #fff;
+border: 3px solid #E0E0E0;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+
+-moz-box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+}
+/* myaccount only */
+.PlentyWebMyAccountPopupContainer,
+.PlentyWebMyAccountAdviceContainer,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer,
+.ui-datepicker {
+top: 25px;
+z-index: 400010 !important;
+width: 328px; 
+margin-left: -179px !important; 
+left: 50%;
+padding: 0 10px;
+}
+
+/* popup sizes */
+.PlentyWebMyAccountPopupContainer.l {
+width: 500px;
+margin-left: -250px !important;
+}
+.PlentyWebMyAccountPopupContainer.xl {
+width: 600px;
+margin-left: -300px !important;
+}
+
+/* popup container hover  (& login container hover) */
+.PlentyWebMyAccountPopupContainer:hover,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer:hover,
+.ui-datepicker:hover {
+-moz-box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* popup header */
+
+.PlentyWebMyAccountPopupContainer > div > div:first-child,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer > div.PlentyFormBox > div.PlentyWebMyAccountPopupTitleContainer,
+.ui-datepicker-header {
+color: #008EBD;
+font-size: 120%;
+font-weight: bold;
+line-height: 26px;
+border-bottom: 1px solid #E0E0E0;
+padding: 7px 1px 3px;
+}
+
+/* popup body */
+
+.PlentyWebMyAccountPopupContainer > div > div + div,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer > div.PlentyFormBox > div.PlentyWebMyAccountPopupTitleContainer + div {
+padding: 10px 0;
+font-size: 95%;
+line-height: 12px;
+}
+.PlentyWebMyAccountClear { 
+clear: both; 
+}
+
+
+/* popup close (includes tab close icon) */
+
+.pmPopupClose,
+#PlentyMyAccountMyAccount a span.TabCloseButton,
+.PlentyWebshopPopupCloseButton > a,
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a  {
+display: inline-block;
+width: 16px;
+height: 16px;
+cursor: pointer;
+text-indent: -10000px;
+background-color: #707173;
+background-position: -16px 0;
+
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+/* hover / focus */
+.pmPopupClose:hover,
+.pmPopupClose:focus,
+#PlentyMyAccountMyAccount a span.TabCloseButton:hover,
+.PlentyWebshopPopupCloseButton > a:hover,
+.PlentyWebshopPopupCloseButton > a:focus,
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a:hover,
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a:focus {
+background-color: #008ebd;
+background-position: 0 0;
+}
+
+/* myaccount */
+
+/* header title left */
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitle {
+float: left;
+display: inline-block;
+font-size: 120%;
+}
+/* header icon right */
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose {
+float: right;
+display: block;
+}
+/* close icon */
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a {
+margin-bottom: -1px;
+}
+/* status message */
+.PlentyWebMyAccountAdviceContainer.PlentyWebMyAccountPopupContainer .plentyMessageBox {
+margin-bottom: 0;
+}
+
+
+/* addititonal style for pmpopup */
+.pmPopupInner {
+    margin: 0 10px;
+}
+.pmPopupHeader {
+    position: relative;
+    padding: 7px 0 3px;
+    border-bottom: 1px solid #E0E0E0;
+    line-height: 26px;
+    font-size: 120%;
+    font-weight: bold;
+    color: #008EBD;
+}
+.pmPopupHeader > .pmPopupHeaderTitle {
+    display: block;
+}
+.pmPopupHeader.pmHasCloseIcon > .pmPopupHeaderTitle {
+    margin-right: 24px;
+}
+.pmPopupHeader > .pmPopupClose {
+    position: absolute;
+    top: 10px;
+    right: -1px;
+}
+.pmPopupContent {
+}
+/* button container */
+.pmPopupButtonContainer {
+    margin-top: 10px;
+}
+
+/* SIMPLE POPUP */
+
+.pmSimplePopup {
+padding: 0 10px;
+}
+.pmSimplePopup > .pmPopupClose {
+position: absolute;
+top: 5px;
+right: 5px;
+}
+.pmSimplePopup > .pmPopupButtonContainer {
+    margin-bottom: 10px;
+}
+.pmSimplePopup > .pmPopupClose + p {
+    margin-right: 20px;
+}
+.PlentyWebMyAccount.pmSimplePopup > .pmPopupClose + p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+/* WEBSHOP POPUP */
+
+.PlentyWebshopPopup {
+display: none;
+position: absolute;
+top: 25px;
+z-index: 400010;
+width: 345px;
+margin-left: -172px;
+left: 50%;
+padding: 10px;
+}
+/* header line */
+.PlentyWebshopPopupCloseButton {
+padding-bottom: 10px;
+text-align: right;
+}
+/* ################################################################################
+tabs (unterseiten) (includes myaccount tabs)
+################################################################################ */
+
+.pmmaincontent > div > .css-tabs + .border-shadow-small2 > .css-panes > div > p {
+    width:600px;
+}
+.pmHasPartnerLogoBoxes p {
+width: auto;
+max-width: 900px;
+}
+/* root element for tabs  */
+ul.css-tabs,
+.pmHasTabs > ul,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs,
+.pmTabBox ul.tabs {
+    height: 30px;
+    margin: 0 !important;
+    padding: 0;
+    position: relative;
+    top: 1px;
+    z-index: 100;
+}
+
+/* single tab */
+ul.css-tabs li,
+.pmHasTabs > ul > li,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li,
+.pmTabBox ul.tabs li {
+    float: left;
+    list-style-type: none;
+    margin: 0 -5px;
+    overflow: hidden;
+    padding: 5px 5px 1px;
+    position: relative;
+    top: -5px;
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a,
+.pmHasTabs > ul > li > a,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > a,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > span,
+.pmTabBox ul.tabs a {
+
+border: 2px solid #FFFFFF !important;
+border-bottom: none !important;
+
+    background-color: #EFEFEF;
+    border-bottom: 0 none;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -moz-box-shadow: 0 0 4px #CCCCCC, 0 -9px 6px -12px #CCCCCC inset;
+    -webkit-box-shadow: 0 0 4px #CCCCCC, 0 -9px 6px -12px #CCCCCC inset;
+    box-shadow: 0 0 4px #CCCCCC, 0 -9px 6px -12px #CCCCCC inset;
+    color: #333333;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 28px;
+    margin-right: 2px;
+    outline: 0 none;
+    padding: 5px 11px;
+    position: relative;
+    text-decoration: none;
+    top: 1px;
+
+font-size: 90%;
+}
+
+.en ul.css-tabs a,
+.en .pmHasTabs > ul > li > a,
+.en #PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > a,
+.en #PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > span,
+.en .pmTabBox ul.tabs a {
+	padding: 5px 8px;
+}
+
+ul.css-tabs a:hover,
+.pmHasTabs > ul > li > a:hover,
+.pmHasTabs > ul > li > a:focus,
+.pmHasTabs > ul > li > a:active,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > a:hover,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > a:focus,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > a:active,
+.pmTabBox ul.tabs a:hover,
+.pmTabBox ul.tabs a:focus,
+.pmTabBox ul.tabs a:active {
+    background-color:#F7F7F7;
+    color:#008ebd;
+}
+
+/* selected tab */
+ul.css-tabs a.current,
+.pmHasTabs > ul > li.current > a,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > a.current,
+#PlentyMyAccountMyAccount div.PlentyGuiTabs > ul.tabs > li > span.current,
+.pmTabBox ul.tabs a.current {
+    background-color: white;
+    border-bottom: 1px solid white;
+    -moz-box-shadow: 0 0 6px #CCCCCC;
+    -webkit-box-shadow: 0 0 6px #CCCCCC;
+    box-shadow: 0 0 6px #CCCCCC;
+    color: #333333;
+    cursor: default;
+    overflow: hidden;
+    position: relative;
+    z-index: 1001;
+}
+
+/* tab close icon */
+#PlentyMyAccountMyAccount a span.TabCloseButton {
+position: relative;
+left: 9px;
+margin: -3px 0;
+}
+#PlentyMyAccountMyAccount a span.TabCloseButton:hover {
+}
+#PlentyMyAccountMyAccount {
+    background-color: #FFFFFF;
+    padding: 20px 20px 0px 20px;
+    margin-top: 30px;
+}
+#PlentyWebMyAccountDisplaySupportPin ul > li,
+.pmmaincontent .span50-inner .pmInterfacesListWrapper > ul.pmUlImg > li {
+line-height: 18px;
+list-style-image: url("/layout/pm/images/icon/pm-list-icon-small.png");
+margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+/* order system confirmation popup */
+
+.CouponCodeContainer > label {
+display: inline-block;
+line-height: 26px;
+}
+input[type="text"].ContractCouponCode {
+float: right;
+width: 200px;
+margin: 0;
+}
+#PlentyWebOrderSystemPopupSpecifications {
+margin: 10px 0 0;
+}
+.CouponCodeContainer,
+.plentyWebOrderSystemCouponCodeText {
+margin: 10px 0;
+}
+.plentyWebOrderSystemSpecificationsTextBottom {
+margin-top: 10px;
+padding: 10px;
+}
+.pmPopupClose + * > .pmPopupHeadlineContainer {
+margin-top: 2px;
+}
+
+
+
+/* CURRENCY PRICE */
+
+/* box */
+.PlentyCurrencyContainer {
+display: inline-block;
+white-space: nowrap;
+vertical-align: top;
+}
+/* price */
+.PlentyCurrencyValue {
+display: inline-block;
+/*float: right;*/ /*use for currency symbol before currency value*/
+}
+/* currency */
+.PlentyCurrencySymbol {
+display: inline-block;
+/*float: left;*/ /*use for currency symbol before currency value*/
+/*margin-right: 5px;*/ /*use for currency symbol before currency value*/
+margin-left: 5px; /*use this only for currency symbol after currency value and comment out all options for symbol before value*/
+}
+
+
+/* TABLE LAYOUT WITH HEADER */
+
+/* table */
+.PlentyWebMyAccountDisplayCouponsData > div,
+.PlentyWebMyAccountMyProjectsContent > div,
+.PlentyWebMyAccountCustomerEventsData > div {
+width: 100%;
+background: #C8DCEA;
+border: 1px solid #fff;
+border-collapse: collapse;
+border-spacing: 1px;
+}
+
+/* table cells standard */
+.PlentyWebMyAccountDisplayCouponsData > div > div > div,
+.PlentyWebMyAccountMyProjectsContent > div > div > div,
+.PlentyWebMyAccountCustomerEventsData > div > div > div {
+padding: 2px 5px;
+border: 1px solid #fff;
+}
+/* table cells odd rows */
+.PlentyWebMyAccountDisplayCouponsData > div > div:nth-child(2n) > div,
+.PlentyWebMyAccountMyProjectsContent > div > div:nth-child(2n) > div,
+.PlentyWebMyAccountCustomerEventsData > div > div:nth-child(2n) > div {
+background: rgb(233, 241, 247);
+}
+/* table cells last */
+.PlentyWebMyAccountDisplayCouponsData > div > div > div:last-child,
+.PlentyWebMyAccountMyProjectsContent > div > div > div:last-child,
+.PlentyWebMyAccountCustomerEventsData > div > div > div:last-child {
+}
+
+/* table first row cells */
+.PlentyWebMyAccountDisplayCouponsData > div > div:first-child > div,
+.PlentyWebMyAccountMyProjectsContent > div > div:first-child > div,
+.PlentyWebMyAccountCustomerEventsData > div > div:first-child > div,
+.PlentyWebMyAccountCustomerEventsSumRow > div,
+.PlentyWebMyAccountTableHeader {
+font-weight: bold;
+background: #f2f2f2;
+font-size: 12px;
+}
+
+/* table last row cells */
+.PlentyWebMyAccountDisplayCouponsData > div > div:last-child > div,
+.PlentyWebMyAccountMyProjectsContent > div > div:last-child > div,
+.PlentyWebMyAccountCustomerEventsData > div > div:last-child > div {
+}
+
+
+/* SIMPLE TABLE */
+
+/* table */
+.PlentyWebshopSimpleTable {
+display: table;
+width: 100%;
+font-size: 12px;
+line-height: 20px;
+}
+/* row */
+.PlentyWebshopSimpleTable > div {
+display: table-row;
+}
+/* cell standard */
+.PlentyWebshopSimpleTable > div > div {
+display: table-cell;
+border-color: #ccc #f0f0f0;
+border-width: 1px;
+border-style: none none solid solid;
+padding: 2px 5px;
+}
+/* cell first */
+.PlentyWebshopSimpleTable > div > div:first-child {
+/*padding-left: 0;*/
+}
+/* cell last */
+.PlentyWebshopSimpleTable > div > div:last-child {
+/*padding-right: 0;*/
+border-style: none solid solid solid;
+}
+
+/* header */
+
+/* header cell */
+.PlentyWebshopSimpleTable .PlentyWebMyAccountTableHeader {
+border-color: #ccc #fff;
+border-width: 1px;
+border-style: none none solid solid;
+}
+/* header cell first */
+.PlentyWebshopSimpleTable .PlentyWebMyAccountTableHeader:first-child {
+border-style: none none solid;
+padding-left: 5px;
+}
+/* header cell last */
+.PlentyWebshopSimpleTable .PlentyWebMyAccountTableHeader:last-child {
+border-style: none none solid solid;
+}
+
+
+/* other table styles */
+
+.numberCell { text-align: right; white-space: nowrap; }
+
+
+
+
+
+
+
+/* CONTRACT BUILDER */
+
+.contractBuilder {
+	font-size: 12px;
+}
+
+input::-moz-focus-inner { border: 0; padding: 0; }
+
+.contractBuilderItemDate,
+.contractBuilderItemPrice {
+	border-width: 1px;
+	border-color: #e0e0e0;
+	font-size: 12px;
+}
+
+
+ul.contractBuilderList > li.center {
+	text-align: center;
+}
+
+.contractBuilderItem {
+	display: inline-block;
+	width: 330px;
+	padding: 5px 10px;
+	text-align: center;
+	vertical-align: top;
+}
+.contractBuilderItem + .contractBuilderItem {
+	margin-left: 10px;
+}
+
+a.contractBuilderItem,
+a.contractBuilderItem:hover,
+a.contractBuilderItem:focus {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.contractBuilderItemDate,
+.contractBuilderItemTitle,
+.contractBuilderItemAdditional,
+.contractBuilderItemDetailsListWrapper,
+.contractBuilderItemAdditionalHint,
+.contractBuilderItemChange {
+	display: block;
+}
+
+.contractBuilderItemDate {
+	border-style: none none solid;
+	padding: 5px 0;
+	text-align: left;
+	color: #008EBD;
+	font-size: 15px;
+	font-weight: bold;
+}
+.contractBuilderItemDateHint {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.contractBuilderItemTitle {
+	padding-top: 10px;
+	line-height: 1.5;
+	color: #444;
+}
+.contractBuilderItemTitle,
+.contractBuilderItemTitle.isNumber.placeholder {
+	font-size: 26px;
+}
+.contractBuilderItemTitle.isNumber.placeholder {
+	line-height: 2.4em;
+}
+.contractBuilderItemTitle.isNumber {
+	font-size: 40px;
+	min-height: 60px;
+}
+
+.contractBuilderItemTitle.isNumber + .contractBuilderItemAdditional {
+	margin-top: -7px;
+}
+.contractBuilderTwoColumns .contractBuilderItemAdditional {
+	text-align: left;
+	padding-top: 10px;
+}
+.contractBuilderTwoColumns .contractBuilderItemTitle {
+	padding: 0;
+}
+.contractBuilderItem > .contractBuilderItemAdditional {
+	margin-top: 10px;
+}
+.contractBuilderItemAdditional + .contractBuilderItemTitle {
+	padding: 0;
+}
+
+.contractBuilderItemAdditionalHint {
+	font-size: 11px;
+	color: #666;
+}
+.contractBuilderItemAdditionalHint:before { content: "(" }
+.contractBuilderItemAdditionalHint:after { content: ")" }
+
+.contractBuilderItemAdditional + .contractBuilderItemAdditionalHint {
+	margin-top: 5px;
+}
+.contractBuilderItemAdditional > .contractBuilderItemAdditionalHint {
+	display: inline;
+	color: #008EBD;
+}
+
+.contractBuilderItemDetailsList {
+	display: inline-block;
+	padding: 10px 0 0;
+	text-align: left;
+	font-size: 11px;
+	color: #888;
+}
+.contractBuilderItemDetailsList > span {
+	display: list-item;
+	list-style-type: square;
+	margin-left: 1.2em;
+}
+.contractBuilderItemDetailsList.placeholder > span {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.contractBuilderItemPrice {
+	display: inline-block;
+	min-width: 125px;
+	margin-top: 10px;
+	padding: 3px 0 0;
+	border-style: solid none none;
+	color: #444;
+}
+.contractBuilderItemChange {
+	height: 30px;
+	margin: 15px 0 0;
+}
+.contractBuilderItemChange > input[type="range"] {
+	width: 300px;
+}
+
+.contractBuilderTableWrapper {
+	margin-bottom: 20px;
+}
+
+.inlineSubmitButton {
+	margin-right: 10px;
+}
+.submitButtonContainer {
+	margin-top: 10px;
+}
+.submitButtonContainer + .pmVatHint {
+	margin-top: 10px;
+}
+
+
+/* contract builder popup */
+
+.pmContractBuilderPopup {
+	left: 50%;
+	width: 800px;
+	margin-left: -405px;
+}
+.pmContractBuilderPopup.isSmallPopup {
+	width: 440px;
+	margin-left: -225px;
+}
+.pmContractBuilderPopup .pmPopupContent {
+	margin: 25px 0 10px;
+}
+.contractBuilderChangeRow {
+	margin: 30px 0 20px;
+}
+.placeholder {
+	color: #ccc;
+}
+
+/* slider */
+
+.ui-slider {
+	position: relative;
+	display: block;
+	margin: 19px 15px 18px;
+	height: 6px;
+	border: 1px solid #888;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+	-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+	
+}
+.ui-slider-handle {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin: -6px 0 0 -6px;
+	border: 1px solid #888;
+	background-color: #e0e0e0;
+		
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	
+	-moz-box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.ui-slider-handle.ui-state-hover,
+.ui-slider-handle.ui-state-focus {
+	border-color: #666;
+	background-color: #f0f0f0;
+	
+	-moz-box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 1) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 1) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+	box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 1) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.ui-slider-handle.ui-state-focus {
+	border-color: #333;
+	background-color: #fff;
+}
+
+/* TMP */
+
+.contractBuilder.isProduct .contractBuilderItem.pmContentBox {
+	width: 425px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.clearfix.isProduct .pmSpan30.pmInner.noPadding.pmWhite.border-shadow-small {
+	width: 450px;
+}
+
+
+
+
+
+/* Errors */
+.myaccount div.PlentyError input[type=text], div.PlentyError input[type=password]
+    {
+    border:none;
+    border:1px dashed #f44d4d!important;
+    background-color:#fbe7e7;
+    }
+.myaccount .PlentyError span
+    {
+      color:#f44d4d;  
+    }
+.myaccount div.PlentyErrorPane
+    {
+    display:    none;
+    color:      white;
+    font-size:    11pt;
+line-height: 12pt;
+    }
+.myaccount .PlentyErrorMessageBox
+   {
+    background-color: #f36060;
+    border: 1px dashed #9c2020 !important;
+    margin-bottom:5px;
+    padding:5px;
+   }
+.myaccount div.PlentyAdviceMsg {
+font-size: 11pt;
+line-height: 12pt;
+}
+.myaccount .PlentyWebMyAccountErrorContainer {
+    margin-bottom: 10px;
+}
+
+
+/* NEW STYLE */
+
+
+/* GENERAL */
+
+/* all */
+.myaccount .PlentyWebMyAccountMyAccountContainer {
+line-height: 1.5;
+}
+.myaccount p {
+margin: 0;
+}
+
+
+
+/* ACCORDIONS --> moved to webshop css */
+
+
+/* accordion container */
+.myaccount .PlentyWebMyAccountAccContainer {
+margin-bottom:15px;  
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+
+-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* accordion header (& login container header) */
+.myaccount .PlentyWebMyAccountAccContainerTitle,
+.myaccount #PlentyWebMyAccountLogin > h1
+
+{
+color: #444444;
+font-size: 130%;
+font-weight: bold;
+line-height: 34px;
+margin-bottom: 0;
+
+background: rgba(220, 220, 220, 0.5) !important;
+border: 1px solid #D4D4D4;
+padding: 0 16px;
+text-shadow: 0 1px 1px #FFFFFF;
+
+-moz-box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+/* border radius opened / closed */
+.myaccount .PlentyWebMyAccountAccContainerTitle {
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+.myaccount .isOpened .PlentyWebMyAccountAccContainerTitle,
+.myaccount #PlentyWebMyAccountLogin > h1 {
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+}
+
+
+/* accordion header opened */
+/*
+.isOpened .PlentyWebMyAccountAccContainerTitle {
+background-color: rgba(0,142,189,0.85) !important;
+background-image: url(/layout/pm/images/layout/navi-verlauf.png) !important;
+color: #fff;
+}
+*/
+/* accordion header hover */
+.myaccount .PlentyWebMyAccountAccContainerTitle.PlentyWebMyAccountOpenableContainerTitle:hover {
+color: #008EBD;
+cursor: pointer;
+}
+/*
+.isOpened .PlentyWebMyAccountAccContainerTitle:hover {
+color: #fff;
+}
+*/
+/* accordion body (& login container body) */
+.myaccount .PlentyWebMyAccountAccContainerContent,
+.myaccount #PlentyWebMyAccountLogin > div.PlentyMyAccountContainerContent {
+border: 1px solid #D4D4D4;
+border-top: none;
+line-height: 17px;
+padding: 10px;
+
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 64%, rgba(248,248,248,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(64%,rgba(255,255,255,1)), color-stop(100%,rgba(248,248,248,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+
+-moz-border-radius: 0 0 5px 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+}
+
+
+
+/* INPUT */
+
+/* standard */
+.myaccount #PlentyMyAccountMyAccount input[type=text],
+.myaccount #PlentyMyAccountMyAccount input[type=password],
+.myaccount #PlentyMyAccountMyAccount input[type=file] {
+margin-bottom: 0;
+padding-top: 3px;
+padding-bottom: 3px;
+}
+/* standard hover, focus */
+.myaccount #PlentyMyAccountMyAccount input[type=text]:hover,
+.myaccount #PlentyMyAccountMyAccount input[type=password]:hover,
+.myaccount #PlentyMyAccountMyAccount select:hover,
+.myaccount #PlentyMyAccountMyAccount input[type=file]:hover,
+.myaccount #PlentyMyAccountMyAccount input[type=text]:focus,
+.myaccount #PlentyMyAccountMyAccount input[type=password]:focus,
+.myaccount #PlentyMyAccountMyAccount select:focus,
+.myaccount #PlentyMyAccountMyAccount input[type=file]:focus {
+z-index: 10;
+}
+/* size presets */
+.myaccount #PlentyMyAccountMyAccount input[type=text].XS,
+.myaccount #PlentyMyAccountMyAccount input[type=password].XS {
+width: 42px;
+}
+.myaccount #PlentyMyAccountMyAccount input[type=text].M,
+.myaccount #PlentyMyAccountMyAccount input[type=password].M {
+width: 132px;
+}
+
+/* checkbox */
+.myaccount input[type=checkbox] {
+height: auto !important;
+}
+
+
+/* SELECT */
+
+/* standard */
+.myaccount .PlentyWebMyAccount select {
+margin-bottom: 0;
+height: 25px;
+width: 210px;
+}
+.myaccount .PlentyWebMyAccount select.XS {
+width: 50px;
+}
+.myaccount .PlentyWebMyAccount select.M {
+width: 140px;
+}
+
+/* standard hover */
+.myaccount .PlentyWebMyAccount select:hover }
+
+
+/* TEXTAREA */
+
+/* standard */
+.myaccount .PlentyWebMyAccount textarea {
+resize: none;
+}
+/* standard hover, focus */
+.myaccount .PlentyWebMyAccount textarea:hover,
+.myaccount .PlentyWebMyAccount textarea:focus {
+}
+
+
+/* BUTTON */
+
+/* standard */
+.myaccount #PlentyMyAccountMyAccount input[type=button],
+.myaccount #PlentyMyAccountMyAccount input[type=submit],
+.myaccount #PlentyMyAccountMyAccount button,
+a.ui-datepicker-prev.ui-corner-all,
+a.ui-datepicker-next.ui-corner-all {
+
+background-image: none;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+/* standard hover */
+.myaccount #PlentyMyAccountMyAccount input[type=button]:hover,
+.myaccount #PlentyMyAccountMyAccount input[type=submit]:hover,
+.myaccount #PlentyMyAccountMyAccount button:hover,
+a.ui-datepicker-prev.ui-corner-all:hover,
+a.ui-datepicker-next.ui-corner-all:hover {
+}
+
+
+/* INPUT & SELECT IN POPUP */
+
+/* input standard */
+.myaccount .PlentyWebMyAccountPopupContainer div.PlentyFormBox input[type=text],
+.myaccount .PlentyWebMyAccountPopupContainer div.PlentyFormBox input[type=password] {
+padding-left: 2px !important;
+padding-right: 2px !important;
+width: 204px;
+}
+/* M in popup (no padding left right) */
+.myaccount .PlentyWebMyAccountPopupContainer input[type=text].M,
+.myaccount .PlentyWebMyAccountPopupContainer input[type=password].M {
+/*width: 138px !important;*/
+}
+/* input standard hover */
+.myaccount .PlentyWebMyAccountPopupContainer div.PlentyFormBox input[type=text],
+.myaccount .PlentyWebMyAccountPopupContainer div.PlentyFormBox input[type=password] {
+}
+/* select standard */
+/*
+.myaccount .PlentyWebMyAccountPopupContainer div.PlentyFormBox select {
+}
+*/
+
+/* INPUT, SELECT & BUTTON IN ITEM DETAIL CONTAINERS OR IN SUB TITLE CONTAINER (e.g. pagination) */
+
+
+/* input standard */
+.myaccount #PlentyMyAccountMyAccount .PlentyFormContainer.ItemsContentRow input[type=text],
+.myaccount .PlentyWebMyAccountTitleSubContainer input[type=text],
+.myaccount .PlentyWebMyAccountItemsPopupContainer input[type=text] {
+}
+/* select standard */
+.myaccount #PlentyMyAccountMyAccount .PlentyFormContainer.ItemsContentRow select,
+.myaccount .PlentyWebMyAccountTitleSubContainer select,
+.myaccount .PlentyWebMyAccountItemsPopupContainer select {
+}
+/* button standard */
+.myaccount .PlentyWebMyAccountTitleSubContainer input[type=button] {
+}
+
+
+/* TEXTAREA IN WRAPPER */
+.myaccount .PlentyWebMyAccountWrapper {
+    margin: 0 5px;
+}
+.myaccount .PlentyWebMyAccountWrapper > textarea {
+    margin: 0 0 0 -5px;
+    width: 100%;
+}
+
+
+/* SCREEN OVERLAY */
+
+/* visible overlay */
+.myaccount #PlentyWebMyAccountOverlay,
+.myaccount #PlentyWebMyAccountDisplayOrdersOverlay,
+.myaccount #PlentyWebMyAccountDisplaySchedulerOrdersOverlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #000000;
+-moz-opacity: 0.5;
+-khtml-opacity: 0.5;
+filter: alpha(opacity=50);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+opacity: 0.5;
+}
+/* invisible overlay */
+.myaccount #PlentyWebMyAccountDisplayOrdersOverlay,
+.myaccount #PlentyWebMyAccountDisplaySchedulerOrdersOverlay {
+-moz-opacity: 0;
+-khtml-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+opacity: 0;
+}
+
+/*loading icon*/
+#jQueryPageWaitInnerPane {
+left: 50% !important;
+top: 50% !important;
+margin-left: -16px;
+margin-top: -16px;
+}
+
+
+
+/* LAYOUT GRID */
+
+
+/* ACCORDION CONTENT */
+
+/* container main */
+.myaccount .PlentyWebMyAccountAccContainerContent {
+/*padding: 16px 16px;*/
+}
+
+
+/* TWO COLUMN LAYOUT */
+
+
+/* table */
+.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer {
+    display: table;
+    width: 100%;
+}
+/* row */
+.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer {
+    display: table-row;
+}
+/*cells*/
+.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountTicketsContentLeft,
+.myaccount .PlentyWebMyAccountTicketsContentRight,
+.myaccount .PlentyWebMyAccountTicketsNewTicket1,
+.myaccount .PlentyWebMyAccountTicketsNewTicket2 {
+    display: table-cell;
+    width: 50%;
+}
+/*cell content left column*/
+.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer:first-child > div,
+.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer:first-child > span,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer:first-child > div,
+.myaccount .PlentyWebMyAccountTicketsContentLeft > div,
+.myaccount .PlentyWebMyAccountTicketsNewTicket1 > div {
+    margin-right: 5px;
+}
+/*cell content right column*/
+.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer:last-child > div,
+.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer:last-child > span,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer:last-child > div,
+.myaccount .PlentyWebMyAccountTicketsContentRight > div,
+.myaccount .PlentyWebMyAccountTicketsNewTicket2 > div {
+    margin-left: 5px;
+}
+
+
+
+/* CONTENT BOXES */
+
+
+/* HEADER GLOBAL */
+
+span.PlentyWebMyAccountMainTitle,
+span.PlentyWebMyAccountOrderOverviewItemsTitle,
+.myaccount .PlentyWebMyAccountTitleContainer
+
+{
+display: block;
+color: #008EBD;
+padding: 5px 0 0;
+font-size: 130%;
+font-weight: bold;
+}
+
+
+/* ITEM CONTAINER */
+
+
+.myaccount div.PlentyFormContainer.PlentyWebMyAccountContainer,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow,
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer,
+.myaccount .PlentyWebMyAccountTicketsTicketContainer,
+.myaccount .PlentyWebMyAccountTicketsLeafContainer,
+.myaccount .PlentyWebMyAccountMyProjectsProjectContainer,
+.myaccount .PlentyWebMyAccountEmailNewAccountContainer,
+.myaccount .PlentyWebMyAccountVersionJumpDomainContainer,
+.myaccount .PlentyWebMyAccountItemContainer,
+.myaccount .PlentyWebMyAccountOpenableItemContainer
+
+{
+margin-top: 10px;
+padding: 0;
+position: relative;
+
+/*border: 2px solid #FFFFFF;*/
+box-shadow: 0 0 6px #CCCCCC;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+
+/* item container hover */
+.myaccount div.PlentyFormContainer.PlentyWebMyAccountContainer:hover,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer:hover,
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow:hover,
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer:hover,
+.myaccount .PlentyWebMyAccountTicketsTicketContainer:hover,
+.myaccount .PlentyWebMyAccountTicketsLeafContainer:hover,
+.myaccount .PlentyWebMyAccountMyProjectsProjectContainer:hover,
+.myaccount .PlentyWebMyAccountEmailNewAccountContainer:hover,
+.myaccount .PlentyWebMyAccountVersionJumpDomainContainer:hover,
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer:hover,
+.myaccount .PlentyWebMyAccountItemContainer:hover,
+.myaccount .PlentyWebMyAccountOpenableItemContainer:hover
+
+{
+
+}
+
+/* special item container */
+.myaccount .PlentyWebMyAccountDisplayOrdersChildContainer {
+z-index: 1;
+}
+/* special item container hover (overlay other containers) */
+.myaccount .PlentyWebMyAccountDisplayOrdersChildContainer:hover {
+z-index: 5 !important;
+}
+
+
+
+/* item header */
+.myaccount div.PlentyFormContainer.PlentyWebMyAccountContainer > span.PlentyWebMyAccountContainerTitle,
+.myaccount div.PlentyFormContainer.PlentyWebMyAccountContainer > div.PlentyWebMyAccountContainerTitle,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer > span,
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow > .ItemsHeaderRow,
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer > div.PlentyWebMyAccountDisplayOrdersOrderId,
+.myaccount .PlentyMyAccountHeaderChange,
+.myaccount .PlentyWebMyAccountTicketsTicketTitleContainer,
+.myaccount .PlentyWebMyAccountTicketsLeafHead,
+.myaccount .PlentyWebMyAccountMyProjectsProjectTitleContainer,
+.myaccount .PlentyWebMyAccountEmailNewAccountContainerTitle,
+.myaccount #PlentyWebMyAccountCustomerEventsContainerContent > h1,
+.myaccount .PlentyWebMyAccountVersionJumpDomainContainer > span,
+.myaccount .PlentyWebMyAccountItemContainerHeader,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader
+
+{
+display: block;
+font-size: 120%;
+line-height: 18px;
+
+border: 1px solid #D4D4D4;
+background: #e0e0e0;
+padding: 0 5px 0 10px;
+color: #444;
+
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+
+-moz-box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+}
+.myaccount .PlentyWebMyAccountItemContainerHeader {
+
+padding-top: 7px;
+padding-bottom: 5px;
+
+}
+
+
+/* item header title container */
+.myaccount div.PlentyWebMyAccountContainerTitle > div:first-child,
+.myaccount div.PlentyMyAccountHeaderChange > div:first-child,
+.myaccount .PlentyWebMyAccountItemContainerHeader > div:first-child
+
+{
+display: inline-block;
+padding: 7px 0 5px;
+text-shadow: 0 1px 1px #FFFFFF;
+font-weight: normal;
+}
+
+
+/* item header button container */
+
+span.PlentyWebMyAccountContainerTitle > span.PlentyFormContainer,
+.myaccount div.PlentyWebMyAccountContainerTitle > div.PlentyFormContainer,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer > span > span.PlentyFormContainer,
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow > .ItemsHeaderRow > span.PlentyFormContainer,
+
+span.PlentyWebMyAccountOrderOverviewItemsTitle > span.PlentyFormContainer.PlentyWebMyAccountOrderOverviewItemsChangeContainer,
+.myaccount .PlentyMyAccountHeaderChange > .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountItemContainerHeader > .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountHeaderButtonRight,
+.myaccount .PlentyWebMyAccountButtonsRightContainer
+
+{
+float: right;
+position: relative;
+margin-top: 1px;
+margin-right: 0;
+}
+
+/* item header button single container */
+.myaccount .PlentyWebMyAccountButtonsRightContainer > .PlentyFormContainer {
+float: right;
+}
+
+
+/* button after button */
+
+span.PlentyWebMyAccountContainerTitle > span.PlentyFormContainer + span.PlentyFormContainer,
+.myaccount div.PlentyWebMyAccountContainerTitle > div.PlentyFormContainer + div.PlentyFormContainer,
+.myaccount .PlentyWebMyAccountButtonsRightContainer > .PlentyFormContainer + .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountHeaderButtonRight > span
+
+{
+margin-right: 5px;
+}
+
+/* input type button */
+.myaccount .PlentyWebMyAccountHeaderButtonRight input[type="button"] {
+margin-top: 2px;
+}
+
+/* item content */
+.myaccount div.PlentyFormContainer.PlentyWebMyAccountContainer > div.PlentyWebMyAccountContainerContent,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer > span + div,
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow > .ItemsContentRow,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer1 > div.PlentyFormContainer > div.PlentyFormContainer,
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer2 > div.PlentyFormContainer > div.PlentyFormContainer,
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer > div.PlentyWebMyAccountDisplayOrdersOrderId + div.PlentyFormBox,
+.myaccount .PlentyWebMyAccountTicketsTicketContent,
+.myaccount .PlentyWebMyAccountTicketsLeafContent,
+.myaccount .PlentyWebMyAccountMyProjectsProjectContent,
+.myaccount #PlentyWebMyAccountCustomerEventsContainerContent > h1 + div,
+.myaccount .PlentyWebMyAccountVersionJumpDomainContainer > div,
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer > form,
+.myaccount .PlentyWebMyAccountItemContainerHeader + .PlentyFormContainer.ItemsContentRow,
+.myaccount .PlentyWebMyAccountItemContainerContent,
+.myaccount .PlentyWebMyAccountOpenableItemContainerContent
+
+{
+padding: 10px;
+font-size: 12px;
+line-height: 20px;
+
+-moz-border-radius: 0 0 5px 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+}
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader + .PlentyWebMyAccountOpenableItemContainerContent {
+border-width: 1px;
+border-style: none solid solid;
+border-color: #D4D4D4;
+}
+.myaccount div.PlentyWebMyAccountContainerContent br { line-height: 10px; }
+
+
+
+
+/* OPENABLE ITEM CONTAINER */
+
+
+/* container */
+.myaccount .PlentyWebMyAccountOpenableItemContainer {
+border: none !important;
+}
+
+/* openable item header */
+.myaccount .PlentyWebMyAccountTicketsTicketTitleContainer,
+.myaccount .PlentyWebMyAccountMyProjectsProjectTitleContainer,
+.myaccount .PlentyWebMyAccountEmailAccountContainer > a,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader
+
+{
+padding: 0 5px !important;
+}
+
+/* title container */
+.myaccount .PlentyWebMyAccountTicketsTicketTitleContainer.PlentyMyAccountHeaderChange > .PlentyWebMyAccountContainerHeaderTitle {
+margin-top: 2px;
+}
+/* title container button img */
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > .PlentyWebMyAccountOpenableItemContainerHeaderTitle > span:first-child > button > img {
+}
+/* title container */
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeaderTitle {
+float: left;
+}
+
+/* button container (tickets) */
+.myaccount .PlentyWebMyAccountTicketsTicketTitleContainer.PlentyMyAccountHeaderChange > .PlentyWebMyAccountHeaderButtonRight {
+margin-top: 2px;
+}
+.myaccount .PlentyWebMyAccountTicketsTicketTitleContainer.PlentyMyAccountHeaderChange > .PlentyWebMyAccountHeaderButtonRight > span:first-child {
+margin-right: 0;
+}
+
+/* button container (e-mail accounts) */
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader .PlentyWebMyAccountButtonsRightContainer {
+display: inline-block;
+float: right;
+margin-top: 1px;
+}
+
+/* content container */
+.myaccount .PlentyWebMyAccountOpenableItemContainerContent {
+padding: 10px;
+/*border-top: 1px solid #D4D4D4;*/
+border-style: none solid solid;
+border-width: 1px;
+border-color: #D4D4D4;
+/*
+-moz-box-shadow: 0 0 50px 5px #efefef inset;
+-webkit-box-shadow: 0 0 50px 5px #efefef inset;
+box-shadow: 0 0 50px 5px #efefef inset;
+*/
+}
+
+/* tabs in openable item conteiner */
+.myaccount .PlentyWebMyAccountOpenableItemContainerContent > div .PlentyGuiTabs > .PlentyWebMyAccountTabPane {
+margin-bottom: 0;
+}
+
+
+/* TABS (--> moved to css webshop) */
+.myaccount .PlentyWebMyAccountTabPane {
+padding: 10px;
+}
+.myaccount .PlentyWebMyAccountTabPane > .PlentyWebMyAccountItemContainerContent {
+color: #333;
+}
+
+
+/* HEADER (TAB PANE) */
+
+
+/*header container (order overview & single order details)*/
+.myaccount .PlentyFormContainer.PlentyWebMyAccountOrderOverviewOverviewContainer,
+.myaccount .PlentyWebMyAccountTabHeaderContainer,
+.myaccount .PlentyWebMyAccountTicketsNewTicket {
+margin-bottom: 16px;
+padding: 4px 12px 12px;
+}
+.myaccount .PlentyWebMyAccountSearchContainer {
+position: relative;
+margin-bottom: 4px;
+}
+.myaccount .PlentyWebMyAccountSearchContainer:after {
+content: '';
+display: block;
+position: absolute;
+border-bottom: 1px solid #e0e0e0;
+bottom: -6px;
+height: 1px;
+left: 12px;
+right: 12px;
+}
+
+/* hide header */
+.myaccount #PlentyWebMyAccountTicketsContainer .PlentyWebMyAccountTabHeaderContainer {
+display: none;
+}
+
+/* header left container */
+.myaccount .PlentyWebMyAccountSearchContainer > div.PlentyWebMyAccountSearchIdContainer {
+float: left;
+}
+/* header right container */
+.myaccount .PlentyWebMyAccountSearchContainer > div.PlentyWebMyAccountSearchDateContainer {
+float: right;
+}
+
+/* inputs & labels */
+.myaccount .PlentyWebMyAccountSearchContainer > div.PlentyWebMyAccountSearchIdContainer > div,
+.myaccount .PlentyWebMyAccountSearchContainer > div.PlentyWebMyAccountSearchDateContainer > div {
+display: table-cell;
+vertical-align: bottom;
+padding-top: 8px;
+}
+
+/* wrap blocks */
+.myaccount .PlentyWebMyAccountSearchContainer > div.PlentyWebMyAccountSearchIdContainer > div > span,
+.myaccount .PlentyWebMyAccountSearchContainer > div.PlentyWebMyAccountSearchDateContainer > div > span,
+.myaccount .PlentyWebMyAccountSearchContainer > div#PlentyWebMyAccountDisplayOrdersDateContainer > div > div > span {
+display: block;
+}
+
+/* distance */
+.myaccount .PlentyWebMyAccountSearchIdContainer > div input,
+.myaccount .PlentyWebMyAccountSearchDateContainer > div input,
+.myaccount .PlentyWebMyAccountSearchDateContainer > div select {
+display: inline-block;
+margin-right: -1px; /*5px*/
+}
+
+/* input / select sizes */
+.myaccount .PlentyWebMyAccountSearchIdContainer > div input[type=text],
+.myaccount .PlentyWebMyAccountSearchDateContainer > div input[type=text] {
+width: 132px;
+}
+.myaccount .PlentyWebMyAccountSearchDateContainer > div select {
+width: 140px;
+}
+.myaccount .PlentyWebMyAccountSearchDateContainer > div:last-child input {
+margin-right: 0;
+}
+/* adapt input position */
+.myaccount .PlentyWebMyAccountSearchPeriodContainer {
+margin: 3px 5px 1px 0;
+}
+
+
+
+/* PAGINATION */
+
+
+/* title sub container / pagination container */
+.myaccount #PlentyWebMyAccountDisplayOrdersPagination,
+.myaccount #PlentyWebMyAccountItemWishListSettingsContainer,
+.myaccount .PlentyWebMyAccountTitleSubContainer,
+.myaccount .PlentyWebMyAccountPagination,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketText {
+margin-bottom: 10px;
+padding: 12px 12px 5px;
+font-weight: normal;
+}
+.myaccount .PlentyWebMyAccountTitleSubContainer:last-child,
+.myaccount .PlentyWebMyAccountPagination:last-child {
+margin-bottom: 0;
+}
+
+/* container row */
+.myaccount #PlentyWebMyAccountDisplayOrdersPagination > div,
+.myaccount #PlentyWebMyAccountDisplayOrdersPagination > span,
+.myaccount #PlentyWebMyAccountDisplaySchedulerOrdersPagination > div,
+.myaccount .PlentyWebMyAccountPagination > div {
+display: table-cell;
+white-space: nowrap;
+}
+/* position in container row */
+.myaccount #PlentyWebMyAccountDisplayOrdersPagination > div:nth-child(2),
+.myaccount #PlentyWebMyAccountDisplaySchedulerOrdersPagination > div:nth-child(2),
+.myaccount .PlentyWebMyAccountPagination > div:nth-child(2) {
+width: 90%;
+text-align: right;
+padding-right: 30px;
+}
+/* headline */
+.myaccount #PlentyWebMyAccountDisplayOrdersPagination > div:first-child,
+.myaccount #PlentyWebMyAccountDisplaySchedulerOrdersPagination > div:first-child,
+.myaccount .PlentyWebMyAccountPagination > div:first-child {
+font-size: 110%;
+}
+
+/* select */
+.myaccount #PlentyWebMyAccountDisplayOrdersPagination > div select,
+.myaccount #PlentyWebMyAccountDisplaySchedulerOrdersPagination > div select,
+.myaccount .PlentyWebMyAccountPagination > div select {
+width: 50px;
+}
+
+
+/* popup */
+
+
+/* 2 column layout */
+
+/* form *//*select from form.PlentyWebMyAccountPopup2ColumnLayoutTable*/
+form.PlentyWebMyAccountPopup2ColumnLayoutTable {
+display: block;
+}
+/* table */
+form.PlentyWebMyAccountPopup2ColumnLayoutTable > .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountPopupContainer form > .PlentyFormBox {
+display: table;
+width: 100%;
+}
+/* table row */
+form.PlentyWebMyAccountPopup2ColumnLayoutTable > .PlentyFormContainer > div,
+.myaccount .PlentyWebMyAccountPopupContainer form > .PlentyFormBox > div {
+display: table-row;
+}
+/* table cell */
+form.PlentyWebMyAccountPopup2ColumnLayoutTable > .PlentyFormContainer > div > div,
+.myaccount .PlentyWebMyAccountPopupContainer form > .PlentyFormBox > div > div {
+display: table-cell;
+padding: 2px 0;
+}
+/* table cell first */
+form.PlentyWebMyAccountPopup2ColumnLayoutTable > .PlentyFormContainer > div > div:first-child,
+.myaccount .PlentyWebMyAccountPopupContainer form > .PlentyFormBox > div > div:first-child {
+	width: 100px;
+	padding-right: 3px;
+	vertical-align: top;
+}
+/* table cell 2nd */
+form.PlentyWebMyAccountPopup2ColumnLayoutTable > .PlentyFormContainer > div > div + div,
+.myaccount .PlentyWebMyAccountPopupContainer form > .PlentyFormBox > div > div + div {
+}
+
+/* table cell 3rd */
+form.PlentyWebMyAccountPopup2ColumnLayoutTable > .PlentyFormContainer > div > div + div + div,
+.myaccount .PlentyWebMyAccountPopupContainer form > .PlentyFormBox > div > div + div + div {
+display: none; /*clear - this container shouldn't be here*/
+}
+
+
+/* popup content */ 
+
+.PlentyWebMyAccountPopupContainer input[type="text"],
+.PlentyWebMyAccountPopupContainer input[type="password"] {
+	margin: 0;
+}
+
+.PlentyWebMyAccountPopupContainer .PlentyWebMyAccountText1Container > p { 
+margin-bottom: 10px; 
+}
+.PlentyWebMyAccountPopupContainer .PlentyFormContainer:first-child,
+.PlentyWebMyAccountPopupContainer div.PlentyFormContainer > div.PlentyFormContainer + div.PlentyFormContainer {
+margin-top: 0;
+}
+
+.PlentyWebMyAccountPopupContainer span.PlentyFormTitle {
+display: block;
+/*width: 100%;*/
+margin-top: 2px;
+}
+.PlentyWebMyAccountPopupContainer span.PlentyFormValue input {
+/*width: 100%;*/
+}
+/* select title */
+.PlentyWebMyAccountSelectSalutation,
+select[name=Salutation] { 
+/*width: 33%;*/
+ }
+/* select country (& newsletter) */
+.PlentyWebMyAccountSelectCountry,
+select[name=Country],
+select[name=newsletter] { 
+/*width: 66%; */
+}
+
+/* 2 inputs in one line (street, zip, ...) */
+/* float left */
+.PlentyWebMyAccountPopupTableCellInputsMulti .PlentyWebMyAccountStreetContainerContent,
+.PlentyWebMyAccountPopupTableCellInputsMulti .PlentyWebMyAccountZipContainerContent,
+.PlentyWebMyAccountBirthdayContainerContent > span {
+	display: inline-block;
+margin-right: 1px;
+	/*float: left;*/
+}
+/* float right */
+.PlentyWebMyAccountPopupTableCellInputsMulti .PlentyWebMyAccountNoContainerContent,
+.PlentyWebMyAccountPopupTableCellInputsMulti .PlentyWebMyAccountCityContainerContent {
+	display: inline-block;
+	/*float: right;*/
+}
+/* 1/4 */
+.PlentyWebMyAccountPopupTableCellInputsMulti .PlentyWebMyAccountNoContainerContent,
+.PlentyWebMyAccountPopupTableCellInputsMulti .PlentyWebMyAccountZipContainerContent {
+width: 45px;
+}
+/* 3/4 */
+.PlentyWebMyAccountPopupTableCellInputsMulti .PlentyWebMyAccountStreetContainerContent,
+.PlentyWebMyAccountPopupTableCellInputsMulti .PlentyWebMyAccountCityContainerContent {
+width: 150px;
+}
+
+/* date of birth */
+
+.PlentyWebMyAccountBirthdayContainerContent {
+display: block;
+/*width: 100%;*/
+}
+
+/* date of birth inputs can be aligned full width or half width by adapting width & float below (@full width / @half width) */
+
+.PlentyWebMyAccountBirthdayContainerContent > span {
+display: inline-block;
+width: 20px; /* 22% @full width / 9% @half width */
+/*float: left;*/
+vertical-align: top;
+}
+.PlentyWebMyAccountBirthdayContainerContent > span + span {
+/*margin-left: 4%;*/
+}
+.PlentyWebMyAccountBirthdayContainerContent > span + span + span {
+display: inline-block;
+width: 42px; /* 48% @full width / 22% @half width */
+/*float: left;*/ /* right @full width / left @half width */
+vertical-align: top;
+}
+/* inputs center text */
+.PlentyWebMyAccountBirthdayContainerContent input[type=text] {
+text-align: center;
+}
+
+/* date of birth individual style adaption */
+.PlentyFormTitle.PlentyWebMyAccountBirthdayContainerTitle {
+}
+/* date of birth note */
+#PlentyWebMyAccountBirthdayNotice {
+display: block;
+font-size: 0.8em;
+padding: 2px 0;
+position: relative;
+top: 0;
+}
+
+
+
+/* popup buttons */
+.myaccount .PlentyWebMyAccountPopupContainer span > span.button a {
+/*width: 90px !important;*/
+}
+
+/* left */
+.myaccount .PlentyWebMyAccountButtonLeft {
+width: 50%;
+float: left;
+margin-top: 10px !important;
+}
+.myaccount .PlentyWebMyAccountButtonLeft > span {
+float: right;
+margin-right: 4px;
+}
+/* right */
+.myaccount .PlentyWebMyAccountButtonRight {
+width: 50%;
+float: right;
+margin-top: 10px !important;
+}
+.myaccount .PlentyWebMyAccountButtonRight > span {
+float: left;
+margin-left: 4px;
+}
+
+
+/* POPUP SHIPPING DETAILS */
+
+/* prepare parent container */
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer1 > div > div.PlentyWebMyAccountDisplayOrdersShipping {
+position: relative;
+}
+
+/* popup container */
+.myaccount .PlentyWebMyAccountDisplayOrdersShippingDetailsContainer {
+position: absolute;
+top: auto;
+margin-top: -100px;
+margin-left: -310px !important;
+width: auto;
+min-width: 150px;
+padding: 0 !important;
+position: absolute;
+}
+/* popup container content */
+.myaccount .PlentyWebMyAccountDisplayOrdersShippingDetailsContainer > div {
+margin: 0 10px;
+}
+
+/* popup headline */
+.myaccount .PlentyWebMyAccountDisplayOrdersShippingContainer span {
+display: inline-block;
+font-weight: bold;
+margin: 15px 0 10px;
+color: #222222;
+}
+.myaccount .PlentyWebMyAccountDisplayOrdersShippingContainer span:first-child {
+margin-top: 0;
+}
+
+
+
+/* POPUP DATE BOX */
+
+
+/* DATE BOX CALENDAR*/
+
+.ui-datepicker {
+text-align: center;
+width: auto;
+}
+
+/* DATE BOX NAVIGATION */
+
+.ui-datepicker-header {
+padding: 7px 10px 3px;
+}
+
+/* DATE BOX NAVIGATION */
+
+/*prev / next*/
+a.ui-datepicker-prev.ui-corner-all,
+a.ui-datepicker-next.ui-corner-all {
+position: absolute;
+font-size: 100%;
+line-height: 22px;
+cursor: pointer;
+display: block;
+height: auto;
+}
+/*prev / next hover*/
+a.ui-datepicker-prev.ui-corner-all:hover,
+a.ui-datepicker-next.ui-corner-all:hover {
+}
+
+a.ui-datepicker-prev.ui-corner-all {
+left: 10px;
+}
+a.ui-datepicker-next.ui-corner-all {
+right: 10px;
+}
+/*date picker title*/
+.ui-datepicker-title {
+display: inline-block;
+font-weight: bold;
+color: #202020;
+}
+
+/* DATE BOX CALENDAR */
+
+table.ui-datepicker-calendar {
+border-collapse: collapse;
+margin: 15px 0 10px;
+}
+/*table header*/
+.ui-datepicker-calendar th {
+padding: 4px 7px;
+border-bottom: 1px solid #EDEDED;
+border-right: 1px solid #EDEDED;
+font-size: 90%;
+line-height: 4px;
+width: 16px;
+}
+.ui-datepicker-calendar th > span {
+position: relative;
+top: -4px;
+}
+
+/*standard cell*/
+.ui-datepicker-calendar td {
+cursor: pointer;
+padding: 4px 7px;
+border-bottom: 1px solid #EDEDED;
+border-right: 1px solid #EDEDED;
+font-size: 90%;
+font-weight: bold;
+}
+/*standard cell hover*/
+.ui-datepicker-calendar td:hover {
+background: #ffcc33;
+}
+/*empty cell*/
+td.ui-state-disabled {
+cursor: default;
+}
+/*empty cell hover reset*/
+td.ui-state-disabled:hover {
+background: #ffffff;
+}
+td.ui-datepicker-week-end.ui-state-disabled:hover {
+background: #fafafa;
+}
+/*first row*/
+.ui-datepicker-calendar tr > th:first-child,
+.ui-datepicker-calendar tr > td:first-child {
+border-left: 1px solid #EDEDED;
+}
+.ui-datepicker-calendar td > a {
+color: #70808C;
+}
+.ui-datepicker-calendar td:hover > a {
+color: #444444;
+}
+
+/*weekend*/
+td.ui-datepicker-week-end {
+background: #fafafa;
+}
+td.ui-datepicker-today {
+background: #E8ECEF ;
+}
+
+
+
+/* TABLE LAYOUT NO HEADER */
+
+
+/* table */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div,
+.myaccount .PlentyWebMyAccountTicketsContentAttachContent > div,
+.myaccount .PlentyWebMyAccountAddOnModulesSelectContainer > div,
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > div {
+width: 100%;
+}
+
+/* table cells standard */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div > div > div,
+.myaccount .PlentyWebMyAccountTicketsContentAttachContent > div > div > div,
+.myaccount .PlentyWebMyAccountAddOnModulesSelectContainer > div > div > div,
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > div > div > div {
+padding: 2px 0;
+padding-left: 20px;
+border-bottom: 1px solid #EEEEEE;
+}
+/* table cells last */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div > div > div:first-child,
+.myaccount .PlentyWebMyAccountTicketsContentAttachContent > div > div > div:first-child,
+.myaccount .PlentyWebMyAccountAddOnModulesSelectContainer > div > div > div:first-child,
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > div > div > div:first-child  {
+padding-left: 0;
+}
+
+/* table first row cells */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div > div:first-child > div,
+.myaccount .PlentyWebMyAccountTicketsContentAttachContent > div > div:first-child > div,
+.myaccount .PlentyWebMyAccountAddOnModulesSelectContainer > div > div:first-child > div,
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > div > div:first-child > div {
+}
+
+/* table last row cells */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div > div:last-child > div,
+.myaccount .PlentyWebMyAccountTicketsContentAttachContent > div > div:last-child > div,
+.myaccount .PlentyWebMyAccountAddOnModulesSelectContainer > div > div:last-child > div,
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > div > div:last-child > div {
+border-bottom: none;
+}
+
+
+/* ORDER CONTAINERS */
+
+/*order container content row*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer > div.PlentyWebMyAccountDisplayOrdersOrderId + div.PlentyFormBox {
+padding: 0;
+vertical-align: top;
+color: #626262;
+font-size: 13px;
+line-height: 20px;
+}
+
+/*container left cell*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer1 {
+width: 35%;
+}
+/*container right cell*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 {
+width: 65%;
+}
+
+/*content left*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer1 > div {
+min-width: 200px;
+padding: 10px 0 10px 10px;
+}
+/*content left table*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer1 > div > .PlentyMyAccountTableLayout > div > div {
+padding-right: 10px;
+}
+/*content left table first column*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer1 > div > .PlentyMyAccountTableLayout > div > div:first-child {
+width: 120px;
+}
+
+/*content left open details link*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer1 > div > div:last-child {
+margin-top: 15px;
+}
+
+/*name (popup adress)*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer1 > div > div.PlentyWebMyAccountDisplayOrdersShipping > span.PlentyWebMyAccountDisplayOrdersShippingData {
+}
+
+
+/*order data container right*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 > div {
+display: inline-block;
+padding: 8px 10px 8px 0;
+}
+/*text/image containers rows standard*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 > div > div > div.PlentyWebMyAccountDisplayOrdersItemsDataContainer {
+margin-bottom: 10px;
+vertical-align: top;
+}
+/*text/image containers last row*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 > div > div > div.PlentyWebMyAccountDisplayOrdersItemsDataContainer:last-child {
+margin-bottom: 0;
+}
+/*text/image containers*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 > div > div > div.PlentyWebMyAccountDisplayOrdersItemsDataContainer > span {
+font-weight: bold;
+vertical-align: top;
+display: table-cell;
+padding-left: 10px;
+}
+/*text/image containers first child (image container)*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 > div > div > div.PlentyWebMyAccountDisplayOrdersItemsDataContainer > span:first-child {
+padding-left: 0;
+width: 50px;
+}
+/*image container first row*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 > div > div > div.PlentyWebMyAccountDisplayOrdersItemsDataContainer:first-child > span:first-child {
+margin-top: 0;
+}
+/*img*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 img {
+max-width: 50px;
+max-height: 50px;
+}
+
+/*number*/
+.myaccount .PlentyWebMyAccountDisplayOrdersContainer2 .PlentyWebMyAccountDisplayOrdersItemsQuantity {
+white-space: nowrap;
+}
+
+
+/* ORDER CONTAINER CHILDREN CONTAINERS (RETOURE, ...) */
+
+/*container*/
+.myaccount .PlentyWebMyAccountDisplayOrdersChildContainer {
+margin-top: 0;
+border-top: medium none;
+}
+/*header*/
+.myaccount .PlentyWebMyAccountDisplayOrdersChildContainer > div.PlentyWebMyAccountDisplayOrdersOrderId {
+background: #fcfcfc;
+border-left: 1px solid #eeeeee;
+border-right: 1px solid #eeeeee;
+}
+
+
+
+
+/* SINGLE ORDER DETAILS */
+
+
+/*header container see above*/
+/*additional styling*/
+.myaccount .PlentyFormContainer.PlentyWebMyAccountOrderOverviewOverviewContainer {
+}
+
+/*header columns*/
+.myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div {
+display: inline-block;
+vertical-align: top;
+font-weight: bold;
+line-height: 20px;
+}
+/*header column left*/
+.myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div:first-child {
+width: 50%;
+padding-top: 8px;
+}
+/*header column right*/
+.myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div:last-child {
+margin-left: 0;
+padding-top: 8px;
+}
+
+/*header data*/
+.myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div > div > span:first-child {
+display: inline-block;
+width: 150px;
+}
+
+
+
+
+/* ITEM CONTAINERS (SHIPPING DETAILS & ARTICLE LIST) */
+
+
+/*item container*/
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer,
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+/*item header*/
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer > span,
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow > .ItemsHeaderRow {
+}
+
+/*item content*/
+.myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer > span + div,
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow > .ItemsContentRow {
+}
+
+/*special styling: trusted shops*/
+.myaccount .PlentyWebMyAccountOrderOverviewTrustedShopsDataContainer div.MyAccountPayment_TrustedShopsContent {
+display: table;
+width: 100%;
+margin: 10px 0;
+}
+.myaccount .PlentyWebMyAccountOrderOverviewTrustedShopsDataContainer div.MyAccountPayment_TrustedShopsContent > div {
+display: table-cell;
+vertical-align: top;
+}
+.myaccount .PlentyWebMyAccountOrderOverviewTrustedShopsDataContainer div.MyAccountPayment_TrustedShopsDescription {
+padding-left: 10px;
+font-size: 13px;
+}
+
+/*special styling: payment method*/
+.myaccount .PlentyWebMyAccountOrderOverviewPaymentMethodContainer div.PlentyWebMyAccountOrderOverviewPaymentMethodDataContainer {
+}
+
+
+/* SINGLE ORDER DETAILS ARTICLE LIST (FULL WIDTH) */
+
+
+/* HEADER */
+
+span.PlentyWebMyAccountOrderOverviewItemsTitle { 
+margin-bottom: 16px;
+}
+
+/*header data left & right*/
+span.PlentyWebMyAccountOrderOverviewItemsTitle > span {
+}
+span.PlentyWebMyAccountOrderOverviewItemsTitle .PlentyWebMyAccountOrderOverviewItemsTitleContainer {
+float: left;
+}
+span.PlentyWebMyAccountOrderOverviewItemsTitle .PlentyWebMyAccountOrderOverviewItemsTotalContainer {
+float: right;
+}
+
+/*header button*/
+span.PlentyWebMyAccountOrderOverviewItemsTitle > span.PlentyWebMyAccountOrderOverviewItemsChangeContainer {
+float: left !important;
+margin-left: 5px !important;
+}
+
+/* ARTICLE LIST */
+
+/*main container*/
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox .PlentyWebMyAccountOrderOverviewItemsMain .PlentyFormContainer.ItemsRow {
+}
+
+/*article item content*/
+.myaccount .PlentyFormContainer.ItemsContentRow {
+padding: 0 !important;
+}
+
+/*article list data*/
+.myaccount .PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > div {
+vertical-align: top;
+padding: 10px;
+font-size: 13px;
+line-height: 20px;
+/*color: #626262;*/
+}
+/*last container (price)*/
+.myaccount .PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > div:last-child {
+padding-left: 0;
+min-width: 80px;
+text-align: right;
+font-weight: bold;
+white-space: nowrap;
+}
+/*last container (quantity return)*/
+.ItemsQuantityReturnDetail {
+display: block
+}
+
+/*article discription container*/
+.myaccount .PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > .PlentyFormContainer.ItemsDescription {
+padding-top: 0;
+padding-right: 0;
+vertical-align: top;
+}
+
+/*article discription boxes*/
+.myaccount .PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > .PlentyFormContainer.ItemsDescription > .PlentyFormContainer.ItemsDescriptionDetails > div {
+display: inline-block;
+vertical-align: top;
+margin-top: 10px;
+margin-right: 20px;
+}
+/* article discription line span */
+.myaccount .PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > .PlentyFormContainer.ItemsDescription > .PlentyFormContainer.ItemsDescriptionDetails > div > span {
+display: block;
+font-weight: normal;
+vertical-align: top;
+}
+
+/* bold */
+/* article details */
+.myaccount .PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > .PlentyFormContainer.ItemsDescription > .PlentyFormContainer.ItemsDescriptionDetails > div > span:first-child {
+font-weight: bold;
+}
+/* img */
+.myaccount .PlentyFormContainer.ItemsImage {
+width: 110px;
+text-align: center;
+}
+/* price */
+.ItemsContentRow .PlentyFormContainer.ItemsPrice {
+font-weight: bold;
+}
+
+/* input quantity */
+.myaccount .PlentyFormContainer.ItemsContentRow input[type=text] {
+text-align: right;
+width: 50px;
+}
+
+/* value & comment */
+span.ItemsDescriptionRatingDetailCommentTitle,
+span.ItemsDescriptionRatingDetailCommentValue > input[type=button] {
+margin-top: 4px;
+}
+
+/* blocks (wrap line) */
+.myaccount .PlentyFormContainer.ItemsDescriptionRating,
+.myaccount .PlentyFormContainer.ItemsDescriptionRatingDetailCommentTitle,
+
+.ItemWishListCommentComment 
+
+{
+display: block !important;
+}
+
+.ItemsDescriptionRatingDetail {
+width: 100% !important;
+}
+
+/* blocks */
+.ItemWishListCommentComment > span {
+display: block;
+}
+
+span.ItemsDescriptionRatingDetailCommentValue > textarea,
+.ItemWishListCommentComment textarea {
+width: 100%;
+}
+
+
+/* last cell */
+.myaccount .PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > .PlentyFormContainer.ItemsRow > .PlentyFormContainer.ItemsContentRow > div.ItemsPrice {
+text-align: right;
+}
+
+
+/* SUM BOX */
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox {
+margin-bottom: 0;
+/*padding: 10px;
+border: 1px solid #EEEEEE;*/
+}
+
+/* cells */
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div > div {
+text-align: right;
+padding: 5px 0;
+border-bottom: 1px solid #eeeeee;
+}
+/* cells left column */
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div > div:first-child {
+width: 95%;
+}
+/* cells right column */
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div > div:last-child  {
+white-space: nowrap;
+}
+/* right column span */
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div > div:last-child > span {
+padding-left: 10px;
+}
+/* price container */
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox .PlentyCurrencyContainer {
+width: 110px;
+}
+
+/* bold */
+.myaccount .PlentyWebMyAccountOrderOverviewGoodsValueGross .PlentyGoodsValueGrossTitle,
+.myaccount .PlentyWebMyAccountOrderOverviewGoodsValueGross .PlentyGoodsValueGrossDetail,
+.myaccount .PlentyWebMyAccountOrderOverviewShippingCostsGross .PlentyShippingCostsGrossTitle,
+.myaccount .PlentyWebMyAccountOrderOverviewShippingCostsGross .PlentyShippingCostsGrossDetail,
+.myaccount .PlentyWebMyAccountOrderOverviewVAT .PlentyVATTitle,
+.myaccount .PlentyWebMyAccountOrderOverviewVAT .PlentyVATDetail,
+.myaccount .PlentyWebMyAccountOrderTotalAmount .PlentyTotalAmountTitle,
+.myaccount .PlentyWebMyAccountOrderTotalAmount .PlentyTotalAmountDetail,
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div:nth-child(1) > div > span,
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div:nth-child(3) > div > span,
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div:nth-child(6) > div > span,
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div:nth-child(7) > div > span,
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div:nth-child(8) > div > span
+
+{
+font-weight: bold;
+}
+
+/* VAT notice */
+.myaccount .PlentyWebMyAccountVatNotice {
+font-weight: normal;
+font-size: 0.7em;
+}
+
+/* no underline */
+.myaccount .PlentyWebMyAccountOrderOverviewGoodsValueGross > div,
+.myaccount .PlentyWebMyAccountOrderOverviewShippingCostsGross > div,
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div:nth-child(1) > div,
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div:nth-child(3) > div
+
+{
+border-bottom: none !important;
+}
+
+/* last underline */
+.myaccount .PlentyWebMyAccountOrderOverviewOrderSumBox > div > div:last-child > div
+{
+border-bottom: 1px solid #000000;
+}
+
+
+/* POPUP SINGLE ORDER VIEW (SHIPPING, PAYMENT & SHIPPING ADRESS) */
+
+/* table */
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer > div > div > form > div > .PlentyFormBox,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer > div > div > form > div > .PlentyFormBox,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer > div > div > form > div > .PlentyFormBox,
+.myaccount div.PlentyMyAccountTableLayout {
+display: table;
+width: 100%;
+font-size: 12px;
+}
+/*table row*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer > div > div > form > div > .PlentyFormBox > div,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer > div > div > form > div > .PlentyFormBox > div,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer > div > div > form > div > .PlentyFormBox > div,
+.myaccount div.PlentyMyAccountTableLayout > div {
+display: table-row;
+}
+/*table-cell*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+.myaccount div.PlentyMyAccountTableLayout > div > div {
+display: table-cell;
+vertical-align: top;
+}
+
+
+/* POPUP TABLE LAYOUT (LIST) */
+
+
+/*cell rows*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer div.PlentyMyAccountTableLayout > div > div,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer div.PlentyMyAccountTableLayout > div > div,
+.myaccount .PlentyWebMyAccountListContainer .PlentyMyAccountTableLayout > div > div
+
+{
+padding: 8px 0 6px;
+border-bottom: 1px solid #e0e0e0;
+}
+
+/*last cell*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer > div > div > form > div > .PlentyFormBox > div > div:last-child,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer > div > div > form > div > .PlentyFormBox > div > div:last-child,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer > div > div > form > div > .PlentyFormBox > div > div:last-child,
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer div.PlentyMyAccountTableLayout > div > div:last-child,
+.myaccount .PlentyWebMyAccountListContainer .PlentyMyAccountTableLayout > div > div:last-child
+
+{
+text-align: right;
+}
+
+/*radio buttons*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer label > input[type=radio], .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer label > input[type=radio],
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer label > input[type=radio],
+.myaccount .PlentyWebMyAccountListContainer label > input[type=radio]
+
+{
+margin-right: 5px;
+}
+
+/*images*/
+.myaccount .PlentyWebMyAccountListContainer .PlentyMyAccountTableLayout > div > div > label > img {
+height: 30px;
+margin: -4px 0;
+}
+
+/*shipping details list*/
+.myaccount .PlentyWebMyAccountShippingDetailsListRadio {
+margin-right: 10px;
+}
+
+
+/*large popups (payment)*/
+
+/*popup width*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer {
+width: 600px;
+margin-left: -316px !important; /* 1/2 width + border-width + 15px */
+}
+/*images*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer img {
+height: 30px;
+margin: -4px 0;
+}
+
+
+/* POPUP CHANGE ARTICLE */
+
+/*container*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountItemsPopupContainer {
+width: 850px;
+margin-left: -425px !important;
+}
+
+/*item container*/
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountItemsPopupContainer .PlentyFormContainer.ItemsRow {
+/*border: 1px solid #CCCCCC;*/
+}
+.myaccount .PlentyWebMyAccountPopupContainer.PlentyWebMyAccountItemsPopupContainer .PlentyFormContainer.ItemsRow > .PlentyFormContainer.ItemsContentRow {
+/*border-top: 1px solid #CCCCCC;*/
+}
+
+/* change attributes */
+
+/* header */
+.myaccount .PlentyWebMyAccountItemUpdateAttributesTitle,
+.myaccount .PlentyWebMyAccountItemUpdatePriceSelectTitle,
+.myaccount .PlentyWebMyAccountItemUpdateOrderParamsTitle {
+display: block;
+background: #F3F3F3;
+border-bottom: 1px solid #888888;
+padding: 5px 8px;
+font-weight: bold;
+}
+/* container */
+.myaccount .PlentyWebMyAccountItemUpdateAttributesMain,
+.myaccount .PlentyWebMyAccountItemUpdatePriceSelectMain,
+.myaccount .PlentyWebMyAccountItemUpdateOrderParamsMain {
+}
+/* table */
+.myaccount .PlentyWebMyAccountItemUpdateAttributesMain > .PlentyMyAccountTableLayout,
+.myaccount .PlentyWebMyAccountItemUpdatePriceSelectMain > .PlentyMyAccountTableLayout,
+.myaccount .PlentyWebMyAccountItemUpdateOrderParamsMain > .PlentyMyAccountTableLayout {
+margin: 0 0 7px;
+}
+/* cells */
+.myaccount .PlentyWebMyAccountItemUpdateAttributesMain > .PlentyMyAccountTableLayout > div > div,
+.myaccount .PlentyWebMyAccountItemUpdatePriceSelectMain > .PlentyMyAccountTableLayout > div > div,
+.myaccount .PlentyWebMyAccountItemUpdateOrderParamsMain > .PlentyMyAccountTableLayout > div > div {
+line-height: 22px;
+vertical-align: middle;
+}
+/* first column */
+.myaccount .PlentyWebMyAccountItemUpdateAttributesMain > .PlentyMyAccountTableLayout > div > div:first-child,
+.myaccount .PlentyWebMyAccountItemUpdatePriceSelectMain > .PlentyMyAccountTableLayout > div > div:first-child,
+.myaccount .PlentyWebMyAccountItemUpdateOrderParamsMain > .PlentyMyAccountTableLayout > div > div:first-child {
+width: 100px;
+padding-right: 5px;
+}
+/* text */
+.myaccount .PlentyWebMyAccountItemUpdateAttributesMain > .PlentyMyAccountTableLayout > div > div,
+.myaccount .PlentyWebMyAccountItemUpdatePriceSelectMain > .PlentyMyAccountTableLayout > div > div,
+.myaccount .PlentyWebMyAccountItemUpdateOrderParamsMain > .PlentyMyAccountTableLayout > div > div {
+font-weight: bold;
+vertical-align: text-top;
+padding: 2px 1px;
+border-bottom: 1px solid #eeeeee;
+}
+
+
+
+
+
+
+
+
+
+/* NOTE */
+
+
+/* note */
+.myaccount #PlentyWebMyAccountMyAccountTitleContainerContent .red {
+display: block;
+padding: 6px 12px;
+margin-bottom: 10px;
+background: #90B9D7;
+color: #FFFFFF;
+font-weight: bold;
+}
+
+
+
+/* PLENTY */
+
+/* fix status message width */
+.myaccount .PlentyWebMyAccountAdviceContainer .plentyMessageBox {
+width: auto !important;
+}
+
+/* remove focus */
+a {
+outline: 0;
+}
+
+
+
+
+
+
+
+/* SUPPORT PIN */
+
+/* pane */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiPane.pane {
+padding: 4px;
+border: 2px solid #fff;
+}
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiPane.pane > div {
+background: #fff;
+padding: 8px 16px;
+
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+}
+
+/* tab / pane color */
+
+/* gold */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiTabs > ul.tabs > li.gold > span,
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiPane.pane.gold {
+background-color: #fad44c;
+}
+/* silver */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiTabs > ul.tabs > li.silver > span,
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiPane.pane.silver {
+background-color: #aaa4a4;
+}
+/* bronze */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiTabs > ul.tabs > li.bronze > span,
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiPane.pane.bronze {
+background-color: #ec9263; /* ec9263 DB825C  */
+}
+
+/* tab */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiTabs > ul.tabs > li > span {
+color: #aaa;
+border-left: 1px solid;
+}
+
+/* tab standard */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiTabs > ul.tabs > li > span {
+background-image: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 52%, rgba(255,255,255,0.06) 55%, rgba(255,255,255,0) 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(52%,rgba(255,255,255,0.5)), color-stop(55%,rgba(255,255,255,0.06)), color-stop(100%,rgba(255,255,255,0)));
+background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 52%,rgba(255,255,255,0.06) 55%,rgba(255,255,255,0) 100%);
+background-image: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 52%,rgba(255,255,255,0.06) 55%,rgba(255,255,255,0) 100%);
+background-image: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 52%,rgba(255,255,255,0.06) 55%,rgba(255,255,255,0) 100%);
+background-image: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 52%,rgba(255,255,255,0.06) 55%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 );
+
+-moz-border-radius: 3px 3px 0 0;
+-webkit-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+}
+/* tab current / pane current */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiTabs > ul.tabs > li > span.current,
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiPane.pane {
+background-image: -moz-linear-gradient(top,  rgba(255,255,255,0) 1%, rgba(255,255,255,0.74) 52%, rgba(255,255,255,0.06) 55%, rgba(255,255,255,0) 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(255,255,255,0)), color-stop(52%,rgba(255,255,255,0.74)), color-stop(55%,rgba(255,255,255,0.06)), color-stop(100%,rgba(255,255,255,0)));
+background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0) 1%,rgba(255,255,255,0.74) 52%,rgba(255,255,255,0.06) 55%,rgba(255,255,255,0) 100%);
+background-image: -o-linear-gradient(top,  rgba(255,255,255,0) 1%,rgba(255,255,255,0.74) 52%,rgba(255,255,255,0.06) 55%,rgba(255,255,255,0) 100%);
+background-image: -ms-linear-gradient(top,  rgba(255,255,255,0) 1%,rgba(255,255,255,0.74) 52%,rgba(255,255,255,0.06) 55%,rgba(255,255,255,0) 100%);
+background-image: linear-gradient(to bottom,  rgba(255,255,255,0) 1%,rgba(255,255,255,0.74) 52%,rgba(255,255,255,0.06) 55%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+
+/* tab all */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiTabs > ul.tabs > li > span {
+color: #FFFFFF;
+font-weight: bold;
+text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+-moz-box-shadow: 0 2px 5px -2px rgba(255, 255, 255, 0.99) inset, 0 0 6px #ccc;
+-webkit-box-shadow: 0 2px 5px -2px rgba(255, 255, 255, 0.99) inset, 0 0 6px #ccc;
+box-shadow: 0 2px 5px -2px rgba(255, 255, 255, 0.99) inset, 0 0 6px #ccc;
+}
+/* tab current */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiTabs > ul.tabs > li > span.current {
+padding-bottom: 7px;
+}
+
+/* pane current */
+.myaccount #PlentyMyAccountMyAccount #PlentyWebMyAccountDisplaySupportPin div.PlentyGuiPane.pane {
+-moz-box-shadow: 0 -2px 5px -2px rgba(255, 255, 255, 0.99) inset, 0 0 6px #ccc;
+-webkit-box-shadow: 0 -2px 5px -2px rgba(255, 255, 255, 0.99) inset, 0 0 6px #ccc;
+box-shadow: 0 -2px 5px -2px rgba(255, 255, 255, 0.99) inset, 0 0 6px #ccc;
+
+-moz-border-radius: 0 5px 5px 5px;
+-webkit-border-radius: 0 5px 5px 5px;
+border-radius: 0 5px 5px 5px;
+}
+
+/* pin container */
+.myaccount .PlentyWebMyAccountSupportPinValue {
+display: inline-block;
+margin-top: 10px;
+margin-bottom: 5px;
+padding: 12px 16px;
+background: #F0F0F0;
+border: 1px solid #FAD44C;
+line-height: 16px;
+font-size: 150%;
+font-weight: bold;
+text-shadow: 0 -1px 1px #FFFFFF;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+
+-moz-box-shadow: 0 0 3px 0 #FFFFFF inset;
+-webkit-box-shadow: 0 0 3px 0 #FFFFFF inset;
+box-shadow: 0 0 3px 0 #FFFFFF inset;
+}
+/* pin container color */
+.gold .PlentyWebMyAccountSupportPinValue  {
+border-color: #FAD44C;
+}
+.silver .PlentyWebMyAccountSupportPinValue {
+border-color: #aaa4a4;
+}
+.bronze .PlentyWebMyAccountSupportPinValue {
+border-color: #ec9263;
+}
+/* pin label */
+.myaccount .PlentyWebMyAccountSupportPinValueTitle {
+padding-right: 5px;
+}
+
+/* text before / after */
+.myaccount #PlentyWebMyAccountDisplaySupportPin .PlentyWebMyAccountText1Container { margin-bottom: 16px; } /* set "display: none;" or remove margin if containers are not used */
+.myaccount #PlentyWebMyAccountDisplaySupportPin .PlentyWebMyAccountText2Container { /*margin-top: 16px;*/ }
+
+
+
+/* NEW TICKET SYSTEM PLENTY */
+.myaccount #PlentyWebMyAccountTicketSystemContainer .PlentyWebMyAccountTabHeaderContainer { display: none; }
+
+
+/* tickets openable item individual style */
+/* item container last child */
+.myaccount .PlentyWebMyAccountTicketSystemLeafContainer:last-child {
+margin-bottom: 16px;
+}
+
+/* openable item header open close button */
+.myaccount .PlentyWebMyAccountOpenableItemContainerOpenButton,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeaderTitle > span,
+.myaccount .PlentyWebMyAccountSystemsTitleOpen,
+.myaccount .PlentyWebMyAccountDomainsTitleOpen {
+display: table-cell;
+padding: 0 5px 0 0;
+vertical-align: middle;
+line-height: 15px;
+}
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeaderTitleText,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeaderTitle > span + div {
+display: table-cell;
+vertical-align: middle;
+padding-left: 10px;
+}
+.myaccount .PlentyWebMyAccountOpenableItemContainerOpenButton + .PlentyWebMyAccountOpenableItemContainerHeaderTitleText { 
+padding-left: 0; 
+}
+.myaccount .PlentyWebMyAccountContainerHeaderTitle >.PlentyWebMyAccountTicketSystemTitleOpen > button {
+margin-top: 1px
+}
+.myaccount .PlentyWebMyAccountTicketSystemTitleContainer {
+display: inline-block;
+vertical-align: bottom;
+}
+.myaccount .PlentyWebMyAccountTitleLabelBig,
+.myaccount .PlentyWebMyAccountTicketSystemTitleContainer1,
+.myaccount .PlentyWebMyAccountDomainsTitle > div + div,
+.myaccount .PlentyWebMyAccountDomainsTitleId, .PlentyWebMyAccountDomainsTitleDomainId, .PlentyWebMyAccountDomainsTitleURL, .PlentyWebMyAccountDomainsTitleType, .PlentyWebMyAccountDomainsTitlePrimaryDomain, .PlentyWebMyAccountDomainsTitleIP {
+color: #333;
+font-size: 13px;
+font-weight: normal;
+}
+.myaccount .PlentyWebMyAccountTitleLabelSmall,
+.myaccount .PlentyWebMyAccountTicketSystemTitleContainer2,
+.myaccount .PlentyWebMyAccountDomainsTitleId > span:first-child, .PlentyWebMyAccountDomainsTitleDomainId > span:first-child, .PlentyWebMyAccountDomainsTitleType > span:first-child, .PlentyWebMyAccountDomainsTitlePrimaryDomain > span:first-child, .PlentyWebMyAccountDomainsTitleURL > span:first-child, .PlentyWebMyAccountDomainsTitleIP > span:first-child, .PlentyWebMyAccountDomainsContractEnd > span:first-child {
+font-size: 11px;
+line-height: 11px;
+color: #888;
+font-weight: normal;
+/*padding: 2px 0 0;*/
+}
+.myaccount .PlentyWebMyAccountTitleLabelBig.PlentyWebMyAccountTitleLabelStandalone {
+display: inline-block;
+padding: 9px 0 7px;
+}
+.myaccount .PlentyWebMyAccountTicketSystemTitleContainer1,
+.myaccount .PlentyWebMyAccountDomainsTitle > div + div,
+.myaccount .PlentyWebMyAccountTicketSystemTitleContainer2,
+.myaccount .PlentyWebMyAccountDomainsTitleId > span:first-child, .PlentyWebMyAccountDomainsTitleDomainId > span:first-child, .PlentyWebMyAccountDomainsTitleType > span:first-child, .PlentyWebMyAccountDomainsTitlePrimaryDomain > span:first-child, .PlentyWebMyAccountDomainsTitleURL > span:first-child, .PlentyWebMyAccountDomainsTitleIP > span:first-child,.PlentyWebMyAccountDomainsTitleId, .PlentyWebMyAccountDomainsTitleDomainId, .PlentyWebMyAccountDomainsTitleURL, .PlentyWebMyAccountDomainsTitleType, .PlentyWebMyAccountDomainsTitlePrimaryDomain, .PlentyWebMyAccountDomainsTitleIP,
+.myaccount .PlentyWebMyAccountDomainsContractEnd {
+text-shadow: 0 1px 1px #fff;
+}
+.myaccount .PlentyWebMyAccountContainerHeaderTitleRight {
+float: right;
+min-width: 85px;
+}
+.myaccount .PlentyWebMyAccountTicketSystemTitleProgress:before {
+content: " | ";
+}
+.myaccount .PlentyWebMyAccountTicketSystemTitleProgress {
+}
+.myaccount .PlentyWebMyAccountTicketSystemTitleStatusValue,
+.myaccount .PlentyWebMyAccountTicketSystemTitleProgressValue {
+font-weight: normal;
+}
+
+/* ticket cointent columns */
+.myaccount .PlentyWebMyAccountTicketSystemContentLeft,
+.myaccount .PlentyWebMyAccountTicketSystemContentLeft { width: 50%; }
+.myaccount .PlentyWebMyAccountTicketSystemLeafContainer { margin-right: 6px; }
+.myaccount .PlentyWebMyAccountTicketSystemContentNewStack.PlentyWebMyAccountTicketSystemLeafContainer,
+.myaccount .PlentyWebMyAccountTicketSystemContentAttach.PlentyWebMyAccountTicketSystemLeafContainer { margin-right: 0; margin-left: 6px; }
+.myaccount .PlentyWebMyAccountTicketSystemLeafContainer { margin-bottom: 12px; }
+.myaccount .PlentyWebMyAccountTicketSystemLeafContainer:last-child { margin-bottom: 0; }
+
+
+/* inner container header */
+.myaccount .PlentyWebMyAccountTicketSystemLeafContainer {
+border: 1px solid #fff;
+
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+
+-moz-box-shadow: 0 0 2px #ccc;
+-webkit-box-shadow: 0 0 2px #ccc;
+box-shadow: 0 0 2px #ccc;
+}
+/* inner container header */
+.myaccount .PlentyWebMyAccountTicketSystemLeafHead,
+.myaccount .PlentyWebMyAccountDomainsDomainContainer .PlentyWebMyAccountItemContainerHeader {
+/*margin-bottom: 6px;*/
+padding: 2px 6px;
+background: #F2F2F2;
+font-size: 11px;
+/*font-weight: bold;*/
+text-shadow: 0 1px 1px #ececec;
+}
+/* inner container content */
+.myaccount .PlentyWebMyAccountTicketSystemLeafContent {
+margin: 0 10px 2px;
+}
+.myaccount #PlentyMyAccountMyAccount .PlentyWebMyAccountTicketSystemLeafContent > p {
+margin: 0;
+}
+
+/* subheadline */
+.myaccount .PlentyWebMyAccountTicketSystemLeafFilesTitle,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketSystemTitle,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketTitleTitle,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketDescriptionTitle,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketFilesTitle,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketAGBinput {
+display: inline-block;
+margin-top: 10px;
+}
+.myaccount .PlentyWebMyAccountTicketSystemLeafFilesInput,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketAGBinput { margin-bottom: 10px; }
+.myaccount .PlentyWebMyAccountTicketSystemContentNewStackContent.PlentyWebMyAccountTicketSystemLeafContent > form,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketSubmit { padding-bottom: 5px; }
+.myaccount .PlentyWebMyAccountTicketSystemLeafFilesInput > input,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketFilesInput > input { margin-top: 2px; }
+
+/* attached files */
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > .PlentyMyAccountTableLayout > div > div { padding-left: 5px; padding-top: 6px; padding-bottom: 1px; }
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > .PlentyMyAccountTableLayout > div > div:first-child { padding-left: 0; }
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > .PlentyMyAccountTableLayout > div > div:last-child { width: 0; padding-top: 0; }
+.myaccount .PlentyWebMyAccountTicketSystemContentAttachContent > .PlentyMyAccountTableLayout > div > div:last-child > span { display: inline-block; }
+
+/* new ticket */
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketTypeInput > select,
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketSystemSelect > select { width: auto; }
+.myaccount .PlentyWebMyAccountTicketSystemNewTicketTitleInput > input { width: 590px; }
+.myaccount #PlentyWebMyAccountTicketSystemNewTicketDescriptionTextarea_parent { display: inline-block; width: 600px; }
+.myaccount #PlentyWebMyAccountTicketSystemNewTicketDescriptionTextarea_parent > table { width: 100% !important; }
+
+/* close ticket button */
+.myaccount .PlentyWebMyAccountTicketSystemTitleClose > span > span.button > a,
+.myaccount .WebMyAccountDomainsAddonEnd > input[type=button] {
+background-color: #D4021D !important;
+}
+.myaccount .PlentyWebMyAccountTicketSystemTitleClose > span > span.button > a:hover,
+.myaccount .PlentyWebMyAccountTicketSystemTitleClose > span > span.button > a:focus,
+.myaccount .WebMyAccountDomainsAddonEnd > input[type=button]:hover,
+.myaccount .WebMyAccountDomainsAddonEnd > input[type=button]:focus {
+background-color: #707173 !important;
+}
+
+/* adapt to large strings */
+.myaccount #PlentyWebMyAccountTicketSystemActive .PlentyWebMyAccountTicketSystemLeafContainer > div + div {
+max-width: 412px;
+word-wrap: break-word;
+overflow: auto;
+} 
+.myaccount #PlentyWebMyAccountTicketSystemClosed .PlentyWebMyAccountTicketSystemLeafContainer > div + div {
+max-width: 818px;
+word-wrap: break-word;
+} 
+
+
+/* PLENTYMARKETS SYSTEMS */
+
+/* titles */
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeaderTitle > div {
+display: table-cell;
+vertical-align: middle;
+}
+.myaccount .PlentyWebMyAccountDomainsTitle > div + div {
+display: inline-block;
+}
+.myaccount .PlentyWebMyAccountDomainsTitle > div > span:first-child {
+/*color: #999;*/
+}
+
+/* tabs */
+.myaccount .tabs + div + .PlentyGuiPane.pane > div > .PlentyWebMyAccountItemContainer {
+margin-top: 0;
+}
+
+/* domains openable containers */
+.myaccount #PlentyWebMyAccountDomains .PlentyWebMyAccountOpenableItemContainer:first-child {
+margin-top: 0;
+}
+
+/* domain overview */
+.myaccount .WebMyAccountDomainsDomainOverview,
+.myaccount .PlentyWebMyAccountDomainsDomainDot,
+.myaccount .WebMyAccountDomainsAddonName {
+font-weight: bold;
+}
+
+/* domain buttons */
+.myaccount .PlentyWebMyAccountDomainsSystemContainer .PlentyWebMyAccountTabHeaderContainer {
+padding-bottom: 6px;
+padding-top: 6px;
+}
+
+/* domain item container first */
+.myaccount .WebMyAccountDomainsDomainNameserverContainer {
+margin-top: 0;
+}
+
+/* check domain */
+.myaccount #PlentyWebMyAccountDomainsSystemCheckForm input,
+.myaccount #PlentyWebMyAccountDomainsSystemCheckForm select {
+margin-right: 0;
+}
+.myaccount #PlentyWebMyAccountDomainsSystemCheckForm select {
+width: auto;
+}
+
+/* open/close button */
+.myaccount #PlentyMyAccountMyAccount .PlentyWebMyAccountOpenableItemContainerHeader > div > div > button:first-child,
+.myaccount #PlentyMyAccountMyAccount .PlentyWebMyAccountOpenableItemContainerHeader > div > span > button:first-child {
+display: inline-block;
+width: 16px;
+height: 16px;
+margin-top: 2px;
+padding: 0;
+font-size: 12px;
+line-height: 16px;
+vertical-align: middle;
+position: relative;
+background-image: url(/layout/pm/images/icon/plus-minus.png);
+background-position: -1px center;
+background-repeat: no-repeat;
+}
+/* toggle img */
+.myaccount #PlentyMyAccountMyAccount .PlentyWebMyAccountOpenableItemContainerHeader > div > div > button.opened:first-child,
+.myaccount #PlentyMyAccountMyAccount .PlentyWebMyAccountOpenableItemContainerHeader > div > span > button.opened:first-child {
+background-position: -17px center;
+}
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > div > button:first-child > img,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > span > button:first-child > img {
+display: none;
+}
+/*
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > div > button:first-child:before,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > span > button:first-child:before,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > div > button:first-child:after,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > span > button:first-child:after {
+content: "";
+display: block;
+position: absolute;
+width: 8px;
+height: 2px;
+top: 6px;
+left: 3px;
+background: #fff;
+}
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > div > button:first-child:after,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > span > button:first-child:after {
+width: 2px;
+height: 8px;
+top: 3px;
+left: 6px;
+}
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > div > button.opened:first-child:after,
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeader > div > span > button.opened:first-child:after {
+display: none;
+}
+*/
+.myaccount .PlentyWebMyAccountDomainsTitleId {
+}
+.myaccount .PlentyWebMyAccountDomainsTitleId,
+.myaccount .PlentyWebMyAccountDomainsTitleDomainId,
+.myaccount .PlentyWebMyAccountDomainsTitleURL,
+.myaccount .PlentyWebMyAccountDomainsTitleType,
+.myaccount .PlentyWebMyAccountDomainsTitlePrimaryDomain,
+.myaccount .PlentyWebMyAccountDomainsTitleIP {
+display: inline-block;
+margin-left: 10px;
+}
+.myaccount .PlentyWebMyAccountDomainsTitleId:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitleDomainId:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitleURL:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitleType:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitlePrimaryDomain:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitleIP:first-child {
+margin-left: 0;
+}
+.myaccount .PlentyWebMyAccountDomainsTitleId > span:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitleDomainId > span:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitleType > span:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitlePrimaryDomain > span:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitleURL > span:first-child,
+.myaccount .PlentyWebMyAccountDomainsTitleIP > span:first-child, 
+.myaccount .PlentyWebMyAccountDomainsContractEnd > span:first-child,
+.myaccount .PlentyWebMyAccountTitleLabelSmall {
+display: block;
+font-size: 11px;
+line-height: 14px;
+color: #888;
+}
+.myaccount .PlentyWebMyAccountDomainsTitleId > span + span,
+.myaccount .PlentyWebMyAccountDomainsTitleDomainId > span + span,
+.myaccount .PlentyWebMyAccountDomainsTitleURL > span + span,
+.myaccount .PlentyWebMyAccountDomainsTitleType > span + span,
+.myaccount .PlentyWebMyAccountDomainsTitlePrimaryDomain > span + span,
+.myaccount .PlentyWebMyAccountDomainsTitleIP > span + span,
+.myaccount .PlentyWebMyAccountTitleLabelBig {
+display: block;
+line-height: 18px;
+}
+.myaccount .PlentyWebMyAccountDomainsTitleDomainId {
+    min-width: 60px;
+}
+.myaccount .PlentyWebMyAccountDomainsTitleURL {
+    min-width: 200px;
+}
+.myaccount .PlentyWebMyAccountDomainsTitleIP {
+    min-width: 100px;
+}
+.myaccount .PlentyWebMyAccountDomainsTitleType {
+    min-width: 75px;
+}
+
+/* tabs ul */
+.myaccount ul.tabs {
+font-size: 12px;
+line-height: 1.5em;
+}
+
+/* item container */
+.myaccount .PlentyWebMyAccountOpenableItemContainer .PlentyWebMyAccountItemContainer .PlentyWebMyAccountItemContainerContent {
+font-size: 11px;
+}
+
+/* version */
+.myaccount #PlentyWebMyAccountMyAccountTitleContainerContent .WebMyAccountDomainsDomainVersion ul + strong {
+margin-top: 5px;
+margin-bottom: 0;
+}
+
+/* addon header width */
+.myaccount .PlentyWebMyAccountTableHeaderModulePrice { width: 100px; }
+.myaccount .WebMyAccountDomainsDomainOverview > .PlentyMyAccountTableLayout { width: 40%; }
+.myaccount .WebMyAccountDomainsAddonPrice,
+.myaccount .WebMyAccountDomainsContractPrice,
+.myaccount .PlentyWebMyAccountTableHeaderDomainItemPrice,
+.myaccount .WebMyAccountDomainsDomainItemPrice { text-align: right; white-space: nowrap; }
+
+
+
+/* tickets abrechnen */
+.myaccount .PlentyWebMyAccountCustomerEventBillable .PlentyWebMyAccountCustomerEventsBillable {
+display: block;
+width: 16px;
+height: 16px;
+background: url(/layout/pm/images/icon/money.png) center center no-repeat;
+}
+
+
+/* dns-check tabelle */
+.myaccount .PlentyWebMyAccountDomainsDnsCheckContainer > div > div {
+padding: 4px 0 3px;
+border-top: 1px solid #f0f0f0;
+}
+.myaccount .PlentyWebMyAccountDomainsDnsCheckContainer > div:first-child > div {
+border-top: none;
+}
+/* label */
+.myaccount .PlentyWebMyAccountDomainsDnsCheckRecordTitle { font-weight: bold; }
+
+
+/* vertrag */
+.myaccount .WebMyAccountDomainsContractName {
+    font-weight: bold;
+}
+.myaccount .WebMyAccountDomainsDomainContract > .PlentyWebshopSimpleTable > div > div:nth-child(4) { text-align: right; }
+
+
+/* HORIZONTAL TAB BAR */
+.myaccount .PlentyGuiTabs.horizontalTabBar > div.PlentyWebMyAccountTabPane {
+margin: 0 -10px -10px;
+background: #fff !important;
+border: none !important;
+padding: 0;
+
+-moz-border-radius: 0 0 5px 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+}
+
+/* save button / popup button */
+.myaccount .PlentyWebMyAccountDomainsSaveSettingsContainer > input,
+.myaccount .PlentyPopupButtonContainer {
+margin: 10px 0 0;
+}
+
+
+/* E-MAIL */
+
+/* openable item container first / item container first */
+.myaccount .PlentyWebMyAccountEmailNewAccountContainer,
+.myaccount #PlentyWebMyAccountEmailAccountContainerContent .PlentyWebMyAccountItemContainer:first-child {
+margin-top: 0;
+}
+
+/* all container (includes FTP user & autoreply) */
+.myaccount .PlentyWebMyAccountNewsletterSettingsContainer > form,
+.myaccount .PlentyWebMyAccountEmailAccountPwdContent > form,
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer > form,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > form,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > .PlentyWebMyAccountItemContainerContent > form
+.myaccount .PlentyMyAccountFtpUserContainer > div,
+.myaccount .PlentyMyAccountFtpUserContainerContent > div,
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer
+{
+/*display: table;
+width: 100%;*/
+line-height: 16px;
+
+}
+
+/* input rows (includes FTP user & autoreply) */
+.myaccount .PlentyWebMyAccountNewsletterSettingsContainer > form > div,
+.myaccount .PlentyWebMyAccountEmailAccountPwdContent > form > div,
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer > form > div,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > form > div,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > .PlentyWebMyAccountItemContainerContent > form > div,
+.myaccount .PlentyMyAccountFtpUserContainer > div > div,
+.myaccount .PlentyMyAccountFtpUserContainerContent > div > div,
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer > div,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer > div
+{
+display: table-row;
+}
+
+/* input labels (includes FTP user & autoreply) */
+.myaccount .PlentyWebMyAccountNewsletterSettingsContainer > form > div > span,
+.myaccount .PlentyWebMyAccountEmailAccountPwdContent > form > div > span,
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer > form > div > span,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > form > div > span,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > .PlentyWebMyAccountItemContainerContent > form > div > span,
+.myaccount .PlentyMyAccountFtpUserContainer > div > div > span,
+.myaccount .PlentyMyAccountFtpUserContainerContent > div > div > span,
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer > div > span,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer > div > span,
+.myaccount .PlentyWebMyAccountLabelCell,
+.myaccount .PlentyWebMyAccountTextCell
+{
+display: table-cell;
+vertical-align: middle;
+padding-top: 2px;
+line-height: 22px;
+}
+
+/* only label cell */
+.myaccount .PlentyMyAccountFtpUserContainer > div > div > span,
+.myaccount .PlentyMyAccountFtpUserContainerContent > div > div > span,
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer > div > span,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer > div > span,
+.myaccount .PlentyWebMyAccountLabelCell
+{
+width: 150px;
+}
+/* small label cell */
+.myaccount .WebMyAccountDomainsDisableCacheContainer .PlentyWebMyAccountLabelCell {
+width: 40px;
+}
+
+/* label to align top */
+.myaccount .PlentyWebMyAccountFtpUserUpdateHostTitle {
+vertical-align: top !important;
+}
+
+/* input container (includes FTP user & autoreply) */
+.myaccount .PlentyWebMyAccountNewsletterSettingsContainer > form > div > div,
+.myaccount .PlentyWebMyAccountEmailAccountPwdContent > form > div > div,
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer > form > div > div,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > form > div > div,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > .PlentyWebMyAccountItemContainerContent > form > div > div,
+.myaccount .PlentyMyAccountFtpUserContainer > div > div > div,
+.myaccount .PlentyMyAccountFtpUserContainerContent > div > div > div,
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer > div > span + span,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer > div > span + span
+{
+display: table-cell;
+padding-left: 5px;
+vertical-align: middle;
+padding-top: 2px;
+line-height: 22px;
+}
+/* first cell */
+.myaccount .PlentyWebMyAccountNewsletterSettingsContainer > form > div > div:first-child,
+.myaccount .PlentyWebMyAccountEmailAccountPwdContent > form > div > div:first-child,
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer > form > div > div:first-child,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > form > div > div:first-child,
+.myaccount .PlentyWebMyAccountEmailAddressContainer > .PlentyWebMyAccountItemContainerContent > form > div > div:first-child,
+.myaccount .PlentyMyAccountFtpUserContainer > div > div > div:first-child,
+.myaccount .PlentyMyAccountFtpUserContainerContent > div > div > div:first-child,
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer > div > span + span:first-child,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer > div > span + span:first-child
+{
+padding-left: 0;
+}
+
+
+/* input (includes FTP user & autoreply) */
+.myaccount .PlentyWebMyAccountEmailNewAccountContainer input,
+.myaccount .PlentyWebMyAccountEmailAccountPwdContent input,
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer input,
+.myaccount .PlentyWebMyAccountEmailAddressContainer input,
+.myaccount .PlentyMyAccountFtpUserContainer input,
+.myaccount .PlentyMyAccountFtpUserContainerContent input,
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer input,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer input
+{
+width: 194px;
+/*margin-top: 4px !important;*/
+}
+
+/* select (includes FTP user & autoreply) */
+.myaccount .PlentyWebMyAccountEmailNewAddressContainer select,
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer select,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer select {
+width: 204px;
+}
+
+/* account name */
+.myaccount .PlentyWebMyAccountEmailNewAccountName > span {
+/*vertical-align: bottom;*/
+}
+
+/* label with more than one line (includes FTP accounts) */
+.myaccount .PlentyWebMyAccountEmailNewAccountNameTitle,
+.myaccount .PlentyWebMyAccountFtpUserUpdatePasswordTitle2 {
+line-height: 16px !important;
+}
+.myaccount .PlentyWebMyAccountAdditionalInfo {
+font-size: 10px !important;
+line-height: 10px !important;
+}
+
+/* username  */
+.myaccount .PlentyWebMyAccountEmailNewAccountUsernameValuePre {
+display: inline-block;
+/*width: 25px;*/
+}
+
+/* input  */
+.myaccount .PlentyWebMyAccountEmailNewAccountUsernameValuePre + input {
+/*width: 165px;*/
+}
+
+/* button (includes FTP user & autoreply) */
+.myaccount .PlentyWebMyAccountEmailAccountPwdButton > span,
+.myaccount .PlentyWebMyAccountEmailAddressSaveAddressValue > span,
+.myaccount .PlentyMyAccountFtpUserContainer > .PlentyFormContainer + div > span,
+.myaccount .PlentyMyAccountFtpUserContainerContent > .PlentyFormContainer + div > span,
+.myaccount #PlentyWebMyAccountEmailAutoreplySubmit > span,
+.myaccount .PlentyWebMyAccountEmailAutoreplySubmit > span
+{
+display: inline-block !important;
+margin-top: 10px;
+}
+
+
+.margin { margin: 10px; }
+.marginBottom { margin-bottom: 10px; }
+.marginTop { margin-top: 10px; }
+.myaccount .PlentyMyAccountTableHeader { font-weight: bold; }
+
+
+/* SSL CERT */
+.myaccount .PlentyWebMyAccountDomainsSaveCnameContainer {
+	margin-top: 10px;
+} 
+
+.certValidationBegin, 
+.certValidationEnd, 
+.certPaymentInterval {
+	width: 100px;
+}
+.certPrice,
+.certStatus {
+	width: 60px;
+}
+.certExtendValidity {
+	width: 130px;
+}
+
+.orderCertPopup,
+.orderCertPopup strong:first-child {
+	font-size: 13px;
+}
+.orderCertPopup p {
+	line-height: 15px;
+	margin: 10px 0;
+}
+.myaccount .PlentyWebMyAccountPopupContainer.xxl {
+	width: 700px;
+	margin-left: -361px !important;
+}
+.pmSmallBox.pmOfferBox {
+	width: 221px;
+}
+.orderCertPopup .pmOfferBoxHeadline {
+	font-size: 12px;
+	line-height: 18px;
+}
+.orderCertPopup .pmOfferBoxContent {
+	height: auto;
+}
+.orderCertPopup .pmOrderSystemPopupVatHintWrapper {
+	font-size: 11px;
+}
+.orderCertDetailsPopup .pmOrderSystemPopupVatHintWrapper {
+	bottom: 7px;
+}
+.pmOfferBoxImageWrapper {
+	height: 82px;
+    padding: 10px 0;
+    text-align: center;
+}
+.orderCertPopup.step-2 .pmUlCheckSmall {
+    line-height: 19px;
+    margin: 0 10px;
+}
+.pmOfferBoxOderButton {
+	padding: 10px;
+	position: relative;
+	text-align: right;
+}
+.pmOfferBoxOderButton .detailsLink {
+	position: absolute;
+	left: 10px;
+	top: 20px;
+}
+.pmSmallBox.pmOfferBox + .pmOfferBox {
+	margin-left: 12px;
+}
+.pmOfferBoxImageWrapper {
+	height: 82px;
+    padding: 10px 0;
+    text-align: center;
+}
+.pmUlNone > li {
+	list-style-type: none !important;
+}
+.myaccount .PlentyWebMyAccount .pmOfferBoxDetailsPopup.pmOfferBoxDetailsPopup {
+	width: 236px;
+	left: -8px;
+	top: -8px;
+}
+.orderCertDetailsPopup .pmUlCheckSmall.pmUlUnderline {
+	margin: 0 0 10px;
+}
+.orderCertDetailsPopup .pmUlNone {
+	color: #444;
+	line-height: 20px;
+}
+.myaccount .PlentyWebMyAccountWebserverOptionsInput {
+    display: block;
+    height: 250px;
+    margin: 0 0 10px;
+    width: 848px;
+}
+.myaccount .WebMyAccountDomainsDomainContractSelectPaymentMethod {
+	margin: 10px 0;
+}
+.myaccount .WebMyAccountDomainsDomainContractSelectPaymentMethod > label {
+	margin-right: 10px;
+}
+
+
+
+/* TMP ERROR FIX - DELETE ASAP */
+.myaccount .PlentyWebMyAccountOpenableItemContainerHeaderTitle > .PlentyWebMyAccountOpenableItemContainerHeaderTitle { float: none; }
+
+#newExternalDomainWebMyAccountDomainsNewExternalDomain > span.button > a,
+#moveDomainWebMyAccountDomainsNewDomain > span.button > a { position: relative; top: 1px; }
+
+/* LOGIN */
+
+
+/* login container */
+.myaccount #PlentyWebMyAccountLogin { 
+width: 322px;
+margin: 10px auto 0 auto;
+}
+
+/* login container content */
+
+/* row */
+.myaccount #PlentyWebMyAccountLogin .PlentyFormContainer { 
+display: block; 
+clear: both; 
+margin-top: 2px;
+margin-bottom: 20px;
+}
+.myaccount .PlentyMyAccountContainerTitle { 
+display: block; 
+color: #4582A5; 
+font-size: 14px; 
+margin-bottom: 10px; 
+padding-bottom: 5px; 
+} 
+
+/* text before */
+.myaccount #PlentyWebMyAccountLoginNote1 { 
+padding: 5px 0 15px; 
+} 
+
+/* input container */
+.myaccount .PlentyFormTitle { 
+    display: inline-block; 
+    color: #626262;
+    font-weight: normal; 
+} 
+.myaccount .PlentyFormTitle > label {
+padding-top: 6px; 
+    display: block; 
+} 
+
+/* labels */
+.myaccount #PlentyWebMyAccountLoginEmailTitle, #PlentyWebMyAccountLoginPasswordTitle { 
+display: inline-block; 
+float: left; 
+width: 100px; 
+} 
+.myaccount #PlentyWebMyAccountLoginEmailContent > input, #PlentyWebMyAccountLoginPasswordContent > input { 
+    display: inline-block; 
+    width: 190px; 
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    outline: medium none;
+    margin-top: 2px;
+    padding: 3px;
+} 
+
+/* inputs */
+.myaccount div.PlentyWebMyAccountLoginData input[type=text],
+.myaccount div.PlentyWebMyAccountLoginData input[type=password] {
+border: 1px solid #CCCCCC;
+padding: 2px 3px;
+font-size: 12px;
+margin-top: 2px;
+margin-bottom: 0;
+}
+/* inputs hover,focus */
+.myaccount div.PlentyWebMyAccountLoginData input[type=text]:hover,
+.myaccount div.PlentyWebMyAccountLoginData input[type=password]:hover,
+.myaccount div.PlentyWebMyAccountLoginData input[type=text]:focus,
+.myaccount div.PlentyWebMyAccountLoginData input[type=password]:focus {
+border-color: #666666 !important; /*1474d4*/
+}
+
+/* link forgotten password */
+.myaccount #PlentyWebMyAccountLoginForgotPassword { 
+} 
+/* link registration */
+.myaccount #PlentyWebMyAccountLoginCustomerRegistration { 
+display: none;
+} 
+
+/* text after */
+.myaccount #PlentyWebMyAccountLoginNote2 { 
+padding-top: 10px; 
+padding-bottom: 5px; 
+} 
+
+
+
+/* LINKS */
+
+
+/*standard*/
+.myaccount #PlentyWebMyAccountLogin a:link, 
+.myaccount #PlentyWebMyAccountLogin a:visited {
+}
+.myaccount #PlentyWebMyAccountLogin a:hover,
+.myaccount #PlentyWebMyAccountLogin a:focus,
+.myaccount #PlentyWebMyAccountLogin a:active {
+}
+/* NEW STYLE */
+.myaccount #PlentyWebMyAccountMyAccountNote1 { 
+    padding: 5px 0 10px; 
+} 
+.myaccount #PlentyWebMyAccountMyAccountTitleContainer {
+position: relative;
+}
+
+/* headline */
+.myaccount #PlentyWebMyAccountMyAccountTitleContainerTitle {
+font-size: 26px;
+border-bottom: 1px solid #999999;
+}
+
+/*logout button*/
+.myaccount #PlentyWebMyAccountMyAccountLogoutContainer {
+display: block;
+position: absolute;
+right: 0;
+top: 3px;
+}
+
+
+/* text before/after */
+.myaccount .PlentyWebMyAccountText1Container {}
+.myaccount .PlentyWebMyAccountText2Container {}
+
+/* hide optional freetext fields */
+
+/* in customer data */
+#WebMyAccountCustomerDataContainerFreetext1,
+#WebMyAccountCustomerDataContainerFreetext2,
+#WebMyAccountCustomerDataContainerFreetext3,
+/* in popup */
+.myaccount #PlentyWebMyAccountUpdateCustomerContactFreetext1Container,
+.myaccount #PlentyWebMyAccountUpdateCustomerContactFreetext2Container,
+.myaccount #PlentyWebMyAccountUpdateCustomerContactFreetext3Container 
+{
+display: none;
+}
+/* hide customer comment */
+.myaccount .PlentyWebMyAccountOrderOverviewCustomerCommentContainer {
+/*display: none;*/
+}
+
+/* customer comment textarea */
+.myaccount .PlentyWebMyAccountOrderOverviewCustomerCommentText {
+height: 120px;
+}
+
+
+/*left column*/
+.myaccount #PlentyWebMyAccountItemWishListContainerContent > div > .PlentyFormContainer > div.PlentyMyAccountTableLayout > div > div:first-child {
+width: 120px;
+padding-top: 5px;
+vertical-align: middle;
+}
+
+/*checkbox*/
+.myaccount .PlentyMyAccountTableLayout input[type=checkbox] {
+margin-top: 4px;
+}
+/*select*/
+select#PlentyWebMyAccountItemWishListShowOwnerSelect {
+width: 200px;
+}
+select#PlentyWebMyAccountItemWishListShippingSelect {
+width: 400px;
+}
+/*input text*/
+.myaccount #PlentyWebMyAccountItemWishListSettingsContainer input[type=text] {
+width: 392px;
+}
+
+/* container main */
+.myaccount .PlentyWebMyAccountDisplayCouponsData {
+}
+
+/* table cells standard */
+.myaccount .PlentyWebMyAccountDisplayCouponsData > div > div > div {
+width: 33%;
+}
+/* item container first */
+.myaccount .PlentyWebMyAccountEmailAutoreplyNewContainer {
+margin-top: 0;
+}
+
+/* label message */
+.myaccount #PlentyWebMyAccountEmailAutoreplyMessageLabel {
+vertical-align: top !important;
+}
+.myaccount #PlentyWebMyAccountEmailAutoreplyMessageLabel > label {
+display: inline-block;
+margin-top: 5px;
+}
+
+/* input sizes */
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer input, 
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer textarea {
+width: 394px;
+} 
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer select {
+width: 404px;
+} 
+
+/* table first column */
+.myaccount #PlentyWebMyAccountEmailAutoreplyDataContainer > div > span:first-child,
+.myaccount .PlentyWebMyAccountEmailAutoreplyDataContainer > div > span:first-child {
+width: 90px;
+}
+/* 1st column */
+.myaccount .PlentyWebMyAccountCustomerEventsRow > div:first-child {
+white-space: nowrap;
+}
+
+/* 4th column */
+.myaccount #PlentyWebMyAccountCustomerEventsTitle > div:nth-child(4),
+.myaccount .PlentyWebMyAccountCustomerEventsRow > div:nth-child(4) {
+white-space: nowrap;
+text-align: right;
+}
+
+
+
+/* PLENTY */
+
+/* table */
+.myaccount .PlentyWebMyAccountCustomerEventsEventContent table th {
+text-align: left;
+}
+/* minutes */
+.myaccount .PlentyWebMyAccountCustomerEventsEventContent table th:nth-child(4) {
+text-align: right;
+}
+.myaccount .WebMyAccountDomainsDomainContractText1 + .PlentyWebshopSimpleTable + .WebMyAccountDomainsDomainAvailableContractText + .PlentyWebshopSimpleTable {
+    display: none;
+}
+/* container main */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData {
+}
+
+/* table */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div {
+width: 100%;
+}
+
+/* table cells standard */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div > div > div {
+padding: 5px 0;
+border-bottom: 1px solid #EEEEEE;
+width: 33%;
+}
+
+/* table first row cells */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div > div:first-child > div {
+}
+
+/* table last row cells */
+.myaccount .PlentyWebMyAccountDisplayDocumentsData > div > div:last-child > div {
+border-bottom: none;
+}
+/* container main */
+.myaccount .PlentyWebMyAccountDisplayDynamicExportData {
+}
+
+/* table */
+.myaccount .PlentyWebMyAccountDisplayDynamicExportData > div {
+width: 100%;
+}
+
+/* table cells standard */
+.myaccount .PlentyWebMyAccountDisplayDynamicExportData > div > div > div {
+padding: 5px 0;
+border-bottom: 1px solid #EEEEEE;
+width: 33%;
+}
+
+/* table first row cells */
+.myaccount .PlentyWebMyAccountDisplayDynamicExportData > div > div:first-child > div {
+}
+
+/* table last row cells */
+.myaccount .PlentyWebMyAccountDisplayDynamicExportData > div > div:last-child > div {
+border-bottom: none;
+}
+
+
+.PlentyWebshopButton:hover,
+.PlentyWebshopButton:focus {
+text-decoration: none;
+}
+
+
+.myaccount,
+.PlentyWebMyAccount { font-weight: normal; }
+.myaccount .contractBuilder { margin-top: 30px; }
+
+.pmUlSeemless {
+list-style-type: none;
+padding: 0;
+}
+
+
+
+/* SCREEN OVERLAY */
+
+/* visible overlay */
+#PlentyWebMyAccountOverlay,
+#PlentyWebMyAccountDisplayOrdersOverlay,
+#PlentyWebMyAccountDisplaySchedulerOrdersOverlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #000000;
+-moz-opacity: 0.5;
+-khtml-opacity: 0.5;
+filter: alpha(opacity=50);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+opacity: 0.5;
+}
+/* invisible overlay */
+#PlentyWebMyAccountDisplayOrdersOverlay,
+#PlentyWebMyAccountDisplaySchedulerOrdersOverlay {
+-moz-opacity: 0;
+-khtml-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+opacity: 0;
+}
+
+/*loading icon*/
+#jQueryPageWaitInnerPane {
+left: 50% !important;
+top: 50% !important;
+margin-left: -16px;
+margin-top: -16px;
+}
+
+
+/* buttons */
+
+
+.PlentyWebMyAccount .button,
+.PlentyWebMyAccount .inlineSubmitButton,
+.PlentyWebMyAccount .button,
+.PlentyWebMyAccount .inlineSubmitButton,
+.PlentyWebMyAccount input[type="button"]
+{
+border: 1px solid #cccccc;
+border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+border-bottom-color: #b3b3b3;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+text-decoration:none;
+margin-bottom: 0;
+font-size: 14px;
+display: inline-block;
+padding: 4px 12px;
+line-height: 15px;
+text-align: center;
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+vertical-align: middle;
+cursor: pointer;
+background-color: #008EBD;
+background-image: -moz-linear-gradient(top, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0)));
+background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+background-image: -o-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+background-image: -ms-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+background-image: linear-gradient(to bottom, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+background-repeat: repeat-x;
+border-color: #0044cc #0044cc #002a80; 
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+font-weight:400;
+background-position:0% 0%;
+}
+
+.PlentyWebMyAccount .button:hover,
+.PlentyWebMyAccount .inlineSubmitButton:hover,
+.PlentyWebMyAccount .button:hover,
+.PlentyWebMyAccount .inlineSubmitButton:hover,
+.PlentyWebMyAccount input[type="button"]:hover
+{
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 -100px 0 200px rgba(255, 255, 255, 0.2);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 -100px 0 200px rgba(255, 255, 255, 0.2);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 -100px 0 200px rgba(255, 255, 255, 0.2);
+}
+
+
+/* ssl */
+
+.pmMarginTop {
+	margin-top: 15px;
+}
+.buttonCell {
+	padding-top: 10px;
+}
+.PlentyWebMyAccountPopupContainer.xxl {
+	margin-left: -357px !important;
+	width: 714px;
+}
+.fleft {
+	float: left;
+}
+.border-shadow-small > .pmh3:first-child,
+.pmContentBoxItem > .pmh3 {
+	margin-top: 0;
+    background: none repeat scroll 0 0 #F2F2F2;
+    color: inherit;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+#PlentyWebMyAccountDomainsSslOrderMainContainer .border-shadow-small > .pmh3:first-child {
+	min-height: 64px !important;
+}
+.pmPopupButtonContainer {
+	padding-bottom: 10px;
+}
+
+
+.center.pmContractBuilderLink {
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
+
+
+/* popup buttons */
+
+.PlentyWebMyAccountPopupContainer span > span.button a {
+/*width: 90px !important;*/
+}
+
+/* left */
+.PlentyWebMyAccountButtonLeft {
+width: 50%;
+float: left;
+margin-top: 10px !important;
+}
+.PlentyWebMyAccountButtonLeft > * {
+float: right;
+margin-right: 4px;
+}
+/* right */
+.PlentyWebMyAccountButtonRight {
+width: 50%;
+float: right;
+margin-top: 10px !important;
+}
+.PlentyWebMyAccountButtonRight > * {
+float: left;
+margin-left: 4px;
+}
+
+
+.bootstrapStyleAdaption p {
+	margin-bottom: 12px;
+}
+.bootstrapStyleAdaption strong {
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+
+/* POPUP CHANGE ARTICLE */
+
+/*container*/
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountItemsPopupContainer {
+width: 822px;
+margin-left: -426px !important; /* 1/2 width + border-width + 15px */
+}
+
+/*item container*/
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountItemsPopupContainer .PlentyFormContainer.ItemsRow {
+/*border: 1px solid #CCCCCC;*/
+}
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountItemsPopupContainer .PlentyFormContainer.ItemsRow > .PlentyFormContainer.ItemsContentRow {
+/*border-top: 1px solid #CCCCCC;*/
+}
+
+/* change attributes */
+
+/* header */
+.PlentyWebMyAccountItemUpdateAttributesTitle,
+.PlentyWebMyAccountItemUpdatePriceSelectTitle,
+.PlentyWebMyAccountItemUpdateOrderParamsTitle {
+display: block;
+background: #F3F3F3;
+border-bottom: 1px solid #888888;
+padding: 5px 8px;
+font-weight: bold;
+}
+/* container */
+.PlentyWebMyAccountItemUpdateAttributesMain,
+.PlentyWebMyAccountItemUpdatePriceSelectMain,
+.PlentyWebMyAccountItemUpdateOrderParamsMain {
+}
+/* table */
+.PlentyWebMyAccountItemUpdateAttributesMain > .PlentyMyAccountTableLayout,
+.PlentyWebMyAccountItemUpdatePriceSelectMain > .PlentyMyAccountTableLayout,
+.PlentyWebMyAccountItemUpdateOrderParamsMain > .PlentyMyAccountTableLayout {
+margin: 0 0 7px;
+}
+/* cells */
+.PlentyWebMyAccountItemUpdateAttributesMain > .PlentyMyAccountTableLayout > div > div,
+.PlentyWebMyAccountItemUpdatePriceSelectMain > .PlentyMyAccountTableLayout > div > div,
+.PlentyWebMyAccountItemUpdateOrderParamsMain > .PlentyMyAccountTableLayout > div > div {
+line-height: 22px;
+vertical-align: middle;
+}
+/* first column */
+.PlentyWebMyAccountItemUpdateAttributesMain > .PlentyMyAccountTableLayout > div > div:first-child,
+.PlentyWebMyAccountItemUpdatePriceSelectMain > .PlentyMyAccountTableLayout > div > div:first-child,
+.PlentyWebMyAccountItemUpdateOrderParamsMain > .PlentyMyAccountTableLayout > div > div:first-child {
+width: 100px;
+padding-right: 5px;
+}
+/* text */
+.PlentyWebMyAccountItemUpdateAttributesMain > .PlentyMyAccountTableLayout > div > div,
+.PlentyWebMyAccountItemUpdatePriceSelectMain > .PlentyMyAccountTableLayout > div > div,
+.PlentyWebMyAccountItemUpdateOrderParamsMain > .PlentyMyAccountTableLayout > div > div {
+font-weight: bold;
+vertical-align: text-top;
+padding: 2px 1px;
+border-bottom: 1px solid #eeeeee;
+}
+
+
+/* item header */
+
+div.PlentyFormContainer.PlentyWebMyAccountContainer > span.PlentyWebMyAccountContainerTitle,
+div.PlentyFormContainer.PlentyWebMyAccountContainer > div.PlentyWebMyAccountContainerTitle,
+
+.PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer > span,
+.PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow > .ItemsHeaderRow,
+
+.PlentyWebMyAccountDisplayOrdersContainer > div.PlentyWebMyAccountDisplayOrdersOrderId,
+
+.PlentyMyAccountHeaderChange,
+
+.PlentyWebMyAccountTicketsTicketTitleContainer,
+.PlentyWebMyAccountTicketsLeafHead,
+
+.PlentyWebMyAccountMyProjectsProjectTitleContainer,
+.PlentyWebMyAccountEmailNewAccountContainerTitle,
+#PlentyWebMyAccountCustomerEventsContainerContent > h1,
+.PlentyWebMyAccountVersionJumpDomainContainer > span,
+
+.PlentyWebMyAccountItemContainerHeader,
+
+.PlentyWebMyAccountOpenableItemContainerHeader
+
+{
+display: block;
+font-size: 120%;
+line-height: 18px;
+
+border: 1px solid #D4D4D4;
+background: #e0e0e0;
+font-weight: bold;
+padding: 0 5px 0 10px;
+color: #444;
+
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+
+-moz-box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+box-shadow: 0 40px 40px -40px rgba(255, 255, 255, 0.9) inset, 0 0 2px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+.PlentyWebMyAccountItemContainerHeader {
+
+padding-top: 7px;
+padding-bottom: 5px;
+
+}
+
+/* item header title container */
+
+div.PlentyWebMyAccountContainerTitle > div:first-child,
+div.PlentyMyAccountHeaderChange > div:first-child,
+
+.PlentyWebMyAccountItemContainerHeader > div:first-child
+
+{
+display: inline-block;
+padding: 7px 0 5px;
+text-shadow: 0 1px 1px #FFFFFF;
+}
+
+
+/* item header button container */
+
+span.PlentyWebMyAccountContainerTitle > span.PlentyFormContainer,
+div.PlentyWebMyAccountContainerTitle > div.PlentyFormContainer,
+
+.PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer > .PlentyFormContainer > span > span.PlentyFormContainer,
+.PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > div.PlentyFormContainer.ItemsRow > .ItemsHeaderRow > span.PlentyFormContainer,
+
+span.PlentyWebMyAccountOrderOverviewItemsTitle > span.PlentyFormContainer.PlentyWebMyAccountOrderOverviewItemsChangeContainer,
+
+.PlentyMyAccountHeaderChange > .PlentyFormContainer,
+
+.PlentyWebMyAccountItemContainerHeader > .PlentyFormContainer,
+
+.PlentyWebMyAccountHeaderButtonRight,
+
+.PlentyWebMyAccountButtonsRightContainer
+
+{
+float: right;
+position: relative;
+margin-top: 1px;
+margin-right: 0;
+}
+
+
+
+/* ARTICLE LIST */
+
+/*main container*/
+.PlentyWebMyAccountOrderOverviewItemsBox .PlentyWebMyAccountOrderOverviewItemsMain .PlentyFormContainer.ItemsRow {
+}
+
+/*article item content*/
+.PlentyFormContainer.ItemsContentRow {
+padding: 0 !important;
+}
+
+/*article list data*/
+.PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > div {
+vertical-align: top;
+padding: 10px;
+font-size: 13px;
+line-height: 20px;
+/*color: #626262;*/
+}
+/*last container (price)*/
+.PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > div:last-child {
+padding-left: 0;
+min-width: 80px;
+text-align: right;
+font-weight: bold;
+white-space: nowrap;
+}
+/*last container (quantity return)*/
+.ItemsQuantityReturnDetail {
+display: block
+}
+
+/*article discription container*/
+.PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > .PlentyFormContainer.ItemsDescription {
+padding-top: 0;
+padding-right: 0;
+vertical-align: top;
+}
+
+/*article discription boxes*/
+.PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > .PlentyFormContainer.ItemsDescription > .PlentyFormContainer.ItemsDescriptionDetails > div {
+display: inline-block;
+vertical-align: top;
+margin-top: 10px;
+margin-right: 20px;
+}
+/* article discription line span */
+.PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > .PlentyFormContainer.ItemsDescription > .PlentyFormContainer.ItemsDescriptionDetails > div > span {
+display: block;
+font-weight: normal;
+vertical-align: top;
+}
+
+/* bold */
+/* article details */
+.PlentyFormContainer.ItemsContentRow > .PlentyFormBox.PlentyMyAccountTableLayout  > .PlentyFormContainer > .PlentyFormContainer.ItemsDescription > .PlentyFormContainer.ItemsDescriptionDetails > div > span:first-child {
+font-weight: bold;
+}
+/* img */
+.PlentyFormContainer.ItemsImage {
+width: 110px;
+text-align: center;
+}
+/* price */
+.ItemsContentRow .PlentyFormContainer.ItemsPrice {
+font-weight: bold;
+}
+
+/* input quantity */
+.PlentyFormContainer.ItemsContentRow input[type=text] {
+text-align: right;
+width: 50px;
+}
+
+/* value & comment */
+span.ItemsDescriptionRatingDetailCommentTitle,
+span.ItemsDescriptionRatingDetailCommentValue > input[type=button] {
+margin-top: 4px;
+}
+
+/* blocks (wrap line) */
+.PlentyFormContainer.ItemsDescriptionRating,
+.PlentyFormContainer.ItemsDescriptionRatingDetailCommentTitle,
+
+.ItemWishListCommentComment 
+
+{
+display: block !important;
+}
+
+.ItemsDescriptionRatingDetail {
+width: 100% !important;
+}
+
+/* blocks */
+.ItemWishListCommentComment > span {
+display: block;
+}
+
+span.ItemsDescriptionRatingDetailCommentValue > textarea,
+.ItemWishListCommentComment textarea {
+width: 100%;
+}
+
+
+/* last cell */
+.PlentyWebMyAccountOrderOverviewItemsBox > .PlentyWebMyAccountOrderOverviewItemsMain > .PlentyFormContainer.ItemsRow > .PlentyFormContainer.ItemsContentRow > div.ItemsPrice {
+text-align: right;
+}
+
+
+/* POPUP SINGLE ORDER VIEW (SHIPPING, PAYMENT & SHIPPING ADRESS) */
+
+/* table */
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer > div > div > form > div > .PlentyFormBox,
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer > div > div > form > div > .PlentyFormBox,
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer > div > div > form > div > .PlentyFormBox,
+
+div.PlentyMyAccountTableLayout {
+display: table;
+width: 100%;
+font-size: 12px;
+}
+/*table row*/
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer > div > div > form > div > .PlentyFormBox > div,
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer > div > div > form > div > .PlentyFormBox > div,
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer > div > div > form > div > .PlentyFormBox > div,
+
+div.PlentyMyAccountTableLayout > div {
+display: table-row;
+}
+/*table-cell*/
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingMethodPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountPaymentMethodPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+.PlentyWebMyAccountPopupContainer.PlentyWebMyAccountShippingDetailsPopupContainer > div > div > form > div > .PlentyFormBox > div > div,
+
+div.PlentyMyAccountTableLayout > div > div {
+display: table-cell;
+vertical-align: top;
+}
+
+.myaccount b, 
+.myaccount strong, 
+.myaccount .bold {
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.PlentyPopupButtonContainer {
+	margin-top: 10px;
+}
+
+
+.PlentyCurrencySymbol + .PlentyCurrencyValue,
+.PlentyCurrencyValue + .PlentyCurrencySymbol {
+    margin-left: 5px;
+}
+
+
+/* MOBILE ADAPTION */
+
+@media (max-width: 767px) {
+	.myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div > div > span { display: inline-block; width: auto !important; }
+	.myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div, .myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div:first-child { width: auto; }
+	.myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div:last-child { padding-top: 0; }
+	.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer, .myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer, .myaccount .PlentyWebMyAccountTicketsContentLeft, .myaccount .PlentyWebMyAccountTicketsContentRight, .myaccount .PlentyWebMyAccountTicketsNewTicket1, .myaccount .PlentyWebMyAccountTicketsNewTicket2 { display: block; width: auto; }
+	.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer:last-child > div, .myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer:last-child > span, .myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer:last-child > div, .myaccount .PlentyWebMyAccountTicketsContentRight > div, .myaccount .PlentyWebMyAccountTicketsNewTicket2 > div { margin-left: 0; }
+	.myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer:first-child > div, .myaccount #PlentyWebMyAccountCustomerContainerContent > .PlentyFormBox > .PlentyFormContainer > .PlentyFormContainer:first-child > span, .myaccount .PlentyWebMyAccountOrderOverviewElementsContainer > .PlentyFormContainer > .PlentyFormContainer:first-child > div, .myaccount .PlentyWebMyAccountTicketsContentLeft > div, .myaccount .PlentyWebMyAccountTicketsNewTicket1 > div { margin-right: 0; }
+	.ItemsContentRow {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	.myaccount .PlentyWebMyAccountOrderOverviewOverviewContainer > div span:first-child { font-weight: normal; }
+	.ItemsDescriptionDetails { white-space: nowrap; }
+}
+
+
+/* additional style plenty create ticket */
+
+.PlentyNewTicketQuestionContainer > div select,
+.PlentyNewTicketQuestionContainer > div input,
+.PlentyNewTicketQuestionContainer > div .PlentyWebMyAccountTicketSystemNewTicketQuestionInput table {
+    margin: 0 0 18px !important;
+}
+.PlentyWebMyAccountTicketSystemNewTicketQuestionTitle {
+    display: block;
+    margin-bottom: 2px;
+   /* @quick fix, es gibt mehrere textzeilen */
+   font-weight: bold;
+}
+.PlentyNewTicketQuestionContainer .mceEditor.defaultSkin {
+    display: inline-block;
+    width: 600px;
+}
+
+
+.myaccount div.PlentyError select
+    {
+    border:none;
+    border:1px dashed #f44d4d!important;
+    background-color:#fbe7e7;
+    }
+.PlentyError .mceEditor.defaultSkin {
+	border:1px dashed #f44d4d!important;
+}
+
+/* @quick fix, titel wurde noch oben verlagert */
+
+.TicketQuestionDateTimeSelectionContainer
+{
+	display: inline;
+}
+
+#PlentyWebMyAccountTicketSystemNewTicketTitle
+{
+	margin-bottom: 18px;
+}
+
+/* hide support-pin */
+
+.en #PlentyWebMyAccountSupportPinContainer {
+	display: none !important;
+}

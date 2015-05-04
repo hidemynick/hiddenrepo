@@ -1,0 +1,3 @@
+<li class="id_$CategoryId{% if $SubCategoryExists %} hasSublevel{% endif %}{% if ($CategoryIsCurrent)||($CategoryIsOpen) %} active{% endif %}">
+$NavigationCategories8ListItem
+	</li>

@@ -1,0 +1,44 @@
+<article class="blogItem">
+	<!-- div class="muted"><span class="blogCategory">$BlogCategory</span></div -->
+	<div class="row">
+		<div class="col-sm-9 col-md-9 col-lg-10">
+			<p class="muted"><span class="blogInserted">$BlogInserted</span> <span class="blogFrom">{% if $Lang=="de" %}von{% else %}from{% endif %}</span> <span class="blogAuthor">$BlogAuthorName</span></p>
+			$BlogBody
+			{% if $BlogTags!="" %}<div class="spacerTop size-xxs blogTags"><strong>Tags </strong>$BlogTags</div>{% endif %}
+		</div>
+		<div class="col-sm-3 col-md-3 col-lg-2">
+			<div class="imageBox spacerTop size-4xs"><img src="$BlogAuthorImage" alt="Foto $BlogAuthorName" title="$BlogAuthorName" /></div>
+			<p class="muted"><span class="blogAuthor">$BlogAuthorName</span></p>
+			<!-- social stuff -->
+			<div class="pmBlogSingleItemAuthorBoxSocial" id="tweetbox">
+				{# <div class="fleft pmSocialTweet"> 
+					{-% if $Port==80 %-}    
+						<script type="text/javascript" src="//tweetmeme.com/i/scripts/button.js"></script>
+					{-% endif %-} 
+				</div> #}
+				<div class="fleft pmSocialLike"> 
+					<script src="//connect.facebook.net/de_DE/all.js#xfbml=1"></script>
+					<fb:like layout="box_count" data-href="{% Link_Blog() %}" show_faces="false" width="60" font="trebuchet ms" ></fb:like>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+
+<hr class="spacerTop" />
+<div class="row equal">
+	<div class="col-sm-6 col-md-6 col-lg-6 buttonBox">
+		{% if Link_LastBlog() %}
+			<strong class="h3">{% if $Lang=="de" %}Vorheriger Blog{% else %}Previous blog{% endif %}</strong>
+			<p>$LastBlogTitle</p>
+	        <p><a class="btn btn-primary btn-large" href="{% Link_LastBlog() %}">{% if $Lang=="de" %}Zum vorherigen Blog{% else %}Previous blog{% endif %}</a></p>
+		{% endif %}
+	</div>
+	<div class="col-sm-6 col-md-6 col-lg-6 buttonBox">
+		{% if Link_NextBlog() %}
+			<strong class="h3">{% if $Lang=="de" %}Nächster Blog{% else %}Next blog{% endif %}</strong>
+			<p>$NextBlogTitle</p>
+            <p><a class="btn btn-primary btn-large" href="{% Link_NextBlog() %}">{% if $Lang=="de" %}Zum nächsten Blog{% else %}Next blog{% endif %}</a></p>
+		{% endif %}
+	</div>
+</div>

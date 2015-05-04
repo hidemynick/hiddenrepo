@@ -1,0 +1,3 @@
+<li class="level$CategoryLevel{% if $SubCategoryExists %} dir{% if $CategoryIsCurrent %}_open{% endif %}{% else %} page{% endif %}" id="page_id_$CategoryId">
+$NavigationCategories4ListItem
+</li>

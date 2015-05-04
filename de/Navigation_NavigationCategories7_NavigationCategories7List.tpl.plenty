@@ -1,0 +1,44 @@
+{% for $_nav in GetNavigationCategories7List() %}
+{% MapTemplateVars($_nav) %}
+{% if($LoopIsFirst[1]) %}
+<div class="row spacerTop">
+	<ul class="list-unstyled">
+{% endif %}
+<li class="col-sm-4 col-md-3 col-lg-3 linkBoxTextImg48">
+			<a class="btn btn-primary white block" href="$CategoryUrl">
+				<span class="block isIcon" style="background-image: url('$CategoryImage[2]');"></span>
+				<span class="block isLabel"><span class="verticalCenterTable"><span class="large">$CategoryName</span></span></span>
+			</a>
+		</li>
+		{% if ($Lang=="de")&&($CategoryId==543) %}
+			<li class="col-sm-4 col-md-3 col-lg-3 linkBoxTextImg48">
+				<a class="btn btn-primary white block" href="{% Link(620) %}">
+					<span class="block isIcon" style="background-image: url('/documents/category/620/icon-handbuch-48x48.png');"></span>
+					<span class="block isLabel"><span class="verticalCenterTable"><span class="large">Handbuch</span></span></span>
+				</a>
+			</li>
+		{% elseif ($Lang=="en")&&($CategoryId==546) %}
+			<li class="col-sm-4 col-md-3 col-lg-3 linkBoxTextImg48">
+				<a class="btn btn-primary white block" href="{% Link(620) %}">
+					<span class="block isIcon" style="background-image: url('/documents/category/620/icon-handbuch-48x48.png');"></span>
+					<span class="block isLabel"><span class="verticalCenterTable"><span class="large">Manual</span></span></span>
+				</a>
+			</li>
+		{% endif %}
+		{% if $CategoryId==551 %}
+			<li class="col-sm-4 col-md-3 col-lg-3 linkBoxTextImg48">
+				<a class="btn btn-primary white block" href="{% Link_BlogHome() %}">
+					<span class="block isIcon" style="background-image: url('/documents/category/520/icon-blog-48x48-blue.png');"></span>
+					<span class="block isLabel"><span class="verticalCenterTable"><span class="large">Blog</span></span></span>
+				</a>
+			</li>
+		{% endif %}
+{% if(($CategoryIsOpen || $NavigationCategories7_OpenLevel > $CategoryLevel) && $SubCategoryExists) %}
+{% NavigationCategories7List($CategoryId) %}
+{% endif %}
+
+{% if($LoopIsLast[1]) %}
+
+	</ul>
+</div>{% endif %}
+{% endfor %}

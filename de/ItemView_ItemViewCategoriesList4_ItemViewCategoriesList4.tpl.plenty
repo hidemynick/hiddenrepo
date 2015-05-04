@@ -1,0 +1,7 @@
+{# Artikelkategorie als Content-Seite #}
+$CurrentCategoryDescription1
+		
+{% for $_item in GetItemViewCategoriesList4() %}{% MapTemplateVars($_item) %}
+
+
+{% endfor %}

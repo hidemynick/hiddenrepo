@@ -1,0 +1,6 @@
+<td>
+
+<a href="$LinkTo_Result"><strong>$Name[1]</strong></a>
+<div style="width:600px; overflow:hidden; display:block;">$Body</div>
+
+</td>

@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<ol class="breadcrumbs">
+				<li>{% if $Lang=="de" %}Sie sind hier{% else %}You are here{% endif %}:&nbsp;&nbsp;</li>
+				<li><a href="{% Link_Home() %}">Home</a></li>
+{% for $_nav in GetNavigationBreadcrumbsList() %}{% MapTemplateVars($_nav) %}
+
+				<li>&nbsp;&nbsp;<span>»</span>&nbsp;&nbsp;<a href="$BreadcrumbUrl">$BreadcrumbName</a></li>
+
+{% endfor %}
+			</ol>
+		</div>
+	</div>
+</div>

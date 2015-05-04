@@ -1,0 +1,29 @@
+<div class="container spacerTop size-3xs">
+{% for $_cat in GetCategoryViewContentSearchResultsList() %}{% MapTemplateVars($_cat) %}
+
+
+	<div class="row">
+
+
+
+		<section class="col-sm-12 col-md-10 col-lg-8">
+		    <h3 class="small spacerBottom size-4xs color-blue"><a class="small" href="{% Link_Result() %}">$Name</a></h3>
+		    <p>$Body</p>
+		</section>
+
+
+
+	</div>
+	<hr class="noMargin" />
+{% endfor %}
+	<div class="row spacerTop size-3xs">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="pull-left">
+				{% BrowsePreviousButton() %}
+			</div>
+			<div class="pull-right">
+				{% BrowseNextButton() %}
+			</div>
+		</div>
+	</div>
+</div>

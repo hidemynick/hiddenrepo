@@ -1,0 +1,5 @@
+{# header logo #}
+<a class="navbar-brand" href="{% Link_Home() %}">
+	{# <img{% if $Month == 12 && $Day <= 23 %} class="logo-xmas-1"{% elseif $Month == 12 && $Day > 23 && $Day < 27 %} class="logo-xmas-2"{% endif %} src="/layout/plenty_responsive/img/plentymarkets_logo_claim_600{% if $Month == 12 && $Day <= 23 %}_weihnachtsmuetze{% elseif $Month == 12 && $Day > 23 && $Day < 27 %}_weihnachtsmuetze_kugeln{% endif %}{% if $Lang == "en" %}_en{% endif %}.png" alt="plentymarkets Logo"> #}
+	<img src="/layout/plenty_responsive/img/plentymarkets_logo_claim{% if $Lang == "en" %}_en{% endif %}.png" alt="plentymarkets Logo">
+</a>

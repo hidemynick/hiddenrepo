@@ -1,0 +1,227 @@
+{# Whitepaper & Kongress Ticket #}
+{% if $Model == "whitepaper" %}
+{# Whitepaper #}
+<div class="container margin-top-ml">
+	<div class="row">
+		<div class="col-lg-4 col-md-3 col-sm-4 col-xs-12 center">
+			<div class="imageBox">
+				<img src="$ImageURL[1]" alt="Whitepaper - $Name[1]">
+			</div>
+		</div>
+		<div class="col-lg-8 col-md-9 col-sm-8 col-xs-12">
+			<h1>
+				<small class="muted">Whitepaper</small><br>
+				$Name[1]
+			</h1>
+			<p>
+				$Description
+			</p>
+		</div>
+	</div>
+</div>
+<script>
+	function enableDownload() {
+		var fileURL = "/index.php?ActionCall=WebActionDownloadDocument&Params[documentId]=1&Params[itemId]=3354";
+		
+		$('#whitepaper-form .colorBox.blue').hide();
+		$('#whitepaper-form .colorBox.blue + div').removeClass('arrowBox-in-top-blue');
+		$('#whitepaper-form button[type="submit"]').removeClass('red');
+		$('#whitepaper-form').submit(function() {
+			window.location=fileURL;
+		});
+		
+		return fileURL;
+	}
+	
+	function createTicket( values ) {
+		
+		$.post( 
+			"/rest/ticket_system/",
+			{
+				TypeId: 7,
+				StatusId: 418,
+				Title: 'New lead / Whitepaper / ' + values.first_name + ' ' + values.last_name,
+				Text: '$Name[1]\n\n'
+						+ 'Company: ' + values.company + '\n'
+						+ 'Name: ' + values.saluation + ' ' + values.first_name + ' ' + values.last_name + '\n'
+						+ 'Street: ' + values.street + ' ' + values.street_no + '\n'
+						+ 'Postcode, City: ' + values.postcode + ' ' + values.city  + '\n'
+						+ 'Phone: ' + values.phone + '\n'
+						+ 'Mail: ' + values.mail + '\n',
+				Confidential: 1
+			},
+			function( result ) {
+				document.cookie = 'readWhitepaper=true; path=/support/whitepaper/';
+				
+				if(result.error == 0) {
+					var file = enableDownload();
+					window.location = file;
+				}
+			}
+		);
+	}
+	
+	$(document).ready(function() {
+		$('#whitepaper-form').on('validationFailed', function() {
+			$('#form-error').removeClass('hidden');	
+		});
+		
+		var cookies = document.cookie ? document.cookie.split('; ') : [];
+		var canReadWhitepaper = false;
+		for (var i = 0, l = cookies.length; i < l; i++) {
+			var pair = cookies[i].split("=");
+			if( pair[0] === "readWhitepaper" && pair[1] === "true" ) {
+				canReadWhitepaper = true;
+				break;
+			}
+		}
+		
+		if( canReadWhitepaper ) {
+			enableDownload();
+		}
+	});
+</script>
+<form data-plenty-checkform="error" data-plenty-callback="createTicket" id="whitepaper-form">
+	<div class="fullwidth colorBox blue spacerTop arrowBox-in-top-white">
+		<div class="colorBoxInner">
+			<div class="container margin-top-ml margin-bottom-s">
+				<div class="row">
+					<h2 class="center">{% if $Lang == "de" %}Dieses Whitepaper herunterladen{% else %}Download this whitepaper{% endif %}</h2>
+					
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label>{% if $Lang == "de" %}Anrede{% else %}Saluation{% endif %}</label>
+							<div class="checkbox noPadding">
+								<label>
+									<input type="radio" name="saluation" value="Mr.">
+									{% if $Lang == "de" %}Herr{% else %}Mr.{% endif %}
+								</label>
+								<label>
+									<input type="radio" name="saluation" value="Mrs.">
+									{% if $Lang == "de" %}Frau{% else %}Mrs.{% endif %}
+								</label>
+							</div>
+						</div>
+						<div class="form-group isRequired" data-plenty-validate="text">
+							<label for="company">{% if $Lang == "de" %}Firma{% else %}Company{% endif %}</label>
+							<input class="form-control" type="text" name="company" placeholder="{% if $Lang == "de" %}Firma{% else %}Company{% endif %}" />
+						</div>
+						<div class="form-group isRequired" data-plenty-validate="text">
+							<label for="first_name">{% if $Lang == "de" %}Vorname{% else %}First Name{% endif %}</label>
+							<input class="form-control" type="text" name="first_name" placeholder="{% if $Lang == "de" %}Vorname{% else %}First Name{% endif %}" />
+						</div>
+						<div class="form-group isRequired" data-plenty-validate="text">
+							<label for="last_name">{% if $Lang == "de" %}Nachname{% else %}Last Name{% endif %}</label>
+							<input class="form-control" type="text" name="last_name" placeholder="{% if $Lang == "de" %}Nachname{% else %}Last Name{% endif %}" />
+						</div>
+					</div>
+					
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label for="street">{% if $Lang == "de" %}Straße, Hausnummer{% else %}Street, No{% endif %}</label>
+							<div class="row">
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<input class="form-control" type="text" name="street" placeholder="{% if $Lang == "de" %}Straße{% else %}Street{% endif %}" />
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<input class="form-control" type="text" name="street_no" placeholder="{% if $Lang == "de" %}Hausnummer{% else %}No{% endif %}" />
+								</div>	
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<label for="postcode">{% if $Lang == "de" %}Ort, PLZ{% else %}Town, Postcode{% endif %}</label>
+							<div class="row">
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<input class="form-control" type="text" name="city" placeholder="{% if $Lang == "de" %}Ort{% else %}Town{% endif %}" />
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<input class="form-control" type="text" name="postcode" placeholder="{% if $Lang == "de" %}PLZ{% else %}Postcode{% endif %}" />
+								</div>
+							</div>
+						</div>
+						<div class="form-group isRequired" data-plenty-validate="text">
+							<label for="phone">{% if $Lang == "de" %}Telefon{% else %}Phone{% endif %}</label>
+							<input class="form-control" type="text" name="phone" placeholder="{% if $Lang == "de" %}Telefon{% else %}Phone{% endif %}" />
+						</div>
+						<div class="form-group isRequired" data-plenty-validate="mail">
+							<label for="mail">{% if $Lang == "de" %}E-Mail-Adresse{% else %}E-Mail{% endif %}</label>
+							<input class="form-control" type="text" name="mail" placeholder="{% if $Lang == "de" %}E-Mail-Adresse{% else %}E-Mail{% endif %}" />
+						</div>
+						<p class="small right">
+							{% if $Lang == "de" %}
+							*<span class="bold">Fett</span> hervorgehobene Felder sind Pflichfelder.
+							{% else %}
+							*<span class="bold">bold</span> fields are required.
+							{% endif %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="arrowBox-in-top-blue">
+		<div class="container">
+			<div class="row margin-top-ml">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+					<button class="btn btn-primary red btn-large" type="submit">{% if $Lang == "de" %}Whitepaper herunterladen{% else %}download whitepaper{% endif %}</button>
+					<p id="form-error" class="hidden">
+						{% if $Lang == "de" %}
+						Bitte füllen Sie alle Pflichtfelder aus!
+						{% else %}
+						please fill out all required fields!
+						{% endif %}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+{% else %}
+{# Kongress Ticket #}
+<div class="fullwidth">
+	<div class="container">
+	
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 isCongressHeader">
+				<div class="bgColor blue gradient-right catchMarginBefore catchMarginAfter">
+					<a href="{% Link(2169) %}">
+						<span class="block indentedRow">
+							<h1 class="imageBox padding-lr-resp center">
+								<img alt="plentymarkets Online-Händler-Kongress 2015" src="/documents/category/2169/plentymarkets-online-haendler-kongress-2015.png">
+							</h1>
+						</span>
+						
+						<span class="banner-45deg congressBanner">
+							<span class="bgColor white color-blue">
+								<span class="mainline block bold large"><stong>{% if $Lang == "de" %}28. Februar 2015{% else %}February 28th 2015{% endif %}</stong></span>
+								<span class="subline block bold">in Kassel</span>
+							</span>
+						</span>
+						
+						<span class="congressPhone block indentedRow right large bold">
+							<span>{% if $Lang == "de" %}weitere Informationen zum Kongress{% else %}further information about the congress{% endif %}</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="bgWhiteTransparent indentedRow catchMarginBefore catchMarginAfter">
+					<div class="row margin-top-l margin-bottom-l">
+						<div class="col-sm-12 col-md-12 col-lg-12 colorBox white">
+							<div class="colorBoxInner noBorderRadius">
+							
+								{% Container_ItemViewManualSelectionList2([3232]) %}
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}

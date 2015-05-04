@@ -1,0 +1,13 @@
+
+	<div class="col-sm-3 col-md-3 col-lg-3" data-id="$ID">
+		<div class="linkBoxTextImg72">
+		    <a{% if $Name[2]!="" %} href="http://$Name[2]" rel="nofollow" target="_blank"{% endif %} title="$Name[1]">
+		        <span class="block isIcon" style="background-image: url('$SecondPreviewImageURL[1]');"></span>
+		    </a>
+		</div>
+        <h4>$Name[1]</h4>
+        {% if $Name[2]!="" %}<div><span>Web</span> <a href="http://$Name[2]" rel="nofollow" target="_blank">$Name[2]</a></div>{% endif %}
+        {% if $Name[3]!="" %}<div><span>eBay</span> <a href="http://$Name[3]" rel="nofollow" target="_blank">$Name[3]</a></div>{% endif %}
+        {% if $DescriptionShort!="" %}<div><span>Blog</span> <a href="http://$DescriptionShort" rel="nofollow" target="_blank">$DescriptionShort</a></div>{% endif %}
+        {% if $Description!="" %}<p>$Description</p>{% endif %}
+	</div>

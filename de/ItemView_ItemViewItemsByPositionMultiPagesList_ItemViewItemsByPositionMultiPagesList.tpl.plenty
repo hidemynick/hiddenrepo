@@ -1,0 +1,31 @@
+{% for $_item in GetItemViewItemsByPositionMultiPagesList() %}{% MapTemplateVars($_item) %}{% if($RowCount == 1 || ($RowCount-1)%$ItemViewItemsByPositionMultiPagesList_EachRow == 0) %}
+<div class="pmContentBoxRow pmTeamBoxesRow">
+{% endif %}
+{% if ($CurrentCategoryId[Level2]!=425) %}
+<div class="pmContentBoxItem pmTeamBoxesItem">
+{% else %}
+<a class="pmContentBoxItem pmTeamBoxesItem" href="$ImageURL[3]" rel="shadowbox$pressefotos" title="$Name[2] $Name[1] | $Name[3]">
+{% endif %}
+    <div class="content-overview-box-content">
+      <div class="pmTeamBoxesItemImageContainer">
+		  {% if ($CurrentCategoryId[Level2]!=425) && ($ImageURL[1]!="/layout/pm/images/icon/file_broken.png") %}
+			  <img src="$ImageURL[1]" alt="$Name[2] $Name[1]" test="$PreviewImageURL[1]" />
+		  {% elseif ($CurrentCategoryId[Level2]!=425) && ($ImageURL[1]=="/layout/pm/images/icon/file_broken.png")  %}
+			  <img src="/images/gallery/website/unternehmen/team_platzhalter.jpg" alt="$Name[2] $Name[1] kein Foto" />
+		  {% else %}
+			  <img src="[MiddleSizeImage[3]" alt="$Name[2] $Name[1]" />
+		  {% endif %}
+	  </div>
+      <h4 class="pmTeamBoxesItemHeadline">$Name[2] $Name[1]</h4>
+      <div class="pmTeamBoxesItemSubline pmTableLayout pmFullsize pmTableCenter"><div><div>$Name[3]</div></div></div>
+    </div>
+{% if ($CurrentCategoryId[Level2]!=425) %}
+	</div>
+{% else %}
+	</a>
+{% endif %}
+{% if($LoopIsLast[1] || $RowCount%$ItemViewItemsByPositionMultiPagesList_EachRow == 0) %}
+
+	  <div class="clear"></div>
+</div>
+{% endif %}{% endfor %}

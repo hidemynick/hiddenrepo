@@ -1,0 +1,22 @@
+<li class="cat-$CategoryId{% if ($CategoryLevel==1)&&($SubCategoryExists) %} dropdown{% endif %}{% if ($CategoryId==517)||($CategoryId==1) %} bigmenu{% endif %}{% if ($CategoryIsCurrent)||($CurrentCategoryId[Level1]==$CategoryId)||($CurrentCategoryId[Level2]==$CategoryId) %} active{% endif %}">
+$NavigationCategories3ListItem
+
+	</li>
+	{% if ($Lang=="de")&&($CategoryId==543) %}
+		<li>
+			<a href="{% Link(620) %}">Handbuch</a>
+		</li>
+	{% elseif ($Lang=="en")&&($CategoryId==546) %}
+		<li>
+			<a href="{% Link(620) %}">Manual</a>
+		</li>
+	{% endif %}
+	{% if $Lang=="de" && $CategoryId==551 %}
+		<li>
+			<a href="{% Link_BlogHome() %}">Blog</a>
+		</li>
+	{% elseif $Lang=="en" && $CategoryId==2169 %}
+		<li>
+			<a href="{% Link_BlogHome() %}">Blog</a>
+		</li>
+	{% endif %}

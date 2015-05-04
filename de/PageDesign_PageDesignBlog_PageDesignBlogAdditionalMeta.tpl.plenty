@@ -1,0 +1,39 @@
+<script type="text/javascript" src="/tpl/global/syntax_highlighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="/tpl/global/syntax_highlighter/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/tpl/global/syntax_highlighter/scripts/shBrushXml.js"></script>
+
+<script type="text/javascript" src="/tpl/global/syntax_highlighter/scripts/shBrushCss.js"></script>
+<link type="text/css" rel="stylesheet" href="/tpl/global/syntax_highlighter/styles/shCore.css" />
+<link type="text/css" rel="stylesheet" href="/tpl/global/syntax_highlighter/styles/shThemeDefault.css" />
+
+
+<meta property="fb:admins" content="1743279468" />
+
+<script type="text/javascript">  
+    SyntaxHighlighter.all();
+    //SyntaxHighlighter.config.clipboardSwf = '/tpl/global/syntax_highlighter/scripts/clipboard.swf';
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function($) {
+    $("pre").hover(function() {
+        var codeInnerWidth = $("code", this).width() + 10;
+        if (codeInnerWidth > 650) {
+            $(this).stop(true, false).css({ zIndex: "100", position: "relative"} ).animate({ width: codeInnerWidth + "px" });
+        }
+    }, function() {
+        $(this).stop(true, false).animate({ width: 650 });
+    });
+});
+</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="plentymarkets Blog" href="/?ActionCall=WebActionRSS&amp;rrss_id=1" />
+
+
+<!-- add to all templates -->
+$FreeVar[2]
+
+
+

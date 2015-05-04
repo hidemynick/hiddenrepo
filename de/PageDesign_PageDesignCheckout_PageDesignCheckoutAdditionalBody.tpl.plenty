@@ -1,0 +1,1 @@
+lang="$Lang" class="pmBody"{% if $CurrentCategoryId==183 %} onload="onPageLoad();"{% endif %}

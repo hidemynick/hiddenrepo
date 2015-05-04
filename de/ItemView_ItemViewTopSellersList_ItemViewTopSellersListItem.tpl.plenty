@@ -1,0 +1,7 @@
+<div class="pmContentBoxItem pmTeamBoxesItem">
+    <div class="content-overview-box-content">
+      <div class="pmTeamBoxesItemImageContainer"><img src="$ImageURL[1]" alt="$Name[2] $Name[1]" /></div>
+      <h4 class="pmTeamBoxesItemHeadline">$Name[2] $Name[1]</h4>
+      <div class="pmTeamBoxesItemSubline pmTableLayout pmFullsize pmTableCenter"><div><div>$Name[3]</div></div></div>
+    </div>
+  </div>

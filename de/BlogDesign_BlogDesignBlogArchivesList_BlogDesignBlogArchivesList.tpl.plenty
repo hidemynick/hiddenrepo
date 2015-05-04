@@ -1,0 +1,4 @@
+
+{% for $_entry in GetBlogDesignBlogArchivesList() %}{% MapTemplateVars($_entry) %}
+<li{% if $IsActive %} class="active"{% endif %}><a href="{% Link_BlogArchiveMonth() %}">$BlogArchiveDate</a></li>
+{% endfor %}

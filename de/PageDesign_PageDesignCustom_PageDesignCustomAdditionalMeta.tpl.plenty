@@ -1,0 +1,13 @@
+
+<!-- mainmenu dropdown -->
+
+<script type="text/javascript">
+  //overwrite css
+  document.write('<style type="text/css">');
+  document.write('.mainmenu-dropdown:hover > ul, .mainmenu-dropdown ul > li:hover > ul { display: none; }');
+  document.write('</style>');
+  //set effects
+  $(document).ready(function($) {
+    $('.mainmenu-dropdown, .mainmenu-dropdown ul > li').hover(function() { $(this).children('ul').stop(true, true).fadeIn(600); }, function() { $(this).children('ul').stop(true, true).fadeOut(200); });
+  });
+</script>

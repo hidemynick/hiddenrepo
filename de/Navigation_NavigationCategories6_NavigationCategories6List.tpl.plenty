@@ -1,0 +1,35 @@
+{% for $_nav in GetNavigationCategories6List() %}
+{% MapTemplateVars($_nav) %}
+{% if($LoopIsFirst[1]) %}
+<!-- interfaces / partners (sublevel) -->
+
+{% endif %}
+
+
+
+	{% if ($CategoryId!=441)&&($CategoryId!=442) %}
+		<div class="row spacerTop">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>$CategoryName</h3>
+			</div>
+		</div>
+		<div class="row spacerTop size-xxs">
+			<ul class="list-unstyled">
+				$setCurrentCategoryAsActive
+				{% Container_ItemViewCategoriesList8() %}					
+				{% ResetCategoryId() %}
+			</ul>
+		</div>
+	{% endif %}
+
+
+{% if(($CategoryIsOpen || $NavigationCategories6_OpenLevel > $CategoryLevel) && $SubCategoryExists) %}
+{% NavigationCategories6List($CategoryId) %}
+{% endif %}
+
+
+
+{% if($LoopIsLast[1]) %}
+
+{% endif %}
+{% endfor %}

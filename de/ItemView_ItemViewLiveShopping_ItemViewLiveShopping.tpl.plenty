@@ -1,0 +1,223 @@
+<div style="background:url(/layout/cyt-layout/images/background-liveshopping.jpg) top left no-repeat; width:689px; height:379px; position:relative;">
+  <div style="position:absolute; top:20px; left:20px;"><img src="/layout/cyt-layout/images/produkt.png" ></div>
+ <div class="blau" style="font-size:24px; position:absolute; top:25px;left:215px">Sichern Sie sich jetzt Ihr Ticket !</div>
+  
+  
+  <!-- weg -->
+  <div id="liveshopping_von_bis" style="display:none;">Shopzeit</div>
+  <div style="display:none;">$Name[1]</div>
+  <!-- -->
+
+<table width="470" border="0" cellspacing="0" cellpadding="0" style="position: absolute; left: 210px; top: 94px;height:46px">
+  <tr>
+    <td id="clock_clock" width="45" height="46" style="background:url(/layout/cyt-layout/images/clock.png) top left no-repeat;">&nbsp;</td>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" />
+        <tr>
+          <td width="25%" style="text-align:center; font-size:18px; font-weight:bold;">Tage</td>
+            <td width="25%" style="text-align:center; font-size:18px; font-weight:bold;">Stunden</td>
+            <td width="25%" style="text-align:center; font-size:18px; font-weight:bold;">Minuten</td>
+            <td width="25%" style="text-align:center; font-size:18px; font-weight:bold;">Sekunden</td>
+        </tr>
+        <tr>
+          <td style="text-align:center; font-size:18px;"><p id="ldays" style="margin-top:0; padding-top:0;"></p></td>
+            <td style="text-align:center; font-size:18px;"><p id="lhours" style="margin-top:0; padding-top:0;"></p></td>
+            <td style="text-align:center; font-size:18px;"><p id="lminutes" style="margin-top:0; padding-top:0;"></p></td>
+            <td style="text-align:center; font-size:18px;"><p id="lseconds" style="margin-top:0; padding-top:0;"></p></td>
+        </tr>
+        </table>
+        <p id="ldate" style="display: none;"></p>
+    </td>
+  </tr>
+</table>
+<!-- 
+<div style="position: absolute; top: 190px; left: 215px;">
+<div style="position:absolute;top:10px; left:50%;margin-left:-60px; text-align:center; width:120px; font-weight:bold;">[LiveShoppingPercentRemaining ]% verf&uuml;gbar</div>
+<div style="background:url(/layout/cyt-layout/images/progress-base.png) top left no-repeat; width:461px; height:45px;">
+    <div style="background:url(/layout/cyt-layout/images/progress-blue.png) top left no-repeat; width:$LiveShoppingPercentRemaining%; height:45px; text-align:center;">
+    </div>
+</div>
+</div>
+-->
+  
+<div style="position:absolute; bottom:68px; left:41%;font-size:30px; color:#575757; font-weight:bold; font-style:italic;">$LiveShoppingPriceOriginal $Currency</div>
+<div class="small" style="position:absolute; bottom:43px; left:45%; color:#575757;  font-style:italic;">zzgl. ges. Mwst. 19%</div>
+      
+      $FormOpenOrder
+      $AttributeSelect
+      
+      <input type="text" maxlength="3" size="3" value="1" name="ArticleQuantity" style="position:absolute; bottom:55px; left:172px; background-color:#fff; z-index:10; border:0; border:1px solid #cecece; padding:5px; font-size:18px">
+      <input src="/layout/cyt-layout/images/buy-ticket.png" title="Kaufen" alt="Kaufen" type="image" style="position:absolute; bottom:60px; right:20px">
+      $FormCloseOrder
+
+<div style="position:absolute;bottom:30px;left:20px; height:60px;width:300px;  color:#666666; line-height:18px; letter-spacing:-0.5px;">
+Wieviele Tickets m&ouml;chten<br> Sie kaufen ?
+</div>
+
+<div>{% if $LiveShoppingQuantityRemaining<=0 %} <b>Live-Shopping derzeit nicht aktiv oder Aktionsbestand ausverkauft!</b>{% endif %}</div>
+</div>
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+
+  function tickLiveShoppingTimer() {
+    
+    var currenttime=new Date();
+    
+    if(checkIfCurrentTimeIsInPeriod('$LiveShoppingStartTime','$LiveShoppingEndTime')){
+    
+      var eventdate = getDateObjectFromUTC("$LiveShoppingEndTime");
+      var milliseconds_until_event=Math.floor((eventdate.getTime()-currenttime.getTime()));
+      var seconds_until_event=milliseconds_until_event/1000;
+
+      days = Math.floor(seconds_until_event/(60*60*24));
+      hours = Math.floor(seconds_until_event/(60*60)) - (days * 24);
+      minutes = Math.floor(seconds_until_event/(60)) - (days*24*60+hours*60);
+      seconds = seconds_until_event - (days*24*60*60+hours*60*60+minutes*60);
+  
+      //ggf. f&uuml;hrende Nullen anf&uuml;gen
+    var s_days = (days < 10) ? '0' + days : days ;
+    var s_hours = (hours < 10) ? '0' + hours : hours ;
+      var s_minutes = (minutes < 10) ? '0' + minutes : minutes ;
+      seconds = Math.floor(seconds);
+      var s_seconds = (seconds < 10) ? '0' + seconds : seconds ;
+  
+     if(document.getElementById('ldate') && document.getElementById('clock_clock')){
+        document.getElementById('ldays').innerHTML = s_days;
+        document.getElementById('lhours').innerHTML = s_hours;
+        document.getElementById('lminutes').innerHTML = s_minutes;
+        document.getElementById('lseconds').innerHTML = s_seconds;
+          
+      }
+  
+      window.setTimeout("tickLiveShoppingTimer()", 1000);
+
+    } else {
+      if(document.getElementById('ldate') && document.getElementById('clock_clock')){
+        document.getElementById('ldate').innerHTML = '';
+        document.getElementById('clock_clock').style.backgroundImage = '';
+        window.setTimeout("tickLiveShoppingTimer()", 1000);
+      }
+    }
+  }
+
+  function getLocalDateTimeStringFromUTC(strDateTime) {
+    
+    var DateTimeArray = strDateTime.split(" ");
+    
+    var DateArray = DateTimeArray[0].split("-");
+    var strYear = DateArray[0];
+    var strMonth = DateArray[1];
+    var strDay = DateArray[2];
+
+    var TimeArray = DateTimeArray[1].split(":");
+    var strHour = TimeArray[0];
+    var strMinutes = TimeArray[1];
+    var strSeconds = TimeArray[2];
+
+    var eventtime = new Date();
+    eventtime.setUTCSeconds(strSeconds);
+    eventtime.setUTCMinutes(strMinutes);
+    eventtime.setUTCHours(strHour);
+    eventtime.setUTCDate(strDay);
+    eventtime.setUTCMonth(strMonth-1);
+    eventtime.setUTCFullYear(strYear);
+
+    var strDateLocal = ((eventtime.getDate()<10)?'0'+eventtime.getDate():eventtime.getDate())  +"."+  ((eventtime.getMonth()+1<10)?'0'+(eventtime.getMonth()+1):eventtime.getMonth()+1) +"."+ eventtime.getFullYear();
+    var strTimeLocal = ((eventtime.getHours() < 10) ? '0' + eventtime.getHours() : eventtime.getHours()) +':'+ ((eventtime.getMinutes() < 10) ? '0' + eventtime.getMinutes() : eventtime.getMinutes());
+    return strDateLocal+" "+strTimeLocal;
+    //return eventtime.toLocaleString(); //always uses long date format :( it is although buggy in firefox.. even more buggy with firefox+mac os leopard
+  }
+  
+  function getDateObjectFromUTC(strDateTime) {
+    
+    var DateTimeArray = strDateTime.split(" ");
+    
+    var DateArray = DateTimeArray[0].split("-");
+    var strYear = DateArray[0];
+    var strMonth = DateArray[1];
+    var strDay = DateArray[2];
+
+    var TimeArray = DateTimeArray[1].split(":");
+    var strHour = TimeArray[0];
+    var strMinutes = TimeArray[1];
+    var strSeconds = TimeArray[2];
+
+    var eventtime = new Date();
+    eventtime.setUTCSeconds(strSeconds);
+    eventtime.setUTCMinutes(strMinutes);
+    eventtime.setUTCHours(strHour);
+    eventtime.setUTCDate(strDay);
+    eventtime.setUTCMonth(strMonth-1);
+    eventtime.setUTCFullYear(strYear);
+
+    return eventtime;
+  }
+
+  function checkIfCurrentTimeIsInPeriod(strStartDateTime, strEndDateTime){
+
+    var StartDateTimeArray = strStartDateTime.split(" ");
+    
+    var StartDateArray = StartDateTimeArray[0].split("-");
+    var strYear = StartDateArray[0];
+    var strMonth = StartDateArray[1];
+    var strDay = StartDateArray[2];
+
+    var StartTimeArray = StartDateTimeArray[1].split(":");
+    var strHour = StartTimeArray[0];
+    var strMinutes = StartTimeArray[1];
+    var strSeconds = StartTimeArray[2];
+
+    var starttime = new Date();
+    starttime.setUTCSeconds(strSeconds);
+    starttime.setUTCMinutes(strMinutes);
+    starttime.setUTCHours(strHour);
+    starttime.setUTCDate(strDay);
+    starttime.setUTCMonth(strMonth-1);
+    starttime.setUTCFullYear(strYear);
+    
+    var EndDateTimeArray = strEndDateTime.split(" ");
+    
+    var EndDateArray = EndDateTimeArray[0].split("-");
+    var strYear = EndDateArray[0];
+    var strMonth = EndDateArray[1];
+    var strDay = EndDateArray[2];
+
+    var EndTimeArray = EndDateTimeArray[1].split(":");
+    var strHour = EndTimeArray[0];
+    var strMinutes = EndTimeArray[1];
+    var strSeconds = EndTimeArray[2];
+
+    var endtime = new Date();
+    endtime.setUTCSeconds(strSeconds);
+    endtime.setUTCMinutes(strMinutes);
+    endtime.setUTCHours(strHour);
+    endtime.setUTCDate(strDay);
+    endtime.setUTCMonth(strMonth-1);
+    endtime.setUTCFullYear(strYear);
+
+    var currenttime=new Date();
+    
+    var startDateSeconds = Date.UTC(starttime.getFullYear(), starttime.getMonth() , starttime.getDate(), starttime.getHours(), starttime.getMinutes(), starttime.getSeconds());
+    var endDateSeconds = Date.UTC(endtime.getFullYear(), endtime.getMonth() , endtime.getDate(), endtime.getHours(), endtime.getMinutes(), endtime.getSeconds());
+    var currentDateSeconds = Date.UTC(currenttime.getFullYear(), currenttime.getMonth() , currenttime.getDate(), currenttime.getHours(), currenttime.getMinutes(), currenttime.getSeconds());
+
+    if(currentDateSeconds>=startDateSeconds && currentDateSeconds<endDateSeconds){
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  document.getElementById('liveshopping_von_bis').innerHTML='Live Shopping Angebot '+getLocalDateTimeStringFromUTC('$LiveShoppingStartTime')+' bis '+getLocalDateTimeStringFromUTC('$LiveShoppingEndTime');
+  tickLiveShoppingTimer();
+
+
+    </script>

@@ -1,0 +1,332 @@
+$HtmlStartTag
+	<head>
+		<!--[if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<title>$HtmlMetaTitle</title>
+		
+		<!-- webfonts weblink -->
+		<link href="//fnt.webink.com/wfs/webink.css/?project=3E57F121-6622-4AAA-8A34-C6E283395C4D&amp;fonts=73E6C83D-7F13-A8AE-4770-C315AE5061C3:f=MyriadPro-Regular,2C42CC2B-4E14-2FB2-85C0-9E10EFCC5735:f=MyriadPro-Light" rel="stylesheet" type="text/css">
+		
+		$HtmlHeadLinkCSSTags
+		$HtmlHeadJavaScriptTags
+		$HtmlHeadMetaTags
+		<link rel="apple-touch-icon" type="image/png" href="/layout/plenty_responsive/img/apple-touch-icon.png" />
+		
+        <!--[if IE 8 ]><link rel="stylesheet" type="text/css" href="/layout/plenty_responsive/slider/revolution-slider-settings-ie8.css" media="screen" /><![endif]-->
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="/layout/plenty_responsive/libs/html5shiv.js"></script>
+			<script src="/layout/plenty_responsive/libs/respond.min.js"></script>
+		<![endif]-->
+
+		{% if $HTTP_HOST=="www.plentymarkets.eu" %}
+			<meta name="verify-v1" content="tY/YiCWUKUE9JB+1AnwWxADAxYW0ne+hoc6o7hQ7jys=" />
+		{% elseif $HTTP_HOST=="www.plentymarkets.co.uk" %}
+		{% endif %}
+		<link rel="alternate" type="application/rss+xml" title="plentymarkets Blog" href="/?ActionCall=WebActionRSS&amp;rrss_id=1" />
+
+		<meta name="google-site-verification" content="bRYc_-gum-mXsvtJGcaMaak6j2aTp3EI9sn1dAcw_6s" />
+		<meta name="google-site-verification" content="sBCsM4RIgkDv4y-gL17JtnKZanAdXKfBkWT4FCueQuk" />
+		
+		<style>.bg-$CurrentCategoryURLName { background-image: url('$CurrentCategoryImageUrl'); }{% if $CurrentCategoryId[Level1]==620 %} .bgImgBox.isManual { background-image: url('/documents/category/621/handbuch-plentymarkets.jpg'); }{% endif %}</style>
+	</head>
+	
+	<!--[if lt IE 7 ]><body class="plenty $Lang ie ielt7 ielte7 ielte8 ielte9"><![endif]-->
+	<!--[if IE 7 ]><body class="plenty $Lang ie ie7 ielte7 ielte8 ielte9"><![endif]-->
+	<!--[if IE 8 ]><body class="plenty $Lang ie ie8 ielte8 ielte9"><![endif]-->
+	<!--[if IE 9 ]><body class="plenty $Lang ie ie9 ielte9"><![endif]-->
+	<!--[if IE 10 ]><body class="plenty $Lang ie ie10"><![endif]-->
+	<!--[if gt IE 10 ]><body class="plenty $Lang ie iegt10"><![endif]-->
+	<!--[if !IE]><!-->
+	<body class="plenty $Lang{% if ($CurrentCategoryId[Level2]==550) || ($CurrentCategoryId[Level2]==2169) || ($CurrentCategoryId[Level2]==2520) %} bgImg isCongress{% endif %}">
+	<!--<![endif]-->
+	<!-- Test -->
+		<script>
+			// add class js
+			document.body.className += ( document.body.className == '' ) ? 'js' : ' js';
+		</script>
+	
+		<a id="top"></a>
+		$PageDesignContentMainFrame
+		<a class="btn btn-large btn-primary glyphicon white onlyIcon glyphicon-arrow-up toTop" href="#top">{% if $Lang=="de" %}Nach oben{% else %}To top{% endif %}</a>
+		<a id="bottom"></a>
+		<!-- js (webshop) -->
+		$HtmlBodyOverlays
+		
+		{% if ($IsWelcomePage)||($CurrentCategoryId==596) %}
+			<!-- js (revolution slider) -->
+			<script src="/layout/plenty_responsive/slider/jquery.themepunch.plugins.min.js"></script>
+			<script src="/layout/plenty_responsive/slider/jquery.themepunch.revolution.min.js"></script>
+		{% endif %}
+		
+		<!-- js (bootstrap, plenty) -->
+		<script src="/layout/plenty_responsive/js/bootstrap.min.js"></script>
+		<script src="/layout/plenty_responsive/js/plenty_1.js"></script>
+		<script>
+		// Form Validation
+		(function ($) {
+
+			function getFormControl( element ) {			
+				if( $(element).is('input') || $(element).is('select') || $(element).is('textarea') ) {
+					return $(element);
+				} else {
+					if( $(element).find('input').length > 0 ) {
+						return $(element).find('input');
+					} 
+					
+					else if ( $(element).find('select').length > 0 ) {
+						return $(element).find('select');
+					} 
+					
+					else if ( $(element).find('textarea').length > 0 ) {
+						return $(element).find('textarea');
+					} 
+					
+					else {
+						return null;
+					}
+				}
+				
+			}
+			
+			function validateText( formControl ) {
+				// check if formControl is no checkbox or radio
+				if ( $(formControl).is('input') || $(formControl).is('select') || $(formControl).is('textarea') ) {
+					// check if length of trimmed value is greater then zero
+					return $.trim( $(formControl).val() ).length > 0;
+					
+				} else {
+					console.log('Validation Error: Cannot validate Text for <' + $(formControl).prop("tagName") + '>');
+					return false;
+				}
+			}
+			
+			function validateMail( formControl ) {
+				var mailRegExp = /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+				if ( validateText(formControl) ) {
+					return mailRegExp.test( $.trim( $(formControl).val() ) );
+				} else {
+					return false;
+				}
+			}
+			
+			function validateNumber( formControl ) {
+				if ( validateText(formControl) ) {
+					return isNumberic( $.trim( $(formControl).val() ) );
+				} else {
+					return false;
+				}
+			}
+			
+			function validateFon( formControl ) {
+				return validateNumber( formControl );
+			}
+			
+			$(document).ready(function() {	
+				$('form[data-plenty-checkform], form.PlentySubmitForm').each(function() {
+					
+					var form = $(this);
+					var errorClass = !!$(this).attr('data-plenty-checkform') ? $(this).attr('data-plenty-checkform') : 'has-error';
+					var missingFields = [];
+					form.submit(function() {
+						var hasError = false;
+						
+						// check every required input inside form
+						form.find('[data-plenty-validate], input.Required').each(function(i, elem) {
+							
+							var formControl = getFormControl(elem);
+							var currentHasError = false;
+							
+							
+							// formControl is textfield (text, mail, password) or textarea					
+							if ( ($(formControl).is('input') && $(formControl).attr('type') != 'radio' && $(formControl).attr('type') != 'checkbox') || $(formControl).is('textarea') ) {
+								// validate text inputs
+								var validationKey = !!$(elem).attr('data-plenty-validate') ? $(elem).attr('data-plenty-validate') : 'text';
+								switch( validationKey ) {
+					
+									case 'text':
+										currentHasError = !validateText( formControl );
+										break;
+										
+									case 'mail':
+										currentHasError = !validateMail( formControl );
+										break;
+										
+									case 'number':
+										currentHasError = !validateNumber( formControl );
+										break;
+									default:
+										console.log('Form validation error: unknown validate property: "'+$(elem).attr('data-plenty-validate')+'"');
+										break;
+								};
+							} else if ( $(formControl).is('input') && ($(formControl).attr('type') == 'radio' || $(formControl).attr('type') == 'checkbox') ) {
+								// validate radio buttons
+								var group = $(formControl).attr('name');
+								var checked, checkedMin, checkedMax;
+								checked = $(form).find('input[name="'+group+'"]:checked').length;
+								
+								if ( $(formControl).attr('type') == 'radio' ) {
+									checkedMin = 1;
+									checkedMax = 1;
+								} else {
+									//eval( "var minMax = " + $(elem).attr('data-plenty-validate') );
+									var minMax = $(elem).data('plenty-validate');
+									checkedMin = !!minMax ? minMax.min : 1;
+									checkedMax = !!minMax ? minMax.max : 1;
+								}
+								
+								currentHasError = ( checked < checkedMin || checked > checkedMax );
+								
+							} else if ( $(formControl).is('select') ) {
+								// validate selects	
+								currentHasError = ( $(formControl).val() == '' || $(formControl).val() == '-1' );
+							} else {
+								console.log('Form validation error: ' + $(elem).prop("tagName") + ' does not contain an form element' );
+								return false;
+							}
+							
+							if ( currentHasError ) {
+								hasError = true;
+								missingFields.push( formControl[0] );
+								$(elem).addClass( errorClass );	
+							}
+							
+						});
+						
+						if ( hasError ) form.trigger('validationFailed', [missingFields]);
+						
+						var cb = form.attr('data-plenty-callback');
+						if( !hasError && !!cb && cb != "submit" && typeof window[cb] == "function") {
+							
+							var fields = {};
+							form.find('input').each(function (){
+								fields[$(this).attr('name')] = $(this).val();
+							});
+							
+							window[cb](fields);
+							return false;
+						} else {
+							return !hasError;
+						}
+					});
+					
+					// remove error class on focus
+					form.find('[data-plenty-validate], .Required').each(function(i, elem) {
+						var formControl = getFormControl(elem);
+						if ( formControl != null ) {
+							$(formControl).focus(function() {
+								$(elem).removeClass( errorClass );
+							});
+							$(formControl).click(function() {
+								$(elem).removeClass( errorClass );
+							});
+						}
+					});
+					
+				});
+			});	
+		}(jQuery));
+		</script>
+		
+		{% if $CurrentCategoryId[Level1]==620 %}
+			<!-- manual stuff -->
+
+			<script type="text/javascript" src="/layout/plenty_responsive/js/plenty_manual_1.js"></script>
+			
+			<script type="text/javascript" src="/layout/plenty_responsive/js/syntax_highlighter/shCore.js"></script>
+			<script type="text/javascript" src="/layout/plenty_responsive/js/syntax_highlighter/shBrushJScript.js"></script>
+			<script type="text/javascript" src="/layout/plenty_responsive/js/syntax_highlighter/shBrushXml.js"></script>
+			<script type="text/javascript" src="/layout/plenty_responsive/js/syntax_highlighter/shBrushCss.js"></script>
+			<script type="text/javascript" src="/layout/plenty_responsive/js/syntax_highlighter/shBrushJava.js"></script>
+			<script type="text/javascript" src="/layout/plenty_responsive/js/syntax_highlighter/shBrushCSharp.js"></script>
+			<script type="text/javascript" src="/layout/plenty_responsive/js/syntax_highlighter/shBrushVb.js"></script>
+			<link rel="stylesheet" type="text/css" href="/layout/plenty_responsive/js/syntax_highlighter/shCoreDefault.css">
+			<script type="text/javascript">SyntaxHighlighter.all();</script>
+		
+		{% endif %}
+		
+		{# congress ticket counter #}
+		{% if $CurrentCategoryId[Level2]==2169 && $Year == 2014 && ( $Month <= 10 || ( $Month == 11 && $Day <= 15 ) ) %}
+			<script type="text/javascript" src="/layout/plenty_responsive/js/jquery.countdown.min.js"></script>
+		{% endif %}
+		
+	<!-- tracking stuff -->	
+	{% if $WebstoreId==1 %}
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-925311-6', 'auto');
+  			ga('send', 'pageview');
+
+		</script>
+	{% else %}
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-925311-1', 'auto');
+  			ga('send', 'pageview');
+
+		</script>
+	{% endif %}
+		
+		{% if ($Dir==157)||($Dir==160) %}
+		
+			{% if $Port==80 %}
+			
+				<!-- Google Code for plenty Interessenten Remarketing List -->
+				<script type="text/javascript">/* <![CDATA[ */
+					var google_conversion_id = 1067993517;
+					var google_conversion_language = "en";
+					var google_conversion_format = "3";
+					var google_conversion_color = "666666";
+					var google_conversion_label = "uHFrCJv2ywEQrZOh_QM";
+					var google_conversion_value = 0;
+				/* ]]> */</script>
+				
+				<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+				<noscript>
+					<div style="display:inline;">
+						<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1067993517/?label=uHFrCJv2ywEQrZOh_QM&guid=ON&script=0">
+					</div>
+				</noscript>
+			
+			{% elseif $Port==443 %}
+		
+				<!-- Google Code for plenty Interessenten Remarketing List -->
+				<script type="text/javascript">/* <![CDATA[ */
+					var google_conversion_id = 1067993517;
+					var google_conversion_language = "en";
+					var google_conversion_format = "3";
+					var google_conversion_color = "666666";
+					var google_conversion_label = "uHFrCJv2ywEQrZOh_QM";
+					var google_conversion_value = 0;
+				/* ]]> */</script>
+				
+				<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+				<noscript>
+					<div style="display:inline;">
+						<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1067993517/?label=uHFrCJv2ywEQrZOh_QM&guid=ON&script=0">
+					</div>
+				</noscript>
+			
+			{% endif %}
+			
+		{% endif %}
+		
+		{% if $HTTP_HOST=="www.plentymarkets.co.uk" %}
+			<!-- Lead Forensics Code -->
+			<script type="text/javascript" src="https://secure.leadforensics.com/js/28477.js"></script>
+			<noscript><img src="https://secure.leadforensics.com/images/track/28477.png?trk_user=28477&amp;trk_tit=jsdisabled&amp;trk_ref=jsdisabled&amp;trk_loc=jsdisabled" height="0" width="0" style="display:none;" alt="tracking image"></noscript>
+ 			<!-- END Lead Forensics Code -->
+		{% endif %}
+		
+	</body>
+</html>

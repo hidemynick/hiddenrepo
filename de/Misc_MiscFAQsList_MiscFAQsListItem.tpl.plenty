@@ -1,0 +1,5 @@
+<h2>$Question</h2>
+<div>
+<p>Bereich: <strong>$FolderName</strong></p>
+<div>$Answer</div>
+</div>

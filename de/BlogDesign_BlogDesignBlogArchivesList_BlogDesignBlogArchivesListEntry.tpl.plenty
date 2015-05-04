@@ -1,0 +1,2 @@
+
+<li{% if $IsActive %} class="active"{% endif %}><a href="{% Link_BlogArchiveMonth() %}">$BlogArchiveDate</a></li>

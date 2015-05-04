@@ -1,0 +1,19 @@
+{% for $_nav in GetNavigationCategories2List() %}
+{% MapTemplateVars($_nav) %}
+{% if($LoopIsFirst[1]) %}
+
+{% if $CategoryLevel>=2 %}<ul>{% endif %} 
+{% endif %}
+
+
+<li class="cat_$CategoryId{% if $CategoryIsCurrent %} current{% endif %}"><a href="$CategoryUrl">$CategoryName</a></li>
+
+{% if(($CategoryIsOpen || $NavigationCategories2_OpenLevel > $CategoryLevel) && $SubCategoryExists) %}
+{% NavigationCategories2List($CategoryId) %}
+{% endif %}
+
+
+{% if($LoopIsLast[1]) %}
+
+{% if $CategoryLevel>=2 %}</ul>{% endif %} {% endif %}
+{% endfor %}

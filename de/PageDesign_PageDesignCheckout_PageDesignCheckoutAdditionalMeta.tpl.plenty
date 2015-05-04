@@ -1,0 +1,18 @@
+<link rel="apple-touch-icon" type="image/png" href="/layout/pm/images/icon/apple-touch-icon.png" />
+
+<script src="/video/Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+{% if $HTTP_HOST=="www.plentymarkets.eu" %}
+<meta name="verify-v1" content="tY/YiCWUKUE9JB+1AnwWxADAxYW0ne+hoc6o7hQ7jys=" >
+{% endif %}
+
+<link rel="alternate" type="application/rss+xml" title="plentymarkets Blog" href="/?ActionCall=WebActionRSS&amp;rrss_id=1" />
+<!-- layout bestellvorgang -->
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('#PlentyOrderCheckoutButtonsTop').append('<div style="clear:both"></div>');
+	});
+</script>
+
+<!-- add to all templates -->
+$FreeVar[2]

@@ -1,0 +1,4649 @@
+/* ------ Main ------- */
+.plentyErrorBox {
+					width:98%; 
+					background-image:url(/images/admin/error_background.gif); background-repeat:repeat-y;
+					margin: 0px 0px 4px 0px;
+					padding:8px; text-align:left;
+					vertical-align:middle; 
+					color: #FFFFFF
+}
+
+.plentyErrorBoxTitle {
+					margin-top:4px;
+					margin-bottom:6px;
+					padding-left:26px;
+					color:#FFFFFF;
+					font-size:16px;
+					font-weight:bold;
+					background-image:url(/images/icons/warning_onred.gif);background-repeat:no-repeat;
+}
+
+.plentyMessageBox {
+					width:98%;
+					background-image:url(/images/admin/message_background.gif); background-repeat:repeat-y;
+					border:0px;
+					margin: 0px 0px 4px 0px;
+					padding:8px;
+					text-align:left;
+					vertical-align:middle;
+					color: #FFFFFF
+}
+
+.plentyMessageBoxTitle {
+					margin-top:4px;
+					margin-bottom:6px;
+					padding-left:26px;
+					color:#FFFFFF;
+					font-size:16px;
+					font-weight:bold;
+					background-image:url(/images/icons/idea_ongreen.gif); background-repeat:no-repeat;
+}
+
+.plentyWarningBox {
+					width:98%;
+					background-image:url(/images/admin/message_background.gif); background-repeat:repeat-y;
+					border:0px;
+					margin: 0px 0px 4px 0px;
+					padding:8px;
+					text-align:left;
+					vertical-align:middle;
+					color: #FFFFFF
+}
+
+.plentyWarningBoxTitle {
+					margin-top:4px;
+					margin-bottom:6px;
+					padding-left:26px;
+					color:#FFFFFF;
+					font-size:16px;
+					font-weight:bold;
+					background-image:url(/images/icons/idea_ongreen.gif); background-repeat:no-repeat;
+}
+
+
+/* ------ Order ------- */
+
+/* sprite url */
+.pmBackButton > span,
+.pmPlayImage > span,
+.pmSprite,
+.pmStyle button,
+.pmStyle a.button,
+.pmClickableIcon,
+.pmSocialIcon,
+.pmFooterHomeLink,
+.pmAvailabilityIndicator,
+.langDropdown li > a,
+a.button,
+.checkout button,
+.checkout input[type="submit"],
+.checkout input[type="reset"],
+input[type="button"],
+a:link > span.pmArrowButton,
+a:visited > span.pmArrowButton,
+.button.back,
+a:link > span.pmArrowButton.back,
+a:visited > span.pmArrowButton.back,
+.button.up,
+.theme-default .nivo-directionNav a,
+#actionsfirst a,
+#actionssecond a,
+.pmPopupClose,
+#PlentyMyAccountMyAccount a span.TabCloseButton,
+.PlentyWebshopPopupCloseButton > a,
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a,
+.pmmainnavigation > ul > li  ul > li.dir > a,
+.pmsearch input[type="text"],
+.pmsearch #searchboxbtn,
+.scrollup,
+.linear-scroller-prev > span,
+.linear-scroller-next > span,
+.PlentyOverlayClose,
+.pmVerticalSliderNavi,
+.plentyInfoBox:before {
+	background-image: url(/layout/pm/images/icon/plenty_sprite_2.png);
+	background-repeat: no-repeat;
+}
+/* CHANGE */
+a.button,
+.checkout button,
+.checkout input[type="submit"],
+input[type="reset"],
+input[type="button"],
+a:link > span.pmArrowButton,
+a:visited > span.pmArrowButton {
+
+    /*background: #eee;  Old browsers */
+    /*background: -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%);  FF3.6+ */
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2)));  Chrome,Safari4+ */
+    /*background: -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);  Chrome10+,Safari5.1+ */
+    /*background: -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); Opera11.10+ */
+    /*background: -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);  IE10+ */
+    /*background: linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%);  W3C */
+/*    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    height: 29px;
+    line-height: 29px;
+    border:1px solid #ccc;
+    color:#FFF;
+    padding:2px 30px 2px 15px;
+    cursor:pointer;
+    background-color: #008ebd;
+    background-position: right -452px;*/
+}
+
+/* standard */
+.PlentyWebMyAccount select {
+margin-bottom: 0;
+height: 23px;
+}
+.PlentyWebMyAccount select.XS {
+width: 50px;
+}
+.PlentyWebMyAccount select.M {
+width: 140px;
+}
+/* CHANGED */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select {
+/*    border: 1px solid #ccc;
+    padding: 4px;
+    outline: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #777;
+    margin: 0;
+    width: 200px;
+    max-width: 100%;*/
+    /*display: block;*/
+/*    margin-bottom: 20px;
+    margin-right:10px;
+    background-color:#f1f1f1;
+font-size: 12px;*/
+}
+
+select,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select {
+padding: 2px 2px 2px 0;
+/*color: #404040;*/
+width: auto;
+}
+
+
+/* focus */
+/* CHANGED */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select:focus {
+/*    border-color: #aaa;
+    color: #444;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow:  0 0 3px rgba(0,0,0,.2);
+    background-color:#e1edc5;
+    background-color:white;*/
+}
+
+/* hover */
+/* CHANGED */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+textarea:hover,
+select:hover,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select:hover,
+input[type="text"].hover,
+input[type="password"].hover,
+input[type="email"].hover,
+textarea.hover,
+select.hover {
+/*    border-color: #aaa;
+    color: #444;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow:  0 0 3px rgba(0,0,0,.2);*/
+}
+
+textarea {
+    min-height: 60px;
+resize: vertical;
+}
+
+
+
+.checkout .pmh3 {
+    color: #707173;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.border-shadow-small,
+.pmContentBox,
+#PlentyMyAccountMyAccount,
+.PlentyWebMyAccountCustomerEventsData,
+.PlentyWebMyAccountDomainsSystemContainer .PlentyWebMyAccountTabHeaderContainer,
+.plentyWebOrderSystemSpecificationsTextBottom,
+.pmShadow {
+    border:solid 2px #ffffff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 6px #cccccc;
+    -webkit-box-shadow: 0px 0px 6px #cccccc;
+    box-shadow: 0px 0px 6px #cccccc;
+    margin-bottom:15px;
+}
+.pmBoxShadow {
+    -moz-box-shadow: 0px 0px 6px #cccccc;
+    -webkit-box-shadow: 0px 0px 6px #cccccc;
+    box-shadow: 0px 0px 6px #cccccc;
+}
+
+
+
+/* content box */
+
+.pmContentBox { background: #ffffff; }
+
+.pmContentBox > a > img {
+margin-top: 2px;
+margin-bottom: 0;
+}
+
+/* preset height sizes */
+.pmContentBox.M.pm-4x-logobox {
+height: 218px;
+}
+.pmContentBox.XL.pm-4x-logobox {
+height: 310px;
+}
+
+
+/* one third / two thirds box */
+
+.pmOneThird {
+    width: 306px;
+}
+.PlentyWebMyAccountItemContainerContent > .clearfix > .pmOneThird {
+    width: 281px;
+}
+.pmTwoThirds {
+    width: 631px;
+}
+.clearfix > .pmOneThird {
+    float: left;
+}
+.pmOneThird + .pmOneThird,
+.pmTwoThirds + .pmOneThird {
+    margin-left: 15px;
+}
+.PlentyWebMyAccountItemContainerContent > .clearfix > .pmOneThird + .pmOneThird {
+    margin-left: 12px;
+}
+.pmOnlyTextBox > p {
+    padding: 0 20px;
+}
+.pmOnlyTextBox > p:first-child {
+    padding-top: 5px;
+}
+.pmHeadlineOuter {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+/* POPUP */
+
+/* popup container (includes myaccount popup) */
+
+.pmPopup,
+.PlentyWebMyAccountPopupContainer,
+.PlentyWebMyAccountAdviceContainer,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer,
+.ui-datepicker,
+.PlentyWebshopPopup {
+display: none;
+position: absolute;
+z-index: 10000;
+background: #fff;
+border: 3px solid #E0E0E0;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+
+-moz-box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+}
+/* myaccount only */
+.PlentyWebMyAccountPopupContainer,
+.PlentyWebMyAccountAdviceContainer,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer,
+.ui-datepicker {
+top: 25px;
+z-index: 400010 !important;
+width: 328px; 
+margin-left: -179px !important; 
+left: 50%;
+padding: 0 10px;
+}
+
+/* popup sizes */
+.PlentyWebMyAccountPopupContainer.l {
+width: 500px;
+margin-left: -250px !important;
+}
+.PlentyWebMyAccountPopupContainer.xl {
+width: 600px;
+margin-left: -300px !important;
+}
+
+/* popup container hover  (& login container hover) */
+.PlentyWebMyAccountPopupContainer:hover,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer:hover,
+.ui-datepicker:hover {
+-moz-box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* popup header */
+
+.PlentyWebMyAccountPopupContainer > div > div:first-child,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer > div.PlentyFormBox > div.PlentyWebMyAccountPopupTitleContainer,
+.ui-datepicker-header {
+color: #008EBD;
+font-size: 120%;
+font-weight: bold;
+line-height: 26px;
+border-bottom: 1px solid #E0E0E0;
+padding: 7px 1px 3px;
+}
+
+/* popup body */
+
+.PlentyWebMyAccountPopupContainer > div > div + div,
+.PlentyWebMyAccountDisplayOrdersShippingDetailsContainer > div.PlentyFormBox > div.PlentyWebMyAccountPopupTitleContainer + div {
+padding: 10px 0;
+font-size: 95%;
+line-height: 12px;
+}
+.PlentyWebMyAccountClear { 
+clear: both; 
+}
+
+
+/* popup close (includes tab close icon) */
+
+.pmPopupClose,
+#PlentyMyAccountMyAccount a span.TabCloseButton,
+.PlentyWebshopPopupCloseButton > a,
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a  {
+display: inline-block;
+width: 16px;
+height: 16px;
+cursor: pointer;
+text-indent: -10000px;
+background-color: #707173;
+background-position: -16px 0;
+
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+/* hover / focus */
+.pmPopupClose:hover,
+.pmPopupClose:focus,
+#PlentyMyAccountMyAccount a span.TabCloseButton:hover,
+.PlentyWebshopPopupCloseButton > a:hover,
+.PlentyWebshopPopupCloseButton > a:focus,
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a:hover,
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a:focus {
+background-color: #008ebd;
+background-position: 0 0;
+}
+
+/* myaccount */
+
+/* header title left */
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitle {
+float: left;
+display: inline-block;
+font-size: 120%;
+}
+/* header icon right */
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose {
+float: right;
+display: block;
+}
+/* close icon */
+div.PlentyWebMyAccountPopupTitleContainer > div.PlentyWebMyAccountTitleClose > a {
+margin-bottom: -1px;
+}
+/* status message */
+.PlentyWebMyAccountAdviceContainer.PlentyWebMyAccountPopupContainer .plentyMessageBox {
+margin-bottom: 0;
+}
+
+
+/* addititonal style for pmpopup */
+.pmPopupInner {
+    margin: 0 10px;
+}
+.pmPopupHeader {
+    position: relative;
+    padding: 7px 0 3px;
+    border-bottom: 1px solid #E0E0E0;
+    line-height: 26px;
+    font-size: 120%;
+    font-weight: bold;
+    color: #008EBD;
+}
+.pmPopupHeader > .pmPopupHeaderTitle {
+    display: block;
+}
+.pmPopupHeader.pmHasCloseIcon > .pmPopupHeaderTitle {
+    margin-right: 24px;
+}
+.pmPopupHeader > .pmPopupClose {
+    position: absolute;
+    top: 10px;
+    right: -1px;
+}
+.pmPopupContent {
+}
+/* button container */
+.pmPopupButtonContainer {
+    margin-top: 10px;
+}
+
+/* SIMPLE POPUP */
+
+.pmSimplePopup {
+padding: 0 10px;
+}
+.pmSimplePopup > .pmPopupClose {
+position: absolute;
+top: 5px;
+right: 5px;
+}
+.pmSimplePopup > .pmPopupButtonContainer {
+    margin-bottom: 10px;
+}
+.pmSimplePopup > .pmPopupClose + p {
+    margin-right: 20px;
+}
+.PlentyWebMyAccount.pmSimplePopup > .pmPopupClose + p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+/* WEBSHOP POPUP */
+
+.PlentyWebshopPopup {
+display: none;
+position: absolute;
+top: 25px;
+z-index: 400010;
+width: 345px;
+margin-left: -172px;
+left: 50%;
+padding: 10px;
+}
+/* header line */
+.PlentyWebshopPopupCloseButton {
+padding-bottom: 10px;
+text-align: right;
+}
+
+/* RIGHT CLICK POPUP */
+
+.pmRightclickPopup {
+width: 250px;
+}
+.pmRightclickPopup h5,
+.pmRightclickPopup p {
+margin: 15px 0;
+}
+
+/* SCREEN OVERLAY */
+
+/* visible overlay */
+.PlentyWebshopOverlay,
+.pmGlass {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #000000;
+-moz-opacity: 0.5;
+-khtml-opacity: 0.5;
+filter: alpha(opacity=50);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+opacity: 0.5;
+}
+.pmGlass {
+background: #000000;
+-moz-opacity: 0.75;
+-khtml-opacity: 0.75;
+filter: alpha(opacity=75);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+opacity: 0.75;
+}
+
+.border-shadow-small .content-boxes-row .pm-4x-thumbnail, 
+.pmContentBoxItem,
+.pmContentBox,
+.plentyInfoBox { /* TODO: MERGE */
+	position: relative;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+	-moz-box-shadow: 0 0 4px #ccc;
+	-webkit-box-shadow: 0 0 4px #ccc;
+	box-shadow: 0 0 4px #ccc;
+}
+/* clickable box hover */
+.pmContentBox.pmGrey.isClickable:hover {
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+}
+.pmContentBox.pmBlue.isClickable:hover {
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4), 0 0 0 2px #90B9D7 inset;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4), 0 0 0 2px #90B9D7 inset;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.4), 0 0 0 2px #90B9D7 inset;
+}
+a.plentyInfoBox:hover {
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.pmContentBox.pmGrey.isClickable:hover {
+	background-color: #fff;
+	border-color: #aaa;
+}
+.pmContentBox.pmBlue.isClickable:hover {
+	background-color: rgba(0, 142, 189, 0.8);
+	border-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* order system confirmation popup */
+
+.CouponCodeContainer > label {
+display: inline-block;
+line-height: 26px;
+}
+input[type="text"].ContractCouponCode {
+float: right;
+width: 200px;
+margin: 0;
+}
+#PlentyWebOrderSystemPopupSpecifications {
+margin: 10px 0 0;
+}
+.CouponCodeContainer,
+.plentyWebOrderSystemCouponCodeText {
+margin: 10px 0;
+}
+.plentyWebOrderSystemSpecificationsTextBottom {
+margin-top: 10px;
+padding: 10px;
+}
+.pmPopupClose + * > .pmPopupHeadlineContainer {
+margin-top: 2px;
+}
+
+
+
+/* CURRENCY PRICE */
+
+/* box */
+.PlentyCurrencyContainer {
+display: inline-block;
+white-space: nowrap;
+vertical-align: top;
+}
+/* price */
+.PlentyCurrencyValue {
+display: inline-block;
+/*float: right;*/ /*use for currency symbol before currency value*/
+}
+/* currency */
+.PlentyCurrencySymbol {
+display: inline-block;
+/*float: left;*/ /*use for currency symbol before currency value*/
+/*margin-right: 5px;*/ /*use for currency symbol before currency value*/
+margin-left: 5px; /*use this only for currency symbol after currency value and comment out all options for symbol before value*/
+}
+
+
+/* TABLE LAYOUT WITH HEADER */
+
+/* table */
+.PlentyWebMyAccountDisplayCouponsData > div,
+.PlentyWebMyAccountMyProjectsContent > div,
+.PlentyWebMyAccountCustomerEventsData > div {
+width: 100%;
+background: #C8DCEA;
+border: 1px solid #fff;
+border-collapse: collapse;
+border-spacing: 1px;
+}
+
+/* table cells standard */
+.PlentyWebMyAccountDisplayCouponsData > div > div > div,
+.PlentyWebMyAccountMyProjectsContent > div > div > div,
+.PlentyWebMyAccountCustomerEventsData > div > div > div {
+padding: 2px 5px;
+border: 1px solid #fff;
+}
+/* table cells odd rows */
+.PlentyWebMyAccountDisplayCouponsData > div > div:nth-child(2n) > div,
+.PlentyWebMyAccountMyProjectsContent > div > div:nth-child(2n) > div,
+.PlentyWebMyAccountCustomerEventsData > div > div:nth-child(2n) > div {
+background: rgb(233, 241, 247);
+}
+/* table cells last */
+.PlentyWebMyAccountDisplayCouponsData > div > div > div:last-child,
+.PlentyWebMyAccountMyProjectsContent > div > div > div:last-child,
+.PlentyWebMyAccountCustomerEventsData > div > div > div:last-child {
+}
+
+/* table first row cells */
+.PlentyWebMyAccountDisplayCouponsData > div > div:first-child > div,
+.PlentyWebMyAccountMyProjectsContent > div > div:first-child > div,
+.PlentyWebMyAccountCustomerEventsData > div > div:first-child > div,
+.PlentyWebMyAccountCustomerEventsSumRow > div,
+.PlentyWebMyAccountTableHeader {
+font-weight: bold;
+background: #f2f2f2;
+font-size: 12px;
+}
+
+/* table last row cells */
+.PlentyWebMyAccountDisplayCouponsData > div > div:last-child > div,
+.PlentyWebMyAccountMyProjectsContent > div > div:last-child > div,
+.PlentyWebMyAccountCustomerEventsData > div > div:last-child > div {
+}
+
+
+/* SIMPLE TABLE */
+
+/* table */
+.PlentyWebshopSimpleTable {
+display: table;
+width: 100%;
+font-size: 12px;
+line-height: 20px;
+}
+/* row */
+.PlentyWebshopSimpleTable > div {
+display: table-row;
+}
+/* cell standard */
+.PlentyWebshopSimpleTable > div > div {
+display: table-cell;
+border-color: #ccc #f0f0f0;
+border-width: 1px;
+border-style: none none solid solid;
+padding: 2px 5px;
+}
+/* cell first */
+.PlentyWebshopSimpleTable > div > div:first-child {
+/*padding-left: 0;*/
+}
+/* cell last */
+.PlentyWebshopSimpleTable > div > div:last-child {
+/*padding-right: 0;*/
+border-style: none solid solid solid;
+}
+
+/* header */
+
+/* header cell */
+.PlentyWebshopSimpleTable .PlentyWebMyAccountTableHeader {
+border-color: #ccc #fff;
+border-width: 1px;
+border-style: none none solid solid;
+}
+/* header cell first */
+.PlentyWebshopSimpleTable .PlentyWebMyAccountTableHeader:first-child {
+border-style: none none solid;
+padding-left: 5px;
+}
+/* header cell last */
+.PlentyWebshopSimpleTable .PlentyWebMyAccountTableHeader:last-child {
+border-style: none none solid solid;
+}
+
+
+/* other table styles */
+
+.numberCell { text-align: right; white-space: nowrap; }
+
+
+
+
+
+
+
+
+/* HEADLINE CONTAINER / HEADLINE */
+
+.PlentyWebMyAccountHeadlineContainer.PlentyWebMyAccountItemContainer,
+.pmPopupHeadlineContainer {
+background: transparent;
+margin: 10px -10px 0;
+padding-top: 10px;
+overflow: hidden;
+
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+border-radius: 0;
+
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.PlentyWebMyAccountHeadlineContainer.PlentyWebMyAccountItemContainer:first-child {
+margin-top: 0;
+}
+
+.PlentyWebMyAccountHeadlineContainer.PlentyWebMyAccountItemContainer > .PlentyWebMyAccountItemContainerHeader,
+.PlentyWebMyAccountTextHeadline > span, 
+.pmPopupHeadlineTitle {
+position: relative;
+display: inline-block;
+margin-left: 10px;
+border: none;
+background: #fff;
+color: #333333;
+padding: 5px 11px;
+height: 26px;
+font-size: 11px;
+font-weight: bold;
+
+-moz-border-radius: 3px 3px 0 0;
+-webkit-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+
+-moz-box-shadow: 0 0 6px #CCCCCC;
+-webkit-box-shadow: 0 0 6px #CCCCCC;
+box-shadow: 0 0 6px #CCCCCC;
+}
+.PlentyWebMyAccountHeadlineContainer.PlentyWebMyAccountItemContainer > .PlentyWebMyAccountItemContainerHeader:after,
+.PlentyWebMyAccountTextHeadline > span:after,
+.pmPopupHeadlineTitle:after {
+content: "";
+position: absolute;
+display: block;
+left: 0;
+width: 100%;
+top: 100%;
+height: 7px;
+background: #fff;
+}
+
+/* headline container first child */
+.PlentyWebMyAccountItemContainer.PlentyWebMyAccountHeadlineContainer:first-child,
+form:first-child > input[type=hidden]:first-child + input[type=hidden] + .PlentyWebMyAccountItemContainer.PlentyWebMyAccountHeadlineContainer {
+margin-top: -10px;
+}
+
+/* headline only */
+.PlentyWebMyAccountTextHeadline {
+position: relative;
+margin: 10px -10px;
+
+font-size: 110%;
+font-weight: bold;
+line-height: 18px;
+
+-moz-box-shadow: 0 -6px 6px -6px #ccc inset;
+-webkit-box-shadow: 0 -6px 6px -6px #ccc inset;
+box-shadow: 0 -6px 6px -6px #ccc inset;
+}
+
+.PlentyWebMyAccountHeadlineContainer.PlentyWebMyAccountItemContainer > .PlentyWebMyAccountItemContainerContent,
+.pmPopupContentContainer {
+margin: 0 0 -10px;
+padding-top: 10px 10px 20px;
+
+-moz-box-shadow: 0 0 6px #CCCCCC;
+-webkit-box-shadow: 0 0 6px #CCCCCC;
+box-shadow: 0 0 6px #CCCCCC;
+}
+
+/* item container */
+
+.PlentyWebMyAccountOpenableItemContainer .PlentyWebMyAccountItemContainer .PlentyWebMyAccountItemContainerContent, 
+.pmPopupContentContainer {
+padding: 10px;
+}
+.pmPopupContentContainer {
+padding: 1px 10px 10px;
+}
+
+
+
+/* TESTSYSTEM BESTELLEN */
+
+.PlentyWebOrderSystemTestsystemRow {
+background-color: rgba(0, 142, 189, 0.1);
+}
+.PlentyWebshopSimpleTable > div.PlentyWebOrderSystemTestsystemRow > div {
+border-color: #ccc rgba(0, 142, 189, 0.15);
+}
+.WebOrderSystemContractName,
+.PlentyWebOrderSystemTestsystemRow .WebOrderSystemContractPrice {
+font-weight: bold;
+}
+
+.PlentyWebCheckboxColumn {
+width: 24px;
+}
+.PlentyWebOrderTableHeaderContract {
+/*width: 598px;*/
+}
+.PlentyWebOrderTableHeaderContractPrice,
+.PlentyWebOrderTableHeaderContractInterval {
+width: 125px;
+}
+
+
+/* LOGIN */
+
+/* login container */
+#PlentyWebMyAccountLogin {
+width: 322px;
+margin: 10px auto 0 auto;
+}
+
+/* login container content */
+
+/* row */
+#PlentyWebMyAccountLogin .PlentyFormContainer {
+display: block;
+clear: both;
+margin-top: 2px;
+margin-bottom: 20px;
+}
+
+.PlentyMyAccountContainerTitle {
+display: block;
+color: #4582A5;
+font-size: 14px;
+margin-bottom: 10px;
+padding-bottom: 5px;
+}
+
+/* text before */
+#PlentyWebMyAccountLoginNote1 {
+padding: 5px 0 15px;
+}
+
+/* input container */
+.PlentyFormTitle {
+    display: inline-block;
+    color: #626262;
+    font-weight: normal;
+}
+.PlentyFormTitle > label {
+padding-top: 6px;
+    display: block;
+}
+
+/* labels */
+#PlentyWebMyAccountLoginEmailTitle, #PlentyWebMyAccountLoginPasswordTitle {
+display: inline-block;
+float: left;
+width: 100px;
+}
+
+#PlentyWebMyAccountLoginEmailContent > input, #PlentyWebMyAccountLoginPasswordContent > input {
+    display: inline-block;
+    width: 190px;
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    outline: medium none;
+    margin-top: 2px;
+    padding: 3px;
+}
+
+/* inputs */
+div.PlentyWebMyAccountLoginData input[type=text],
+div.PlentyWebMyAccountLoginData input[type=password] {
+border: 1px solid #CCCCCC;
+padding: 2px 3px;
+font-size: 12px;
+margin-top: 2px;
+margin-bottom: 0;
+}
+/* inputs hover,focus */
+div.PlentyWebMyAccountLoginData input[type=text]:hover,
+div.PlentyWebMyAccountLoginData input[type=password]:hover,
+div.PlentyWebMyAccountLoginData input[type=text]:focus,
+div.PlentyWebMyAccountLoginData input[type=password]:focus {
+border-color: #666666 !important; /*1474d4*/
+}
+
+/* link forgotten password */
+#PlentyWebMyAccountLoginForgotPassword {
+}
+/* link registration */
+#PlentyWebMyAccountLoginCustomerRegistration {
+display: none;
+}
+
+/* text after */
+#PlentyWebMyAccountLoginNote2 {
+padding-top: 10px;
+padding-bottom: 5px;
+}
+
+
+
+/* note */
+.pmInfoMessage {
+display: block;
+margin-bottom: 10px;
+padding: 6px 12px;
+background: #90B9D7;
+color: #fff;
+font-weight: bold;
+}
+
+/* order system error box */
+.PlentyWebOrderSystem .PlentyErrorPane {
+margin-bottom: 20px;
+}
+
+
+
+
+/* SPECIAL OFFERS */
+
+.pmSpecialOffersPage {
+    padding-bottom: 35px;
+}
+
+/* container */
+.pmSpecialOfferBox {
+    min-height: 415px;
+}
+.pmOneThird,
+.pmTwoThirds {
+    background-color: #fff;
+}
+
+/* header */
+.pmSpecialOfferBoxHeader {
+    height: 73px;
+    text-align: center;
+    color: #1b2528;
+    text-shadow: 0 1px 0 #fff;
+}
+.pmHighlight > .pmSpecialOfferBoxHeader {
+}
+
+/* inner */
+.pmSpecialOfferBoxHeaderInner {
+    margin-top: 17px;
+    display: inline-block;
+}
+.PlentyWebMyAccount .pmSpecialOfferBoxHeaderInner {
+    margin-top: 16px;
+    margin-left: 2px;
+}
+
+.pmSpecialOfferNameLeft {
+    vertical-align: middle;
+    text-align: left;
+}
+.pmSpecialOfferNameLeftLine1 {
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+.PlentyWebMyAccount .pmSpecialOfferNameLeftLine1 {
+    font-size: 17px;
+}
+.pmSpecialOfferNameLeftLine2 {
+    font-size: 21px;
+}
+.PlentyWebMyAccount .pmSpecialOfferNameLeftLine2 {
+    font-size: 20px;
+}
+.pmSpecialOfferNameRight {
+    padding-top: 3px;
+    padding-left: 5px;
+    vertical-align: middle;
+    font-size: 48px;
+}
+.PlentyWebMyAccount .pmSpecialOfferNameRight {
+    padding-top: 2px;
+    font-size: 46px;
+}
+
+
+/* content */
+
+/* price */
+.pmSpecialOfferBoxPrice {
+	position: relative;
+	height: 135px;
+}
+.PlentyWebMyAccount .pmSpecialOfferBoxPrice {
+    height: 128px;
+}
+/* sup */
+.pmSpecialOfferBoxPrice sup {
+    font-size: 60%;
+    vertical-align: text-top;
+    position: relative;
+    left: -3px;
+}
+/* price normal */
+.pmSpecialOfferPriceNormal {
+	position: absolute;
+	left: 0;
+    margin: 24px 0 0 18px;
+    padding: 2px 2px 5px 6px;
+    background-color: #707173;
+    color: #fff;
+}
+/* stroke */
+.pmSpecialOfferPriceNormal:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 32px;
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    background-color: #fff;
+}
+.pmSpecialOfferPriceNormalText {
+    font-size: 13px;
+}
+.pmSpecialOfferPriceNormalNumber {
+    font-size: 23px;
+}
+.PlentyWebMyAccount .pmSpecialOfferPriceNormalNumber {
+    font-size: 21px;
+}
+
+/* price reduced */
+.pmSpecialOfferPriceReduced {
+	position: absolute;
+	right: 0;
+    margin: 42px 18px 0 0;
+    padding: 4px 6px 2px 12px;
+    line-height: 1.2;
+}
+.pmSpecialOfferPriceReducedOnly {
+    position: absolute;
+    top: -18px;
+    left: -19px;
+    padding: 5px 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.PlentyWebMyAccount .pmSpecialOfferPriceReducedOnly {
+    top: -18px;
+    left: -20px;
+    font-size: 12px;
+}
+.pmSpecialOfferPriceReducedNumber {
+    font-size: 44px;
+    font-weight: bold;
+}
+.PlentyWebMyAccount .pmSpecialOfferPriceReducedNumber {
+    font-size: 38px;
+}
+.pmSpecialOfferPriceReducedUnit {
+    position: absolute;
+    right: 4px;
+    bottom: 10px;
+    font-size: 12px;
+}
+.PlentyWebMyAccount .pmSpecialOfferPriceReducedUnit {
+    bottom: 8px;
+    font-size: 11px;
+}
+.pmSpecialOfferPriceReduced,
+.pmSpecialOfferPriceReducedOnly,
+.pmSpecialOfferPriceReducedUnit {
+    background-color: #008EBD;
+    color: #fff;
+}
+.pmSpecialOfferBox.pmHighlight .pmSpecialOfferPriceReduced,
+.pmSpecialOfferBox.pmHighlight .pmSpecialOfferPriceReducedOnly,
+.pmSpecialOfferBox.pmHighlight .pmSpecialOfferPriceReducedUnit {
+    background-color: #D4021D;
+}
+/* hint */
+.pmSpecialOfferPriceHint {
+	position: absolute;
+	top: 100px;
+	right: 0;
+    padding: 5px 15px;
+    text-align: right;
+    font-size: 11px;
+    color: #aaa;
+}
+
+/* button */
+.pmSpecialOfferBoxButton {
+    padding: 4px 15px;
+}
+
+/* list */
+.pmSpecialOfferBoxList {
+}
+
+/* ul check small (transparent bg) */
+.pmUlCheckSmall {
+    margin: 0;
+    padding: 0;
+}
+.pmUlCheckSmall > li,
+.pmmaincontent ul.pmUlCheckSmall > li,
+.PlentyWebMyAccount ul.pmUlCheckSmall > li {
+    position: relative;
+    margin-left: 0;
+    padding: 5px 0 3px 26px;
+    list-style: none;
+}
+.lteie7 .pmmaincontent ul.pmUlCheckSmall > li {
+    list-style: sqare;
+}
+.pmUlCheckSmall > li:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+
+    background-image: url(/layout/pm/images/icon/pm_checked_b.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* ul underlined */
+.pmUlUnderline {
+    margin: 0;
+    padding: 0;
+}
+.pmUlUnderline > li,
+.pmmaincontent ul.pmUlUnderline > li {
+    margin-left: 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* ul line */
+.pmUlLine {
+	margin: 0;
+	padding: 0;
+}
+.pmUlLine > li,
+.pmmaincontent ul.pmUlLine > li {
+	margin-left: 0;
+}
+.pmUlLine > li + li,
+.pmmaincontent ul.pmUlLine > li + li {
+	border-top: 1px solid #eee;
+}
+
+/* ul space & line */
+.pmUlSpace.pmUlLine > li {
+	margin-bottom: 5px;
+}
+.pmUlSpace.pmUlLine > li + li {
+	margin-top: 0;
+	padding-top: 5px;
+}
+.pmUlSpace.pmUlLine > li:last-child {
+	margin-bottom: 10px;
+}
+
+
+
+/* OFFERS (STANDARD) */
+
+/* container */
+.pmOfferBox {
+    position: relative;
+    min-height: 76px;
+}
+.PlentyWebMyAccount .pmOfferBoxContent {
+    height: 80px;
+}
+.pmOfferBoxPrice {
+    margin-top: 1px;
+    padding: 16px 0 0 20px;
+    font-size: 15px;
+    color: #666;
+}
+.pmOfferBoxDetails {
+    padding: 18px 8px 10px 0;
+}
+.pmOfferBoxButton {
+    padding: 12px 0 8px 0;
+}
+.PlentyWebMyAccount .pmOfferBoxButton.fright {
+    float: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.pmOfferBoxDetailsPopup {
+    display: none;
+    top: -5px;
+    left: -5px;
+    width: 310px;
+}
+.pmOfferBoxDetailsPopup .pmPopupContent {
+    position: relative;
+}
+.PlentyWebMyAccount .pmOfferBoxDetailsPopup {
+    width: 286px;
+}
+.pmPopupHeadline {
+    margin: 5px 20px 5px 0;
+}
+.pmPopupContent {
+    margin: 10px 0;
+}
+/* confirmation popup */
+.pmOrderSystemConfirmationPopup {
+    left: 50%;
+    width: 310px;
+    margin-left: -168px;
+}
+.pmVatHint,
+.pmHint {
+	color: #999;
+}
+.pmHint {
+	font-size: 11px;
+	line-height: 1.5;
+}
+p.pmVatHint {
+margin: 8px 0 6px;
+}
+
+
+/* REGISTRATION / LOGIN */
+
+/* span 50 */
+.pmSpan50 {
+    width: 469px;
+}
+.pmOrderSystemRegistration {
+    min-height: 495px;
+}
+.pmOrderSystemLogin {
+    min-height: 309px;
+}
+.pmOrderSystemContactUs {
+    height: 167px;
+}
+.en .pmOrderSystemContactUs {
+	height: 180px;
+	padding-top: 20px;
+}
+/* header */
+.pmSpecialOfferBoxHeader.smallHeader {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+}
+
+/* form column */
+.pmSpan50 .pmFormColumn {
+    width: 204px;
+}
+.pmLabelWrapper {
+    margin-top: 6px;
+}
+.pmLabelInputWrapper:first-child > .pmLabelWrapper {
+    margin-top: 0;
+}
+.pmInputWrapper {
+    height: 25px;
+}
+.pmInputWrapper > * {
+    vertical-align: middle;
+}
+.pmPwHintWrapper {
+    margin-top: 7px;
+}
+.pmSubmitWrapper {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.pmSubmitWrapper.pmMoveIntoForm {
+    margin-top: -26px
+}
+/* input / select / textarea in input wrapper */
+.pmInputWrapper > input[type="text"],
+.pmInputWrapper > input[type="password"] {
+    display: inline-block;
+    width: 194px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.pmInputWrapper > select {
+    height: 25px;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 3px 3px 3px 0;
+}
+/* small / large inputs */
+.pmInputWrapper > input[type="text"].small {
+    width: 41px;
+}
+.pmInputWrapper > input[type="text"].large {
+    width: 138px;
+}
+.pmInputWrapper > .marginLeft {
+    margin-left: 5px;
+}
+select.pmCountrySelect,
+select.pmSalutationSelect {
+    width: auto;
+}
+
+/* input hint */
+.pmInputHint {
+    position: absolute;
+    z-index: 5;
+    bottom: 70px;
+    width: 204px;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+/* testing */
+
+/* small offer box */
+.pmSmallOfferBox {
+    height: 220px;
+}
+/* small list box */
+.pmSmallList {
+    height: 87px;
+    padding-bottom: 0px;
+    line-height: 18px;
+}
+/* vat hint wrapper */
+.pmVatHintWrapperRight,
+.plentyWebOrderSystemSpecialOfferNotice2,
+.PlentyWebOrderSystemNotice2 {
+    margin-bottom: -15px;
+    text-align: right;
+}
+
+.pmOrderSystemPopupVatHintWrapper {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+}
+.plentyWebOrderSystemSpecificationsTextBottom  > .pmOrderSystemPopupVatHintWrapper,
+.pmOrderSystemConfirmationPopup .pmOrderSystemPopupVatHintWrapper {
+    bottom: 13px;
+    left: 10px;
+}
+
+/* inner column 50 */
+.pmInnerColumn50 {
+    position: relative;
+    width: 435px;
+}
+
+/* line between columns */
+/* 
+.pmInnerColumn50.pmBorderRight:after,
+.pmInnerColumn50.pmBorderLeft:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 15px;
+    bottom: 15px;
+    right: -23px;
+    width: 0;
+    border-color: #ccc;
+    border-width: 1px;
+}
+.pmInnerColumn50.pmBorderRight:after {
+    right: -23px;
+    border-style: none solid none none;
+}
+.pmInnerColumn50.pmBorderLeft:before {
+    left: -24px;
+    border-style: none none none solid;
+}
+*/
+
+.pmOderSystemTestSystemColumn {
+    min-height: 208px;
+}
+
+/* success popup */
+.pmOrderSystemSuccessPopup {
+    width: 400px;
+    left: 50%;
+    margin-left: -213px;
+    padding-bottom: 40px;
+}
+.pmSuccessMessageBlue > * + * > .blue-back {
+    margin-left: 40px;
+}
+.pmSuccessMessageBlue .blue-back {
+    padding: 7px 10px;
+}
+.pmOrderSystemSuccessPopup > .button.pmRed.pmBottomRight {
+    right: 10px;
+}
+
+
+/* mandatory field */
+.PlentyMandatoryField {
+font-weight: bold !important;
+}
+
+
+/* CONTRACT BUILDER */
+
+.contractBuilder {
+	font-size: 12px;
+}
+
+input::-moz-focus-inner { border: 0; padding: 0; }
+
+.contractBuilderItemDate,
+.contractBuilderItemPrice {
+	border-width: 1px;
+	border-color: #e0e0e0;
+}
+
+
+ul.contractBuilderList > li.center {
+	text-align: center;
+}
+
+.contractBuilderItem {
+	display: inline-block;
+	width: 330px;
+	padding: 5px 10px;
+	text-align: center;
+	vertical-align: top;
+}
+.contractBuilderItem + .contractBuilderItem {
+	margin-left: 10px;
+}
+
+a.contractBuilderItem,
+a.contractBuilderItem:hover,
+a.contractBuilderItem:focus {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.contractBuilderItemDate,
+.contractBuilderItemTitle,
+.contractBuilderItemAdditional,
+.contractBuilderItemDetailsListWrapper,
+.contractBuilderItemAdditionalHint,
+.contractBuilderItemChange {
+	display: block;
+}
+
+.contractBuilderItemDate {
+	border-style: none none solid;
+	padding: 5px 0;
+	text-align: left;
+	color: #008EBD;
+	font-size: 15px;
+	font-weight: bold;
+}
+.contractBuilderItemDateHint {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.contractBuilderItemTitle {
+	padding-top: 10px;
+	line-height: 1.5;
+	color: #444;
+}
+.contractBuilderItemTitle,
+.contractBuilderItemTitle.isNumber.placeholder {
+	font-size: 26px;
+}
+.contractBuilderItemTitle.isNumber.placeholder {
+	line-height: 2.4em;
+}
+.contractBuilderItemTitle.isNumber {
+	font-size: 40px;
+	min-height: 60px;
+}
+
+.contractBuilderItemTitle.isNumber + .contractBuilderItemAdditional {
+	margin-top: -7px;
+}
+.contractBuilderTwoColumns .contractBuilderItemAdditional {
+	text-align: left;
+	padding-top: 10px;
+}
+.contractBuilderTwoColumns .contractBuilderItemTitle {
+	padding: 0;
+}
+.contractBuilderItem > .contractBuilderItemAdditional {
+	margin-top: 10px;
+}
+.contractBuilderItemAdditional + .contractBuilderItemTitle {
+	padding: 0;
+}
+
+.contractBuilderItemAdditionalHint {
+	font-size: 11px;
+	color: #666;
+}
+.contractBuilderItemAdditionalHint:before { content: "(" }
+.contractBuilderItemAdditionalHint:after { content: ")" }
+
+.contractBuilderItemAdditional + .contractBuilderItemAdditionalHint {
+	margin-top: 5px;
+}
+.contractBuilderItemAdditional > .contractBuilderItemAdditionalHint {
+	display: inline;
+	color: #008EBD;
+}
+
+.contractBuilderItemDetailsList {
+	display: inline-block;
+	padding: 10px 0 0;
+	text-align: left;
+	font-size: 11px;
+	color: #888;
+}
+.contractBuilderItemDetailsList > span {
+	display: list-item;
+	list-style-type: square;
+	margin-left: 1.2em;
+}
+.contractBuilderItemDetailsList.placeholder > span {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.contractBuilderItemPrice {
+	display: inline-block;
+	min-width: 125px;
+	margin-top: 10px;
+	padding: 3px 0 0;
+	border-style: solid none none;
+	color: #444;
+}
+.contractBuilderItemChange {
+	height: 30px;
+	margin: 15px 0 0;
+}
+.contractBuilderItemChange > input[type="range"] {
+	width: 300px;
+}
+
+.contractBuilderTableWrapper {
+	margin-bottom: 20px;
+}
+
+.inlineSubmitButton {
+	margin-right: 10px;
+}
+.submitButtonContainer {
+	margin-top: 10px;
+}
+.submitButtonContainer + .pmVatHint {
+	margin-top: 10px;
+}
+
+
+/* contract builder popup */
+
+.pmContractBuilderPopup {
+	left: 50%;
+	width: 800px;
+	margin-left: -405px;
+}
+.pmContractBuilderPopup.isSmallPopup {
+	width: 440px;
+	margin-left: -225px;
+}
+.pmContractBuilderPopup .pmPopupContent {
+	margin: 25px 0 10px;
+}
+.contractBuilderChangeRow {
+	margin: 30px 0 20px;
+}
+.placeholder {
+	color: #ccc;
+}
+
+/* slider */
+
+.ui-slider {
+	position: relative;
+	display: block;
+	margin: 19px 15px 18px;
+	height: 6px;
+	border: 1px solid #888;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+	-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+	
+}
+.ui-slider-handle {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin: -6px 0 0 -6px;
+	border: 1px solid #888;
+	background-color: #e0e0e0;
+		
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	
+	-moz-box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.ui-slider-handle.ui-state-hover,
+.ui-slider-handle.ui-state-focus {
+	border-color: #666;
+	background-color: #f0f0f0;
+	
+	-moz-box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 1) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 1) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+	box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 1) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.ui-slider-handle.ui-state-focus {
+	border-color: #333;
+	background-color: #fff;
+}
+
+/* TMP */
+
+.contractBuilder.isProduct .contractBuilderItem.pmContentBox {
+	width: 425px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.clearfix.isProduct .pmSpan30.pmInner.noPadding.pmWhite.border-shadow-small {
+	width: 450px;
+}
+
+
+
+
+
+
+
+
+/* Errors */
+  div.PlentyError input[type=text], div.PlentyError input[type=password]
+    {
+    border:none;
+    border:1px dashed #f44d4d!important;
+    background-color:#fbe7e7;
+    }
+  
+  div.PlentyErrorPane
+    {
+    display:    none;
+    color:      white;
+    font-size:    12pt;
+    }
+   .PlentyErrorMessageBox
+   {
+    background-color: #f36060;
+      border: 1px dashed #9c2020 !important;
+    margin-bottom:5px;
+    padding:5px;
+   }
+
+
+
+
+
+/* Box Settings*/
+  .PlentyWebBasketContainer
+  {
+    margin-bottom:15px;  
+  }
+  #PlentyWebBasketTitleContainer
+  {
+    margin-top:15px;  
+  }
+
+/* Box Headlines */
+
+  .PlentyWebBasketContainerTitle
+  {
+      
+      color:#000;
+      font-size:16px;
+      font-weight:bold;
+      border:1px solid #d4d4d4;
+	  border-bottom:0;
+      padding:0px 10px 0px 10px;
+      
+	-webkit-box-shadow: 0 1px 0 0 #d4d4d4;
+	   -moz-box-shadow: 0 1px 0 0 #d4d4d4;
+	        box-shadow: 0 1px 0 0 #d4d4d4;
+  }
+  .PlentyWebBasketOpenableContainer:hover #PlentyWebBasketShippingCountryContainerTitle,.PlentyWebBasketOpenableContainer:hover #PlentyWebBasketPaymentMethodContainerTitle,
+  .PlentyWebBasketOpenableContainer:hover #PlentyWebBasketShippingMethodContainerTitle,.PlentyWebBasketOpenableContainer:hover #PlentyWebBasketCouponContainer,
+  .PlentyWebBasketOpenableContainer:hover #PlentyWebBasketCouponContainerTitle,.PlentyWebBasketOpenableContainer:hover #PlentyWebBasketSchedulerContainerTitle
+  {
+    cursor:pointer;
+    
+    color:#008EBD;
+  }
+  .PlentyWebBasketOpenableContainer:hover #PlentyWebBasketShippingMethodContainerTitle #WebBasketShippingMethodSelectedChange,
+  .PlentyWebBasketOpenableContainer:hover #PlentyWebBasketPaymentMethodContainerTitle #WebBasketPaymentMethodSelectedChange,
+  .PlentyWebBasketOpenableContainer:hover #PlentyWebBasketSchedulerContainerTitle #WebBasketSchedulerSelectedChange,
+  .PlentyWebBasketOpenableContainer:hover #PlentyWebBasketShippingCountryContainerTitle #WebBasketShippingCountrySelectedChange,
+  .PlentyWebBasketOpenableContainer:hover #PlentyWebBasketCouponContainerTitle #WebBasketCouponSelectedChange
+  {
+    color:#888;
+  }
+
+/* Box Body */
+
+  .PlentyWebBasketContainerContent
+  {
+    background-color:#fff;
+    padding:10px;
+    line-height:17px;
+	border-width: 1px;
+	border-color: #d4d4d4;
+	border-style: none solid solid;
+  }
+#PlentyWebBasketFooterContainerContent {
+	border-style: solid;
+}
+  
+/* footer */
+  #PlentyWebBasketFooterContainerContent
+  {  
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    -khtml-border-radius-topleft:5px;
+    -khtml-border-radius-topright:5px;
+    
+    text-align: right;
+  }
+
+/* Box Head change Buttons */
+  #WebBasketSchedulerSelectedChange,#WebBasketShippingCountrySelectedChange,#WebBasketPaymentMethodSelectedChange,#WebBasketShippingMethodSelectedChange,#WebBasketCouponSelectedChange
+  {
+    font-size:12px;
+    font-weight:400;
+    color:blue;
+    float:right;
+    margin-top:3px;  
+    cursor:pointer;
+    line-height: 36px;
+    color: #008ebd;
+    text-decoration: underline;
+  }
+
+/* Box slideable:hover */
+
+.PlentyWebBasketOverlayMainPane > .PlentyWebBasketOverlayBackground
+{
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  opacity: 0.5;
+  background-color: black;
+}
+
+.PlentyWebBasketOverlayMainPane > .PlentyWebBasketOverlayContent
+{
+  max-height: 80%;
+  overflow: auto;
+  min-width: 30%;
+  width: 40%;
+  top: 10%;
+  left: 30%;
+  position: fixed;
+  z-index: 10001;
+}
+
+.PlentyWebBasketOverlayMainPane > .PlentyWebBasketOverlayClose
+{
+  position: fixed;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  background-image: url(/images/icons/silk/overlay_close.png);
+  top:8%;
+  right:29%;
+  z-index: 10002;
+}
+	
+#PlentyBasketWebBasket input,#PlentyBasketWebBasket select { margin-bottom:5px!important; }
+#PlentyWebBasketPaymentMethodSelect .PlentyFormContainer { border-bottom:none!important;}
+#PlentyTotalAmountTitle { font-size:16px!important; }
+#PlentyTotalAmountTitle span { font-size:10px!important; }
+
+#PlentyTotalAmountDetail .PlentyCurrencyValue,
+#PlentyTotalAmountDetail .PlentyCurrencySymbol { font-size:16px; }
+
+#PlentyWebBasketItemsMain > div.PlentyBasketItemRow > div { border-bottom:1px solid #e0e0e0!important; padding:10px 3px!important }
+
+.PlentyWebBasketContainerContent { padding:7px 15px!important; }
+/*#PlentyWebBasketCouponContainerTitle { padding:10px 15px 0 15px!important }*/
+
+#PlentyBasketWebBasket select { width: auto; }
+
+
+/* UPDATE */
+
+
+
+
+
+
+/* PARAMETER */
+
+/* position line to headline */
+#article_order_params .PlentyWebBasketDecoration,
+html body.pmBody div.pmwrap div.pmcontent-wrap div.pmmaincontent form#article_order_params div.PlentyWebBasketContainer h1.PlentyWebBasketContainerTitle div.PlentyWebBasketDecoration {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 5px !important;
+}
+
+/* padding left / right */
+.pmmaincontent.pmpagewidth .PlentyWebBasketContainer > .PlentyWebBasketContainerTitle,
+.pmmaincontent.pmpagewidth .PlentyWebBasketContainer > .PlentyWebBasketContainerContent,
+html body.pmBody div.pmwrap div.pmcontent-wrap div.pmmaincontent form#article_order_params div.PlentyWebBasketContainer h1.PlentyWebBasketContainerTitle div.PlentyWebBasketDecoration,
+html body.pmBody div.pmwrap div.pmcontent-wrap div.pmmaincontent form#article_order_params div.PlentyWebBasketContainer div.PlentyWebBasketContainerContent {
+padding-left: 15px;
+padding-right: 15px;
+}
+
+
+
+
+/* BASKET */
+
+/* position line to headline */
+#PlentyWebBasketTitleContainer .PlentyWebBasketDecoration, #PlentyWebBasketItemsContainer .PlentyWebBasketDecoration, 
+#PlentyWebBasketTotalsContainer .PlentyWebBasketDecoration, #PlentyWebBasketCouponContainer .PlentyWebBasketDecoration,
+.PlentyWebBasketContainer.PlentyWebBasketOpenableContainer.open > h1#PlentyWebBasketShippingCountryContainerTitle.PlentyWebBasketContainerTitle div.PlentyWebBasketDecoration,
+.PlentyWebBasketContainer.PlentyWebBasketOpenableContainer.open > h1#PlentyWebBasketPaymentMethodContainerTitle.PlentyWebBasketContainerTitle div.PlentyWebBasketDecoration,
+.PlentyWebBasketContainer.PlentyWebBasketOpenableContainer.open > h1#PlentyWebBasketShippingMethodContainerTitle.PlentyWebBasketContainerTitle div.PlentyWebBasketDecoration {
+    border-bottom: 1px solid #E0E0E0 !important;
+    padding-bottom: 5px !important;
+}
+.PlentyWebBasketContainer.PlentyWebBasketOpenableContainer .PlentyWebBasketOpenableContainer h1.PlentyWebBasketContainerTitle,
+html body.pmBody div.pmwrap div.pmcontent-wrap div.pmmaincontent div#PlentyBasketWebBasket div#PlentyWebBasketShippingCountryContainer.PlentyWebBasketContainer h1#PlentyWebBasketShippingCountryContainerTitle.PlentyWebBasketContainerTitle,
+html body.pmBody div.pmwrap div.pmcontent-wrap div.pmmaincontent div#PlentyBasketWebBasket div#PlentyWebBasketPaymentMethodContainer.PlentyWebBasketContainer h1#PlentyWebBasketPaymentMethodContainerTitle.PlentyWebBasketContainerTitle,
+html body.pmBody div.pmwrap div.pmcontent-wrap div.pmmaincontent div#PlentyBasketWebBasket div#PlentyWebBasketShippingMethodContainer.PlentyWebBasketContainer h1#PlentyWebBasketShippingMethodContainerTitle.PlentyWebBasketContainerTitle {
+    padding-top: 5px !important;
+}
+
+/* input checkbox / radio */
+.PlentyWebBasketContainer #PlentyWebBasketPaymentMethodSelect input,
+.PlentyWebBasketContainer #PlentyWebBasketShippingMethodSelect input {
+margin-left: 0 !important;
+}
+#PlentyWebBasketShippingMethodSelect {
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+#PlentyWebBasketPaymentMethodSelect .PlentyFormContainer,
+#PlentyWebBasketShippingMethodSelect > div:first-child {
+padding-top: 0 !important;
+}
+
+/* header height */
+#PlentyBasketWebBasket .PlentyWebBasketOpenableContainer .PlentyWebBasketDecoration {
+    line-height: 30px !important;
+    padding-bottom: 0 !important;
+}
+
+/* buttons */
+#WebBasketSchedulerSelectedChange, #WebBasketShippingCountrySelectedChange, #WebBasketPaymentMethodSelectedChange, 
+
+#WebBasketShippingMethodSelectedChange, #WebBasketCouponSelectedChange {
+    position: relative;
+    top: 4px;
+}
+
+/* coupon */
+#PlentyWebBasketCouponInput {
+padding: 5px 0 0;
+}
+#PlentyWebBasketCouponData > span {
+display: table-cell;
+padding-right: 10px;
+}
+#PlentyWebBasketCouponData > span * {
+vertical-align: middle;
+}
+#PlentyBasketWebBasket #PlentyWebBasketCouponData > span input[type=text] {
+margin: 0 !important;
+}
+#coupon_encash span.button a {
+top: -2px !important;
+}
+
+#PlentyWebBasketShippingCountrySelect {
+margin-left: 0 !important;
+}
+
+/* main */
+#PlentyWebBasketTitleContainer { margin-top: 0 !important; }
+#PlentyWebBasketFooterContainer { margin-bottom: 0 !important; }
+/* Titel CSS */
+
+#nextWebBasket1,#change_basketWebBasketItemsRefresh,#proceed_orderWebBasket1
+  {
+    display:block;
+    text-align:right;
+    margin-top:5px;  
+  }
+  
+/* Article List CSS */
+
+  #PlentyWebBasketItemsData
+  {
+     display : table;
+     width: 100%;
+  }
+  
+  #PlentyWebBasketItemsItemsHeader
+  {
+     display : table-row;
+  }
+  #PlentyWebBasketItemsItemsHeader > div.ItemsHeadline
+  {
+     display : table-cell;
+     border-bottom: 1px solid #CCCCCC;
+     padding:0 5px 5px 5px;
+     font-weight:bold;
+  }
+  #PlentyWebBasketItemsMain
+  {
+     display : table-row-group;
+  }
+  #PlentyWebBasketItemsMain > div.PlentyBasketItemRow > div
+  {
+     vertical-align: top;
+     display : table-cell;
+     border-bottom: 1px solid #b5c6d0;
+     padding:5px;
+  }
+  #PlentyWebBasketItemsMain > div.PlentyBasketItemRow
+  {
+     display : table-row;
+  }
+  #PlentyWebBasketItemsItemsHeaderImage,.ItemsImage { width:15%; text-align:center; }
+  #PlentyWebBasketItemsItemsHeaderDescription { width:60%; }
+  #PlentyWebBasketItemsItemsHeaderQuantity { width:10%; }
+  #PlentyWebBasketItemsItemsHeaderTotal { width:10%; }  
+  #PlentyWebBasketItemsItemsHeaderDelete { width:5%; text-align:center; }
+  
+  
+  .ItemsDescriptionInfo > .PlentyDataContainer > .PlentyDataContainerTitle
+  {
+    font-weight:bold;  
+  }
+  .ItemsDescriptionInfo > .PlentyDataContainer
+  {
+    float:left; margin-right:15px; margin-top:5px;
+  }
+  .ItemsVariationSelection, .ItemsDeliveryDateChange
+  {
+  clear:both; display:block; width:100%  
+  }
+  .ItemsDescriptionGiftPackage
+  {
+  clear:both;  
+  }
+  .ItemsDescriptionGiftPackage:hover
+  {
+  cursor:pointer;  
+  }
+
+
+  
+/* Basket Sum */
+
+  #PlentyWebBasketTotalsBasketSumBox
+  {
+    text-align:right;
+  }
+  
+  .PlentyBasketSumTitle
+  {
+    font-weight:bold; display:inline-block;
+  }
+  .PlentyBasketSum
+  {
+    border-bottom:1px solid #CCCCCC;
+    padding:5px;
+  }
+  .PlentyBasketSumDetail
+  {
+      display: inline-block;
+      min-width: 10%;
+      padding-left: 25px;
+      text-align: right;
+  }
+  #PlentyWebBasketTotalsTotalAmount
+  {
+    border-bottom:none;  
+  }
+  #PlentyWebBasketTotalsTotalAmountSubscription
+  {
+	 border-top:1px solid #CCCCCC;
+  }
+  
+  #PlentyGoodsValueNetTitle,#PlentyShippingCostsNetTitle,#PlentySubtotalNetTitle
+  {
+    font-weight:400!important;
+  }
+.ItemsQuantity input { width:50px;}
+
+
+.ItemsDescriptionGiftPackageTitle
+{
+	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 3px;
+}
+
+.ItemsDescriptionDiscountDetail
+{
+color:#95C65C;
+}
+
+.ItemParamError > .ItemsDescriptionParamDetail, .ItemParamError > .ItemsDescriptionCharacterDetail
+{
+    color: red;
+    font-style:italic;
+}
+
+.ItemsDescriptionEAN
+{
+    display: none;
+}
+
+
+/* Country Select */
+
+  #PlentyWebBasketShippingCountryText1,#PlentyWebBasketShippingCountryForm
+  {
+    display:inline;
+  }  
+  #PlentyWebBasketShippingCountrySelect { display:inline-block; margin-left:10px; }
+/* Payment */
+  .PlentyWebBasketPaymentMethodRadio
+  {
+        float: left; font-size: 12px; font-weight: 400; margin-top: 7px; min-width: 250px;
+  }
+  .PlentyWebBasketPaymentMethodPrice
+  {
+    font-size:14px;float:right;font-weight:400;  margin-top:7px;
+  }
+  .PlentyWebBasketPaymentMethodAdvice
+  {
+    display:inline-block; margin-left:10px;
+  }
+  
+  #PlentyWebBasketPaymentMethodSelect .PlentyFormContainer
+  {
+    border-bottom: 1px solid #B5C6D0;
+    min-height: 30px;
+    padding: 5px 0;
+  }
+  #PlentyGoodsRebateTitle,#PlentyGoodsRebateDetail
+  {
+    color:#95c65c;
+  }
+  
+  #PlentyWebBasketTotalsGoodsValueGross,#PlentyWebBasketTotalsShippingCostsGross
+  {
+    border-bottom:none; padding-bottom:0;
+  }
+/* Shipping Select */
+
+  #PlentyWebBasketShippingMethodSelect
+  {
+    padding-left: 5px;
+      padding-right: 5px;
+  }
+  #PlentyWebBasketShippingMethodSelect .PlentyFormContainer
+  {
+    border-bottom: 1px solid #b5c6d0;
+    min-height: 30px;
+    padding: 5px 0;
+  }
+  #PlentyWebBasketShippingMethodSelect .PlentyFormContainer:last-child
+  {
+    border-bottom:none;  
+  }
+  .PlentyWebBasketShippingMethodName
+  {
+    float:left; font-size:12px; font-weight:400; margin-top:7px;
+  }
+  .PlentyWebBasketShippingMethodPrice
+  {
+    font-size:14px;float:right;font-weight:400; margin-top:7px;
+  }
+#PlentyWebBasketShippingMethodSelect .PlentyFormContainer#PlentyWebBasketShippingMethod10Container { border-bottom:none!important; }
+	#PlentyTotalAmountDetail, #PlentyTotalAmountSubscriptionDetail
+	{
+		font-weight: bold;
+		vertical-align: top;
+	}
+	
+	
+	#PlentyTotalAmountTitle > .PlentyDataAdditional,
+	#PlentyTotalAmountSubscriptionTitle > .PlentyDataAdditional
+	{
+		font-weight: normal;
+	}
+	
+	#PlentyWebBasketTotalsVoucherCreditNote
+	{
+		color: #95C65C;
+	}
+	
+
+.PlentyBasketSum { border-bottom: 1px solid #e0e0e0!important; }
+#PlentyWebBasketTotalsGoodsValueGross, #PlentyWebBasketTotalsShippingCostsGross,
+#PlentyWebBasketTotalsTotalAmount{ border-bottom:none!important; }
+#PlentyGoodsValueGrossDetail .PlentyCurrencyValue,
+#PlentyGoodsValueGrossDetail .PlentyCurrencySymbol { font-weight:bold; }
+.PlentyCurrencySymbol { padding-left:5px; }
+
+#PlentyShippingCostsGrossDetail .PlentyCurrencyValue,
+#PlentyShippingCostsGrossDetail .PlentyCurrencySymbol { font-weight:bold; }
+
+#PlentyVATDetail .PlentyCurrencyValue,
+#PlentyVATDetail .PlentyCurrencySymbol { font-weight:bold; }
+/* General Styles */
+#PlentyOrderCheckoutAccordion
+  {
+    margin:10px 0 10px 0;
+    clear:both;
+  }
+
+  /* Errors */
+  div.PlentyError input[type=text], div.PlentyError input[type=password]
+    {
+    border:none;
+    border:1px dashed #f44d4d!important;
+    background-color:#fbe7e7;
+    }
+    .PlentyError span
+    {
+      color:#f44d4d;  
+    }
+  
+  div.PlentyErrorPane
+    {
+    display:    none;
+    color:      white;
+    font-size:    12pt;
+    }
+   .PlentyErrorMessageBox
+   {
+    background-color: #f36060;
+    border: 1px dashed #9c2020 !important;
+    margin-bottom:5px;
+    padding:5px;
+   }
+   
+    .PlentyMandatoryField { font-weight:bold; }
+    #PlentyOrderWebShippingMethodContent input,#PlentyOrderWebPaymentMethodContent input
+    {
+         margin-right:5px;  
+    }
+
+	#PlentyOrderCheckoutButtonsTop > #PlentyOrderCheckoutButtonsOpenBasket { float:left; margin-bottom: 4px; }
+	#PlentyOrderCheckoutButtonsTop > #PlentyOrderCheckoutButtonsOpenHelp { float: right; }
+
+
+/* Accordion Headlines */
+
+  .AccordionTitle
+  {
+      background: #f2f6f8; /* Old browsers */
+      background: -moz-linear-gradient(top, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f6f8), color-stop(50%,#d8e1e7), color-stop(51%,#b5c6d0), color-stop(100%,#e0eff9)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* Opera11.10+ */
+     
+      
+      background: linear-gradient(top, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* W3C */  
+    
+      /* rounded borders top left and right */
+      -moz-border-radius-topleft:5px;
+      -moz-border-radius-topright:5px;
+      -khtml-border-radius-topleft:5px;
+      -khtml-border-radius-topright:5px;
+      
+      /* rest */
+      color:#32576d;
+      font-size:18px;
+      border:1px solid #b5c6d0;
+      padding:5px 10px 5px 10px;
+      font-weight:400;
+  }
+  .AccordionTitle.CurrentAccordionTitle
+  {
+    background: #a8def7; /* Old browsers */
+    background: -moz-linear-gradient(top, #a8def7 0%, #7bbbe5 50%, #5aa4ce 51%, #3bacf7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8def7), color-stop(50%,#7bbbe5), color-stop(51%,#5aa4ce), color-stop(100%,#3bacf7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a8def7 0%,#7bbbe5 50%,#5aa4ce 51%,#3bacf7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a8def7 0%,#7bbbe5 50%,#5aa4ce 51%,#3bacf7 100%); /* Opera11.10+ */
+  
+    background: linear-gradient(top, #a8def7 0%,#7bbbe5 50%,#5aa4ce 51%,#3bacf7 100%); /* W3C */
+
+    /* rest */
+    border:1px solid #68b2e4;
+    color:#fff;
+    font-weight:bold;
+  }
+ 
+
+ .AccordionTitle.AlreadyOpened
+  {
+    background: #a8def7; /* Old browsers */
+    background: -moz-linear-gradient(top, #a8def7 0%, #7bbbe5 50%, #5aa4ce 51%, #3bacf7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8def7), color-stop(50%,#7bbbe5), color-stop(51%,#5aa4ce), color-stop(100%,#3bacf7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a8def7 0%,#7bbbe5 50%,#5aa4ce 51%,#3bacf7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a8def7 0%,#7bbbe5 50%,#5aa4ce 51%,#3bacf7 100%); /* Opera11.10+ */
+    background: linear-gradient(top, #a8def7 0%,#7bbbe5 50%,#5aa4ce 51%,#3bacf7 100%); /* W3C */
+
+    /* rest */
+    border:1px solid #68b2e4;
+    color:#fff;
+    font-weight:bold;
+  }
+  
+ /* Unique goes here */
+ 
+ /* Unique goes here */
+
+
+/* Accordion Body */
+
+  #PlentyOrderCheckoutAccordion > .AccordionPane
+  {
+    
+    -webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+    border:1px solid #d4d4d4;
+    border-top:0;
+    background-color:#fff;
+    padding:15px;
+    line-height:17px;
+    margin-bottom:10px;
+  }
+
+
+/* Input fields*/
+/* CHANGED */
+div.PlentyFormBox input[type=text],div.PlentyFormBox input[type=password]
+{
+/*  border:none;  
+  border:1px solid #CCC;
+  padding:3px 0;
+  margin-top:2px;*/
+}
+/* CHANGED */
+div.PlentyFormBox input[type=text]:focus,div.PlentyFormBox input[type=password]:focus
+{
+/*  border:none;  
+  border:1px solid #4582a5;
+  padding:3px 0;*/
+}
+
+/* General Styles end */
+
+
+.PlentyOrderDeliveryAddress
+{
+  border: 1px solid #cccccc;
+  margin: 16px 7px 0px 7px;
+  padding: 10px;
+  float: left;
+  width: 45%;
+}
+
+.PlentyOrderDeliveryAddress > .PlentyWebShippingDetailsListTitle
+{
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #cccccc;
+  font-weight: bold;
+  margin: -10px;
+  padding: 10px;
+display: block;
+}
+
+
+.PlentyOrderDeliveryAddress > .PlentyWebShippingDetailsListContent
+{
+  margin-top: 15px;
+float: left;
+}
+
+.PlentyOrderDeliveryAddress > .PlentyWebEditButtonContent
+{
+float: right;
+margin-top: 15px;
+}
+
+#PlentyWebShippingDetailsSubmit
+{
+    clear: both;
+
+text-align: right;
+padding:5px;
+}
+	
+
+.button a { line-height: 21px !important;
+border: 1px solid #CCC !important;
+color: white !important;
+padding: 2px 30px 2px 15px !important;
+cursor: pointer !important;
+background: #008EBD url(/layout/pm/images/icon/link-arrow.png) no-repeat center right !important;
+width: auto !important;
+height: auto !important;
+-moz-border-radius: 3px !important;
+-webkit-border-radius: 3px !important;
+border-radius: 3px !important;
+display: inline-block !important;
+font-size: 11px !important;
+font-weight: bold !important;
+text-decoration: none !important;
+	margin-top: 2px!important;
+}
+
+.button a:focus,.button a:hover { background-color: #707173 !important; }
+
+#PlentyOrderCheckoutAccordion{
+/*background-color:#fff; 
+padding:20px; 
+border:solid 2px #ffffff;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 0px 0px 6px #cccccc;
+-webkit-box-shadow: 0px 0px 6px #cccccc;
+box-shadow: 0px 0px 6px #cccccc;*/
+margin-bottom:15px;		
+}
+#PlentyOrderCheckoutAccordion .AccordionTitle { 
+margin-top:10px; 
+color: #232323;
+font-size: 16px!important;
+font-weight:bold;
+padding: 7px 14px 0 14px;
+font-style: normal;
+letter-spacing: 0!important;
+border: 1px solid #D4D4D4;
+background: #F3F3F3;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+line-height: 30px!important;
+padding-bottom:5px!important;
+}
+
+#PlentyOrderCheckoutAccordion h1:nth-child(2) { margin-top:0; }
+
+.CurrentAccordionTitle {
+background-color:#fff!important;
+border-bottom:none!important;
+color:#008EBD!important;
+-webkit-border-bottom-right-radius: 0px!important;
+-webkit-border-bottom-left-radius: 0px!important;
+-moz-border-radius-bottomright: 0px!important;
+-moz-border-radius-bottomleft: 0px!important;
+border-bottom-right-radius: 0px!important;
+border-bottom-left-radius: 0px!important;
+}
+
+
+div#PlentyWebInvoiceDetailsContainer1, div#PlentyWebInvoiceDetailsContainer2 {
+border:none!important;
+}
+
+#PlentyOrderCheckoutAccordion label { font-weight:400; }
+#PlentyOrderCheckoutAccordion .PlentyMandatoryField label { font-family: myriadpro-regular; }
+
+#PlentyOrderCheckoutAccordion input[type="text"],
+#PlentyOrderCheckoutAccordion input[type="password"],
+#PlentyOrderCheckoutAccordion select {
+	margin-bottom:20px!important;	
+}
+
+#PlentyWebInvoiceDetailsShippingAdressContainer span { display:inline!important; }
+#PlentyOrderCheckoutAccordion label { display:inline!important; } 
+
+#button_order_help { display: none; }
+
+#PlentyOrderCheckoutAccordion label { text-align:left!important; }
+
+#PlentyWebInvoiceDetailsShippingAdressThis,
+#PlentyWebInvoiceDetailsShippingAdressOther { margin-bottom:0!important; }
+
+.CurrentAccordionTitle .PlentyWebBasketDecoration {
+	border-bottom: 1px solid #E0E0E0!important; padding-bottom:6px!important; }
+
+#PlentyOrderCheckoutAccordion input { margin-left:0!important; }
+#PlentyWebInvoiceDetailsShippingAdressOtherContent { margin-left:20px!important; }
+
+
+#PlentyOrderCheckoutAccordion select { width: auto; }
+
+
+
+/* UPDATE */
+
+
+/* CHECKOUT */
+
+/* registration */
+
+#PlentyWebInvoiceDetailsForm #PlentyWebInvoiceDetailsHouseNo,
+#PlentyWebInvoiceDetailsForm #PlentyWebInvoiceDetailsCity,
+#PlentyWebInvoiceDetailsForm #PlentyWebInvoiceDetailsBirthyear {
+margin-right: 0 !important;
+}
+
+#PlentyWebInvoiceDetailsForm #PlentyWebInvoiceDetailsBirthday,
+#PlentyWebInvoiceDetailsForm #PlentyWebInvoiceDetailsBirthmonth {
+width: 14% !important;
+}
+/* Errors */
+  div.PlentyError input[type=text], 
+div.PlentyError input[type=password],
+div.PlentyError select
+    {
+    border:none;
+    border:1px dashed #f44d4d!important;
+    background-color:#fbe7e7;
+    }
+    .PlentyError span
+    {
+      color:#f44d4d;  
+    }
+  
+  div.PlentyErrorPane
+    {
+    display:    none;
+    color:      white;
+    font-size:    11pt;
+line-height: 12pt;
+    }
+   .PlentyErrorMessageBox
+   {
+    background-color: #f36060;
+    border: 1px dashed #9c2020 !important;
+    margin-bottom:5px;
+    padding:5px;
+   }
+div.PlentyAdviceMsg {
+font-size: 11pt;
+line-height: 12pt;
+}
+
+
+
+
+/* main header */
+#PlentyWebCustomerRegistrationTitle {
+background: #EEEEEE;
+border-bottom: 2px solid #CCCCCC !important;
+color: #444444;
+font-size: 18px;
+font-weight: normal;
+padding: 5px 10px;
+margin-bottom: 0;
+}
+
+/* main container */
+#PlentyWebCustomerRegistrationMainContainer {
+background-color: #FFFFFF;
+border: 1px solid #CCCCCC;
+line-height: 17px;
+padding: 16px;
+}
+
+/* 2 COLUMN LAYOUT */
+
+/* table */
+#PlentyWebCustomerRegistrationTable { 
+display: table;
+width: 100%;
+}
+/* row */
+#PlentyWebCustomerRegistrationTableRow { 
+display: table-row;
+}
+/* cell */
+#PlentyWebCustomerRegistrationTableRow > div { 
+display: table-cell;
+width: 50%;
+}
+#PlentyWebCustomerRegistrationContainer1 {
+padding-right: 8px;
+}
+#PlentyWebCustomerRegistrationContainer2 {
+padding-left: 8px;
+}
+
+
+/* LABEL INPUT LIST */
+
+/* table */
+#PlentyWebCustomerRegistrationContainer1 > div,
+#PlentyWebCustomerRegistrationContainer2 > div {
+display: table;
+width: 100%;
+}
+/* row */
+.PlentyWebCustomerRegistrationData {
+display: table-row;
+}
+/* cell */
+.PlentyWebCustomerRegistrationData > div {
+display: table-cell;
+vertical-align: middle;
+}
+/* label cell */
+.PlentyWebTableCellLabel {
+}
+/* input cell */
+.PlentyWebTableCellInputs,
+.PlentyWebTableCellInputsMulti {
+width: 61%;
+}
+
+/* label */
+.PlentyWebTableCellLabel > span {
+display: block;
+}
+/* input wrappers */
+.PlentyWebTableCellInputs > span,
+.PlentyWebTableCellInputsMulti > span {
+display: block;
+margin: 2px 0;
+}
+/* input */
+.PlentyWebTableCellInputs > span > input,
+.PlentyWebTableCellInputsMulti > span > input,
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayDayInput > input,
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayMonthInput > input,
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayYearInput > input  {
+width: 100%;
+margin-left: -1px;
+color: #404040 !important;
+}
+/* select */
+.PlentyWebTableCellInputs > span > select {
+margin-left: -1px;
+}
+/* input wrapper multi (street, nr., zip, city) */
+.PlentyWebTableCellInputsMulti #PlentyWebCustomerRegistrationInputStreetInput,
+.PlentyWebTableCellInputsMulti #PlentyWebCustomerRegistrationInputCityInput {
+width: 74%;
+}
+.PlentyWebTableCellInputsMulti #PlentyWebCustomerRegistrationInputHouseNoInput,
+.PlentyWebTableCellInputsMulti #PlentyWebCustomerRegistrationInputZipCodeInput {
+width: 22%;
+}
+/* input wrapper multi (street, nr., zip, city) */
+.PlentyWebTableCellInputsMulti #PlentyWebCustomerRegistrationInputStreetInput,
+.PlentyWebTableCellInputsMulti #PlentyWebCustomerRegistrationInputZipCodeInput {
+float: left;
+}
+.PlentyWebTableCellInputsMulti #PlentyWebCustomerRegistrationInputHouseNoInput,
+.PlentyWebTableCellInputsMulti #PlentyWebCustomerRegistrationInputCityInput {
+float: right;
+}
+.PlentyWebCustomerRegistrationClear {
+clear: both;
+}
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayInput {
+display: block;
+}
+/* input wrapper multi (date of birth) */
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayDayInput,
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayMonthInput,
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayYearInput {
+display: block;
+float: left;
+vertical-align: top;
+text-align: center;
+width: 9%;
+}
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayYearInput {
+width: 22%;
+}
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayMonthInput,
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayYearInput {
+margin-left: 4%;
+}
+
+#PlentyWebCustomerRegistrationUpdateCustomerDetailsInputBirthdayInput input {
+text-align: center;
+}
+
+#PlentyWebCustomerRegistrationBirthdayTitle,
+#PlentyWebCustomerRegistrationVATNumberTitle {
+}
+#PlentyWebCustomerRegistrationBirthdayNotice,
+#PlentyWebCustomerRegistrationVATNumberNotice {
+display: block;
+font-size: 0.8em;
+padding: 2px 0;
+}
+
+/* select */
+#PlentyWebCustomerRegistration select {
+border: 1px solid #CCCCCC;
+font-size: 12px;
+margin-top: 2px;
+margin-bottom: 0;
+height: 34px; /*no height set*/
+padding: 7px 5px 7px 0; /*no padding set*/
+}
+#PlentyWebCustomerRegistration select:hover,
+#PlentyWebCustomerRegistration select:focus {
+border-color: #666666; /*1474d4*/
+}
+#PlentyWebCustomerRegistrationSalutation {
+width: 33%;
+}
+#PlentyWebCustomerRegistrationCountry {
+width: 66%;
+}
+
+/* input */
+#PlentyWebCustomerRegistration input[tyle=text],
+#PlentyWebCustomerRegistration input[tyle=password] {
+border: 1px solid #CCCCCC;
+padding: 2px 3px;
+font-size: 12px;
+height: 28px; /*13px*/
+margin-top: 2px;
+margin-bottom: 0;
+}
+#PlentyWebCustomerRegistration input[tyle=text]:hover,
+#PlentyWebCustomerRegistration input[tyle=password]:hover,
+#PlentyWebCustomerRegistration input[tyle=text]:focus,
+#PlentyWebCustomerRegistration input[tyle=password]:focus {
+border-color: #666666 !important; /*1474d4*/
+}
+
+/* note */
+#PlentyWebCustomerRegistrationContainer4 {
+margin-top: 16px;
+}
+
+
+#PlentyWebLoginRegisterRadios > div > label > input[type=radio] {
+height: auto !important;
+}
+
+.PlentyMandatoryField {
+font-weight: bold !important;
+}
+/* container main */
+
+#PlentyWebCancelNewsletter {
+    margin: 10px auto 0;
+    width: 322px;
+}
+
+
+/* accordion header (cancel newsletter) */
+
+#PlentyWebCancelNewsletterTitle
+{
+background: #EEEEEE;
+border-bottom: 2px solid #CCCCCC !important;
+color: #444444;
+font-size: 18px;
+font-weight: normal;
+padding: 5px 10px;
+margin-bottom: 0;
+}
+
+/* accordion body (cancel newsletter) */
+
+#PlentyWebCancelNewsletterMainContainer
+{
+background-color: #FFFFFF;
+border: 1px solid #CCCCCC;
+line-height: 17px;
+padding: 10px;
+
+font-family: Arial,Helvetica,sans-serif;
+}
+
+/* login container content */
+
+.PlentyMyAccountContainerTitle { 
+display: block; 
+color: #4582A5; 
+font-size: 14px; 
+margin-bottom: 10px; 
+padding-bottom: 5px; 
+} 
+
+/* text before */
+#PlentyWebCancelNewsletterNotice { 
+padding: 5px 0 10px; 
+color: #626262;
+} 
+
+/* row */
+#PlentyWebCancelNewsletterEMailContainer {
+display: block; 
+} 
+
+/* labels */
+#PlentyWebCancelNewsletterEMailTitle { 
+display: inline-block; 
+float: left;
+width: 100px; 
+
+padding-top: 11px;
+color: #626262;
+} 
+
+/* input container */
+#PlenyWebCancelNewsletterEMailContent { 
+    display: inline-block; 
+    color: #626262;
+    font-weight: normal; 
+} 
+
+/* inputs */
+#PlentyWebCancelNewsletterEMail {
+border: 1px solid #CCCCCC;
+padding: 2px 3px;
+font-size: 12px;
+height: 28px; /*13px*/
+margin-top: 2px;
+margin-bottom: 0;
+
+width: 190px;
+}
+/* inputs hover,focus */
+#PlentyWebCancelNewsletterEMail:hover,
+#PlentyWebCancelNewsletterEMail:focus {
+border-color: #666666 !important; /*1474d4*/
+}
+
+/* text after */
+#PlentyWebCancelNewsletterContainer2 { 
+padding-top: 10px; 
+padding-bottom: 5px; 
+} 
+
+
+
+/* LINKS */
+
+
+/*standard*/
+
+#PlentyWebMyAccountLogin a:link, 
+#PlentyWebMyAccountLogin a:visited {
+color: #282828 !important;
+text-decoration: none;
+}
+#PlentyWebMyAccountLogin a:hover,
+#PlentyWebMyAccountLogin a:focus,
+#PlentyWebMyAccountLogin a:active {
+color: #686868 !important;
+text-decoration: none;
+}/* 1 Accordion*/
+
+  #PlentyWebLoginRegister,#PlentyWebLoginLogin
+  {
+    display:inline-block;
+    width:47%;  
+    vertical-align:top;
+  }
+  #PlentyWebLoginLogin
+  {
+    margin-left:30px  
+  }
+  #PlentyWebLoginNotice
+  {
+    font-size:14px;
+    font-weight:bold;
+    margin:10px 0 10px 0
+  }
+  .PlentyFormContainer.PlentyWebLoginData
+  {
+    margin:10px 0 10px 0;  
+  }  
+  #PlentyWebLoginRegisterTitle,#PlentyWebLoginLoginTitle
+  {
+    font-size:14px;
+    color:#404040;
+    border-bottom:1px solid #e0e0e0;
+    padding-bottom:5px;
+    margin-bottom:10px;
+  }
+  #PlentyWebLoginRegisterRadiosRegister { margin-top:3px; }
+  #PlentyWebLoginRegisterRadios { font-weight:bold; }
+  #PlentyWebLoginLoginEmailTitle,#PlentyWebLoginLoginPasswordTitle { width:100px;display:inline-block }
+  #PlentyWebLoginLoginSubmit { margin-top: 10px; }
+  #PlentyWebLoginRegisterSubmit { margin-top:10px; }
+  
+  #PlentyWebInvoiceDetailsVATNumberNotice { font-size: 90%; }
+  /* container main */
+
+#PlentyWebLostPWDLogin {
+}
+
+
+/* login container content */
+
+.PlentyMyAccountContainerTitle { 
+display: block; 
+color: #4582A5; 
+font-size: 14px; 
+margin-bottom: 10px; 
+padding-bottom: 5px; 
+} 
+
+/* text before */
+#PlentyWebCancelNewsletterNotice { 
+padding: 5px 0 10px; 
+color: #626262;
+} 
+
+/* row */
+#PlentyWebLostPWDData {
+display: block; 
+} 
+
+/* labels */
+#PlentyWebLostPWDLoginEmailTitle { 
+display: inline-block; 
+padding-right: 10px;
+
+padding-top: 11px;
+color: #626262;
+} 
+
+/* input container */
+#PlentyWebLostPWDLoginEmailContent { 
+    display: inline-block; 
+    color: #626262;
+    font-weight: normal; 
+} 
+
+/* inputs */
+#PlentyWebLostPWDLoginEmail {
+/*border: 1px solid #CCCCCC;
+padding: 2px 3px;
+font-size: 12px;
+height: 28px; /*13px*/
+margin-top: 2px;
+margin-bottom: 0;*/
+
+width: 190px;
+}
+
+/* text after */
+#PlentyWebLostPWDData + div { 
+padding-top: 10px; 
+padding-bottom: 5px; 
+} 
+
+
+
+/* LINKS */
+
+
+/*standard*/
+
+#PlentyWebMyAccountLogin a:link, 
+#PlentyWebMyAccountLogin a:visited {
+color: #282828 !important;
+text-decoration: none;
+}
+#PlentyWebMyAccountLogin a:hover,
+#PlentyWebMyAccountLogin a:focus,
+#PlentyWebMyAccountLogin a:active {
+color: #686868 !important;
+text-decoration: none;
+}div#PlentyWebInvoiceDetailsContainer1,
+div#PlentyWebInvoiceDetailsContainer2
+{
+display: table; border:1px solid #ccc;
+width: 49%;
+border-spacing: 2px;
+}
+
+div#PlentyWebInvoiceDetailsContainer1
+{
+float: left;
+}
+
+div#PlentyWebInvoiceDetailsContainer2
+{
+float: right;
+}
+
+
+div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer,
+div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer
+{
+display: table-row;
+}
+
+div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer > .PlentyFormTitle, div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer > .PlentyFormValue,
+div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer > .PlentyFormTitle, div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer > .PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer:first-child > .PlentyFormTitle,
+div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer:first-child > .PlentyFormValue,
+div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer:first-child > .PlentyFormTitle,
+div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer:first-child > .PlentyFormValue
+{
+padding-top:10px!important;
+}
+
+div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer:last-child > .PlentyFormTitle,
+div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer:last-child > .PlentyFormValue,
+div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer:last-child > .PlentyFormTitle,
+div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer:last-child > .PlentyFormValue
+{
+padding-bottom:10px!important;
+}
+
+div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer > .PlentyFormTitle,
+div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer > .PlentyFormTitle
+{
+text-align: left;
+}
+
+#PlentyWebInvoiceDetailsBirthdayNotice
+{
+display: block;
+}
+
+
+div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer > .PlentyFormValue input,
+div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer > .PlentyFormValue input
+{
+width:99%;
+}
+
+input#PlentyWebInvoiceDetailsStreet, input#PlentyWebInvoiceDetailsCity
+{
+width: 64% !important;
+}
+
+
+input#PlentyWebInvoiceDetailsHouseNo, input#PlentyWebInvoiceDetailsZIPCode
+{
+width: 27% !important;
+}
+
+#PlentyWebInvoiceDetailsBirthdayContainer .address_input_field
+{
+width: 27% !important;
+}
+
+
+#PlenyWebInvoiceDetailsStreetContent, #PlenyWebInvoiceDetailsZIPCodeContent
+{
+  text-align: right;
+}
+
+#PlentyWebInvoiceDetailsStreet, #PlentyWebInvoiceDetailsZIPCode
+{
+  float: left;
+}
+
+/*** Container 3     ***/
+
+div#PlentyWebInvoiceDetailsContainer3,
+div#PlentyWebInvoiceDetailsNotice2
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+
+#PlentyWebInvoiceDetailsSubmit
+{
+margin-top:5px;
+text-align:right;
+}
+
+#PlentyWebInvoiceDetailsContainer3,
+#PlentyWebInvoiceDetailsContainer4,
+div#PlentyWebInvoiceDetailsContainer3, div#PlentyWebInvoiceDetailsNotice2{ border:none!important; }
+
+#PlentyOrderCheckoutAccordion span label { display:inline-block!important; padding-top:6px!important }
+#PlentyWebInvoiceDetailsShippingAdressThis { margin-left:0; }
+
+#PlentyWebInvoiceDetailsNotice2 { margin-top:0!important; padding-top:0!important; }
+
+		#PlentyWebShippingDetailsLoginSubmit,#PlentyWebShippingDetailsFormPane .PlentyFormBox
+{
+    width:47%
+}
+#PlentyWebShippingDetailsLoginSubmit,#PlentyWebShippingDetailsFormPane .PlentyFormBox:last-child
+{
+  width:auto;
+}
+#PlentyWebShippingDetailsLoginSubmit
+{
+ text-align:right;
+ padding:5px;
+ margin-top:5px;
+border: none;
+}
+#PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer > .PlentyFormTitle
+{
+ display:inline-block;
+ width: 30%;
+ padding-right:5px;
+ text-align:right;
+}
+#PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer > .PlentyFormValue input
+{
+ width:100%  
+}
+#PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer > .PlentyFormValue
+{
+ display:inline-block;
+ width:67%
+}
+#PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer
+{
+ margin-bottom:2px!important;
+}    
+#PlentyWebShippingDetailsHouseNoTitle { display:none!important; }  
+#PlentyWebShippingDetailsHouseNoContainer { float:right!important; margin-right:5px;}    
+#PlentyWebShippingDetailsStreetContainer { width: 84%!important;float:left!important;  }
+#PlentyWebShippingDetailsStreetTitle { width:36%!important;}
+#PlentyWebShippingDetailsStreetContent { width:60%!important;}
+#PlentyWebShippingDetailsHouseNoContent { width:100%!important;}
+#WebPostfinderGetPackstationsOverlayTrigger
+{
+	margin-top: 10px;
+	cursor: pointer;
+	text-align: left;
+}
+
+#PlentyWebShippingDetailsZIPCodeContainer
+{
+  float: left !important;
+    width: 50% !important;  
+}
+
+#PlentyWebShippingDetailsZIPCodeTitle{
+ display: inline-block!important;
+    padding-right: 10px!important;
+    text-align: right!important;
+    width: 58% !important;
+  }
+  #PlentyWebShippingDetailsZIPCodeContent{
+     display: inline-block!important;
+   width: 29% !important;
+  }
+  #PlentyWebShippingDetailsCityContainer
+  {
+float: left!important;
+width: 49% !important;
+  }
+  #PlentyWebShippingDetailsCityContent
+  {
+    padding-right: 10px!important;
+    text-align: right!important;
+    width: 100% !important;
+  }
+  #PlentyWebShippingDetailsCityTitle { display:none!important;}
+  
+  #PlentyWebShippingDetailsNotice2
+  {
+  	padding: 5px;
+  	margin-top: 5px;
+  }
+	/* 4 Accordion */
+  
+  .PlentyWebPaymentMethodRadio
+  {
+        float: left; font-size: 12px; font-weight: 400; min-width: 250px; margin-bottom:10px;
+  }
+  .PlentyWebPaymentMethodPrice
+  {
+    font-size:14px;float:right;font-weight:400;  margin-bottom:10px;
+  }
+  .PlentyWebPaymentMethodAdvice
+  {
+    display:inline-block; margin-left:10px; margin-bottom:10px;
+  }
+  
+  #PlentyOrderWebPaymentMethodContent .PlentyFormBox > .PlentyFormContainer
+  {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  #PlentyWebPaymentMethodNotice
+  {
+    font-size:18px;
+
+  }
+  #PlentyWebPaymentMethodSubmit { text-align:right; margin-top:10px; }
+#PlentyWebPaymentMethod2Container { border-bottom:none!important }
+
+#PlentyWebPaymentMethodNotice { display:none!important; }
+#PlentyOrderWebPaymentMethodContent { padding:8px 15px!important; }div#PlentyWebBankInformationContainer
+{
+display : table;
+}
+
+div#PlentyWebBankInformationContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebBankInformationContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebBankInformationContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebBankInformationNotice,div#PlentyWebBankInformationNotice
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+
+#PlentyWebBankInformationSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneCreditCardContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneCreditCardContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneCreditCardContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneCreditCardContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneCreditCardNotice,div#PlentyWebPayoneCreditCardNotice
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+
+#PlentyWebPayoneCreditCardSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneDebitContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneDebitNotice,div#PlentyWebPayoneDebitNotice
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+
+#PlentyWebPayoneDebitSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneEpsContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneEpsContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneEpsContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneEpsContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneEpsNotice,div#PlentyWebPayoneEpsNotice
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneEpsSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneGiropayContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneGiropayContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneGiropayContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneGiropayContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneGiropayNotice,div#PlentyWebPayoneGiropayNotice
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneGiropaySubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneIdealContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneIdealContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneIdealContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneIdealContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneIdealNotice,div#PlentyWebPayoneIdealNotice
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneIdealSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneSofortueberweisungContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneSofortueberweisungContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneSofortueberweisungContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneSofortueberweisungContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneSofortueberweisungNotice,div#PlentyWebPayoneSofortueberweisungNotice
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneSofortueberweisungSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneDebitContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneDebitNotice,div#PlentyWebPayoneDebitNotice
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+
+#PlentyWebPayoneDebitSubmit
+{
+margin-top:5px;
+text-align:right;
+}/* 5 Accordion */
+
+  #PlentyOrderWebShippingMethodContent
+  {
+    padding-left: 5px;
+      padding-right: 5px;
+  }
+  #PlentyOrderWebShippingMethodContent .PlentyFormBox > .PlentyFormContainer
+  {
+    border-bottom: 1px solid #e0e0e0;
+	min-height:30px;
+	line-height:30px;
+  }
+  .PlentyWebShippingMethodName
+  {
+    float:left; font-size:12px; font-weight:400; 
+  }
+  .PlentyWebShippingMethodPrice
+  {
+    font-size:14px;float:right;font-weight:400;
+  }
+
+  #PlentyOrderWebPaymentMethodContent { margin-bottom:10px;}
+  #PlentyWebShippingMethodSubmit { text-align:right; margin-top:5px; }
+#PlentyWebShippingMethod10Container { border-bottom:0!important; }
+
+#PlentyWebShippingMethodNotice { display:none; }
+#PlentyOrderWebShippingMethodContent { padding:10px 15px!important }/* 6 Accordion */
+
+
+
+.PlentyFormContainer fieldset
+{
+      border: 1px solid #cccccc;
+}
+
+#PlentyWebOrderOverviewInvoiceContainer,#PlentyWebOrderOverviewShippingContainer,
+#PlentyWebOrderOverviewPaymentMethodContainer,#PlentyWebOrderOverviewShippingMethodContainer,
+#PlentyWebOrderOverviewSchedulerContainer
+{
+   padding:0;  
+}
+
+
+#PlentyWebOrderOverviewPaymentIcon
+{
+  float:left; padding:10px 0 10px 0;  
+}
+
+#PlentyWebOrderOverviewItemsBox
+{
+  clear:both;  
+  display:table;
+  border:1px solid #CCCCCC;
+}
+#PlentyWebOrderOverviewItemsContainer
+{
+  clear:both;
+}
+#PlentyWebOrderOverviewItems
+{
+  font-size:18px;  float:left;
+}
+#PlentyWebOrderOverviewItems
+{
+  font-size:18px;float:left;
+}
+.ItemsHeadline
+{
+   font-weight:bold;
+   display : table-cell;
+   border-bottom: 1px solid #e0e0e0;
+   padding: 5px;
+}
+#PlentyWebOrderOverviewItemsMain { display: table-row-group; }
+#PlentyWebOrderOverviewItemsMain .ItemsRow,#PlentyWebOrderOverviewItemsHeader { display:table-row; width:100%; }
+#PlentyWebOrderOverviewItemsMain .ItemsRow > div {display:table-cell; vertical-align:top; border-bottom:1px solid #B5C6D0; padding:5px; }
+#PlentyWebOrderOverviewItemsMain .ItemsRow:last-child > div{ border-bottom:none!important; }
+#PlentyWebOrderOverviewItemsHeaderImage { width:15%; }
+#PlentyWebOrderOverviewItemsMain > .PlentyFormContainer > .ItemsDescription > .ItemsDescriptionLink
+{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;  
+}
+
+#PlentyWebOrderOverviewItemsMain > .PlentyFormContainer > .ItemsDescription > .ItemsDescriptionDetails
+{
+    vertical-align: top;    
+}
+.PlentyOrderSumTitle
+{
+  font-weight:bold;
+  display:inline-block;
+}
+.PlentyOrderSumDetail
+{
+    display: inline-block;
+    min-width: 10%;
+    padding-left: 40px;
+    text-align: right;
+}
+#PlentyWebOrderOverviewOrderSumBox
+{
+  text-align:right;
+  margin:20px 0 20px 0;
+}
+.PlentyOrderSum
+{
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px;
+}
+#PlentyWebOrderTotalAmount
+{
+  border-bottom:none;  
+}
+#PlentyWebOrderTotalAmountSubscription
+{
+  border-top: 1px solid #CCCCCC;
+}
+
+#PlentyWebOrderOverviewSubmitContainer
+{
+  padding: 3px 3px 6px;
+  text-align:right;  
+}
+#PlentyWebOrderOverviewSubmitContainer > div
+{ display:inline;}
+
+#PlentyWebOrderOverviewNotice
+{
+  margin:10px 0 20px 0;  
+}
+#PlentyWebOrderOverviewAGBandWithdrawal h3
+{
+  font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 0;
+    padding: 0;
+}
+#PlentyWebOrderOverviewAGBContainer,#PlentyWebOrderOverviewWithdrawalContainer,#PlentyWebOrderOverviewNewsletterContainer
+{
+  margin-top:5px;
+}
+#PlentyWebOrderOverviewAGBContainer { margin-top:15px; }
+#PlentyWebOrderOverviewNotesContainer
+{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+#PlentyWebOrderOverviewNotesTextarea
+{
+  width:890px;
+}
+#PlentyWebOrderOverviewReference
+{
+  display:inline-block;
+  margin:10px 0 5px 0;  
+}
+#PlentyWebOrderOverviewItems,#PlentyWebOrderOverviewItemsChangeContainer
+{
+  float:none;display:inline-block;margin-top:10px;padding-bottom:10px
+}
+#PlentyWebOrderOverviewItemsChangeContainer
+{ float:right; margin-top:0;}
+#PlentyWebOrderOverviewItemsTop
+{
+  margin:16px 0 10px 0;  
+  background-color: #F0F0F0;
+  border: 1px solid #CCCCCC;
+  padding: 0 3px 0 25px;
+}
+
+
+/* Anzeige von IHR ZEICHEN & SONDERWÜNSCHE FÜR DIE BESTELLUNG */
+
+#PlentyWebOrderOverviewReferenceContainer,#PlentyWebOrderOverviewNotesContainer { display:none;}
+
+
+/* POSITIONEN DER EINZELNEN BOXEN */
+#PlentyWebOrderOverviewAGBPrivacyContainer { margin:15px 0; padding:10px!important; }
+#PlentyWebOrderOverviewItemsContainer { float: right; width: 73%; min-height:710px; }
+#PlentyWebOrderOverviewInvoiceContainer,#PlentyWebOrderOverviewShippingContainer,
+#PlentyWebOrderOverviewShippingMethodContainer,#PlentyWebOrderOverviewPaymentMethodContainer,
+#PlentyWebOrderOverviewSchedulerContainer
+{
+ border: 1px solid #CCCCCC;
+    float: left;
+    margin-top: 16px;
+    padding: 10px;
+    width: 23%;
+
+}
+#PlentyWebOrderOverviewPaymentMethodContainer { margin-bottom:10px; }
+#PlentyWebOrderOverviewSubmitContainer { clear:both; background-color:#f0f0f0; border:1px solid #ccc; }
+
+#PlentyWebOrderOverviewAGBandWithdrawal {  background-color: #F0F0F0;
+    
+    display: block;
+    margin: -10px;
+    padding: 10px;}
+
+
+
+
+
+/* Article */
+
+  #PlentyWebOrderOverviewItemsHeaderImage,.ItemsImage { width:15%; text-align:center; }
+  #PlentyWebOrderOverviewItemsHeaderDescription { width:65%; }
+  #PlentyWebOrderOverviewItemsHeaderQuantity { width:10%; }
+  #PlentyWebOrderOverviewItemsHeaderTotal { width:10%; }  
+  #PlentyWebOrderOverviewItemsHeader { background-color:#f0f0f0; }
+  
+  .ItemsDescriptionDetails > .PlentyFormContainer
+  {
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;  
+  }
+  .ItemsDescriptionDetails > .PlentyFormContainer span
+  {
+    display:block;
+  }
+  .ItemsDescriptionDetails > .PlentyFormContainer:first-child
+  {
+    margin-left:0;
+  }
+  .ItemsDescriptionUnitPriceTitle,.ItemsDescriptionNoTitle,.ItemsDescriptionIDTitle,.ItemsDescriptionEANTitle,.ItemsDescriptionConditionTitle,.ItemsDescriptionUnit0Title,.PlentyItemsDescriptionContainerTitle
+  {
+    font-weight:bold;
+  }
+  #PlentyWebOrderOverviewNoticeTotals
+  {
+    clear:both;
+    margin:20px 0 20px 0;
+  }
+  #PlentyWebOrderOverviewNotice2
+  {
+    margin:20px 0 20px 0;
+  }
+  #PlentyWebOrderOverviewSubmitText,.ItemsDescriptionUnitTitle,.ItemsAttributeValueTitle
+  {
+    font-weight:bold;  
+  }
+
+  #PlentyGoodsRebateTitle,#PlentyGoodsRebateDetail
+  {
+    color:#95c65c;
+  }
+  
+  #PlentyWebOrderOverviewGoodsValueGross,#PlentyWebOrderOverviewShippingCostsGross
+  {
+    border-bottom:none; padding-bottom:0;
+  }
+  #PlentyGoodsValueNetTitle,#PlentyShippingCostsNetTitle,#PlentySubtotalNetTitle
+  {
+    font-weight:400!important;
+  }
+
+#PlentyWebOrderOverviewInvoiceTitle,#PlentyWebOrderOverviewShippingTitle,
+#PlentyWebOrderOverviewShippingMethodTitle,#PlentyWebOrderOverviewPaymentMethodTitle,
+#PlentyWebOrderOverviewSchedulerTitle
+{
+  margin: -10px; display: block; background-color:#f0f0f0; padding: 10px; font-weight: bold;  
+}
+#PlentyWebOrderOverviewInvoiceDataContainer,#PlentyWebOrderOverviewShippingDataContainer,
+#PlentyWebOrderOverviewShippingMethodDataContainer,#PlentyWebOrderOverviewPaymentMethodDataContainer,
+#PlentyWebOrderOverviewSchedulerDataContainer
+{
+margin-top:15px;
+}
+
+.ItemsDescriptionDiscountDetail
+{
+color:#95C65C;
+}
+.ItemsDescriptionDiscountTitle { font-weight:bold;}
+
+	#PlentyTotalAmountDetail,#PlentyTotalAmountSubscriptionDetail
+	{
+		font-weight: bold;
+		vertical-align: top;
+	}
+	
+	#PlentyTotalAmountTitle > .PlentyDataAdditional,
+	#PlentyTotalAmountSubscriptionTitle> .PlentyDataAdditional
+	{
+		font-weight: normal;
+	}
+
+	#PlentyWebOrderVoucherCreditNote
+	{
+		color: #95C65C;
+	}
+  
+.ItemsDescriptionEAN
+{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIX SUM BOX */
+ 
+#PlentyWebOrderOverviewOrderSumBox {
+display: table;
+}
+#PlentyWebOrderOverviewOrderSumBox > div {
+display: table-row;
+}
+#PlentyWebOrderOverviewOrderSumBox > div > span {
+display: table-cell;
+vertical-align: top;
+padding: 5px 0;
+border-bottom: 1px solid #CCCCCC;
+}
+#PlentyWebOrderOverviewOrderSumBox > div > span.PlentyCurrencyContainer {
+padding-left: 30px;
+}
+ 
+ 
+ 
+ 
+/* SHOPPING CART SOLUTION */
+ 
+/* general */
+.PlentyWebClear {
+clear: both;
+}
+ 
+/* therms/conditions & privacy */
+#PlentyWebOrderOverviewAGBPrivacyContainer {
+margin-bottom: 0;
+}
+ 
+/* SHIPPING DETAILS */
+ 
+/* containers */
+#PlentyWebOrderOverviewInvoiceContainer,
+#PlentyWebOrderOverviewShippingContainer,
+#PlentyWebOrderOverviewShippingMethodContainer,
+#PlentyWebOrderOverviewPaymentMethodContainer,
+#PlentyWebOrderOverviewSchedulerContainer,
+#PlentyWebOrderOverviewAGBPrivacyContainer,
+#PlentyWebOrderOverviewReferenceContainer,
+#PlentyWebOrderOverviewNotesContainer {
+border: 1px solid;
+margin: 16px 0 0;
+min-height: 140px;
+}
+#PlentyWebOrderOverviewReferenceContainer,
+#PlentyWebOrderOverviewNotesContainer {
+min-height: 1px;
+height: auto;
+}
+#PlentyWebOrderOverviewAGBPrivacyContainer {
+height: auto;
+min-height: 0;
+}
+/* containers half width */
+#PlentyWebOrderOverviewInvoiceContainer,
+#PlentyWebOrderOverviewShippingContainer,
+#PlentyWebOrderOverviewShippingMethodContainer,
+#PlentyWebOrderOverviewPaymentMethodContainer,
+#PlentyWebOrderOverviewSchedulerContainer {
+width: 46%;
+}
+/* containers right */
+#PlentyWebOrderOverviewShippingContainer,
+#PlentyWebOrderOverviewShippingMethodContainer {
+float: right;
+clear: right;
+}
+/* individual style */
+#PlentyWebOrderOverviewPaymentMethodContainer {
+margin-bottom: 16px;
+}
+#PlentyWebOrderOverviewAGBPrivacyContainer > span > h3 {
+font-size: 16px;
+}
+/* header */
+#PlentyWebOrderOverviewInvoiceContainer > span,
+#PlentyWebOrderOverviewShippingContainer > span,
+#PlentyWebOrderOverviewShippingMethodContainer > span,
+#PlentyWebOrderOverviewPaymentMethodContainer > span,
+#PlentyWebOrderOverviewSchedulerContainer > span,
+#PlentyWebOrderOverviewAGBPrivacyContainer > span,
+.PlentyWebItemContainerHeader {
+display: block;
+background: #F3F3F3;
+color: #444444;
+font-size: 14px;
+line-height: 17px;
+padding: 0;
+}
+/* header label */
+.PlentyWebItemContainerHeaderTitle,
+#PlentyWebOrderOverviewAGBandWithdrawal > h3 {
+display: inline-block;
+padding: 10px 10px 7px;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+}
+/* button */
+.PlentyWebButtonsRightContainer {
+display: block !important; /*to overwrite element style*/
+float: right;
+margin-right: 5px;
+padding-bottom: 5px;
+position: relative;
+top: 1px;
+}
+/* hide old button */
+.PlentyWebOrderOverviewChangeContainerBottom {
+display: none;
+}
+/* content container */
+#PlentyWebOrderOverviewInvoiceDataContainer,
+#PlentyWebOrderOverviewShippingDataContainer,
+#PlentyWebOrderOverviewShippingMethodDataContainer,
+#PlentyWebOrderOverviewPaymentMethodDataContainer,
+#PlentyWebOrderOverviewSchedulerDataContainer {
+margin-top: 20px;
+}
+/* textarea / input */
+#PlentyWebOrderOverviewNotesTextareaBox,
+#PlentyWebOrderOverviewReferenceInputBox {
+padding: 5px 10px;
+}
+#PlentyWebOrderOverviewNotesTextareaContainer,
+#PlentyWebOrderOverviewReferenceInputContainer {
+display: block;
+margin: 3px 4px;
+}
+#PlentyWebOrderOverviewNotesTextareaContainer > textarea,
+#PlentyWebOrderOverviewReferenceInputContainer > input {
+height: 100px;
+width: 100%;
+margin-left: -4px;
+padding: 2px 3px;
+font-family: inherit;
+font-size: inherit;
+line-height: 16px;
+}
+#PlentyWebOrderOverviewNotesTextareaContainer > textarea {
+height: 100px;
+resize: vertical !important;
+}
+ 
+ 
+/* ITEMS CONTAINER */
+ 
+/* background color all container */
+#PlentyWebOrderOverviewItemsContainer {
+background: #E9F1F7;
+}
+ 
+/* items container */
+#PlentyWebOrderOverviewItemsContainer {
+min-height: 0;
+width: auto;
+float: none;
+clear: both;
+border: 1px solid #CCCCCC;
+margin-top: 16px;
+padding: 0 10px 10px;
+}
+/* header */
+#PlentyWebOrderOverviewItemsTop {
+border: none;
+background: #90B9D7;
+margin: 0 -10px 10px;
+padding: 0;
+}
+/* header label */
+#PlentyWebOrderOverviewItems {
+display: inline-block;
+padding: 10px 10px 7px;
+margin-top: 0;
+font-size: 16px;
+font-weight: bold;
+line-height: 18px;
+}
+/* header button */
+#PlentyWebOrderOverviewItemsTop > #PlentyWebOrderOverviewItemsChangeContainer {
+display: block;
+float: right;
+margin-right: 5px;
+padding-bottom: 5px;
+position: relative;
+top: 1px;
+}
+/* items container */
+#PlentyWebOrderOverviewItemsBox {
+margin-bottom: 0;
+}
+/* sum box */
+#PlentyWebOrderOverviewOrderSumBox {
+margin: 0 0 0 50%;
+width: 50%;
+padding-bottom: 1px;
+text-align: left;
+}
+/* text after sum */
+#PlentyWebOrderOverviewNoticeTotals,
+#PlentyWebOrderOverviewNoticeNonEUDelivery,
+#PlentyWebOrderOverviewNoticeEUDelivery {
+margin: 0 0 0 50%;
+}
+/* button container */
+#PlentyWebOrderOverviewSubmitContainer {
+border: none;
+background: none;
+margin-top: 0;
+padding: 8px 0 0;
+}
+ 
+ 
+/* ITEMS LIST */
+ 
+/* main */
+#PlentyWebOrderOverviewItemsBox {
+border: none;
+border-bottom: 1px solid #cccccc;
+}
+/* header */
+#PlentyWebOrderOverviewItemsHeader {
+background-color: transparent;
+}
+/* header cells */
+.ItemsHeadline {
+border-bottom-color: #e0e0e0;
+}
+/* list container */
+#PlentyWebOrderOverviewItemsMain .ItemsRow > div {
+border-bottom-color: #cccccc;
+}
+ 
+/* SUM BOX */
+ 
+/* container */
+#PlentyWebOrderOverviewOrderSumBox {
+}
+/* column width */
+#PlentyWebOrderOverviewOrderSumBox > div > span:first-child {
+width: 70%;
+}
+/* price sum */
+#PlentyWebOrderTotalAmount {
+font-size: 19px;
+}
+/* note vat */
+#PlentyWebOrderOverviewOrderSumBox .PlentyDataAdditional {
+font-size: 11px; /*.7*/
+font-weight: normal;
+}
+/* note vat scheduler */
+#PlentyTotalAmountSubscriptionTitle .PlentyDataAdditional {
+font-size: 0.7em;
+}
+/* line */
+#PlentyWebOrderOverviewOrderSumBox > div > span {
+border-bottom-color: #E4E4E4;
+}
+/* no line */
+#PlentyWebOrderOverviewOrderSumBox > div#PlentyWebOrderOverviewGoodsValueGross > span,
+#PlentyWebOrderOverviewOrderSumBox > div#PlentyWebOrderOverviewShippingCostsGross > span {
+border-bottom: none;
+}
+/* main line */
+#PlentyWebOrderOverviewOrderSumBox > div#PlentyWebOrderTotalAmount > span {
+border-color: #000000;
+}
+ 
+/* TEXT AFTER SUM BOX */
+ 
+#PlentyWebOrderOverviewNoticeTotals > div,
+#PlentyWebOrderOverviewNoticeNonEUDelivery > div,
+#PlentyWebOrderOverviewNoticeEUDelivery > div {
+font-size: 0.7em;
+line-height: 1.6em;
+}
+#PlentyWebOrderOverviewNoticeTotals > div:first-child,
+#PlentyWebOrderOverviewNoticeNonEUDelivery > div:first-child,
+#PlentyWebOrderOverviewNoticeEUDelivery > div:first-child {
+margin-top: 8px;
+} 
+
+#PlentyWebOrderOverviewItemsBox { width:100%!important; }
+.PlentyFormContainer.ItemsPrice.PlentyCurrencyContainer,
+#PlentyWebOrderOverviewItemsHeaderTotal { text-align:right!important; }
+	
+#PlentyWebOrderOverviewItemsHeaderQuantity,
+.PlentyFormContainer.ItemsQuantity { text-align:center!important; }
+
+
+
+#PlentyWebOrderOverviewInvoiceContainer,#PlentyWebOrderOverviewShippingContainer,
+#PlentyWebOrderOverviewPaymentMethodContainer,#PlentyWebOrderOverviewShippingMethodContainer,
+#PlentyWebOrderOverviewAGBPrivacyContainer{ 
+border: solid 2px #fff;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 0px 0px 6px #cccccc;
+-webkit-box-shadow: 0px 0px 6px #CCC;
+box-shadow: 0px 0px 6px #CCC;
+margin-bottom: 15px;
+}
+
+#PlentyWebOrderOverviewItemsContainer {
+	border: solid 2px white;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 0px 0px 6px #cccccc;
+-webkit-box-shadow: 0px 0px 6px #CCC;
+box-shadow: 0px 0px 6px #CCC;
+margin-bottom: 15px;
+
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px; 
+}
+
+#PlentyWebOrderOverviewItemsTop {
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px; 
+}.PayoneCreditCardTable
+{
+	border: 1px black solid;
+	width: 70%
+}
+
+.PayoneCreditCardTable td, th
+{
+	padding: 6px 10px 5px 15px;
+	border: 0px;
+}
+
+.PayoneCreditCardTable tr:first-child th
+{
+	background-color: #4e5559;
+	padding-left: 10px;
+	border: 1px solid black;
+	color: #FFFFFF;
+}
+			
+.PayoneCreditCardTable input
+{
+	height: 20px;
+	line-height: 1;
+}div#PlentyWebPayoneDebitContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneDebitContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneDebitTextVor,div#PlentyWebPayoneDebitTextNach
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneDebitSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneGiropayContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneGiropayContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneGiropayContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneGiropayContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneGiropayTextVor,div#PlentyWebPayoneGiropayTextNach
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneGiropaySubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneSofortUeberweisungContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneSofortUeberweisungContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneSofortUeberweisungContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneSofortUeberweisungContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneSofortUeberweisungTextVor,div#PlentyWebPayoneSofortUeberweisungTextNach
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneSofortUeberweisungSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneEpsContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneEpsContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneEpsContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneEpsContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneEpsTextVor,div#PlentyWebPayoneEpsTextNach
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneEpsSubmit
+{
+margin-top:5px;
+text-align:right;
+}div#PlentyWebPayoneIDealContainer
+{
+display : table;
+}
+
+div#PlentyWebPayoneIDealContainer > div.PlentyFormContainer
+{
+display : table-row;
+}
+
+div#PlentyWebPayoneIDealContainer > div.PlentyFormContainer > span.PlentyFormTitle,
+div#PlentyWebPayoneIDealContainer > div.PlentyFormContainer > span.PlentyFormValue
+{
+display: table-cell;
+vertical-align: top;
+padding:0 5px;
+}
+
+div#PlentyWebPayoneIDealTextVor,div#PlentyWebPayoneIDealTextNach
+{
+clear: both;
+border:1px solid #ccc;
+padding:5px;
+margin-top:5px;
+}
+
+#PlentyWebPayoneIDealSubmit
+{
+margin-top:5px;
+text-align:right;
+}
+
+
+
+
+.checkout,
+.PlentyWebMyAccount{
+font-weight: normal;
+}
+.checkout > #PlentyOrderCheckoutButtonsTop {
+margin-top: 30px;
+height: 35px;
+}
+.checkout .AccordionTitle {
+margin-bottom: 0;
+}
+.pmUlSeemless {
+list-style-type: none;
+padding: 0;
+}
+
+
+#PlentyWebOrderSystemMainContainer { margin-top: 30px; }
+
+.submitButtonContainer + .pmVatHint {
+    margin-top: 10px;
+}
+.pmVatHint, .pmHint {
+    color: #999999;
+}
+.pmOrderSystemConfirmationPopup {
+    left: 50%;
+    margin-left: -168px;
+    width: 310px;
+}
+
+
+.pmPaddingLargeLeftRight {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pmPadding {
+    padding: 15px;
+}
+
+.border-shadow-small > .pmh3:first-child,
+.pmContentBoxItem > .pmh3 {
+color: inherit;
+    background:#f2f2f2;
+    padding: 0 20px;
+    font-weight:bold;
+}
+.pmContentBoxItem > .pmh3 {
+padding: 5px 10px;
+}
+.fleft { float: left; }
+.fright { float: right; }
+
+.pmOfferBoxContent:after {
+content: "";
+display:table;
+clear: both;
+}
+
+
+/* fix */
+
+
+.pmOrderSystemsCustomerRegistrationTop + .pmMarginBottom form#PlentyWebOrderSystemForm,
+.pmOrderSystemsCustomerRegistrationTop + .pmMarginBottom form#PlentyWebOrderSystemLoginForm,
+#PlentyWebOrderSystemLoginForm + .pmSpan50 { width: 50%; }
+#PlentyWebOrderSystemLoginForm,
+#PlentyWebOrderSystemLoginForm + .pmSpan50 { float: right !important; }
+#PlentyWebOrderSystemMainContainer .pmSpan50 { 
+	border: none;
+	
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.pmOrderSystemsCustomerRegistrationTop + .pmMarginBottom form#PlentyWebOrderSystemForm > .pmSpan50,
+.pmOrderSystemsCustomerRegistrationTop + .pmMarginBottom form#PlentyWebOrderSystemLoginForm > .pmSpan50, { 
+	float: none !important;
+}
+#PlentyWebOrderSystemForm > .pmSpan50 { padding-right: 15px; }
+#PlentyWebOrderSystemLoginForm > .pmSpan50,
+#PlentyWebOrderSystemLoginForm + .pmSpan50 { padding-left: 15px; }
+
+.pmOrderSystemsCustomerRegistrationTop + .pmMarginBottom.clearfix .pmSpecialOfferBoxHeader.smallHeader,
+.pmOrderSystemsCustomerRegistrationTop + .pmMarginBottom.clearfix .pmPaddingLargeLeftRight {
+	padding-left: 0;
+	padding-right: 0;
+}
+#PlentyWebOrderSystemLoginForm > .pmSpan50 { float: none; width: auto; }
+
+
+/* SJS */
+
+#PlentyOrderSystemContentContainer .clearfix:first-child > .border-shadow-small.pmWhite { box-shadow:none }
+#PlentyOrderSystemContentContainer .clearfix:first-child > .border-shadow-small.pmWhite > .pmPaddingLargeLeftRight.clearfix { padding:0; }
+#PlentyOrderSystemContentContainer .clearfix:first-child > .border-shadow-small.pmWhite > .pmSpecialOfferBoxHeader.smallHeader { padding:0; }
+#PlentyOrderSystemContentContainer .clearfix:first-child .pmInnerColumn50.pmOderSystemTestSystemColumn.pmBorderRight.fleft,
+#PlentyOrderSystemContentContainer .clearfix:first-child .pmInnerColumn50.pmOderSystemTestSystemColumn.pmBorderLeft.fright
+{
+	width:50%; border:none;
+}
+
+.checkout .button,
+.checkout .inlineSubmitButton,
+.pmPopup .button,
+.pmPopup .inlineSubmitButton,
+.pmPopup input[type="button"]
+{
+border: 1px solid #cccccc;
+border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+border-bottom-color: #b3b3b3;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+text-decoration:none;
+margin-bottom: 0;
+font-size: 14px;
+display: inline-block;
+padding: 4px 12px;
+line-height: 20px;
+text-align: center;
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+vertical-align: middle;
+cursor: pointer;
+background-color: #008EBD;
+background-image: -moz-linear-gradient(top, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0)));
+background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+background-image: -o-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+background-image: -ms-linear-gradient(top, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+background-image: linear-gradient(to bottom, rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+background-repeat: repeat-x;
+border-color: #0044cc #0044cc #002a80; 
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+font-weight:400;
+background-position:0% 0%;
+}
+
+.checkout .button:hover,
+.checkout .inlineSubmitButton:hover,
+.pmPopup .button:hover,
+.pmPopup .inlineSubmitButton:hover,
+.pmPopup input[type="button"]:hover
+{
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 -100px 0 200px rgba(255, 255, 255, 0.2);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 -100px 0 200px rgba(255, 255, 255, 0.2);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 -100px 0 200px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  #PlentyWebOrderSystemForm,
+  #PlentyWebOrderSystemLoginForm{
+    width: 100%!important;
+  }
+  #PlentyWebOrderSystemLoginForm > .pmSpan50, #PlentyWebOrderSystemLoginForm + .pmSpan50 { padding-left:0; }
+  .pmOrderSystemContactUs { width:100%!important; }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #PlentyWebOrderSystemForm .pmSpan50{
+    width: 435px;
+  }
+  .pmInputWrapper > input[type="text"], 
+  .pmInputWrapper > input[type="password"] {
+	width: 150px; 
+  }
+  .pmSpan50 .pmFormColumn { width: 170px; }
+  .pmFormColumn.fright    { float:left; }
+  .pmInputWrapper > input[type="text"].large { width:107px; }
+}
+
+.paddingLeft { padding-left: 15px; }
+.paddingRight { padding-right: 15px; }
+
+
+.center.pmContractBuilderLink {
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
+.pmTwoThirds {
+	width: 67%;
+}
+.pmOneThird {
+	width: 33%;
+}
+.pmTwoThirds.fleft + .pmOneThird {
+	float: right;
+	margin: 0;
+}
+.pmTwoThirds + .pmOneThird {
+	padding-left: 15px;
+}
+.pmTwoThirds:first-child {
+	padding-right: 15px;
+}
+.pmTwoThirds.border-shadow-small,
+.pmOneThird.border-shadow-small {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.PlentyOrderSystemContentContainer > .clearfix > .pmTwoThirds > * {
+	padding-left: 0;
+}
+.PlentyOrderSystemContentContainer > .clearfix > .pmOneThird > * {
+	padding-right: 0;
+}
+.pmOneThird > .pmSpecialOfferBoxHeader.smallHeader {
+	margin-top: 0;
+}
+.pmSpecialOfferBoxHeader.smallHeader {
+	margin-bottom: 20px;
+}
+
+.PlentyCurrencySymbol + .PlentyCurrencyValue,
+.PlentyCurrencyValue + .PlentyCurrencySymbol {
+    margin-left: 5px;
+}
+
+/* tmp fix */
+#PlentyWebOrderSystemBirthdayContainer { display: none!important; }
+.relative { position:relative; }
+
+
+
+.isRequired .control-label:after {
+    content: "*";
+}
+
+
+
+@media (max-width: 767px) {
+	[class*="col-"] + [class*="col-"] {
+		margin-top: 24px;
+	}
+	.form-group [class*="col-"] + [class*="col-"] {
+		margin-top: 0;
+	}
+}
+@media (min-width: 768px) {
+	.form-LabelNoPadding-right .control-label {
+		padding-right: 0;
+	}
+}
+
+.w-pc-offset-4 { margin-left: 4%; }
+
+@media (max-width: 767px) {
+	.w-xs-pc-100 { width: 100%; }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.w-sm-pc-48 { width: 48%; }
+	.w-sm-pc-66 { width: 66%; }
+	.w-sm-pc-100 { width: 100%; }
+}
+
+/* fix for bootstrap-style: .checkout button */
+.checkout .form-group button {
+	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0)));
+	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%);
+	background-image: linear-gradient(to bottom,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); 
+	background-repeat: repeat-x;
+}
+
+
+
+.PlentyWebBasketContainerTitle {
+	margin-bottom: 1px;
+}
+/* button margin top */
+#PlentyWebEditOrderParamsSubmit > a,
+.change_basket {
+	margin-top: 6px;
+}
+#PlentyWebInvoiceDetailsVATNumberNotice,
+#PlentyWebInvoiceDetailsBirthdayNotice{
+	position: relative;
+	top: -20px;
+}
+.PlentyWebShippingDetailsData:before {
+	content: "";
+	display: table;
+	clear: both;
+}
+.BasketItemOrderParamsContainer + .BasketItemOrderParamsContainer { margin-top: 6px; }
+
+
+/* MOBILE ADAPTION */
+@media (max-width: 767px) {
+	/*.PlentyCurrencyContainer { white-space: normal; }*/
+	.PlentyWebBasketContainerTitle { position: relative; }
+	#WebBasketSchedulerSelectedChange, #WebBasketShippingCountrySelectedChange, #WebBasketPaymentMethodSelectedChange, #WebBasketShippingMethodSelectedChange, #WebBasketCouponSelectedChange {
+		position: absolute;
+		right: 4px;
+		top: 2px;
+	}
+	#PlentyWebBasketCouponDataButton { display: block; margin-top: 5px; }
+	#PlentyWebBasketItemsForm, #PlentyWebOrderOverviewItemsContainer { overflow-x: auto; overflow-y: hidden; padding-bottom: 12px; }
+	#PlentyWebBasketCouponDataButton { display: block !important; }
+	#PlentyWebLoginRegister, #PlentyWebLoginLogin {
+		display: block;
+		margin: 0;
+		width: auto;
+	}
+	#PlentyWebLoginLogin { margin-top: 36px; }
+	#PlentyWebInvoiceDetailsForm > div {
+		display: block;
+		float: none;
+		margin: 0;
+		width: auto;
+	}
+	/*#PlentyWebInvoiceDetailsForm #PlentyWebInvoiceDetailsBirthday, #PlentyWebInvoiceDetailsForm #PlentyWebInvoiceDetailsBirthmonth { width: 27% !important; }*/
+	div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer > .PlentyFormTitle, div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer > .PlentyFormValue, div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer > .PlentyFormTitle, div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer > .PlentyFormValue { display: block; }
+	div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer, div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer { display: block; }
+	#PlentyOrderCheckoutAccordion input[type="text"], #PlentyOrderCheckoutAccordion input[type="password"], #PlentyOrderCheckoutAccordion select { margin-bottom: 10px !important; }
+	#PlentyWebInvoiceDetailsVATNumberNotice, #PlentyWebInvoiceDetailsBirthdayNotice { top: -5px; }
+	.PlentyOrderDeliveryAddress { width: auto; float: none; margin: 20px 0 0; }
+	.PlentyOrderDeliveryAddress > .PlentyWebShippingDetailsListContent, .PlentyOrderDeliveryAddress > .PlentyWebEditButtonContent { float: none; }
+	#PlentyWebShippingDetailsLoginSubmit, #PlentyWebShippingDetailsFormPane .PlentyFormBox { width: auto; }
+	#PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer > .PlentyFormValue { display: block; width: auto; }
+	#PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer > .PlentyFormTitle { width: auto; }
+	#PlentyWebShippingDetailsZIPCodeContainer, #PlentyWebShippingDetailsCityContainer, #PlentyWebShippingDetailsStreetContainer, #PlentyWebShippingDetailsHouseNoContainer { float: none !important; width: auto !important; }
+	#PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer > .PlentyFormTitle { width: auto !important; display: block !important; text-align: left !important; }
+	#PlentyWebShippingDetailsSubmit { padding: 12px 0; }
+	#PlentyWebShippingDetailsStreetContent, #PlentyWebShippingDetailsCityContent { width: 64% !important; }
+	#PlentyWebShippingDetailsZIPCodeContent, #PlentyWebShippingDetailsHouseNoContent { width: 27% !important; }
+	#PlentyWebShippingDetailsHouseNoContainer, #PlentyWebShippingDetailsCityContainer { height: 0;  }
+	#PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer > .PlentyFormTitle#PlentyWebShippingDetailsHouseNoTitle, #PlentyWebShippingDetailsFormPane > .PlentyFormBox > .PlentyFormContainer > .PlentyFormTitle#PlentyWebShippingDetailsCityTitle { display: none !important; }
+	#PlentyWebShippingDetailsHouseNoContent, #PlentyWebShippingDetailsCityContent { float: right; margin-top: -32px; }
+	#PlentyWebShippingDetailsHouseNoContainer { margin: 0 !important; }
+	#PlentyWebShippingDetailsCityContent { padding: 0 !important; }
+	div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer:first-child > .PlentyFormTitle, div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer:first-child > .PlentyFormValue, div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer:first-child > .PlentyFormTitle, div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer:first-child > .PlentyFormValue { padding-top: 0 !important; }
+	div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer:last-child > .PlentyFormTitle, div#PlentyWebInvoiceDetailsContainer1 > .PlentyFormContainer:last-child > .PlentyFormValue, div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer:last-child > .PlentyFormTitle, div#PlentyWebInvoiceDetailsContainer2 > .PlentyFormContainer:last-child > .PlentyFormValue { padding-bottom: 0 !important; }
+	#PlentyWebShippingDetailsNotice2 { padding: 0; }
+	#PlentyOrderCheckoutAccordion input[type="text"], #PlentyOrderCheckoutAccordion input[type="password"], #PlentyOrderCheckoutAccordion select { margin-bottom: 5px !important; }
+	.PlentyWebPaymentMethodRadio { min-width: 0 !important; }
+	#PlentyWebOrderOverviewInvoiceContainer, #PlentyWebOrderOverviewShippingContainer, #PlentyWebOrderOverviewPaymentMethodContainer, #PlentyWebOrderOverviewShippingMethodContainer, #PlentyWebOrderOverviewAGBPrivacyContainer { margin-bottom: 0; }
+	#PlentyWebOrderOverviewInvoiceContainer, #PlentyWebOrderOverviewShippingContainer, #PlentyWebOrderOverviewShippingMethodContainer, #PlentyWebOrderOverviewPaymentMethodContainer, #PlentyWebOrderOverviewSchedulerContainer { width: 100%; margin-bottom: 15px; margin-top: 0; }
+	#PlentyWebOrderOverviewItemsContainer { margin-bottom: 0; }
+	#PlentyWebOrderOverviewOrderSumBox { margin-left: 0; width: auto; }
+}

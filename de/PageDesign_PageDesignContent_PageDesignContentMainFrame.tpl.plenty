@@ -1,0 +1,110 @@
+<!-- static navbar -->
+<nav class="navbar navbar-default mainNavigationWrapper" role="navigation">
+	<div class="container">
+		<!-- mobile navbar -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			{% Container_NavigationCategories10() %}
+		</div>
+		
+		<!-- mini navbar, search, main navbar -->
+		<div class="collapse navbar-collapse mainNavigation">
+			
+			<div class="navbarMiniWrapper navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right navbar-mini">
+					<li class="isCongress"><a href="{% Link(2169) %}"><span>{% if $Lang=="de" %}Kongress{% else %}Congress{% endif %}</span> <span>2015</span></a></li>
+					<li><a href="{% Link_Contact() %}">{% if $Lang=="de" %}Kontakt{% else %}Contact{% endif %}</a></li>
+					<li><a href="{% Link_MyAccount() %}">{% if $CustomerID %}{% if $Lang=="de" %}Mein Konto{% else %}My account{% endif %}{% else %}Login{% endif %}</a></li>
+					<li class="dropdown lang-dropdown width-li">
+						{% if $Lang=="de" %}<a class="dropdown-toggle lang-de" href="javascript:void(0);" title="Sprache wählen"><span class="flag"></span>DE <b class="caret"></b></a>
+						{% elseif $Lang=="en" %}<a class="dropdown-toggle lang-en" href="javascript:void(0);" title="Select language"><span class="flag"></span>EN <b class="caret"></b></a>{% endif %}
+						<ul class="dropdown-menu">
+							{% if $Lang=="de" %}<li><a class="lang-en" href="http://www.plentymarkets.co.uk"><span class="flag"></span>EN</a></li>
+							{% elseif $Lang=="en" %}<li><a class="lang-de" href="https://www.plentymarkets.eu"><span class="flag"></span>DE</a></li>{% endif %}
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<form class="navbar-form navbar-right content_search_form" role="search" method="get" name="search_form" action="/">
+				<input type="hidden" value="ContentSearch" name="ToShow" />
+				<div class="form-group navbarInputWrapper"><input type="search" class="form-control" placeholder="{% if $Lang=="de" %}Suchen{% else %}Search{% endif %}" id="flAutocompleteInputText" name="Params[SearchParam]"{% if $Request_SearchString!="" %} value="$Request_SearchString"{% endif %} /></div><button class="glyphicon onlyIcon glyphicon-search transition" type="submit">{% if $Lang=="de" %}Los{% else %}Go{% endif %}</button>
+			</form>
+			
+			{% Container_NavigationCategories3() %}
+			
+		</div>
+	</div>
+</nav>
+
+{% if (!$IsWelcomePage)&&($CurrentCategoryId!=596)&&($CurrentCategoryId!=2106)&&($CurrentCategoryId!=2116) %}
+	<!-- breadcrumbs -->
+	<div class="fullwidth breadcrumbsContainer{% if $CurrentCategoryImageUrl=="" %} inverse{% endif %}">
+		{% Container_NavigationBreadcrumbsList() %}
+	</div>
+{% endif %}
+
+{% if ($CurrentCategoryId[Level2]!=550) && ($CurrentCategoryId[Level2]!=2169) && ($CurrentCategoryId[Level2]!=2520) %}
+	{# show category image oder blue color box if not congress #}
+	{% if ($CurrentCategoryImageUrl!="")||($CurrentCategoryId[Level1]==620) %}
+		<!-- fullwidth bgimage box -->
+		<section class="fullwidth{% if $CurrentCategoryId == 64 %} min-h-xs-3 h-sm-3 h-md-3 h-lg-3 bgImg-top{% else %} min-h-xs-5 h-sm-5 h-md-5 h-lg-5{% endif %} bgImgBox bgImgBoxContainer {% if $CurrentCategoryId!=2061 %}bg-$CurrentCategoryURLName{% endif %}{% if $CurrentCategoryId[Level1]==620 %} isManual{% endif %} inverse">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 headTxtContainer">
+						<h1>$CurrentCategoryShortDescription</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+	{% elseif (!$IsWelcomePage)&&($CurrentCategoryId!=596)&&($CurrentCategoryId!=2106)&&($CurrentCategoryId!=2116) %}
+		<!-- fullwidth color box -->
+		<div class="fullwidth colorBox headerBox blue">
+			<div class="colorBoxInner">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-12 col-md-12 col-lg-12 headTxtContainer">
+		                    <h1>{% if $Request_SearchString %}{% if $Lang=="de" %}Suchergebnis für „$Request_SearchString“{% else %}Search result for »$Request_SearchString«"{% endif %}{% elseif $CurrentItemId %}$CurrentSingleItemName{% elseif $CurrentCategoryShortDescription!="" %}$CurrentCategoryShortDescription{% elseif $CurrentCategoryId[Level1]==620 %}$CurrentCategoryDescription1[Level1]{% else %}$CurrentCategoryName{% endif %}</h1>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	{% endif %}
+{% endif %}
+
+{% if $CurrentCategoryId[Level1]==620 %}
+	{# is manual #}
+	<div class="container">
+		<div class="row spacerTop size-xxs fixedNavigationTreeTarget">
+	
+			<div class="navigationTreeWrapper" role="navigation">
+				<a class="navigationTreeToggle hideNav btn-tool fade in" data-toggle="tooltip" data-placement="right" title="{% if $Lang=="de" %}Menü ausblenden{% else %}Hide menu{% endif %}">{% if $Lang=="de" %}Menü ausblenden{% else %}Hide menu{% endif %}</a>
+				<a class="navigationTreeToggle showNav btn-tool fade" data-toggle="tooltip" data-placement="right" title="{% if $Lang=="de" %}Menü einblenden{% else %}Show menu{% endif %}">{% if $Lang=="de" %}Menü einblenden{% else %}Show menu{% endif %}</a>
+				
+				<div class="navigationTreeScrollContainer">
+					{% Container_NavigationCategories8() %}
+				</div>
+			</div>
+	
+			<div class="col-sm-8 col-md-9 col-lg-9 col-sm-offset-4 col-md-offset-3 col-lg-offset-3 moveToTop expandableColumn generateTopics">
+			
+				$MainFrame
+				
+			</div>
+		</div>
+	</div>
+
+{% else %}
+
+	$MainFrame
+	
+{% endif %}
+
+{# footer #}
+{% Container_NavigationCategories9() %}

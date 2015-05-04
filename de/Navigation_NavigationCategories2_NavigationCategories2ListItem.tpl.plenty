@@ -1,0 +1,2 @@
+
+<li class="cat_$CategoryId{% if $CategoryIsCurrent %} current{% endif %}"><a href="$CategoryUrl">$CategoryName</a></li>

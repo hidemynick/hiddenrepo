@@ -1,0 +1,19 @@
+<!-- videos -->
+<script type="text/javascript">
+	var videoOverlayAutoplay = true;
+	var videoOverlayCloseLink = '$BaseSSLURL4Links$CurrentCategoryURLName[Level1]/$CurrentCategoryURLName[Level2]/$CurrentCategoryURLName[Level3]/';
+</script>
+{% Container_ItemViewCategoriesList2() %}
+
+<div id="$ID" class="PlentyVideoOverlayBox showOnlyRobots">
+	<a class="PlentyOverlayClose pmFramedIcon glyphicon glyphicon-remove">{% if $Lang=="de" %}Schließen{% else %}Close{% endif %}</a>
+	<a class="PlentyOverlayInfoOpen pmFramedIcon glyphicon glyphicon-info-sign">{% if $Lang=="de" %}Informationen einblenden{% else %}Show information{% endif %}</a>
+	<div class="PlentyOverlayInfo none">
+		<h2>$Name</h2>
+		<p> $Description </p>
+		<a class="PlentyOverlayInfoClose pmFramedIcon glyphicon glyphicon-remove">{% if $Lang=="de" %}Schließen{% else %}Close{% endif %}</a>
+	</div>
+	<iframe src="$Free[1]" width="$Free[2]" height="$Free[3]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<span class="pmHiddenAutoplayTrigger PlentyVideoOverlayTrigger" data-target="#$ID">Open Video</span>

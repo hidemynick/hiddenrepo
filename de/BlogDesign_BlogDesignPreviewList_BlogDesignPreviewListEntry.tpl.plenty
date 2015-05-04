@@ -1,0 +1,7 @@
+
+
+
+	<div class="item">
+	    <strong><a class="basicColor p" href="{% Link_Blog() %}">$BlogInserted – $BlogTitle</a></strong>
+	    $BlogBody
+	</div>

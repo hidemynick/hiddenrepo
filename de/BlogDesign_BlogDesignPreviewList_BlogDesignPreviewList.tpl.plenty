@@ -1,0 +1,15 @@
+<div class="items">
+
+
+{% for $_entry in GetBlogDesignPreviewList() %}{% MapTemplateVars($_entry) %}
+
+
+	<div class="item">
+	    <strong><a class="basicColor p" href="{% Link_Blog() %}">$BlogInserted – $BlogTitle</a></strong>
+	    $BlogBody
+	</div>
+{% endfor %}
+
+
+</div>
+

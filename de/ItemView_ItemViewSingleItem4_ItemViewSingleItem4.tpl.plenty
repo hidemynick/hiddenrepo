@@ -1,0 +1,46 @@
+<!-- termine / webinare / academy / systemschulung -->
+
+<article class="container spacerTop" data-id="$ID">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<h2>$Name[1]</h2>
+		</div>
+	</div>
+	<div class="row margin-top-m">
+		<div class="col-sm-4 col-md-4 col-lg-4">
+			{% if $PreviewImageURL[1]!="/layout/pm/images/icon/file_broken.png" %}<div class="imageBox"><img src="$MiddleSizeImageURL[1]" alt="Bild $Name[1]" /></div>{% endif %}
+			
+			{% $_expirationTime = strtotime($ExpirationDate) %}
+			{% $_releaseTime = strtotime($ReleaseDate) %}
+			{% if date("m", $_releaseTime) == date("m", $_expirationTime) && date("Y", $_releaseTime) == date("Y", $_expirationTime) %}
+				{% $_dateBegin = date("d.", $_releaseTime) %}
+			{% elseif date("m", $_releaseTime) != date("m", $_expirationTime) && date("Y", $_releaseTime) == date("Y", $_expirationTime) %}
+				{% $_dateBegin = date("d.m.", $_releaseTime) %}
+			{% else %}
+				{% $_dateBegin = date("d.m.Y", $_releaseTime) %}
+			{% endif %}
+			
+			<span class="x-large{% if ($Model=="academy")||($Model=="systemschulung") %} dateFollowedByElement{% endif %}">
+			{% if $_expirationTime && $_expirationTime!=$_releaseTime %}
+				<span class="dateBegin">$_dateBegin</span>&thinsp;–&thinsp;<span class="dateEnd">{% date("d.m.Y",$_expirationTime) %}</span>
+			{% elseif $_expirationTime && $_expirationTime==$_releaseTime %}
+				<span class="dateBegin">{% date("d.m.Y",$_expirationTime) %}</span>
+			{% else %}
+				&nbsp;
+			{% endif %}
+			
+			{% if ($Model=="academy")||($Model=="systemschulung") %}
+				{% if $AvailabilityId==1 %}
+					<span class="pmAvailabilityIndicator pmTooltipHtml glyphicon glyphicon-ok color-green" data-text="{% if $Lang=="de" %}Plätze verfügbar{% else %}available{% endif %}"></span>
+				{% else %}
+					<span class="pmAvailabilityIndicator pmTooltipHtml glyphicon glyphicon-banCircle color-red" data-text="{% if $Lang=="de" %}ausgebucht{% else %}fully booked{% endif %}"></span>
+				{% endif %}
+			{% endif %}
+			{% if $Name[3]!="" %}<p class="location x-large"><span>$Name[3]</span></p>{% endif %}
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-8">
+			$Description
+		</div>
+	</div>
+</article>
+{% if $TechnicalData!="" %}$TechnicalData{% endif %}

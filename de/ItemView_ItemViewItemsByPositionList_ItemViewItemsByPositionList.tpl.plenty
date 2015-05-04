@@ -1,0 +1,8 @@
+<table class="pmtable pmtable-zebra" style="width: 100%;"><!-- pressemitteilungen -->
+<tbody>
+{% for $_item in GetItemViewItemsByPositionList() %}{% MapTemplateVars($_item) %}<tr>
+<td>$Name[1]</td>
+<td><a href="$Name[3]" target="_blank" title="$Name[2]">$Name[2]</a>{% if $DescriptionShort!="" %} <span>$DescriptionShort</span>{% endif %}</td>
+</tr>{% endfor %}
+</tbody>
+</table>

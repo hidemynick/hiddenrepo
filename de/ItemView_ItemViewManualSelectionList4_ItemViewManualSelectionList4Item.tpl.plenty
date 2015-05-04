@@ -1,0 +1,43 @@
+
+
+<hr class="spacerTop" />
+
+<article class="row spacerTop">
+
+	<div class="col-sm-8 col-md-8 col-lg-8 moveToTop">
+
+    	<h3>$Name[1]</h3>
+    	{% if $DescriptionShort!="" %}$DescriptionShort{% endif %}
+    	
+    </div>
+    
+	<div class="col-sm-4 col-md-4 col-lg-4">
+
+		<a class="imageBox videoLink videoOverlayTrigger PlentyVideoOverlayTrigger transition" data-target="#$ID">
+	        <img src="$MiddleSizeImageURL[1]" alt="Bild $Name[1]" />
+	        <span>
+	            <span class="glyphicon glyphicon-play transition"></span>
+	        </span>
+	    </a>
+	
+		<div id="$ID" class="PlentyVideoOverlayBox appendIframe">
+			<a class="PlentyOverlayClose pmFramedIcon glyphicon glyphicon-remove">{% if $Lang=="de" %}Schließen{% else %}Close{% endif %}</a>
+			<a class="PlentyOverlayInfoOpen pmFramedIcon glyphicon glyphicon-info-sign">{% if $Lang=="de" %}Informationen einblenden{% else %}Show information{% endif %}</a>
+			<div class="PlentyOverlayInfo none">
+				<h2>$Name[1]</h2>
+				<p> $Description </p>
+				<a class="PlentyOverlayInfoClose pmFramedIcon glyphicon glyphicon-remove">{% if $Lang=="de" %}Schließen{% else %}Close{% endif %}</a>
+			</div>
+		</div>
+							
+		<script type="text/javascript">
+			frameHtml['#$ID'] = '<iframe src="$Free[1]" width="$Free[2]" height="$Free[3]" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+			videoUrl['#$ID'] = '$Free[1]';
+			videoWidth['#$ID'] = $Free[2];
+			videoHeight['#$ID'] = $Free[3];
+		</script>
+
+	</div>
+	
+</article>
+

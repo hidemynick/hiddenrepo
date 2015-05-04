@@ -1,0 +1,33 @@
+<!-- is video -->
+
+$CurrentCategoryDescription1
+
+<div class="container">
+	
+	{% if ($CurrentCategoryId[Level3]==0) %}<!-- show level 2 -->
+		<div class="row spacerTop">
+			<ul class="list-unstyled">
+				{% Container_NavigationCategoriesStepByStepList() %}
+			</ul>
+		</div>
+	{% elseif ($CurrentCategoryId[Level3]!=0) %}<!-- show level 3 -->
+		<script type="text/javascript">
+			var frameHtml = [];
+			var videoUrl = [];
+			var videoWidth = [];
+			var videoHeight = [];	
+		</script>
+		{% Container_NavigationCategoriesStepByStepList() %}
+	{% endif %}
+
+{% for $_item in GetItemViewCategoriesList2() %}{% MapTemplateVars($_item) %}
+			
+
+										
+
+			
+{% endfor %}
+
+</div>
+
+$CurrentCategoryDescription2

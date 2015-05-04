@@ -1,0 +1,4 @@
+{% $PageDesign = "StandAlone" %} 
+
+
+<h3 align="center">$Name</h3>  <table border="0" align="center"><tbody>  <tr>  <td>$Image1 </td>  </tr>   <tr>  <td>$Image2</td>  </tr>   <tr>  <td>$Image3</td>  </tr>   <tr>  <td>$Image4</td>  </tr>   <tr>  <td>$Image5</td>  </tr>   <tr>  <td>$Image6</td>  </tr>  </tbody></table> 

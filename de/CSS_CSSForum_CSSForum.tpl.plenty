@@ -1,0 +1,6516 @@
+/* ################################################################################
+reset
+################################################################################ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, sub, sup, tt, var,
+u,ul,li
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* sprite url */
+.pmSocialIcon,
+.pmFooterHomeLink {
+	background-image: url(/layout/pm/images/icon/plenty_sprite_1.png);
+	background-repeat: no-repeat;
+}
+
+.forum {
+	line-height: 1;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style-type: decimal; 
+	margin-left: 1.4em;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.clearfix {display:inline-block;}
+/* Hide from IE Mac */
+	.clearfix {display:block;}
+/* End hide from IE Mac */
+.clear { clear: both; } 
+/*a:hover, a:active, a:focus { outline: none; }
+img a:hover, img a:active, img a:focus { outline: none; }
+img { border: 0; }
+object, embed { outline: 0; }*/
+
+.bold {font-weight:bold;}
+
+::selection {
+	background:#90b9d7;
+	color:#fff;
+}
+
+::-moz-selection {
+	background:#90b9d7;
+	color:#fff;
+}
+
+
+/* ################################################################################ 
+### colors ###
+################################################################################ */
+/*
+dunkelblau:
+#008ebd
+
+hellblau:
+#90b9d7
+
+rot:
+#d4021d
+
+grau:
+#707173
+*/
+
+/* ################################################################################
+headlines
+################################################################################ */
+
+.pmh1 {
+	font-size:18px;
+	color:#008ebd;
+	line-height:24px;
+	font-weight:bold;
+	
+}
+
+.pmh1.pmh1-alone {
+	margin-left:5px;
+	margin-bottom:10px;
+	margin-top:35px;
+}
+
+h2, .pmh2 {
+	font-size:12px;
+	font-weight:bold;
+	color:#008ebd;
+	margin-bottom:15px;
+}
+
+.pmh2 a {
+	display:block;
+}
+
+.pmh3 {
+	background:#f2f2f2;
+	padding:5px 20px;
+	font-weight:bold;
+}
+
+.pmh4 {
+	color:#008ebd;
+}
+
+.pmh5 {
+	font-size:14px;
+	color:#008ebd;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+/* ################################################################################
+general
+################################################################################ */
+.forum { min-width: 1000px; }
+
+.forum {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#333333;
+	color:#303030;
+	cursor:default;
+}
+
+.forum {
+	font-size:12px;
+	line-height:18px;
+}
+
+.pmwrap {
+}
+
+.forum a:link, .forum a:visited {
+	color:#008ebd;
+	text-decoration:none;
+}
+
+a:hover, a:focus {
+	text-decoration:underline;
+}
+
+
+p { margin:15px 0; } 
+
+.pmpagewidth {
+	width:960px;
+	margin: 0 auto;
+	position:relative;
+}
+
+.pmwrap {}
+
+.fleft, .pmfleft  {
+	float:left;
+}
+
+.fright, .pmfright {
+	float:right;
+}
+
+.pmplenty-small {
+	font-weight:normal;
+}
+
+
+.forum hr {
+	background:none; 
+	border:none; 
+	margin-bottom:25px;
+}
+
+.pmmaincontent ul li {
+	text-align: left;
+	list-style-type: none;
+	margin-left:15px;
+}
+
+/* ################################################################################
+header
+################################################################################ */
+
+.pmtest-it-now-btn,
+.pmOrderNow {
+position: fixed;
+display: block;
+top: 203px;
+left: -22px; 
+background: url(/layout/pm/images/layout/button_testen_trsp.png) top right no-repeat; 
+z-index: 2010;
+
+background-color: #D4021D;
+
+border-color: #fff;
+border-width: 3px;
+border-style: solid solid solid none;
+
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+border-radius: 6px;
+
+-moz-box-shadow: 3px 3px 7px -1px rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 3px 3px 7px -1px rgba(0, 0, 0, 0.4);
+box-shadow: 3px 3px 7px -1px rgba(0, 0, 0, 0.4);
+
+height: 173px;
+width: 51px;
+
+}
+.pmOrderNow {
+	top: 386px;
+	height: 155px;
+	background:url(/layout/pm/images/layout/button_bestellen_trsp.png) top right no-repeat;
+
+background-color: #008EBD;
+}
+
+.pmtest-it-now-btn:hover,
+.pmtest-it-now-btn:focus,
+.pmOrderNow:hover,
+.pmOrderNow:focus {
+left: -15px;
+}
+
+@media only screen and (max-width : 1050px) {
+/* begin */
+.pmtest-it-now-btn,
+.pmOrderNow { display: none; }
+/* end */
+}
+
+.pmheader {
+	height:35px;
+	background:#000000;
+	border-bottom:5px solid #008ebd;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:11px;
+}
+
+.pmheader a {
+	color:#ffffff;
+	padding:0 10px;
+}
+
+.pmheader a.nopadding {
+	padding-left:0px;
+}
+
+.pmheader .pmnewsletter a {
+	text-transform:uppercase;
+	color:#90b9d7;
+	font-weight:bold;
+}
+
+.pmheader-additional-info {
+	position: absolute;
+	top: 8px;
+	width: 400px;
+	left: 2px;
+}
+
+.pmheader-additional-menu {
+	position: absolute;
+	top: 8px;
+	right:110px;
+}
+
+.pmheader-additional-menu ul li, .pmheader-additional-info ul li {
+	float:left;
+}
+
+/* ################################################################################
+language dropdown
+################################################################################ */
+
+.pmlang-dropdown-main-container {
+	position: absolute;
+	right:0;
+	
+	/*float:right;*/
+	margin-top: 8px;
+	width: 100px;
+	font-weight: normal;
+	z-index: 1000;
+}
+
+.pmlang-dropdown * {
+	font-size: 11px;
+	line-height: 13px;
+	border: 0 none;
+	margin: 0;
+}
+
+.pmlang-dropdown {
+	width: 100px;
+	height: 18px;
+	background: #333333;
+	overflow: hidden;
+}
+
+.pmlang-dropdown:hover {
+	/*color: #999999;*/
+	width: 150px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.pmlang-dropdown .pmdropdown-selected {
+	display: block;
+	padding-top: 3px;
+	padding-left: 7px;
+	padding-bottom: 2px;
+}
+/*
+.pmlang-dropdown .dropdown-selected > div:first-child {
+	float: left;
+}*/
+
+.pmlang-dropdown ul {
+	list-style-position: outside;
+	margin-left: 0px;
+}
+
+.pmlang-dropdown li {
+	list-style-type: none;
+	margin-top: 1px;
+}
+
+.pmlang-dropdown:hover li {
+}
+
+.pmlang-dropdown li > a {
+	display: block;
+	width: 100%;
+	height: 18px;
+	padding-top: 6px;
+}
+.pmlang-dropdown a:link, .pmlang-dropdown a:visited {
+	/*color: #999999;*/
+	text-decoration: none;
+}
+.pmlang-dropdown:hover .pmlang-dropdown li > a:link:focus, .pmlang-dropdown li > a:visited:focus {
+	color: #ffffff;
+}
+.pmlang-dropdown li > a:link:hover, .pmlang-dropdown li > a:visited:hover {
+	color: #ffffff;
+	background-color: #666666;
+}
+
+.pmlang-dropdown span {
+	padding-left: 5px;
+}
+
+.pmlang-dropdown span + span {
+	padding-left: 0px;
+} /*line added*/
+
+.pmlang-dropdown .pmflag {
+	width: 18px;
+	height: 11px;
+	float: right;
+	margin-left: 5px;
+	margin-top: 0;
+}
+
+.pmlang-dropdown .pmdropdown-unselected {
+	
+	padding-right:10px;
+	width:140px;
+	padding-top:5px;
+}
+
+
+.pmlang-dropdown .pmflag.pmde {
+	background:url(/layout/pm/images/icon/flag-de.jpg) no-repeat;
+}
+
+.pmlang-dropdown .pmflag.pmen {
+	background:url(/layout/pm/images/icon/flag-en.jpg) no-repeat;
+}
+
+.pmlang-dropdown.border-radius {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.pmlang-dropdown.border-radius ul > li:last-child > a { 
+-moz-border-radius-bottomleft: 4px;
+-moz-border-radius-bottomright: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+.pmlang-dropdown .clear {
+	clear: both;
+}
+
+/* NEW LANGUAGE DROPDOWN */
+
+/* ul reset */
+ul.langDropdown,
+.langDropdown ul {
+    list-style: none;
+	padding: 0;
+    margin: 0;
+}
+ul.langDropdown > li,
+.langDropdown ul > li {
+	position: relative;
+}
+
+/* dropdown container */
+.langDropdown { 
+	line-height: 18px;
+}
+/* selection */
+.langDropdownSelection {
+	display: none;
+	position: absolute;
+}
+/* width all */
+.langDropdown,
+.langDropdownSelection {
+	width: 100px; 
+}
+
+/* a */
+.langDropdown li > a { 
+	display: block; 
+	height: 16px;
+	padding: 5px 30px 5px 7px;
+	color: #ccc;
+	text-decoration: none;
+	background-color: #333;
+	
+	-webkit-transition: background-color .3s ease, color .3s ease; 
+	-moz-transition: background-color .3s ease, color .3s ease; 
+	-o-transition: background-color .3s ease, color .3s ease; 
+	-ms-transition: background-color .3s ease, color .3s ease; 
+	transition: background-color .3s ease, color .3s ease; 
+}
+/* a hover/focus */
+.langDropdown li > a:hover,
+.langDropdown li > a:focus { 
+	color: #fff;
+	background-color: #404040;
+}
+/* a selected */
+.langDropdown > li > a,
+.langDropdown > li > a:hover,
+.langDropdown > li > a:focus { 
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #333;
+	line-height: 16px;
+	color: #fff;
+	cursor: default;
+}
+
+/* a */
+.langDropdown li > a { 
+	background-image: url(/layout/pm/images/icon/flag_sprite_vertical.png);
+	background-repeat: no-repeat;
+}
+/* a selected lang */
+.langDropdown > li > a.de { background-position: 77px 3px; }
+.langDropdown > li > a.en { background-position: 77px -22px; }
+.langDropdown > li > a.fr { background-position: 77px -47px; }
+.langDropdown > li > a.it { background-position: 77px -72px; }
+
+/* a lang */
+.langDropdown li.de > a { background-position: 77px 8px; }
+.langDropdown li.en > a { background-position: 77px -17px; }
+.langDropdown li.fr > a { background-position: 77px -42px; }
+.langDropdown li.it > a { background-position: 77px -67px; }
+
+/* show sublevel */
+.langDropdown > li:hover > ul,
+.langDropdown > li > a:focus + ul {
+	display: block;
+}
+
+/* border-radius */
+
+/* a selected */
+.langDropdown > li > a { 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+/* a selected hover */
+.langDropdown > li:hover > a,
+.langDropdown > li > a:focus { 
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+/* selection a last */
+.langDropdown > li > ul > li:last-child > a { 
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+/* ################################################################################
+end of language dropdown
+################################################################################ */
+
+.pmlogo-wrap {
+	height:105px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.pmlogo {
+	float:left;
+}
+
+.pmclaim {
+	float:right;
+}
+
+#pmnavigation {
+	/* see navi css */
+}
+
+.pmfixed-header { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	width:100%; 
+	z-index:100000000000; 
+	-moz-box-shadow: 0px 0px 10px #000000;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	box-shadow: 0px 0px 5px #000000;
+}
+
+.pmfixed-navigation { 
+	position:fixed; 
+	top:35px; 
+	left:0; 
+	width:100%; 
+	z-index:100000000000; 
+	-moz-box-shadow: 0px 0px 10px #000000;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	box-shadow: 0px 0px 5px #000000;
+}
+
+/* breadcrumb navi */
+.pmbreadcrumb-wrap { 
+	margin-bottom: 15px; 
+	color:#999;
+}
+
+ul.pmbreadcrumb li:first-child,
+.pmmaincontent .pmbreadcrumb span { 
+	font-weight:bold;
+}
+
+.pmmaincontent .pmbreadcrumb li,
+.pmmaincontent .pmbreadcrumb span { 
+	float:left; 
+	list-style:none;
+	margin-left: 0;
+}
+.pmmaincontent .pmbreadcrumb li:first-child, 
+.pmmaincontent .pmbreadcrumb li span,
+.pmbreadcrumb a { 
+	margin-left: 5px; 
+white-space: nowrap;
+}
+.pmbreadcrumb ul li a { 
+	color:#333; 
+	text-decoration:none; 
+}
+
+.pmbreadcrumb ul li a:hover { 
+	text-decoration:underline; 
+}
+
+.pmbreadcrumb ul li:last-child a { 
+	color:#47a3d1;
+}
+
+/* ################################################################################
+content
+################################################################################ */
+
+/* container mit navi */
+.pmcontent-wrap {
+	margin-bottom:15px;
+}
+
+/* content container ohne navi */
+.pmmaincontent {
+	margin-top:15px;
+}
+
+#slider {
+
+	margin-bottom:15px;
+	height:300px;
+	background:#f3f3f3;
+	width:956px;
+}
+
+.pmcontent-page {
+	width:660px;
+	height:auto;
+	margin-right:10px;
+	float:left;
+	/*background: #ffffff url("/layout/pm/images/zufriedensheitsgarantie.png") no-repeat 70px 10px;*/
+	position:relative;
+	background:#fff;
+	padding-bottom:7px;
+position: relative;
+}
+
+.pmcontent-page-inner-left {
+	width:250px;
+	padding-left:20px;
+	padding-right:10px;
+	margin-top:20px;
+	/*border-right:1px solid #e5e5e5;*/
+	float:left;
+}
+
+.pmcontent-page-inner-right {
+	width:350px;
+	padding-left:10px;
+	padding-right:20px;
+	margin-top:20px;
+	float:left;
+}
+
+.pmcontent-page-inner-bottom {
+	width:620px;
+	padding-left:20px;
+	/*padding-right:10px;*/
+	padding-top:30px;
+	position:relative;
+}
+
+
+.pmsidebar {
+	width:280px;
+	background:#ffffff;
+	height:515px;
+	float:right;
+}
+
+
+/* spans/grids */
+
+.pm-support p{
+	width: 600px;
+}
+
+.span100, .span60, .span30, .span50, .span50-noPadding {
+	position:relative;
+	background: #fff;
+	/*
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f3f3f3));
+	background: -webkit-linear-gradient(top, #fff, #f3f3f3); 
+	background: -moz-linear-gradient(top, #fff, #f3f3f3); 
+	background: -ms-linear-gradient(top, #fff, #f3f3f3); 
+	background: -o-linear-gradient(top, #fff, #f3f3f3); 
+	background: linear-gradient(top, #fff, #f3f3f3); 
+	background-color:white;
+	*/
+}
+
+.span100 {
+	padding-top:10px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.span100-noPadding {
+	padding:0;
+}
+
+.bubbles {
+	background-image: url("/layout/pm/images/layout/bubbles-bg.png") ; 
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.span60 {
+	width:580px;
+	padding:20px;
+	float:left;
+}
+
+.span30 {
+	width:280px;
+	padding:20px;
+	float:right;
+}
+
+.span50 {
+	width:430px;
+	padding:20px;
+	float:left;
+}
+
+.span50-inner {
+	width:48%;
+	float:left;
+}
+.span100-inner {
+	width:100%;
+	float:left;
+}
+
+.span50-noPadding {
+	width:470px;
+	padding:0;
+	float:left;
+}
+
+.span50-noPadding p, .span100-noPadding p {
+	padding:0 20px;
+}
+
+.span50-right {
+	float:right;
+}
+
+.product-support-list li {
+	margin-left:10px;
+	border-bottom:1px solid #ccc;
+	vertical-align: middle;
+	width:90%;
+	list-style:none!Important;
+}
+
+.product-support-list li:last-child {
+	border-bottom:none;
+}
+
+.product-support-list li img {
+	
+	vertical-align: middle;
+}
+
+.product-support-list li span {
+	margin-left:10px;
+	display:inline-block;
+	margin-top:10px;
+}
+
+
+/* ################################################################################
+small slider
+################################################################################ */
+
+.pmslider-small {
+	height:170px;
+	margin-top:15px;
+	background:#ffffff;
+	margin-bottom:30px;
+}
+
+.pmslider-small {
+	height:180px;
+	margin-top:15px;
+	background:#ffffff;
+	margin-bottom:30px;
+}
+
+/*
+  root element for the scrollable.
+  when scrolling occurs this element stays still.
+*/
+
+.pmscrollable {
+    /* required settings */
+    position:relative;
+    overflow:hidden;
+    width: 785px;
+    height:160px;
+	padding-top:10px;
+}
+
+.tools-slide {
+	
+}
+
+/*
+   root element for scrollable items. Must be absolutely positioned
+   and it should have a extremely large width to accomodate scrollable
+   items.  it's enough that you set the width and height for the root
+   element and not for this element.
+*/
+
+.pmscrollable .items {
+    /* this cannot be too large */
+    width:20000em;
+    position:absolute;
+    clear:both;
+}
+
+.pmscrollable .items > div {
+    float:left;
+    width:800px;
+}
+
+.pmscrollable .items > div > a {
+display: block;
+width: 184px;
+height: 134px;
+margin: 0 5px;
+float: left;
+background: #f7f7f7;
+border: solid 1px #ffffff;
+text-align: center;
+	-moz-border-radiu: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 0px 6px #cccccc;
+	-webkit-box-shadow: 0px 0px 6px #cccccc;
+	box-shadow: 0px 0px 6px #cccccc;
+}
+
+/* single scrollable item */
+.pmscrollable .items > div > a > img {
+    margin: 14px 0 0;
+}
+/* single scrollable text */
+.pmscrollable .items > div > a > span {
+    display: block;
+    margin: 7px 0 0;
+    color: #666666;
+    font-weight: 400;
+}
+.pmscrollable .items > div > a:link:hover,
+.pmscrollable .items > div > a:visited:hover {
+    text-decoration: none;
+}
+
+/* individual style */
+.pmscrollable .items > div > a.pmWebselling > img { padding-top: 12px; }
+.pmscrollable .items > div > a.pmTopProduktHandel > img { position: relative; top: -1px; }
+.pmscrollable .items > div > a.pmTrustedshops > img { padding-top: 10px; }
+.pmscrollable .items > div > a.pmEhi > img { padding-top: 6px; }
+.pmscrollable .items > div > a.pmPaypal > img { padding-top: 14px; }
+
+
+/* active item */
+.pmscrollable .active {
+    border:2px solid #000;
+    position:relative;
+    cursor:default;
+}
+
+/* this makes it possible to add next button beside scrollable */
+.pmscrollable {
+    float:left;
+	margin-left:26px;
+	margin-top:0px;
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+    /*background:url(/layout/pm/images/layout/hori_large.png) no-repeat;*/
+    display:block;
+    width:30px;
+    height:30px;
+    float:left;
+    margin:40px 10px;
+	
+	margin-top:60px;
+	
+    cursor:pointer;
+    font-size:1px;
+
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+background: #eeeeee;
+text-align: center;
+line-height: 30px;
+-moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.30), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.30), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.30), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+-webkit-transition: background 150ms ease;
+-moz-transition: background 150ms ease;
+-ms-transition: background 150ms ease;
+-o-transition: background 150ms ease;
+transition: background 150ms ease;
+}
+a.browse > span {
+border-style: solid;
+border-width: 6px 12px;
+border-color: transparent #ffffff;
+}
+a.browse.prev > span {
+border-left: none;
+margin-right: 3px;
+}
+a.browse.next > span {
+border-right: none;
+margin-left: 3px;
+}
+
+/* right */
+a.right { background-position: 0 -30px; clear:right; margin-right: 20px; float:right;}
+a.right:hover { /*background-position:-30px -30px;*/ }
+a.right:active { /*background-position:-60px -30px;*/ }
+/* left */
+a.left { margin-left: 20px; }
+a.left:hover  { /*background-position:-30px 0;*/ }
+a.left:active { /*background-position:-60px 0;*/ }
+
+/* hover, focus */
+a.browse:hover,
+a.browse:focus { 
+background: #e8e8e8; 
+-moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.3) inset;
+-webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.3) inset;
+box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.3) inset;
+}
+/* active */
+a.browse:active { 
+background: #e4e4e4; 
+-moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+-webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.3) inset;
+}
+a.browse:active > span {
+position: relative;
+top: 1px;
+}
+
+/* up and down */
+a.up, a.down  {
+    background:url(/media/img/scrollable/arrow/vert_large.png) no-repeat;
+    float: none;
+    margin: 10px 50px;
+}
+
+/* up */
+a.up:hover { background-position:-30px 0; }
+a.up:active { background-position:-60px 0; }
+
+/* down */
+a.down { background-position: 0 -30px; }
+a.down:hover { background-position:-30px -30px; }
+a.down:active { background-position:-60px -30px; }
+
+
+/* disabled navigational button */
+a.disabled {
+    visibility:hidden !important;
+}
+
+/* ################################################################################
+boxes span4 (partner boxes)
+################################################################################ */
+
+.pmtop-hoster-wrap {
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+.span4 {
+	float:left;
+	margin-right:10px;
+	width:228px;
+	background:white;
+	position:relative;
+}
+
+.span4 .pmmore-link a {
+	text-transform:uppercase;
+	position:absolute;
+	bottom:0;
+	right:10px;
+	font-size:10px;
+	font-weight:bold;
+	color:#666666;
+	
+	-webkit-transition:All .3s ease; -moz-transition:All .3s ease; -o-transition:All .3s ease;
+}
+
+.span4 .pmmore-link a:hover {
+	text-decoration:none;
+	color:#008ebd;
+}
+
+
+
+.span-last {
+	margin:0;
+}
+
+.span4 p {
+	color:#666666;
+	padding:0 20px;
+	min-height:70px;
+}
+
+.pmPartnerBox {
+height: 180px;
+}
+.pmPartnerBox > p {
+margin-bottom: -15px;
+}
+
+/* span images */
+
+.pmPartnerLogo a {
+display: block;
+width: 74px;
+height: 74px;
+float: left;
+margin: 0 0 0 27px;
+cursor: pointer;
+}
+.pmPartnerLogo.pmPaypal a { background:url(/layout/pm/images/partner/paypal.png) bottom left no-repeat; }
+.pmPartnerLogo.pmClickandbuy a { background:url(/layout/pm/images/partner/clickandbuy.png) bottom left no-repeat; }
+.pmPartnerLogo.pmAmazon a { background:url(/layout/pm/images/partner/amazon.png) bottom left no-repeat; }
+.pmPartnerLogo.pmEbay a { background:url(/layout/pm/images/partner/ebay.png) bottom left no-repeat; }
+.pmPartnerLogo.pmDhl a { background:url(/layout/pm/images/partner/dhl.png) bottom left no-repeat; }
+.pmPartnerLogo.pmHermes a { background:url(/layout/pm/images/partner/hermes.png) bottom left no-repeat; }
+.pmPartnerLogo.pmFactfinder a { background:url(/layout/pm/images/partner/factfinder.png) bottom left no-repeat; }
+.pmPartnerLogo.pmEhi a { background:url(/layout/pm/images/partner/ehi.png) bottom left no-repeat; }
+
+.pmPartnerLogo a:hover,
+.pmPartnerLogo a:focus {
+background-position: top left;
+}
+
+/* span images end */
+
+.border-shadow {
+	border:solid 2px #ffffff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 0px 4px #a6a6a6;
+	-webkit-box-shadow: 0px 0px 4px #a6a6a6;
+	box-shadow: 0px 0px 4px #a6a6a6;
+}
+
+.border-shadow-small,
+.pmContentBox {
+	border:solid 2px #ffffff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 0px 6px #cccccc;
+	-webkit-box-shadow: 0px 0px 6px #cccccc;
+	box-shadow: 0px 0px 6px #cccccc;
+	margin-bottom:15px;
+}
+.border-shadow-small2 {
+	border: none;
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+	-moz-box-shadow: 0px 0px 6px #cccccc;
+	-webkit-box-shadow: 0px 0px 6px #cccccc;
+	box-shadow: 0px 0px 6px #cccccc;
+	margin-bottom:15px;
+	z-index: 999;
+	position: relative;
+}
+
+.border-shadow-small-tabs {
+	border: none;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+	-moz-box-shadow: 0px 0px 6px #cccccc;
+	-webkit-box-shadow: 0px 0px 6px #cccccc;
+	box-shadow: 0px 0px 6px #cccccc;
+/* 	margin-bottom:15px; */
+	z-index: 1;
+	position: relative;
+}
+/*
+.pm-tab-fill{
+	width:138%;
+	background-color: white !important;
+	height:20px !important;
+	margin-left: -15px;
+}
+*/
+
+
+.border-shadow-small .border-shadow-small {
+	margin-bottom:0;
+}
+
+.pmContentBox { background: #ffffff; }
+
+/* ################################################################################
+footer
+################################################################################ */
+
+.pmfooter {
+	height:auto;
+	background:#000000;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:#ffffff;
+}
+
+.pmfooter a {
+	color:#ffffff;
+}
+
+/* footer boxes */
+
+.pmfooter .pmfooter-content {
+	float:left;
+	width:140px;
+	border-right:1px solid #363636;
+	padding-left:30px;
+	padding-right:5px;
+}
+
+.pmfooter .pmfooter-content img {
+	margin-top:5px;
+	margin-right:2px;
+	margin-bottom:7px;
+}
+
+
+.pmfooter .plentyfeedback{
+	width:135px;
+	padding-left:0;
+}
+
+.pmfooter .plentysys {
+	width:140px;
+}
+
+.pmfooter .plentynews {
+	width:80px;
+}
+
+.pmfooter .plentyglossar {
+	width:100px;
+}
+
+.pmfooter .plentyhilfe {
+	width:135px;
+}
+
+.pmfooter .plentycontact {
+	width:165px;
+	margin-right:0;
+	border:none;
+}
+
+.pmfooter-info {
+	margin-top:40px;	
+	border-bottom:1px solid #363636;
+	
+}
+
+.pmfooter-menue {
+	float:right;
+	margin-top:10px;
+	width:350px;
+}
+
+
+.pmfooter-menue ul {
+	float:right;
+}
+
+.pmfooter-menue ul li {
+	float:left;
+}
+
+.pmfooter-menue ul li.pmlast a {
+	padding-right:0;
+}
+
+.pmfooter-menue ul li a {
+	padding:0 10px;
+}
+
+
+.pmfooter-info-bottom {
+	margin-top:10px;
+}
+
+.pmfooter .pmfleft {
+	float:left;
+}
+
+.pmfooter .pmfright {
+	float:right;
+}
+
+
+
+/* social icons */
+
+.pmSocialIcon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	border: 1px solid #e0e0e0;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+
+	text-indent: -100000px;
+}
+.pmSocialIcon.isFacebook { background-position: -112px 0; }
+.pmSocialIcon.isTwitter { background-position: -112px -16px; }
+.pmSocialIcon.isXing { background-position: -112px -32px; }
+.pmSocialIcon.isRss { background-position: -112px -48px; }
+/* hover */
+.pmSocialIcon:hover {
+	border-color: #fff;
+}
+.pmSocialIcon.isFacebook:hover { background-position: -96px 0; }
+.pmSocialIcon.isTwitter:hover { background-position: -96px -16px; }
+.pmSocialIcon.isXing:hover { background-position: -96px -32px; }
+.pmSocialIcon.isRss:hover { background-position: -96px -48px; }
+
+/* footer home link */
+.pmFooterHomeLink {
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	background-position: -4px -997px;
+}
+
+/* ################################################################################
+tables
+################################################################################ */
+
+.pmtable {
+  
+  background:#c8dcea;
+}
+
+.pmtable th {
+    background:#92b9d6;
+	font-weight:bold;
+	padding:5px 10px;
+	border:1px solid #fff;
+}
+
+.pmtable td {
+	border:1px solid #FFF;
+	padding:5px 10px;
+}
+
+.pmtable td * {
+	
+}
+
+
+/* ################################################################################
+buttons
+################################################################################ */
+/*
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+a:link > span.pmArrowButton,
+a:visited > span.pmArrowButton {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 21px;
+    border:1px solid #ccc;
+    color:#FFF;
+    padding:2px 30px 2px 15px;
+    cursor:pointer;    
+	background:#008ebd url(/layout/pm/images/icon/link-arrow.png) no-repeat center right;
+}
+        
+a.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+a:link:hover > span.pmArrowButton,
+a:visited:hover > span.pmArrowButton,
+a.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+a:link:focus > span.pmArrowButton,
+a:visited:focus > span.pmArrowButton {
+	background-color: #707173;
+}
+    
+a.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+a:link:active > span.pmArrowButton,
+a:visited:active > span.pmArrowButton {
+}
+  
+.button.full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center; 
+}
+
+
+.button.back,
+a:link > span.pmArrowButton.back,
+a:visited > span.pmArrowButton.back {
+background-image: url(/layout/pm/images/icon/link-arrow-back.png);
+background-position: left;
+padding: 2px 15px 2px 30px;
+}
+
+
+a.button.btn-red {
+	background-color:#d4021d;
+	font-size:12px;
+	padding:5px 30px 5px 15px;
+}
+
+a.button.btn-red:hover {
+	background-color:#008ebd;
+}
+
+a.button.btn-transparent {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+
+.pm-btn-bottom-right {
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+
+.pm-btn-bottom-normal-right {
+	position:relative;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	float:right;
+}
+
+.pm-btn-bottom-left {
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	background:#707173 url(/layout/pm/images/icon/link-arrow.png) no-repeat center left;
+	padding:2px 15px 2px 30px;
+}
+*/
+
+
+/* ################################################################################
+forms
+################################################################################ */
+
+/*
+form {
+    margin-bottom: 20px; }
+fieldset {
+    margin-bottom: 20px; }
+*/  
+input[type="text"], 
+input[type="password"],
+input[type="email"],
+textarea,
+select,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select { /* UPDATE MARGIN */
+    border: 1px solid #ccc;
+    padding: 4px;
+    outline: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #919191;
+    margin: 0;
+    width: 200px;
+    max-width: 100%;
+    /*display: block;*/
+    /*margin-bottom: 20px;*/ /* UPDATE REMOVE MARGIN */
+    /*margin-right:10px;*/
+    background-color:#f1f1f1;
+font-size: 12px;
+}
+
+select,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select { 
+padding: 0; 
+color: #404040;
+width: auto;
+}
+
+
+/* focus */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select:focus {
+    border-color: #aaa;
+    color: #444;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow:  0 0 3px rgba(0,0,0,.2);    
+    background-color:#e1edc5;
+    background-color:white;
+}
+
+/* hover */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+textarea:hover
+select:hover,
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select:hover {
+    border-color: #aaa;
+	color: #444;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow:  0 0 3px rgba(0,0,0,.2); 
+}
+    
+textarea {
+    min-height: 60px; 
+resize: vertical;
+}
+
+label, legend {
+    display: block;
+    font-weight: bold;
+}
+
+select {
+    width: 220px; 
+}
+.PlentyForumSearchContent > select {
+width: 400px;
+}
+
+input[type="checkbox"] {
+    display: inline; 
+}
+
+label span,
+legend span {
+    font-weight: normal;
+    font-size: 13px;
+    color: #444; 
+}
+
+/* ################################################################################
+tabs (startseite)
+################################################################################ */
+
+
+ul.tabs {
+    margin:0 !important;
+    padding:0;
+    /*border-bottom:1px solid #666;*/
+    height:30px;
+}
+
+/* single tab */
+ul.tabs li {
+    float:left;
+    text-indent:0;
+    padding:0;
+    margin:0 !important;
+    list-style:none !important;
+}
+
+.panes p {
+	margin-bottom:20px;
+	width: 600px;
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a {
+    /*background:url(/layout/pm/images/layout/blue.png) no-repeat -420px 0;*/
+background: #eeeeee;
+    font-size:12px;
+	font-weight:bold;
+    display:block;
+    height: 30px;
+    line-height:30px;
+    width: 140px;
+    text-align:center;
+    text-decoration:none;
+    color:#303030;
+    padding:0px;
+    margin:0px;
+    position:relative;
+    top:1px;
+	border:none 3px #ffffff;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-bottomleft:0px;
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+-webkit-transition: background 150ms ease;
+-moz-transition: background 150ms ease;
+-ms-transition: background 150ms ease;
+-o-transition: background 150ms ease;
+transition: background 150ms ease;
+}
+
+ul.tabs a:active {
+    outline:none;
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+    /*background-position: -420px -31px;*/
+background: #55b2d1;
+    color:#fff;
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+    /*background-position: -420px -62px;*/
+background: #ffffff;
+    cursor:default !important;
+    color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+/* width 1 */
+ul.tabs a.s { background-position: -553px 0; width:81px; }
+ul.tabs a.s:hover { background-position: -553px -31px; }
+ul.tabs a.s.current  { background-position: -553px -62px; }
+
+/* width 2 */
+ul.tabs a.l { background-position: -248px -0px; width:174px; }
+ul.tabs a.l:hover { background-position: -248px -31px; }
+ul.tabs a.l.current { background-position: -248px -62px; }
+
+/* width 3 */
+ul.tabs a.xl { background-position: 0 -0px; width:248px; }
+ul.tabs a.xl:hover { background-position: 0 -31px; }
+ul.tabs a.xl.current { background-position: 0 -62px; }
+
+/* initially all panes are hidden */
+.panes .pane {
+    display:none;
+    padding: 15px;
+}
+
+/* tab pane styling */
+.panes div {
+    display:none;
+    padding:15px 10px;
+    /*border:1px solid #999;*/
+    border-top:0;
+    background-color:#fff;
+}
+
+
+
+.pmTabBox {
+position: relative;
+}
+
+.pmTabBox p{
+position: relative;
+width: 250px;
+}
+.pmTabBox > .panes {
+position: absolute;
+top: 30px;
+bottom: 0;
+left: 0;
+right: 0;
+}
+.pmTabBox > .panes > div {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+}
+
+/* tab navigation */
+.pmTabNavigation { 
+margin-top: 15px; 
+margin-bottom: 20px; 
+}
+.pmTabNavigation li { 
+display: inline-block; 
+padding: 0 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################
+NivoSlider
+################################################################################ */
+
+/*
+Skin Name: Nivo Slider Default Theme
+Skin URI: http://nivo.dev7studios.com
+Skin Type: flexible
+Description: The default skin for the Nivo Slider.
+Version: 1.2
+Author: Gilbert Pellegrom
+Author URI: http://dev7studios.com
+*/
+
+.theme-default .nivoSlider {
+	position:relative;
+	background:#fff url(/layout/pm/images/layout/loading.gif) no-repeat 50% 50%;
+    margin-bottom:50px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-default .nivo-controlNav {
+	text-align: center;
+	padding: 20px 0;
+}
+.theme-default .nivo-controlNav a {
+	display:inline-block;
+	width:22px;
+	height:22px;
+	background:url(/layout/pm/images/layout/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin: 0 2px;
+}
+.theme-default .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(/layout/pm/images/layout/arrows_32.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+.theme-default a.nivo-nextNav {
+	background-position:-32px 0;
+	right:15px;
+}
+.theme-default a.nivo-prevNav {
+	left:15px;
+}
+
+.theme-default .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+    color:#fff;
+}
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+	width: 100%;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+	width: auto;
+	height: auto;
+	background: none;
+	margin-bottom: 5px;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+	display: block;
+	width: 120px;
+	height: auto;
+}
+
+/*
+ * jQuery Nivo Slider v3.0.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+
+.theme-default .nivo-controlNav {
+	padding: 5px 0;
+}
+
+.nivo-controlNav {
+	width:150px;
+	position:absolute;
+	margin-top:-50px;
+	z-index:99999999;
+	right:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################################################
+NewsSlider
+################################################################################ */
+
+/* root element for scrollable */
+.vertical {
+	/* required settings */
+	position: relative;
+	overflow: hidden;
+	height: 470px;
+	width: 280px;
+}
+
+.scrollableNews .newsSliderBlog, .scrollableNews .newsSliderEvents {
+	padding-left:10px;
+	padding-top:0;
+}
+
+/* root element for scrollable items */
+.scrollableNews .items {
+	position: absolute;
+	/* this time we have very large space for height */
+	height: 20000em;
+	padding: 0px!Important;
+	display:block;
+}
+
+/* single scrollable item */
+.scrollableNews .item {
+	width:270px;
+	display:block;
+	padding:0;
+	margin:0;
+	/*padding: 15px 0;*/
+	
+	/*height:100px;*/
+	margin-top:15px;
+}
+
+/* the action buttons above the scrollable */
+#actionsfirst, #actionssecond {
+	top:420px;
+	width: 260px;
+	margin:10px 0;
+	padding:10px 0;
+	display:block; 
+	position:relative; 
+	
+	
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(35%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+#actionsfirst a, #actionssecond a {
+	cursor: pointer;
+	margin-top:10px;
+}
+
+#actionsfirst a:hover, #actionssecond a:hover {
+	text-decoration: underline;
+	color: #333;
+}
+
+.disabled {
+	visibility: hidden;
+}
+.nextone, .nexttwo {
+	float: right;
+}
+
+
+
+
+
+/* ################################################################################
+tabs (unterseiten)
+################################################################################ */
+
+.border-shadow-small2 p {
+	width:600px;
+} 
+/* root element for tabs  */
+ul.css-tabs,
+.pmHasTabs > ul {
+    height: 30px;
+    margin: 0 !important;
+    padding: 0;
+    position: relative;
+    top: 1px;
+    z-index: 1000;
+}
+
+/* single tab */
+ul.css-tabs li,
+.pmHasTabs > ul > li {
+    float: left;
+    list-style-type: none;
+    margin: 0 -5px;
+    overflow: hidden;
+    padding: 5px 5px 1px;
+    position: relative;
+    top: -5px;
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a,
+.pmHasTabs > ul > li > a {
+
+border: 2px solid #FFFFFF !important;
+border-bottom: none !important;
+
+    background-color: #EFEFEF;
+    border-bottom: 0 none;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -moz-box-shadow: 0 0 4px #CCCCCC, 0 -9px 6px -12px #CCCCCC inset;
+    -webkit-box-shadow: 0 0 4px #CCCCCC, 0 -9px 6px -12px #CCCCCC inset;
+    box-shadow: 0 0 4px #CCCCCC, 0 -9px 6px -12px #CCCCCC inset;
+    color: #333333;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 16px;
+    margin-right: 2px;
+    outline: 0 none;
+    padding: 5px 12px;
+    position: relative;
+    text-decoration: none;
+    top: 1px;
+
+font-size: 90%;
+}
+
+ul.css-tabs a:hover,
+.pmHasTabs > ul > li > a:hover,
+.pmHasTabs > ul > li > a:focus,
+.pmHasTabs > ul > li > a:active {
+    background-color:#F7F7F7;
+    color:#008ebd;
+}
+
+/* selected tab */
+ul.css-tabs a.current,
+.pmHasTabs > ul > li.current > a {
+    background-color: white;
+    border-bottom: 1px solid white;
+    -moz-box-shadow: 0 0 6px #CCCCCC;
+    -webkit-box-shadow: 0 0 6px #CCCCCC;
+    box-shadow: 0 0 6px #CCCCCC;
+    color: #333333;
+    cursor: default;
+    overflow: hidden;
+    position: relative;
+    z-index: 1001;
+}
+
+.pm-newtab {
+}
+
+/* tab pane */
+.css-panes > div {
+    display:none;
+    border-width:0 1px 1px 1px;
+    min-height:150px;
+    padding:15px 20px;
+    background-color:white;
+	/*
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright:3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-top-left-radius:0;
+	-webkit-border-top-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-top-left-radius:0;
+	border-top-right-radius:3px;
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+*/	
+	-moz-border-radius: 0 4px 4px 4px;
+	-webkit-border-radius: 0 4px 4px 4px;
+	border-radius: 0 4px 4px 4px;
+	
+	position:relative;
+border: 2px solid #FFFFFF;
+}
+
+/* UPDATE */
+.pmUrlTabs > ul a {
+font-size: 90%;
+/*padding: 5px 12px;*/
+}
+.pmHasTabs .css-panes > div,
+.pmHasTabs .css-panes > div > div {
+display: block;
+}
+.pmHasTabs .css-panes {
+background: #ffffff;
+}
+
+
+
+/* ################################################################################
+komplettloesungen
+################################################################################ */
+
+.pmloesungbox-wrap {
+	height:412px;
+	background:#FFFFFF;
+}
+
+.pmloesungbox-text {
+	padding:20px;
+	height:220px;
+	/*
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(183,183,183,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(183,183,183,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(183,183,183,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(183,183,183,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(183,183,183,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(183,183,183,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b7b7b7',GradientType=0 );
+	*/
+	background:url(/layout/pm/images/komplettloesungen/loesungbox-text-bg.png) no-repeat top right;
+}
+
+.pmloesungbox-btns {
+	height:150px;
+}
+
+.pmloesungbox-btns ul li {
+	float:left;
+	display:block;
+	border-left:1px solid white;
+	margin-left:0;
+}
+
+.pmloesungbox-btns ul li a {
+	display:block;
+	height:150px;
+	width:118px;
+	background: no-repeat top center;
+}
+
+.pmloesungbox-btns ul li a .pmloesungbox-btns-text {
+	text-align:center;
+	width:120px;
+	display:block;
+	height:40px;
+	margin-top:100px;
+	position:absolute;
+}
+
+.pmloesungbox-btns ul li a:hover .pmloesungbox-btns-text {
+	color:#ffffff;
+}
+
+
+.pmloesungbox-btns ul li a:hover {
+	display:block;
+	height:150px;
+	width:118px;
+	background-position: center -150px;
+}
+
+.pmloesungbox-btns ul li.pmtooltip-webshop a {
+	background-image:url(/layout/pm/images/komplettloesungen/loesungsbox/komplettloesung-sprite-01.png);
+}
+
+.pmloesungbox-btns ul li.pmtooltip-wirtschaft a {
+	background-image:url(/layout/pm/images/komplettloesungen/loesungsbox/komplettloesung-sprite-02.png);
+}
+
+.pmloesungbox-btns ul li.pmtooltip-payment a {
+	background-image:url(/layout/pm/images/komplettloesungen/loesungsbox/komplettloesung-sprite-03.png);
+}
+
+.pmloesungbox-btns ul li.pmtooltip-logistik a {
+	background-image:url(/layout/pm/images/komplettloesungen/loesungsbox/komplettloesung-sprite-04.png);
+}
+
+.pmloesungbox-btns ul li.pmtooltip-crm a {
+	background-image:url(/layout/pm/images/komplettloesungen/loesungsbox/komplettloesung-sprite-05.png);
+}
+
+.pmloesungbox-btns ul li.pmtooltip-beratung a {
+	background-image:url(/layout/pm/images/komplettloesungen/loesungsbox/komplettloesung-sprite-06.png);
+}
+
+.pmloesungbox-btns ul li.pmtooltip-software a {
+	background-image:url(/layout/pm/images/komplettloesungen/loesungsbox/komplettloesung-sprite-07.png);
+}
+
+.pmloesungbox-btns ul li.pmtooltip-cloud a {
+	background-image:url(/layout/pm/images/komplettloesungen/loesungsbox/komplettloesung-sprite-08.png);
+	width:122px;
+}
+
+
+
+.pmloesungbox-btns ul li .pmtooltip {
+	/*
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(183,183,183,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(183,183,183,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(183,183,183,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(183,183,183,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(183,183,183,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(183,183,183,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b7b7b7',GradientType=0 );
+	*/
+	background:url(/layout/pm/images/komplettloesungen/tooltip-bg-left.png) no-repeat top left;
+	color:#333;
+	height:200px;
+	width:500px;
+	position:absolute;
+	z-index:9999;
+	top:110px;
+	padding:20px;
+	display:none;
+	line-height: 18px;
+	/*
+	opacity:0;
+	-webkit-transition:All .3s ease; -moz-transition:All .3s ease; -o-transition:All .3s ease;
+	*/
+}
+
+
+.pmloesungbox-btns ul li:hover .pmtooltip {
+	display:block;
+	/*opacity:1;*/
+}
+
+
+
+
+.pmloesungbox-btns ul li.pmrighttooltip .pmtooltip {
+	background:url(/layout/pm/images/komplettloesungen/tooltip-bg-right.png) no-repeat top left;
+	
+}
+
+.pmloesungbox-btns ul li.pmrighttooltip-one .pmtooltip {
+	left:50px;
+}
+
+.pmloesungbox-btns ul li.pmrighttooltip-two .pmtooltip {
+	left:180px;
+}
+
+.pmloesungbox-btns ul li.pmrighttooltip-three .pmtooltip {
+	left:300px;
+}
+
+.pmloesungbox-btns ul li.pmrighttooltip-four .pmtooltip {
+	left:420px;
+}
+
+.pmloesungbox-text-overlay {
+	opacity:0.1;
+}
+
+
+.pmloesungen-tab1-01 {
+	background:url("/layout/pm/images/komplettloesungen/transparente-kosten.jpg") no-repeat top right;
+}
+
+.pmloesungen-tab2-01 {
+	background:url("/layout/pm/images/komplettloesungen/neueinsteiger.png") no-repeat top right;
+}
+
+
+.pmloesungen-tab3-01 {
+	background:url("/layout/pm/images/komplettloesungen/macbook.png") no-repeat top right;
+}
+
+
+
+.span-50-versionen-44 {
+	background:url("/layout/pm/images/komplettloesungen/tab-bilder/versionen-changelog.jpg") no-repeat bottom right ;
+	min-height:208px;
+}
+
+.span-50-versionen-4306 {
+	background:url("/layout/pm/images/komplettloesungen/tab-bilder/versionen-changelog.jpg") no-repeat bottom right ;
+	min-height:208px;
+	float:right;
+}
+
+
+
+
+
+/* TABS unten */
+
+.span-50-loesungen-demo {
+	background:url("/layout/pm/images/komplettloesungen/tab-bilder/demo-anfordern.png") no-repeat bottom right ;
+	min-height:208px;
+}
+
+.span-50-loesungen-vergleich {
+	background:url("/layout/pm/images/komplettloesungen/tab-bilder/versionen-changelog.jpg") no-repeat bottom right ;
+	min-height:208px;
+	float:right;
+}
+
+/* TABS "Die wichtigsten Vorteile für Sie als Kunde" */
+.pmloesungen-vorteile-01 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/alles-aus-einer-hand.jpg") no-repeat bottom right ;
+	min-height: 210px !important;
+}
+
+.pmloesungen-vorteile-02 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/arbeitsprozess.jpg") no-repeat bottom right ;
+	min-height: 210px !important;
+}
+
+.pmloesungen-vorteile-03 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/verkaufsabwicklung.jpg") no-repeat bottom right ;
+	min-height: 210px !important;
+}
+
+.pmloesungen-vorteile-04 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/handbuch.jpg") no-repeat bottom right ;
+	min-height: 210px !important;
+}
+
+.pmloesungen-vorteile-05 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/demoversion.jpg") no-repeat bottom right ;
+	min-height: 210px !important;
+}
+
+/* TABS "Für jeden das Richtige" */
+.pmloesungen-dasrichtige-01 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/neueinsteiger.jpg") no-repeat bottom right ;
+	min-height: 140px !important;
+}
+
+.pmloesungen-dasrichtige-02 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/umsteiger.jpg") no-repeat bottom right ;
+	min-height: 140px !important;
+}
+
+.pmloesungen-dasrichtige-03 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/erweiterer.jpg") no-repeat bottom right ;
+	min-height: 140px !important;
+}
+
+/* TABS "Warum plentymarkets - Informieren Sie sich jetzt:" */
+.pmloesungen-warumplenty-01 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/unsere-produkte.jpg") no-repeat bottom right ;
+	min-height: 140px !important;
+}
+
+.pmloesungen-warumplenty-02 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/funktionen.jpg") no-repeat bottom right ;
+	min-height: 140px !important;
+}
+
+.pmloesungen-warumplenty-03 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/technologie.jpg") no-repeat bottom right ;
+	min-height: 140px !important;
+}
+
+.pmloesungen-warumplenty-04 {
+	background: url("/layout/pm/images/komplettloesungen/tab-bilder/versionen-changelog.jpg") no-repeat bottom right ;
+	min-height: 140px !important;
+}
+
+/* TABS "Warum plentymarkets - Informieren Sie sich jetzt:" */
+.pmsupport-waskoennen-01 {
+	background: url("/layout/pm/images/layout/bubbles-bg.png") no-repeat top right ;
+	height: 200px !important;
+}
+
+.pmsupport-waskoennen-02 {
+	background: url("/layout/pm/images/layout/bubbles-bg.png") no-repeat top right ;
+	height: 220px !important;
+}
+
+.pmsupport-waskoennen-03 {
+	background: url("/layout/pm/images/layout/bubbles-bg.png") no-repeat top right ;
+	height: 220px !important;
+}
+
+.pmsupport-waskoennen-04 {
+	background: url("/layout/pm/images/layout/bubbles-bg.png") no-repeat top right ;
+	height: 220px !important;
+}
+
+.pmsupport-waskoennen-05 {
+	background: url("/layout/pm/images/layout/bubbles-bg.png") no-repeat top right ;
+	height: 220px !important;
+}
+
+.pmsupport-waskoennen-06 {
+	background: url("/layout/pm/images/layout/bubbles-bg.png") no-repeat top right ;
+	height: 220px !important;
+}
+
+.pmsupport-waskoennen-07 {
+	background: url("/layout/pm/images/layout/bubbles-bg.png") no-repeat top right ;
+	height: 220px !important;
+}
+
+
+/* ################################################################################
+main navigation with dropdown
+################################################################################ */
+
+/* navi container */
+.pmmainnavigation {
+height: 38px;
+border: none;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+/* navi container & a level 1 */
+.pmmainnavigation,
+.pmmainnavigation > ul > li > a {
+background: #008ebd url("//www.plentymarkets.eu/layout/pm/images/layout/navi-verlauf.png") repeat-x;
+}
+
+/* li level1 */
+.pmmainnavigation > ul > li {
+float: left;
+}
+/* ul, li level >=2 */
+.pmmainnavigation > ul li, 
+.pmmainnavigation > ul ul {
+position: relative;
+background: none;
+}
+
+/* a all */
+.pmmainnavigation ul > li > a {
+display: block;
+zoom: 1;
+padding: 10px 15px;
+white-space: nowrap;
+font-weight: bold;
+background: none;
+
+-webkit-transition: background-color .3s ease, color .3s ease; 
+-moz-transition: background-color .3s ease, color .3s ease; 
+-o-transition: background-color .3s ease, color .3s ease; 
+-ms-transition: background-color .3s ease, color .3s ease; 
+transition: background-color .3s ease, color .3s ease; 
+}
+/* a level1 */
+.pmmainnavigation > ul > li > a {
+color: #fff;
+border-right: 1px solid #0580a8;
+border-left: 1px solid #45a6c6;
+}
+
+/* a first (home) */
+.pmmainnavigation > ul > li:first-child a {
+
+-moz-border-radius: 4px 0 0 4px;
+-webkit-border-radius: 4px 0 0 4px;
+border-radius: 4px 0 0 4px;
+
+border: none;
+border-right: 1px solid #0580a8;
+}
+
+/* a hover all */
+.pmmainnavigation ul li a:hover,
+.pmmainnavigation ul li a:focus {
+text-decoration: none;
+}
+
+/* a (li) hover level1, active level1 */
+.pmmainnavigation > ul > li > a:hover, 
+.pmmainnavigation > ul > li > a:focus,  
+.pmmainnavigation > ul > li.active > a, 
+.pmmainnavigation > ul > li:hover > a,
+.pmmainnavigation > ul > li.focus > a { /* UPDATE */
+background-color: #fff;
+color: #008ebd;
+}
+
+/* ul level >=2 */
+.pmmainnavigation > ul > li ul {
+display: none;
+/*left: -99000px;*/
+position: absolute;
+z-index: 2000;
+	
+background: #fff; /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); 
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );*/ /* ie doesn't seem to like combination with border radius */
+
+-moz-box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.3);
+box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.3);
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+
+/* li level >=2 */
+.pmmainnavigation > ul > li ul > li {
+border-bottom: 1px solid #ccc;
+background: none;
+}
+
+/* a level >=2 */
+.pmmainnavigation > ul > li ul > li > a {
+color: #5e5e5e;
+padding: 5px 15px;
+}
+
+/* a hover / li current level >=2 */ /* content-navigation uses .page_active & .dir_active | category-navigation uses .active */
+.pmmainnavigation > ul > li ul > li > a:hover,
+.pmmainnavigation > ul > li ul > li > a:focus,
+.pmmainnavigation > ul > li ul > li.page_active > a,
+.pmmainnavigation > ul > li ul > li.dir_active > a,
+.pmmainnavigation > ul > li ul > li.active > a {
+background-color: #008ebd;
+color: #fff;
+}
+
+/* ul level >=3 */
+.pmmainnavigation > ul > li ul > li > ul {
+position: absolute;
+left: 100%;
+top: 0;
+}
+
+/* show sublevel */
+
+/* level1 */
+.pmmainnavigation > ul > li:hover > ul, 
+/*.pmmainnavigation > ul > li:active > ul, 
+.pmmainnavigation > ul:focus, 
+.pmmainnavigation > ul:active, */
+.pmmainnavigation ul > li > a:focus + ul,
+
+.pmmainnavigation ul > li > ul.focus { /* UPDATE */
+display: block;
+/*left: 0;*/
+}
+/* level >=2 */
+.pmmainnavigation > ul > li ul > li:hover > ul, 
+/*.pmmainnavigation > ul > li ul > li:active > ul, 
+.pmmainnavigation > ul > li ul:focus, 
+.pmmainnavigation > ul > li ul:active, */
+.pmmainnavigation > ul > li ul > li > a:focus + ul,
+
+.pmmainnavigation > ul > li ul > li > ul.focus { /* UPDATE */
+display: block;
+/*left: 100%;*/
+}
+
+
+/* BORDER BOTTOM */
+
+/* li last level >=2 */
+.pmmainnavigation > ul > li ul > li:last-child,
+.pmmainnavigation > ul > li ul > li.categoryId394 {
+border:none;
+} /*adapted to hidden last child container*/
+
+
+/* BORDER RADIUS */
+
+/* a first level >=2 */
+.pmmainnavigation > ul > li ul > li:first-child > a {
+
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+
+/* a last level >=2 */
+.pmmainnavigation > ul > li ul > li:last-child > a,
+.pmmainnavigation > ul > li ul > li.categoryId394 > a {	
+
+-moz-border-radius-bottomleft: 4px;
+-moz-border-radius-bottomright: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+} /*adapted to hidden last child container*/
+
+
+/* ARROW */
+
+/* a dir (arrow) */
+.pmmainnavigation > ul > li  ul > li.dir > a {
+padding-right: 25px;
+background-image: url("//www.plentymarkets.eu/layout/pm/images/icon/navi-arrow-sprite.png");
+background-repeat: no-repeat;
+background-position: top right;
+}
+/* a dir hover / current (arrow) */
+.pmmainnavigation > ul > li  ul > li.dir > a:hover,
+.pmmainnavigation > ul > li  ul > li.dir > a:focus, /* UPDATE */
+.pmmainnavigation > ul > li  ul > li.dir_active > a,
+.pmmainnavigation > ul > li  ul > li.page_active > a {
+background-position: bottom right;
+}
+
+
+/* SPECIAL */
+
+/* special style level1 */
+.pmNavigationBorderHelper {
+border: none:
+padding: 0;
+margin: 0;
+display: block;
+float: left;
+height: 38px;
+width: 0;
+border-left: 1px solid #45A6C6;
+}
+
+
+/* ################################################################################
+searchbox
+################################################################################ */
+.pmsearch {
+	float:right;
+	padding:0;
+	margin:0;
+	width:220px;
+	margin-top:7px;
+}
+
+.pmsearch input[type="text"] {
+	width:160px;
+	font-size: 14px;
+	background:white url("//www.plentymarkets.eu/layout/pm/images/icon/search-icon.jpg") no-repeat center left;
+	padding-left:20px;
+	font-size:11px;
+	border:solid 1px #90b9d7;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright:0;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:0;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:0;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:0;
+    border-top-left-radius:5px;
+    border-top-right-radius:0;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:0;
+	margin:0;
+	-webkit-transition:All .3s ease; -moz-transition:All .3s ease; -o-transition:All .3s ease;
+vertical-align: middle;
+}
+
+.pmsearch input[type="text"]:hover,
+.pmsearch input[type="text"]:focus {
+	width:160px;
+	border-color:#90b9d7;
+	-moz-box-shadow: 0px 0px 5px #ffffff;
+	-webkit-box-shadow: 0px 0px 5px #ffffff;
+	box-shadow: 0px 0px 5px #ffffff;
+}
+
+.pmsearch input[type="text"]:focus {}
+
+.pmsearch #searchboxbtn {
+	background-color: transparent;
+	background-image: url("/layout/pm/images/icon/search-arrow-sprite.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+	border:none;
+	margin:0;
+	padding: 0;
+	height:24px;
+	width:24px;
+	margin-left:1px;
+vertical-align: middle;
+}
+
+.pmsearch #searchboxbtn:hover {
+	background-position: center bottom;
+	/* hover sprite hier einfuegen */
+}
+
+
+
+/* ################################################################################
+support seite
+################################################################################ */
+.support-liste30 {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 30px;
+	color: #008ebd;
+	margin-bottom:15px;
+}
+
+.support-liste30 ul li {
+	list-style-image: url("/layout/pm/images/icon/pm-list-icon-small.png");
+	margin-left: 20px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.support-tab-01 {
+	background:url("/layout/pm/images/support/systemeinrichtungen.png") no-repeat top right;
+}
+
+.blue-back {
+	font-size:22px;
+	background:#008ebd;
+	color:white;
+	padding:5px 10px;
+	display:inline-block;
+	
+}
+
+.blue-back-left {
+	margin-left:30px;
+}
+
+.blue {
+	color:#008ebd;
+}
+
+.span60-support {
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 64%, rgba(248,248,248,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(64%,rgba(255,255,255,1)), color-stop(100%,rgba(248,248,248,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+	
+	min-height:334px;
+}
+
+.span30-support {
+	/*
+	background: rgb(255,255,255);
+	background: url("layout/pm/images/support/support.png") no-repeat top right;
+	background: url("layout/pm/images/support/support.png") no-repeat top right, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f3f3f3));
+	background: url("layout/pm/images/support/support.png") no-repeat top right, -webkit-linear-gradient(top, #fff, #f3f3f3); 
+	background: url("layout/pm/images/support/support.png") no-repeat top right,    -moz-linear-gradient(top, #fff, #f3f3f3); 
+	background: url("layout/pm/images/support/support.png") no-repeat top right,     -ms-linear-gradient(top, #fff, #f3f3f3); 
+	background: url("layout/pm/images/support/support.png") no-repeat top right,      -o-linear-gradient(top, #fff, #f3f3f3); 
+	background: url("layout/pm/images/support/support.png") no-repeat top right,         linear-gradient(top, #fff, #f3f3f3); 
+	*/
+	background: url("/layout/pm/images/support/support.png") no-repeat top right, rgb(255,255,255);
+	background: url("/layout/pm/images/support/support.png") no-repeat top right, -moz-linear-gradient(top, rgba(255,255,255,1) 64%, rgba(248,248,248,1) 100%);
+	background: url("/layout/pm/images/support/support.png") no-repeat top right, -webkit-gradient(linear, left top, left bottom, color-stop(64%,rgba(255,255,255,1)), color-stop(100%,rgba(248,248,248,1)));
+	background: url("/layout/pm/images/support/support.png") no-repeat top right, -webkit-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("/layout/pm/images/support/support.png") no-repeat top right, -o-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("/layout/pm/images/support/support.png") no-repeat top right, -ms-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("/layout/pm/images/support/support.png") no-repeat top right, linear-gradient(to bottom, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+}
+
+/* ################################################################################
+JOBS UND KARRIERE
+################################################################################ */
+.jobs-liste30 {
+	margin-left: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	color: #000000;
+	margin-bottom:15px;
+	list-style-image: url("/layout/pm/images/icon/pm-list-icon-small.png");
+}
+
+
+
+/* ################################################################################
+schnittstellen seite
+################################################################################ */
+
+.pm-white {
+	background-color: #FFFFFF;
+	padding: 20px 20px 0px 20px;
+	}
+
+
+.pm-4x-box p{
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 0;
+	height: 85px;
+	z-index: 999;
+/*
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+*/
+	font-size: 11px;
+	line-height: 15px;
+	}
+	
+/*Button
+.pm-anbieter-button{
+	clear: both;
+	background-image: url(/layout/pm/images/icon/link-arrow.png);
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-color: #008ebd;
+	font-size: 12px;
+	color: #FFFFFF;
+	width: 118px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 5px; 
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	}
+
+.pm-anbieter-button a{
+	color: #FFFFFF;
+	}
+*/
+/*einzelne fenster der Support-Seite*/
+
+.pmsupport-box01 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-01.jpg) !important;
+}
+.pmsupport-box02 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-02.jpg) !important;
+}
+.pmsupport-box03 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-03.jpg) !important;
+}
+.pmsupport-box04 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-04.jpg) !important;
+}
+.pmsupport-box05 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-05.jpg) !important;
+}
+.pmsupport-box06 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-06.jpg) !important;
+}
+.pmsupport-box07 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-07.jpg) !important;
+}
+.pmsupport-box08 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-08.jpg) !important;
+}
+.pmsupport-box09 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-09.jpg) !important;
+}
+.pmsupport-box10 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-10.jpg) !important;
+}
+
+
+
+
+/* ################################################################################
+produkte Seite
+################################################################################ */
+
+.span60-produkte {
+	/*
+	background: url("layout/pm/images/komplettloesungen/produkte/zufriedensheitsgarantie.png") no-repeat 470px 30px, rgb(255,255,255);
+	background: url("layout/pm/images/komplettloesungen/produkte/zufriedensheitsgarantie.png") no-repeat 470px 30px, -moz-linear-gradient(top, rgba(255,255,255,1) 64%, rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/zufriedensheitsgarantie.png") no-repeat 470px 30px, -webkit-gradient(linear, left top, left bottom, color-stop(64%,rgba(255,255,255,1)), color-stop(100%,rgba(248,248,248,1)));
+	background: url("layout/pm/images/komplettloesungen/produkte/zufriedensheitsgarantie.png") no-repeat 470px 30px, -webkit-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/zufriedensheitsgarantie.png") no-repeat 470px 30px, -o-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/zufriedensheitsgarantie.png") no-repeat 470px 30px, -ms-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/zufriedensheitsgarantie.png") no-repeat 470px 30px, linear-gradient(to bottom, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+	*/
+	background: #fff url("/layout/pm/images/komplettloesungen/produkte/zufriedensheitsgarantie.png") no-repeat 470px 30px;
+	min-height:230px;
+	
+}
+
+.span30-produkte {
+	/*
+	background: url("layout/pm/images/komplettloesungen/produkte/support.png") no-repeat top right, rgb(255,255,255);
+	background: url("layout/pm/images/komplettloesungen/produkte/support.png") no-repeat top right, -moz-linear-gradient(top, rgba(255,255,255,1) 64%, rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/support.png") no-repeat top right, -webkit-gradient(linear, left top, left bottom, color-stop(64%,rgba(255,255,255,1)), color-stop(100%,rgba(248,248,248,1)));
+	background: url("layout/pm/images/komplettloesungen/produkte/support.png") no-repeat top right, -webkit-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/support.png") no-repeat top right, -o-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/support.png") no-repeat top right, -ms-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/support.png") no-repeat top right, linear-gradient(to bottom, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+	*/
+	background: #FFF url("/layout/pm/images/komplettloesungen/produkte/support.png") no-repeat top right;
+	min-height:230px;
+}
+
+.vertrieb {
+	font-size:22px;
+	color:#c6c7c8;	
+	display:block;
+	margin-bottom:10px;
+}
+
+.span100-produkte {
+	/*
+	background: url("layout/pm/images/komplettloesungen/produkte/funktionen.png") no-repeat right 30px, rgb(255,255,255);
+	background: url("layout/pm/images/komplettloesungen/produkte/funktionen.png") no-repeat right 30px, -moz-linear-gradient(top, rgba(255,255,255,1) 64%, rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/funktionen.png") no-repeat right 30px, -webkit-gradient(linear, left top, left bottom, color-stop(64%,rgba(255,255,255,1)), color-stop(100%,rgba(248,248,248,1)));
+	background: url("layout/pm/images/komplettloesungen/produkte/funktionen.png") no-repeat right 30px, -webkit-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/funktionen.png") no-repeat right 30px, -o-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/funktionen.png") no-repeat right 30px, -ms-linear-gradient(top, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	background: url("layout/pm/images/komplettloesungen/produkte/funktionen.png") no-repeat right 30px, linear-gradient(to bottom, rgba(255,255,255,1) 64%,rgba(248,248,248,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+	*/
+	background: #fff url("/layout/pm/images/komplettloesungen/produkte/funktionen.png") no-repeat right 30px;
+	min-height:165px;
+}
+
+/* ################################################################################
+preise Seite
+################################################################################ */
+
+.span60-preise {
+	background: #fff;
+	min-height:230px;
+	
+}
+
+.product-price-list {
+	width:49%;
+	float:left;
+}
+
+
+.pmmaincontent .product-price-list li {
+	margin-left:10px;
+	vertical-align: middle;
+	width:90%;
+	list-style:none;
+}
+
+.product-price-list li img {
+	vertical-align: middle;
+}
+
+.product-price-list li span {
+	margin-left:10px;
+	display:inline-block;
+	margin-top:10px;
+}
+
+.product-image-wrap {
+	width:400px;
+	float:left;
+}
+
+/* ################################################################################
+schnittstellen Seite
+################################################################################ */
+
+.pm-white {
+	background-color: #FFFFFF;
+	padding: 20px 20px 0px 20px;
+	}
+
+.border-shadow-small .pm-4x-logobox, /* UPDATE */
+.pmHasFloatedItems .pm-4x-logobox {
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	width: 210px;
+	height: 190px;
+	float:left;
+	margin-right:15px;
+	position: relative;
+	}
+
+.border-shadow-small .pm-4x-referenzenbox {
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	width: 210px;
+	height: 220px;
+	float:left;
+	margin-right:15px;
+	position: relative;
+	}
+
+
+.border-shadow-small .pm-4x-logobox {
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	width: 210px;
+	height: 190px;
+	float:left;
+	margin-right:15px;
+	position: relative;
+	}
+	
+.border-shadow-small .content-boxes-row .pm-4x-thumbnail {
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	width: 200px;
+	float:left;
+	margin-right:15px;
+	position: relative;
+	border:none 5px #000000!Important;
+	-moz-border-radius-topleft: 0px!Important;
+	-moz-border-radius-topright:5px!Important;
+	-moz-border-radius-bottomleft:5px!Important;
+	-moz-border-radius-bottomright:5px!Important;
+	-webkit-border-top-left-radius:0px!Important;
+	-webkit-border-top-right-radius:5px!Important;
+	-webkit-border-bottom-left-radius:5px!Important;
+	-webkit-border-bottom-right-radius:5px!Important;
+	border-top-left-radius:0px!Important;
+	border-top-right-radius:5px!Important;
+	border-bottom-left-radius:5px!Important;
+	border-bottom-right-radius:5px!Important;
+	margin-top:-25px;
+	box-shadow:  0px 0px 4px #cccccc;
+	}
+	
+.pm-4x-box p{
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 0;
+	height: 35px;
+	z-index: 999;
+	font-size: 11px;
+	line-height: 15px;
+	position: relative;
+	}
+	
+.pm-4x-logobox p{
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 0;
+	height: 35px;
+	z-index: 999;
+	font-size: 11px;
+	line-height: 15px;
+	position: relative;
+	}
+	
+.pm-4x-box img{
+	margin-top: 30px;
+	}
+
+.pm-4x-logobox img{
+	margin-top: 20px;
+	margin-bottom: -10px;
+	}
+	
+/*Button*/
+.pm-anbieter-button{
+	clear: both;
+	background-image: url(/layout/pm/images/icon/link-arrow.png);
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 30px;
+	padding-top: 5px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-color: #008ebd;
+	font-size: 12px;
+	color: #FFFFFF;
+	width: auto;
+	float: right;
+	margin-top: 63px;
+	margin-right: 5px; 
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	}
+	
+.pm-logo-button{
+	clear: both;
+	background-image: url(/layout/pm/images/icon/link-arrow.png);
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 30px;
+	padding-top: 5px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-color: #008ebd;
+	font-size: 12px;
+	color: #FFFFFF;
+	width: auto;
+	float: right;
+	margin-top: 24px;
+	margin-right: 5px; 
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	}
+
+.pm-anbieter-button a{
+	color: #FFFFFF;
+	}
+.pm-logo-button a{
+	color: #FFFFFF;
+	}
+
+.schnittstellen-header{
+		background-repeat: no-repeat;
+		background-position: right top;
+		height: 160px;
+		background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-header.jpg);
+	}
+
+.agenturen-header {
+		background-repeat: no-repeat;
+		background-position: right top;
+		height: 160px;
+		background-image: url(/layout/pm/images/agenturen/pm-agenturen-header.jpg);
+	}
+
+.referenzen-header {
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-image: url(/layout/pm/images/referenzen/pm-referenzen-header.jpg);
+	}
+
+.kongress-header{
+		background-repeat: no-repeat;
+		background-position: right top;
+		height: 160px;
+		background-image: url(/layout/pm/images/kongress/pm_header_kongress.jpg);
+	}
+
+/*einzelne fenster der Support-Seite*/
+
+.pmsupport-box01 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-01.jpg) !important;
+}
+.pmsupport-box02 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-02.jpg) !important;
+}
+.pmsupport-box03 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-03.jpg) !important;
+}
+.pmsupport-box04 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-04.jpg) !important;
+}
+.pmsupport-box05 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-05.jpg) !important;
+}
+.pmsupport-box06 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-06.jpg) !important;
+}
+.pmsupport-box07 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-07.jpg) !important;
+}
+.pmsupport-box08 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-08.jpg) !important;
+}
+.pmsupport-box09 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-09.jpg) !important;
+}
+.pmsupport-box10 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/schnittstellen/pm-schnittstellen-bg-10.jpg) !important;
+}
+/*einzelne fenster der Unternehmen-Seite*/
+
+.pmunternehmen-box01 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/unternehmen/pm-unternehmen-geschichte.jpg) !important;
+}
+.pmunternehmen-box02 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/unternehmen/pm-unternehmen-presse.jpg) !important;
+}
+.pmunternehmen-box03 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/unternehmen/pm-unternehmen-jobs.jpg) !important;
+}
+.pmunternehmen-box04 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/unternehmen/pm-unternehmen-kundenrat.jpg) !important;
+}
+.pmunternehmen-box05 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/unternehmen/pm-unternehmen-kontakt.jpg) !important;
+}
+.pmunternehmen-box06 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-image: url(/layout/pm/images/unternehmen/pm-unternehmen-anfahrtsskizze.jpg) !important;
+}
+
+
+
+/* SCHNITTSTELLEN TABS 
+.pmschnittstellen-tab-01 {
+	position:relative;
+}
+.pmschnittstellen-tab-02 {
+	position:relative;
+}*/
+
+/* tab pane */
+
+.css-panes .schnittstellen-tab {
+	display: block;
+	width:210px;
+	float:left;
+	text-align: center;
+	margin-right: 7px;
+	height: 170px;
+	}
+	
+.css-panes .schnittstellen-tab a{
+	color: #444444;
+	font-weight: bold;
+	text-decoration: underline;
+	}
+	
+.css-panes img{
+}
+
+/* ################################################################################
+accordion plenty
+################################################################################ */
+
+#accordion-fullsize { 
+}
+
+#accordion-fullsize .pane {  
+	/*display:none;*/
+	padding:20px;
+	background:#FFF;
+    border:1px solid #d4d4d4;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright:0px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:4px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:4px;
+	margin-bottom:10px;
+	border-top:none;
+}
+
+#accordion-fullsize h2 {
+    color: #232323;
+    font-size: 16px!important;;
+    max-height: 29px;
+    padding: 7px 0 0 14px;
+	font-style:normal;
+	letter-spacing:0!important;
+	border:1px solid #d4d4d4;
+	background:#f3f3f3;
+	padding:10px;
+	margin-bottom:10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;	
+ }
+ 
+#accordion-fullsize h2:hover { 
+	color:#008EBD; 
+	cursor:pointer; 
+}
+
+#accordion-fullsize h2.current { 
+	color:#008EBD; 
+	cursor:pointer; 
+	
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-bottomleft:0px;
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	border-bottom:none;
+	background:white;
+	margin-bottom:0px;
+}
+
+
+/* ################################################################################
+agenturen seite
+################################################################################ */
+
+.border-shadow-small .pm-4x-agenturenbox {
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	width: 210px;
+	min-height: 280px;
+	float:left;
+	margin-right:15px;
+	position: relative;
+	}
+
+
+.border-shadow-small .pm-agenturen-teaserinfo {
+		padding-left: 40px;
+		position: relative;
+		padding-bottom: 50px;
+		padding-top: 5px;
+	}
+
+
+.border-shadow-small .pm-agenturen-teaserinfo ul{
+		list-style-position: outside;
+		list-style-type: none;
+
+	}
+
+
+/* ################################################################################
+versionen seite
+################################################################################ */
+
+.pmmaincontent .span50-inner ul li {
+	margin-bottom:15px;
+	list-style:none;
+}
+
+.span50-inner ul.pmimage-list li .pmimage-list-icon {
+	display:inline-block;
+	vertical-align:top;
+	
+}
+
+.span50-inner ul.pmimage-list li .pmimage-list-text {
+	display:inline-block;
+	width:90%;
+	margin-top:5px;
+}
+
+.span50-inner-right {
+	float:right;
+}
+
+/* ################################################################################
+Technologie und funktionen
+################################################################################ */
+
+#accordion-fullsize .span50-inner {
+	/*margin-bottom:15px;
+	width:40%;*/
+}
+
+#accordion-fullsize .span50-inner ul li {
+	margin-bottom:0;
+}
+
+#accordion-fullsize .span50-inner ul.pmimage-list li .pmimage-list-icon {
+	/*display:inline-block;
+	vertical-align:top;*/
+}
+
+#accordion-fullsize .span50-inner ul.pmimage-list li .pmimage-list-text {
+	/*display:inline-block;
+	width:90%;
+	margin-top:5px;*/
+}
+
+#accordion-fullsize .span50-inner-right {
+	/*float:right;*/
+}
+
+/* ################################################################################
+enterprise seite
+################################################################################ */
+
+.span30-enterprise {
+	position:relative;
+	background: #fff;
+	width:320px;
+	padding:0;
+	background:white url(/layout/pm/images/komplettloesungen/produkte/enterprise/valentin.png) top right no-repeat;
+	
+	height:230px;
+}
+
+.span30-enterprise p {
+	padding:0 20px;
+}
+
+.span60-enterprise {
+	min-height:220px;
+	border:none 5px #000000;
+	-moz-border-radius-topleft: 4px!Important;
+	-moz-border-radius-topright:4px!Important;
+	-moz-border-radius-bottomleft:0px!Important;
+	-moz-border-radius-bottomright:0px!Important;
+	-webkit-border-top-left-radius:4px!Important;
+	-webkit-border-top-right-radius:4px!Important;
+	-webkit-border-bottom-left-radius:0px!Important;
+	-webkit-border-bottom-right-radius:0px!Important;
+	border-top-left-radius:4px!Important;
+	border-top-right-radius:4px!Important;
+	border-bottom-left-radius:0px!Important;
+	border-bottom-right-radius:0px;!Important
+}
+
+.span100-enterprise {
+	border:none 5px #000000!Important;
+	-moz-border-radius-topleft: 0px!Important;
+	-moz-border-radius-topright:5px!Important;
+	-moz-border-radius-bottomleft:5px!Important;
+	-moz-border-radius-bottomright:5px!Important;
+	-webkit-border-top-left-radius:0px!Important;
+	-webkit-border-top-right-radius:5px!Important;
+	-webkit-border-bottom-left-radius:5px!Important;
+	-webkit-border-bottom-right-radius:5px!Important;
+	border-top-left-radius:0px!Important;
+	border-top-right-radius:5px!Important;
+	border-bottom-left-radius:5px!Important;
+	border-bottom-right-radius:5px!Important;
+	
+	margin-top:-25px;
+	box-shadow:  0px 0px 4px #cccccc;
+	min-height:750px;
+}
+
+
+.pmbackgroundwhite {
+	position:absolute;
+	background:white;
+	height:30px;
+	width:620px;
+	z-index:100;
+	top:-20px;
+	left:0;
+	
+}
+
+.pmEnterpriseImage {
+	position:absolute;
+	z-index:200;
+	top:-140px;
+}
+
+.pmEnterpriseRight {
+	float:right;
+	width:50%;
+}
+
+
+/* ################################################################################
+Bilder-Boxen
+################################################################################ */
+
+.content-overview-box {
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	width: 210px;
+	min-height: 280px;
+	float:left;
+	margin-right:15px;
+	position: relative;
+	border:solid 2px #ffffff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 0px 6px #cccccc;
+	-webkit-box-shadow: 0px 0px 6px #cccccc;
+	box-shadow: 0px 0px 6px #cccccc;
+	margin-bottom:15px;
+	}
+
+.content-overview-box P{
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+
+
+
+
+/* ################################################################################
+ALLGEMEINES
+################################################################################ */
+.pm-100-kleiner p {
+	max-width: 600px;
+}
+
+/* -------- glossar --------*/
+
+.pmTabNavigation.pmTabBoxStatic.pmContentBox.border-shadow-small {
+	overflow:auto;
+}
+
+.pmTabNavigation.pmTabBoxStatic.pmContentBox.border-shadow-small ul.level1_sub {
+	width:160px;
+	float:left;
+	padding:20px;
+	font-size:12px;
+}
+
+.pmTabNavigation.pmTabBoxStatic.pmContentBox.border-shadow-small ul.level1_sub li a {
+	border-bottom:1px solid #e0e0e0; /*#cccccc*/
+	width:200px;
+	display:block;
+	padding:5px 10px;
+	-webkit-transition: all .3s ease; -moz-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;
+}
+
+.pmTabNavigation.pmTabBoxStatic.pmContentBox.border-shadow-small ul.level1_sub li a:hover {
+	background:#008ebd;
+	color:#FFF;
+	text-decoration:none;
+}
+
+.pmTabNavigation.pmTabBoxStatic.pmContentBox.border-shadow-small ul.level1_sub ul {
+	display:none;
+}
+
+.pmTabNavigation.pmTabBoxStatic.pmContentBox.border-shadow-small ul.level1_sub ul li {
+	padding:0;
+}
+
+
+.pmTabContentStatic {
+	width:650px;
+	padding:20px;
+	padding-left:0;
+	float:right;
+}
+
+
+.pmTabNavigation.pmTabBoxStatic.pmContentBox.border-shadow-small ul.level1_sub li.dir_active ul {
+	display:block;
+}
+
+
+
+/* BEGIN ----- plenty video overlay ----- */
+
+/*trigger element*/
+.PlentyVideoOverlayTrigger {
+cursor: pointer;
+}
+
+/*overlay element*/
+.PlentyVideoOverlayBox {
+display: none;
+background: url(/images/gallery/Webseite/loading_000000.gif) no-repeat
+center center #000000;
+border: 1px solid #666666;
+padding: 0;
+vertical-align: middle;
+z-index: 10000;
+-moz-box-shadow: 0 0 0 90000px rgba(0, 0, 0, 0.8);
+-webkit-box-shadow: 0 0 0 90000px rgba(0, 0, 0, 0.8);
+box-shadow: 0 0 0 90000px rgba(0, 0, 0, 0.8);
+}
+
+/*close*/
+.PlentyOverlayClose {
+position:absolute;
+width: 32px;
+height: 32px;
+right: 0px;
+top: 0px;
+background: url(/images/gallery/Webseite/close_overlay_2.png) no-repeat
+left center;
+cursor: pointer;
+}
+/*close hover*/
+.PlentyOverlayClose:hover {
+background-position: right center;
+}
+
+/* END ----- plenty video overlay ----- */
+
+
+
+
+
+.download-items {
+    list-style: none outside none;
+    margin-top: 20px !important;
+}
+.download-items li {
+    list-style: none outside none!Important;
+    margin-left: 0 !important;
+}
+.download-items .download-item1 {
+    float: left;
+    width: 250px;
+}
+.download-items .download-image {
+    float: left;
+    width: 140px;
+}
+.download-items .text-box {
+    float: left;
+    width: 550px;
+}
+.download-items .text-box .download-item-description {
+    float: left;
+    margin-left: 5px;
+}
+.download-items .text-box h3 {
+    margin-top: 0 !important;
+}
+
+
+/*
+dunkelblau:
+#008ebd
+
+hellblau:
+#90b9d7
+
+rot:
+#d4021d
+
+grau:
+#707173
+
+*/
+
+/* ################################################################################
+Akkordeon
+################################################################################ */
+#functions-list .panel {
+	background: #fcfcfc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcfcfc 0%, #eaeaea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eaeaea)); 
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcfcfc 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcfcfc 0%,#eaeaea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcfcfc 0%,#eaeaea 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcfcfc 0%,#eaeaea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#eaeaea',GradientType=0 ); 
+	/* IE6-9 */
+    font-size: 16px!important;;
+    max-height: 29px;
+    padding: 10px;
+	font-style:normal;
+	letter-spacing:0!important;
+	border:1px solid #d4d4d4;
+/* 	margin-bottom:10px; */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;	
+	list-style: none;
+	}
+
+#functions-list {
+	background: none;
+	list-style: none;
+	}
+	
+#functions-list li{
+	list-style: none;
+	}
+	
+#functions-list li .content ul li{
+	border-bottom: 1px solid #efefef;
+	font-weight: bold;
+	margin-top:15px;
+	}
+		
+#functions-list li .content ul li ul li{
+	border-bottom: 1px solid #efefef;
+	font-weight: normal;
+	max-width: 550px;
+	}
+		
+#functions-list li .content ul li {
+	border-bottom: 1px solid #efefef;
+	max-width: 550px;
+	}
+		
+/* ################################################################################
+unternehmen seite
+################################################################################ */
+
+.border-shadow-small .pm-4x-companybox {
+ margin-bottom: 30px;
+ background-color: #FFFFFF;
+ width: 210px;
+ min-height: 280px;
+ float:left;
+ margin-right:15px;
+ position: relative;
+ }
+
+
+.border-shadow-small .pm-company-teaserinfo {
+  position: relative;
+  padding:0 10px 0 10px!Important;
+  min-height:120px!Important;
+ }
+ 
+
+
+
+
+
+
+
+
+.pm-2-spalten {
+	-moz-column-count: 2;
+	-moz-column-gap: 30px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 30px;
+	column-count: 2;
+	column-gap: 30px;
+}
+
+.pm-3-spalten {
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;
+}
+
+.pm-4-spalten {
+	-moz-column-count: 4;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px;
+	column-count: 4;
+	column-gap: 20px;
+}
+
+.span33 {
+	width:290px;
+	float:left;
+	margin-right:15px;
+	position: relative;
+	min-height: 680px;
+}
+
+.border-shadow-small .span33 p{
+	padding: 15px 15px 0px 15px;
+}
+
+.span33-last {
+	margin-right:0;
+}
+
+
+
+.ecommerce-liste {
+	list-style-image: url("/layout/pm/images/icon/pm-list-icon-small.png");
+	margin-left: 20px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	max-width: 350px;
+}
+
+.ecommerce-liste li {
+	padding-top: 10px;
+}
+
+
+
+
+/* ################################################################################
+IE 7+8 styles
+################################################################################ */
+
+.border-shadow, .border-shadow-small {
+	border: 2px solid #cccccc9; /* IE8 und darunter */     
+	*border: 2px solid #cccccc; /* IE7 und darunter */ 
+}
+
+.pmmainnavigation ul.pmnavigation li ul li ul li a {
+	/*
+	background:red9;
+	*background:red;
+	display:block9;
+	*display:block;
+	*/
+}
+
+
+
+
+
+/* UPDATE */
+
+
+/* partner logo box */
+.pmPartnerLogoBox {
+margin-right: 7px;
+display: inline-block;
+background: url(/layout/pm/images/schnittstellen/partner_box_bg.jpg) center top no-repeat;
+}
+.pmPartnerLogoBoxImageLink {
+display: block;
+height: 90px;
+text-align: center;
+}
+.pmPartnerLogoBoxLink {
+display: block;
+}
+.pmPartnerLogoBoxLink.pmPartnerLogoBoxTextName,
+.pmPartnerLogoBoxLink.pmPartnerLogoBoxTextLink {
+display: block;
+margin-left: 2px;
+margin-top: 4px;
+}
+a.pmPartnerLogoBoxLink.pmPartnerLogoBoxTextName,
+h3.pmPartnerLogoBoxTextName {
+margin-top: 10px;
+color: #333333;
+text-decoration: none !important;
+font-weight: bold;
+}
+
+/* tab panes inner container */
+.pmHasTabs .css-panes > div {
+clear: both;
+}
+/* link back to category */
+.pmHasTabs .css-panes > div > .pmArticleBacklinkContainer {
+margin-bottom: 18px;
+height: auto;
+min-height: 0;
+padding: 0;
+}
+/* contentpage in tabs */
+.pmHasTabs .contentpage {
+padding: 25px 30px !important;
+}
+
+/* floating item box */
+.pmHasFloatedItems {
+padding-right: 0;
+}
+.pmHasFloatedItems > .pm-4x-logobox {
+margin-right: 20px;
+}
+
+/* BEGIN ----- registration form ----- */
+
+/*input*/
+#PlentyCustomerRegistrationContentContainer  div.PlentyFormContainer > div span.PlentyFormValue > input[type=text] {
+padding: 3px 0 !important;
+}
+/*select*/
+#PlentyCustomerRegistrationContentContainer  div.PlentyFormContainer > div span.PlentyFormValue > select {
+padding: 2px 2px 2px 0 !important;
+margin-top: 0px !important;
+margin-right: 10px !important;
+margin-bottom: 20px !important;
+}
+/*input / select standard*/
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > input[type=text],
+#PlentyCustomerRegistrationContentContainer div.PlentyFormContainer > div span.PlentyFormValue > select {
+margin-left: -1px;
+height: auto !important;
+}
+/*input / select hover*/
+#PlentyCustomerRegistrationContentContainer  div.PlentyFormContainer > div span.PlentyFormValue > input[type=text]:hover,
+#PlentyCustomerRegistrationContentContainer  div.PlentyFormContainer > div span.PlentyFormValue > select:hover {
+}
+/*input / select focus*/
+#PlentyCustomerRegistrationContentContainer  div.PlentyFormContainer > div span.PlentyFormValue > input[type=text]:focus,
+#PlentyCustomerRegistrationContentContainer  div.PlentyFormContainer > div span.PlentyFormValue > select:focus {
+}
+/*select width*/
+#PlenyWebCustomerRegistrationFreevar1Content { width: 100%; }
+#PlenyWebCustomerRegistrationFreevar2Content,
+#PlenyWebCustomerRegistrationFreevar3Content { width: 66%; }
+#PlenyWebCustomerRegistrationFreevar1Content > select,
+#PlenyWebCustomerRegistrationFreevar2Content > select,
+#PlenyWebCustomerRegistrationFreevar3Content > select { width: 100%; }
+
+/* label container */
+.PlentyWebCustomerRegistrationData > div {
+vertical-align: top !important;
+}
+/* label */
+.PlentyWebCustomerRegistrationData > div > span > label {
+margin-top: 6px !important;
+}
+/* main container */
+#PlentyWebCustomerRegistration { 
+    background-color: #ffffff;
+    background-image: url("/layout/pm/images/layout/bubbles-bg.png");
+    background-position: right top;
+    background-repeat: no-repeat; 
+    border: 2px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 6px #CCCCCC;
+    margin-bottom: 15px;
+    padding: 20px;
+} /*add style from .span100 .border-shadow-small .bubbles .pm-white*/
+#PlentyWebCustomerRegistration > div {
+background: transparent !important;
+border: none  !important;
+padding: 0 !important;
+}
+/* headline */
+#PlentyWebCustomerRegistrationTitle > span { 
+    color: #008EBD;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+} /*add style from .pmh1*/
+
+/* END ----- registration form ----- */
+
+
+/* BEGIN ----- error / status message ----- */
+
+/* ERROR / SUCCESS / STATUS MESSAGES */
+
+/* error / success / message box */
+.plentyMessageBox,
+.plentyErrorBox,
+.plentySuccessBox {
+width: auto;
+background: transparent;
+border: 1px solid;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+padding: 8px 10px;
+-moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+-webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+color: #444444;
+text-shadow: 0px 1px 1px #ffffff;
+background-image: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 33%, rgba(255,255,255,0.55) 66%, rgba(255,255,255,0.2) 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(33%,rgba(255,255,255,0.85)), color-stop(66%,rgba(255,255,255,0.55)), color-stop(100%,rgba(255,255,255,0.2)));
+background-image: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.85) 33%,rgba(255,255,255,0.55) 66%,rgba(255,255,255,0.2) 100%);
+background-image: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.85) 33%,rgba(255,255,255,0.55) 66%,rgba(255,255,255,0.2) 100%);
+background-image: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.85) 33%,rgba(255,255,255,0.55) 66%,rgba(255,255,255,0.2) 100%);
+background-image: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.85) 33%,rgba(255,255,255,0.55) 66%,rgba(255,255,255,0.2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#33ffffff',GradientType=0 );
+}
+/* message box */
+.plentyMessageBox {
+border-color: #FFDF42;
+background-color: #FFDF42;
+}
+/* error box */
+.plentyErrorBox {
+border-color: #ff1a1a;
+background-color: #ff1a1a;
+color: #000000;
+}
+/* success box */
+/*.plentySuccessBox*/
+.plentyMessageBox {
+border-color: #49DD39;
+background-color: #49dd39;
+}
+
+/* error / success / message title */
+.plentyMessageBoxTitle,
+.plentyErrorBoxTitle,
+.plentySuccessBoxTitle {
+display: inline-block;
+height: 32px;
+line-height: 32px;
+font-size: 150%;
+margin-bottom: 4px;
+padding: 0 5px 0 36px;
+color: #444444;
+text-shadow: 0px 2px 2px #ffffff;
+background-position: left center;
+background-repeat: no-repeat;
+}
+/* message title */
+.plentyMessageBoxTitle {
+background-image: url("/layout/pm/images/icon/bulb.png");
+}
+/* success title */
+/*.plentySuccessBoxTitle*/
+.plentyMessageBoxTitle {
+background-image: url("/layout/pm/images/icon/success.png");
+}
+/* error title */
+.plentyErrorBoxTitle {
+background-image: url("/layout/pm/images/icon/error.png");
+}
+
+/* box after box */
+.plentyMessageBox + .plentyErrorBox,
+.plentyErrorBox + .plentyMessageBox,
+.plentyMessageBox + .plentySuccessBox,
+.plentySuccessBox + .plentyMessageBox,
+.plentySuccessBox + .plentyErrorBox,
+.plentyErrorBox + .plentySuccessBox,
+.plentyMessageBox + .plentyMessageBox,
+.plentyErrorBox + .plentyErrorBox,
+.plentySuccessBox + .plentySuccessBox {
+margin-top: 10px;
+}
+
+/* END ----- error / status message ----- */
+
+
+
+/* UPDATE */
+
+/* registration form */
+#PlentyWebCustomerRegistrationBirthdayNotice,
+#PlentyWebCustomerRegistrationVATNumberNotice {
+position: relative;
+top: -16px;
+}
+
+/* floating items container */
+.pmHasFloatedItems {
+padding-right: 0;
+}
+.pmHasFloatedItems > .pm-4x-agenturenbox {
+margin-right: 20px;
+}
+
+/* partner logo box container */
+.pmHasPartnerLogoBoxes,
+.css-panes > .pmHasPartnerLogoBoxes {
+padding-top: 30px;
+padding-left: 30px;
+padding-right: 0;
+}
+.pmPartnerLogoBoxesRow {
+margin-top: 20px;
+}
+.pmPartnerLogoBoxesRow:first-child {
+margin-top: 0;
+}
+.pmPartnerLogoBox {
+margin: 0 20px 30px 0;
+vertical-align: top;
+width: 210px;
+}
+/* ul container */
+.pmPartnerLogoBoxTextUl {
+margin-top: 20px;
+}
+/* ul */
+.pmPartnerLogoBoxTextUl > ul > li {
+list-style-type: disc;
+}
+
+
+/* PARTNER PAGES */
+
+
+
+/* page generated of article data */
+
+/* main container */
+.pmPageArticleContent {
+border-top: 1px solid #e0e0e0;
+padding-top: 20px;
+}
+
+/* headlines */
+.pmPageArticleContent .pmPageApiHeadline,
+.pmPageArticleContent .pmPageAgencyHeadline {
+color: #333333;
+font-weight: bold;
+font-size: 30px;
+line-height: 46px;
+}
+.pmPageArticleContent h2 {
+margin: 15px 0;
+}
+
+/* ul */
+.pmPageArticleContent ul {
+}
+.pmPageArticleContent ul > li {
+line-height: 18px;
+list-style-image: url("/layout/pm/images/icon/pm-list-icon-small.png");
+margin-left: 20px;
+}
+/*
+.pmPageArticleContent ul > li > a:link, 
+.pmPageArticleContent ul > li > a:visited {
+color: #888888;
+text-decoration: underline;
+}
+*/
+/* table html */
+.pmPageArticleContent th {
+text-align: left;
+}
+
+
+/*  API */
+
+.pmPageApi {
+}
+.pmPageApi div {
+}
+.pmPageApiDataContainer {
+float: right;
+width: 250px;
+}
+.pmPageApiImage {
+text-align: center;
+padding: 30px 0 25px;
+}
+
+.pmPageApiText {
+width: 640px;
+}
+
+
+/* AGENCIES */
+
+
+.pmPageAgency {
+}
+.pmPageAgency div {
+display: block;
+}
+.pmPageAgencyHeadline {
+}
+
+.pmPageAgencyText {
+width: 640px;
+margin-bottom: 30px;
+}
+
+.pmPageAgencyDataContainer {
+float: right;
+width: 250px;
+margin-bottom: 30px;
+}
+.pmPageAgencyImage {
+text-align: center;
+padding: 20px 0 0;
+}
+.pmPageAgencyData {
+padding: 0 20px 20px;
+}
+.pmPageAgencyData h3 {
+margin: 20px 0 15px;
+color: #888888;
+font-weight: bold;
+}
+
+/* slider */
+.pmPageAgencySlider {
+clear: both;
+}
+
+/* references */
+.pmPageAgencyReferencesContainer {
+margin-top: 30px;
+clear: both;
+}
+.pmHasFloatedItemsRow > .pm-4x-logobox {
+margin-right: 0;
+margin-left: 21px;
+}
+.pmHasFloatedItemsRow > .pm-4x-logobox:first-child {
+margin-left: 0;
+}
+.pmAgencyReferencesItemRow > .pmAgencyReferencesItemBox {
+width: 210px;
+float: left;
+margin-left: 25px;
+margin-bottom: 35px;
+background: url("/layout/pm/images/agenturen/partner_reference_box_bg.jpg") no-repeat center top;
+}
+.pmAgencyReferencesItemRow > .pmAgencyReferencesItemBox:first-child {
+margin-left: 0;
+}
+.pmImageLinkFullwidth {
+display: block;
+text-align: center;
+height: 115px;
+}
+/* vertical center table */
+.pmVerticalCenterTable {
+display: table;
+width: 100%;
+height: 100%;
+}
+.pmVerticalCenterTable > span,
+.pmVerticalCenterTable > div {
+display: table-cell;
+vertical-align: middle;
+}
+.pmAgencyReferencesItemBox > a img {
+margin: 0;
+}
+.pmLinkLabel {
+margin-right: 5px;
+}
+.pmAgencyReferencesItemBoxText {
+}
+.pmAgencyReferencesItemBoxText .pmPartnerLogoBoxTextName {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+
+/* SEARCH RESULT */
+
+.pmSearchResultRow {
+padding: 5px 0;
+}
+.pmSearchResultRow h3 {
+margin-bottom: 0;
+}
+.pmUnderlineDotted {
+border-bottom: 2px dotted #E0E0E0;
+}
+.pmBrowseNextPrev {
+position: relative;
+height: 30px;
+}
+
+
+/* HIDE CATEGORY REFERENCES */
+.categoryId392 { display: none; }
+
+
+/* REFERENCES TOOLTIP */
+
+.referenzen-list { width: 203px; height: 167px; }
+#tooltip_referenzen { 
+position: absolute; 
+overflow: hidden; 
+display: none; 
+z-index: 9999; 
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-moz-box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.5); 
+-webkit-box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.5); 
+box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.5); 
+}
+
+
+/* OVERRIDE PLENTY-BUTTON */
+#PlentyWebCustomerRegistrationSubmit > span > span > a {
+
+}
+
+
+
+/* PATCH */
+
+.forum { text-align: left; }
+ul > li { margin-left: 0; }
+.main.fullwidth { margin: 30px auto; }
+input.field { height: auto !important; }
+input[type=image] { height: auto; }
+.forum { line-height: 18px; font-family: font-family: Arial,Helvetica,sans-serif; }
+
+
+
+/* FORUM */
+
+/* COPY FROM OLD WEBSHOP CSS */
+
+
+
+
+/* BEGIN ----- form ----- */
+
+/*input/textarea standard*/
+.styled-form > form input[type=text],
+.styled-form > form textarea {
+border: 1px solid #CCCCCC;
+margin: 2px 0;
+padding: 3px 4px;
+}
+/*input/textarea hover (.hover may be added via js)*/
+.styled-form > form input[type=text]:hover,
+.styled-form > form input[type=text].hover,
+.styled-form > form textarea:hover,
+.styled-form > form textarea.hover {
+border-color: #47A3D1;
+}
+/*input/textarea focus (.focus may be added via js)*/
+.styled-form > form input[type=text]:focus,
+.styled-form > form input[type=text].focus,
+.styled-form > form textarea:focus,
+.styled-form > form textarea.focus {
+border-color: #444444;
+}
+/*checkbox*/
+.styled-form > form input[type=checkbox] {
+margin-left: 0;
+}
+/*textarea size/resize*/
+.styled-form > form textarea {
+min-height: 70px;
+width: 550px !important;
+resize: vertical !important;
+}
+/*label*/
+.styled-form > form .PlentySubmitFormLabel {
+display: block;
+padding-right: 10px;
+vertical-align: middle;
+}
+/*labe nowrapl*/
+.styled-form.nowrap > form .PlentySubmitFormLabel {
+white-space: nowrap;
+}
+/*hint*/
+.styled-form > form .hint {
+padding: 8px 0;
+}
+/*submit button*/
+.styled-form.colored-button > form .PlentySubmitButton,
+.styled-form.colored-button button,
+
+.PlentyForumMain input[type=button],
+.PlentyForumMain input[type=submit],
+.PlentyForumMain button,
+.PlentyForumPostTasksContainer a,
+.PlentyForumPopupContent input[type=button]
+{
+color: #FFFFFF;
+text-shadow: 0 -1px 1px #2299BC;
+background: #008EBD;
+border: 1px solid #1c90b4;
+border-top-color: #67b0c6;
+border-bottom-color: #003b4e;
+cursor: pointer;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+/*padding: 5px 20px;*/
+-moz-box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+
+transition: box-shadow 200ms, border-color 200ms;
+-moz-transition: -moz-box-shadow 200ms, box-shadow 200ms, border-color 200ms; /* Firefox 4 */
+-webkit-transition: -webkit-box-shadow 200ms, box-shadow 200ms, border-color 200ms; /* Safari and Chrome */
+-o-transition: box-shadow 200ms, border-color 200ms; /* Opera */
+}
+/*submit button hover/focus*/
+.styled-form.colored-button > form .PlentySubmitButton:hover,
+.styled-form.colored-button > form .PlentySubmitButton:focus,
+.styled-form.colored-button button:hover,
+.styled-form.colored-button button:focus,
+
+.PlentyForumMain input[type=button]:hover,
+.PlentyForumMain input[type=submit]:hover,
+.PlentyForumMain input[type=button]:focus,
+.PlentyForumMain input[type=submit]:focus,
+.PlentyForumMain button:hover,
+.PlentyForumMain button:focus,
+.PlentyForumPostTasksContainer a:hover,
+.PlentyForumPostTasksContainer a:focus,
+.PlentyForumPopupContent input[type=button]:hover,
+.PlentyForumPopupContent input[type=button]:focus
+{
+border: 1px solid #0485ad;
+border-top-color: #4eadca;
+border-bottom-color: #022530;
+-moz-box-shadow: 2px 5px 10px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 2px 5px 10px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+box-shadow: 2px 5px 10px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+/*submit button active*/
+.styled-form.colored-button > form .PlentySubmitButton:active,
+.styled-form.colored-button button:active,
+
+.PlentyForumMain input[type=button]:active,
+.PlentyForumMain input[type=submit]:active,
+.PlentyForumMain button:active,
+.PlentyForumPostTasksContainer a:active,
+.PlentyForumPopupContent input[type=button]:active
+{
+-moz-box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* END ----- form ----- */
+
+/* General */
+.PlentyForumClearPane { clear: both; display: block !important; }
+
+
+
+/*----- NEW STYLE -----*/
+
+
+/* GENERAL */
+
+.forum > div:first-child > .plentyMessageBox { margin-bottom: 16px; }
+
+.PlentyForumMain { text-align: left; }
+
+
+
+
+
+
+/* INPUT */
+
+/* standard */
+.PlentyForumMain input[type=text],
+.PlentyForumMain input[type=password],
+.PlentyForumMain input[type=file] {
+padding: 3px 4px;
+font-size: 12px;
+height: auto; /*13px*/
+margin-top: 4px;
+margin-bottom: 0;
+color: inherit !important;
+width: 192px;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 12px;
+line-height: 16px;
+}
+/* standard hover */
+.PlentyForumMain input[type=text]:hover,
+.PlentyForumMain input[type=password]:hover,
+.PlentyForumMain select:hover,
+.PlentyForumMain input[type=file]:hover {
+position: relative;
+z-index: 10;
+}
+/* standard focus */
+.PlentyForumMain input[type=text]:focus,
+.PlentyForumMain input[type=password]:focus,
+.PlentyForumMain select:focus,
+.PlentyForumMain input[type=file]:focus {
+position: relative;
+z-index: 10;
+}
+/* size presets */
+.PlentyForumMain input[type=text].XS,
+.PlentyForumMain input[type=password].XS {
+width: 42px;
+}
+.PlentyForumMain input[type=text].M,
+.PlentyForumMain input[type=password].M {
+width: 132px;
+}
+
+/* checkbox */
+input[type=checkbox] {
+height: auto !important;
+width: auto !important;
+}
+
+
+/* SELECT */
+
+/* standard */
+.PlentyForumMain select {
+font-size: 12px;
+margin-top: 4px;
+margin-bottom: 0;
+height: 34px; /*no height set*/
+padding: 7px 5px 7px 0; /*no padding set*/
+width: 200px;
+}
+.PlentyForumMain select.XS {
+width: 50px;
+}
+.PlentyForumMain select.M {
+width: 140px;
+}
+/* select multiple */
+.PlentyForumMain select[multiple] {
+height: auto !important;
+width: 400px;
+}
+
+/* standard hover */
+.PlentyForumMain select:hover {
+position: relative;
+z-index: 10;
+}
+/* standard focus */
+.PlentyForumMain select:focus {
+position: relative;
+z-index: 10;
+}
+
+
+
+/* TEXTAREA */
+
+/* standard */
+.PlentyForumMain textarea {
+padding: 3px 4px;
+font-size: 12px;
+font-family: Arial,Helvetica,sans-serif;
+margin-top: 4px;
+resize: none;
+color: inherit !important;
+line-height: 16px;
+}
+/* standard hover, focus */
+.PlentyForumMain textarea:hover,
+.PlentyForumMain textarea:focus {
+}
+
+
+/* INPUT / TEXTAREA WRAPPER */
+
+/* wrapper */
+.PlentyWebMyAccountWrapper {
+margin: 0 4px;
+}
+/* input / textarea in wrapper */
+.PlentyWebMyAccountWrapper > input[type=text],
+.PlentyWebMyAccountWrapper > input[type=password],
+.PlentyWebMyAccountWrapper > textarea {
+margin-left: -4px;
+width: 100%;
+}
+
+
+/* INPUT SELECT TEXTAREA - STANDARD / HOVER / FOCUS COLORS */
+
+/* standard */
+.PlentyForumMain input[type=text],
+.PlentyForumMain input[type=password],
+.PlentyForumMain input[type=file],
+
+.PlentyForumMain select,
+
+.PlentyForumMain textarea
+{
+border: 1px solid #CCCCCC;
+
+transition: border-color 200ms;
+-moz-transition: border-color 200ms; /* Firefox 4 */
+-webkit-transition: border-color 200ms; /* Safari and Chrome */
+-o-transition: border-color 200ms; /* Opera */
+}
+/* standard hover */
+.PlentyForumMain input[type=text]:hover,
+.PlentyForumMain input[type=password]:hover,
+.PlentyForumMain select:hover,
+.PlentyForumMain input[type=file]:hover,
+
+.PlentyForumMain select:hover,
+
+.PlentyForumMain textarea:hover
+{
+border-color: #47A3D1; /*1474d4*/
+}
+/* standard focus */
+.PlentyForumMain input[type=text]:focus,
+.PlentyForumMain input[type=password]:focus,
+.PlentyForumMain select:focus,
+.PlentyForumMain input[type=file]:focus,
+
+.PlentyForumMain select:focus,
+
+.PlentyForumMain textarea:focus
+{
+border-color: #444444; 
+}
+
+
+/* BUTTON */
+
+/* standard */
+.PlentyForumMain input[type=button],
+.PlentyForumMain input[type=submit],
+.PlentyForumMain button,
+.PlentyForumPostTasksContainer a {
+/*height: 34px;
+margin-top: 2px;
+padding: 0 5px;
+cursor: pointer;
+border: 1px solid #949494;
+background: #434343;
+color: #FFFFFF !Important;*/
+}
+
+/* standard hover / focus */
+.PlentyForumMain input[type=button]:hover,
+.PlentyForumMain input[type=submit]:hover,
+.PlentyForumMain input[type=button]:focus,
+.PlentyForumMain input[type=submit]:focus,
+.PlentyForumMain button:hover,
+.PlentyForumMain button:focus,
+.PlentyForumPostTasksContainer a:hover,
+.PlentyForumPostTasksContainer a:focus {
+/*color: #ffffff !Important;
+background: #222222;*/
+}
+
+/* BUTTON BIG (SUBMIT RED) */
+
+.PlentyForumLoginMain input[type=submit],
+.PlentyForumSearchMain input[type=submit],
+.PlentyForumAddTopicMain input[type=submit],
+.PlentyForumPostReplyButton input[type=submit],
+.PlentyForumPostReplyButton input[type=button],
+.PlentyForumPopupContent input[type=button] {
+height: 32px;
+background: #D4021D;
+border: 1px solid #ccc;
+padding: 0 20px;
+margin-top: 10px;
+}
+/* hover / focus */
+.PlentyForumLoginMain input[type=submit]:hover,
+.PlentyForumSearchMain input[type=submit]:hover,
+.PlentyForumAddTopicMain input[type=submit]:hover,
+.PlentyForumPostReplyButton input[type=submit]:hover,
+.PlentyForumPostReplyButton input[type=button]:hover,
+.PlentyForumPopupContent input[type=button]:hover,
+.PlentyForumLoginMain input[type=submit]:focus,
+.PlentyForumSearchMain input[type=submit]:focus,
+.PlentyForumAddTopicMain input[type=submit]:focus,
+.PlentyForumPostReplyButton input[type=submit]:focus,
+.PlentyForumPostReplyButton input[type=button]:focus,
+.PlentyForumPopupContent input[type=button]:focus {
+background-color: #008EBD;
+}
+
+/* A BUTTON */
+
+.PlentyForumPostTasksContainer a {
+display: inline-block;
+height: 23px !important;
+padding: 0 8px;
+vertical-align: baseline;
+font-family: inherit;
+font-size: 11px !important;
+line-height: 23px !important;
+color: #ffffff !important;
+text-decoration: none !important;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+/* INPUT, SELECT & BUTTON IN SUB TITLE CONTAINER (e.g. pagination) */
+
+
+/* input standard */
+.PlentyForumTopicHeader input[type=text],
+.PlentyForumPostHeader input[type=text],
+PlentyForumSearchResultHeader input[type=text] {
+height: 13px !important;
+}
+/* input button */
+.PlentyForumTopicHeader input[type=button],
+.PlentyForumPostHeader input[type=button],
+.PlentyForumSearchResultHeader input[type=button],
+.PlentyForumUserPageHeader input[type=button],
+.PlentyForumPostTasksContainer input {
+height: 23px !important;
+line-height: 18px !important;
+padding: 0 4px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+/* select standard */
+.PlentyForumTopicHeader select,
+.PlentyForumPostHeader select,
+.PlentyForumSearchResultHeader select,
+.PlentyForumUserPageHeader select {
+height: auto !important;
+margin-top: 0;
+padding: 2px !important;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+/* LINKS */
+
+
+/* standard */
+
+.PlentyForumMain a:link, 
+.PlentyForumMain a:visited,
+.PlentyForumMain a.link {
+color: #47A3D1;
+cursor: pointer;
+text-decoration: none;
+}
+.PlentyForumMain a:hover,
+.PlentyForumMain a:focus,
+.PlentyForumMain a:active,
+.PlentyForumMain a.link:hover {
+text-decoration: underline;
+}
+
+/* tab links */
+
+/* tab standard */
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a:link,
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a:visited { /* UPDATE TABS BACKGROUND */
+color: #444444;
+text-decoration: none;
+background: #fff;
+}
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a:hover,
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a:focus,
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a:active {
+color: #000000;
+text-decoration: none;
+}
+/* tab current */
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a.current:link,
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a.current:visited {
+color: #ffffff;
+text-decoration: none;
+}
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a.current:hover,
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a.current:focus,
+.PlentyForumMain .PlentyForumHeaderNavigation > ul > li > a.current:active {
+color: #ffffff;
+text-decoration: none;
+}
+
+
+
+/* TABS */
+
+
+/* tab bar */
+.PlentyForumHeaderNavigation > ul {
+display: block;
+list-style: none !important;
+margin: 0 !important;
+padding: 0 !important;       
+height: 32px;
+}
+
+/* tab bar list item */
+.PlentyForumHeaderNavigation > ul > li { /* UPDATE MARGIN PADDING */
+float: left;     
+text-indent: 0;
+    margin: -5px -5px 0 !important;
+    overflow: hidden;
+    padding: 5px 5px 0;
+list-style-image: none !important;
+list-style-type: none !important;
+}
+
+/* tab standard */
+.PlentyForumHeaderNavigation > ul > li > a {
+height: 31px;
+top: 0;
+padding: 0 10px;
+width: auto !important;
+min-width: 40px;
+vertical-align: middle;
+border-style: solid;
+border-width: 1px;
+border-color: #E0E0E0;
+border-bottom-style: none;
+border-left-style: none;
+-moz-border-radius: 3px 3px 0 0;
+-webkit-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+
+display: block;
+line-height: 32px;
+text-align: center;
+margin: 0px;    
+
+background: #fff;
+}
+/* tab standard first child */
+.PlentyForumHeaderNavigation > ul > li:first-child > a {
+border-left-style: solid;
+}
+
+/* tab standard hover / focus */
+.PlentyForumHeaderNavigation > ul > li > a:hover,
+.PlentyForumHeaderNavigation > ul > li > a:focus {
+background: #fafafa;
+-moz-box-shadow: 0 -25px 20px -15px rgba(0, 0, 0, 0.1) inset;
+-webkit-box-shadow: 0 -25px 20px -15px rgba(0, 0, 0, 0.1) inset;
+box-shadow: 0 -20px 20px -15px rgba(0, 0, 0, 0.1) inset;
+
+transition: box-shadow 200ms;
+-moz-transition: -moz-box-shadow 200ms, box-shadow 200ms; /* Firefox 4 */
+-webkit-transition: -webkit-box-shadow 200ms, box-shadow 200ms; /* Safari and Chrome */
+-o-transition: box-shadow 200ms; /* Opera */
+/*z-index: 2;*/
+}
+
+/* tab standard active */
+.PlentyForumHeaderNavigation > ul > li > a:active {
+outline:none;        
+}
+
+/* tab current */
+.PlentyForumHeaderNavigation > ul > li > a.current:link,
+.PlentyForumHeaderNavigation > ul > li > a.current:visited{ /* UPDATE BOX SHADOW */
+background: #222222;
+
+height: 33px;
+top: 0;
+border-left: 1px solid #888888;
+border-right: 1px solid #555555;
+border-top: 1px solid #888888;
+border-bottom: none;
+border-radius: 3px;
+-moz-box-shadow: 0 75px 32px -32px rgba(255, 255, 255, 0.3) inset, 0 32px 32px -32px rgba(255, 255, 255, 0.5) inset, 0 0 6px 0 #CCCCCC;
+-webkit-box-shadow: 0 75px 32px -32px rgba(255, 255, 255, 0.3) inset, 0 32px 32px -32px rgba(255, 255, 255, 0.5) inset, 0 0 6px 0 #CCCCCC;
+box-shadow: 0 75px 32px -32px rgba(255, 255, 255, 0.3) inset, 0 32px 32px -32px rgba(255, 255, 255, 0.5) inset, 0 0 6px 0 #CCCCCC;
+z-index: 5;
+
+color: #fff;
+}
+
+/* tab current hover */
+.PlentyForumHeaderNavigation > ul > li > a.current:hover,
+.PlentyForumHeaderNavigation > ul > li > a.current:focus {
+}
+/* lost password */
+.PlentyForumLoginLostPWD {
+margin-top: 8px;
+}
+
+
+
+/* MAIN CONTAINER PANE */
+
+
+.PlentyForumHeaderInformation { /* UPDATE BOX SHADOW */
+padding: 0;
+border: none;
+background: #222222;
+border-left: 1px solid #888888;
+border-right: 1px solid #222222;
+border-top: 1px solid #666666;
+border-bottom: 1px solid #111111;
+color: #ffffff;
+line-height: 16px;
+-moz-box-shadow: 0 44px 32px -32px rgba(255, 255, 255, 0.3) inset, -3px -16px 10px -12px rgba(0, 0, 0, 0.3) inset, 0 0 6px 0 #CCCCCC;
+-webkit-box-shadow: 0 44px 32px -32px rgba(255, 255, 255, 0.3) inset, -3px -16px 10px -12px rgba(0, 0, 0, 0.3) inset, 0 0 6px 0 #CCCCCC;
+box-shadow: 0 44px 32px -32px rgba(255, 255, 255, 0.3) inset, -3px -16px 10px -12px rgba(0, 0, 0, 0.3) inset, 0 0 6px 0 #CCCCCC;
+}
+
+
+/* HEADER (TAB PANE) */
+
+
+/*header container (order overview & single order details)*/
+.PlentyForumHeaderInformation {
+/*margin-bottom: 16px;*/
+padding: 2px 8px 8px;
+-moz-border-radius: 0 3px 3px 3px;
+-webkit-border-radius: 0 3px 3px 3px;
+border-radius: 0 3px 3px 3px;
+}
+
+/* header left container */
+.PlentyForumHeaderInformationUser {
+float: left;
+padding-left: 4px;
+padding-bottom: 6px;
+}
+.PlentyForumHeaderInformationUser > a {
+color: #ffffff !important;
+font-weight: 400;
+}
+/* header right container */
+.PlentyForumHeaderInformationContent {
+float: right;
+}
+/* header containers */
+.PlentyForumHeaderInformationUser,
+.PlentyForumHeaderInformationContent {
+padding-top: 8px;
+}
+/* header msg */
+.PlentyForumHeaderInformationUser {
+position: relative;
+top: 3px;
+}
+/* header right container links */
+.PlentyForumHeaderInformationContent > ul {
+text-indent: 0;
+padding: 0;
+margin: 0;
+list-style-image: none;
+list-style-type: none;
+}
+.PlentyForumHeaderInformationContent > ul > li {
+display: inline-block;
+margin: 0;
+}
+/* rounded buttons */
+.PlentyForumHeaderInformationContent > ul > li > a,
+.PlentyForumAddTopic > a,
+.PlentyForumRSS > a,
+.PlentyForumPostReplyLinkContainer > a,
+.PlentyForumPostAdminPanel > div a,
+.PlentyForumUserPageHeader > div a {
+display: block;
+/*height: 18px;*/
+padding: 1px 8px;
+margin: 0 4px;
+line-height: 19px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+cursor: pointer;
+text-decoration: none !important;
+border-style: solid;
+border-width: 1px;
+border-color: #777777 #666666 #555555;
+background: #222222;
+color: #dddddd !important;
+-moz-box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.3) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+-webkit-box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.3) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.3) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+}
+/* rounded buttons hover / focus */
+.PlentyForumHeaderInformationContent > ul > li > a:hover,
+.PlentyForumAddTopic > a:hover,
+.PlentyForumRSS > a:hover,
+.PlentyForumPostReplyLinkContainer > a:hover,
+.PlentyForumPostAdminPanel > div a:hover,
+.PlentyForumUserPageHeader > div a:hover,
+.PlentyForumHeaderInformationContent > ul > li > a:focus,
+.PlentyForumAddTopic > a:focus,
+.PlentyForumRSS > a:focus,
+.PlentyForumPostReplyLinkContainer > a:focus,
+.PlentyForumPostAdminPanel > div a:focus,
+.PlentyForumUserPageHeader > div a:focus {
+color: #ffffff !important;
+-moz-box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.3) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 0 4px 0 rgba(255, 255, 255, 0.2);
+-webkit-box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.3) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 0 4px 0 rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.3) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 0 4px 0 rgba(255, 255, 255, 0.2);
+}
+/* rounded buttons active */
+.PlentyForumHeaderInformationContent > ul > li > a:active,
+.PlentyForumAddTopic > a:active,
+.PlentyForumRSS > a:active,
+.PlentyForumPostReplyLinkContainer > a:active,
+.PlentyForumPostAdminPanel > div a:active,
+.PlentyForumUserPageHeader > div a:active {
+-moz-box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.3) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 0 4px 0 rgba(255, 255, 255, 0.2);
+-webkit-box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.3) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 0 4px 0 rgba(255, 255, 255, 0.2);
+box-shadow: 0 -2px 4px -2px rgba(255, 255, 255, 0.2) inset, 0 3px 3px -3px rgba(0, 0, 0, 0.3) inset, 0 2px 5px 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+/* rounded buttons colored (pagination menu left) */
+.PlentyForumAddTopic > a,
+.PlentyForumRSS > a,
+.PlentyForumPostReplyLinkContainer > a,
+.PlentyForumPostAdminPanel > div a,
+.PlentyForumUserPageHeader > div a {
+background: #f8f8f8;
+color: #444444 !important;
+border-color: #DDDDDD #CCCCCC #BBBBBB;
+-moz-box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 1) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+-webkit-box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 1) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 1) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+}
+/* rounded buttons colored hover / focus (pagination menu left) */
+.PlentyForumAddTopic > a:hover,
+.PlentyForumRSS > a:hover,
+.PlentyForumPostReplyLinkContainer > a:hover,
+.PlentyForumPostAdminPanel > div a:hover,
+.PlentyForumUserPageHeader > div a:hover,
+.PlentyForumAddTopic > a:focus,
+.PlentyForumRSS > a:focus,
+.PlentyForumPostReplyLinkContainer > a:focus,
+.PlentyForumPostAdminPanel > div a:focus,
+.PlentyForumUserPageHeader > div a:focus {
+color: #000000 !important;
+-moz-box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 1) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 0 2px 0 rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 1) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 0 2px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 1) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+/* rounded buttons colored active (pagination menu left) */
+.PlentyForumAddTopic > a:active,
+.PlentyForumRSS > a:active,
+.PlentyForumPostReplyLinkContainer > a:active,
+.PlentyForumPostAdminPanel > div a:active,
+.PlentyForumUserPageHeader > div a:active {
+-moz-box-shadow: 0 -1px 3px 0 rgba(255, 255, 255, 1) inset, 0 3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 2px 5px 0 rgba(0, 0, 0, 0.2) inset;
+-webkit-box-shadow: 0 -1px 3px 0 rgba(255, 255, 255, 1) inset, 0 3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 2px 5px 0 rgba(0, 0, 0, 0.2) inset;
+box-shadow: 0 -1px 3px 0 rgba(255, 255, 255, 1) inset, 0 3px 3px -3px rgba(0, 0, 0, 0.2) inset, 0 2px 5px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+/* rounded buttons floated (pagination menu left) */
+.PlentyForumAddTopic,
+.PlentyForumRSS,
+.PlentyForumPostReplyLinkContainer,
+.PlentyForumUserPageDeleteAllPosts {
+float: left;
+}
+/* rounded button img */
+.PlentyForumPostAdminPanel > div a > img, 
+.PlentyForumPostHeader > div > a > img, 
+.PlentyForumUserPageHeader > .PlentyForumPostReplyLinkContainer a > img {
+vertical-align: middle;
+position: relative;
+top: -1px;
+left: 2px;
+}
+/* rounded buttons in pagination */
+.PlentyForumTopicHeader > div:first-child > a,
+.PlentyForumPostHeader > div:first-child > a,
+.PlentyForumPostAdminPanel > div:first-child a,
+.PlentyForumUserPageHeader > div:first-child a {
+margin-left: 0 !important;
+}
+
+
+/* FORUM NAVIGATOR (BREADCRUMBS) */
+
+/*
+.PlentyForumNavigator > div {
+display: inline-block;
+font-size: 11px;
+color: #47A3D1;
+padding: 3px;
+}
+*/
+/* links */
+/*
+.PlentyForumNavigator > div a:link,
+.PlentyForumNavigator > div a:visited {
+color: #47A3D1;
+}
+*/
+/* links hover / focus */
+/*
+.PlentyForumNavigator > div a:link:hover,
+.PlentyForumNavigator > div a:link:focus,
+.PlentyForumNavigator > div a:visited:hover,
+.PlentyForumNavigator > div a:visited:focus {
+text-decoration: underline;
+}
+*/
+
+
+/* HEADER GLOBAL */
+
+.PlentyForumCategoryHeader,
+.PlentyForumTopicForumName,
+.PlentyForumPostNameHeader,
+.PlentyForumNavigator,
+.PlentyForumNavigator div {
+display: block;
+color: #000000;
+padding: 8px 0 5px;
+font-size: 18px;
+line-height: 28px;
+font-weight: 400;
+margin-bottom: 10px;
+margin-top: 4px;
+/*background: url("//www.plentymarkets.eu/layout/cyt-layout/images/referenzen-kunde-trenner-fullwidth.jpg") no-repeat center 40px;*/
+border-bottom: 1px solid #cccccc;
+}
+.PlentyForumPostNameHeader > div,
+.PlentyForumNavigator div {
+display: inline-block;
+border-bottom: none;
+padding: 0;
+margin: 0;
+}
+
+/* do not show ("you are here", individual headlines) */
+.PlentyForumNavigatorInfoText,
+.PlentyForumTopicForumName,
+.PlentyForumPostNameHeader {
+display: none;
+}
+
+
+
+/* ITEM CONTAINER (MODIFIED) */
+
+
+.NOCLASS {
+margin-top: 16px;
+padding: 0;
+/*border: 1px solid #cccccc;*/
+position: relative;
+/*z-index: 2;*/
+}
+
+/* item container hover */
+
+/*
+PlentyForumCategoryMain:hover {
+-moz-box-shadow: 0 0 2px 0 rgba(61, 90, 153, 0.15);
+-webkit-box-shadow: 0 0 2px 0 rgba(61, 90, 153, 0.15);
+box-shadow: 0 0 2px 0 rgba(61, 90, 153, 0.15);
+}
+*/
+
+/* item header */
+
+.PlentyForumPostReplyInfoText {
+display: block;
+/*padding: 10px 10px 7px;*/
+font-size: 16px;
+line-height: 18px;
+font-weight: 400;
+color: #444444;
+border-bottom: 2px solid #CCCCCC;
+background: #008EBD;
+border-bottom: 1px solid #2299bc;
+color: #ffffff;
+-moz-box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+padding: 10px 10px 7px;
+}
+
+/* item content */
+
+.PlentyForumCategoryContent,
+.PlentyForumTopicContentContainer,
+.PlentyForumPostReplyMain,
+.PlentyForumPostReplyContent,
+.PlentyForumSearchResultContainer {
+/*border: 1px solid #E0E0E0;*/
+border-top: none;
+font-size: 13px;
+line-height: 20px;
+color: #404040;
+background: #fff;
+/*
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+*/
+    -moz-box-shadow: 0 0 6px #CCCCCC;
+    -webkit-box-shadow: 0 0 6px #CCCCCC;
+    box-shadow: 0 0 6px #CCCCCC;
+}
+.PlentyForumLoginMain:last-child,
+.PlentyForumSearchMain:last-child {
+/*margin-top: 10px;*/
+margin-bottom: 0; 
+}
+
+
+/* TABLE LAYOUT */
+
+
+/* table */
+.PlentyForumTableLayout {
+display: table;
+}
+/* table row */
+.PlentyForumTableLayout > div {
+display: table-row;
+}
+/* table cells */
+.PlentyForumTableLayout > div > div {
+display: table-cell;
+}
+/* table wrapper */
+.PlentyForumTableWrapper > .PlentyForumTableLayout { /* UPDATE BACKGROUND SHADOW RADIUS */
+width: 100%;
+
+background: #fff;
+/*
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+*/
+    -moz-box-shadow: 0 0 6px #CCCCCC;
+    -webkit-box-shadow: 0 0 6px #CCCCCC;
+    box-shadow: 0 0 6px #CCCCCC;
+}
+
+
+
+/* TABLE LAYOUT WITH HEADER (forum overview) */
+
+
+/* table */
+.PlentyForumTableLayoutForum.PlentyForumTableLayout,
+.PlentyForumTableLayoutTopicOverview.PlentyForumTableLayout,
+.PlentyForumTableLayoutSearchResult.PlentyForumTableLayout {
+}
+
+/* table row */
+.PlentyForumTableLayoutForum.PlentyForumTableLayout > div {
+}
+/* table cells standard */
+.PlentyForumTableLayoutForum.PlentyForumTableLayout > div > div,
+.PlentyForumTableLayoutTopicOverview.PlentyForumTableLayout > div > div,
+.PlentyForumTableLayoutSearchResult.PlentyForumTableLayout > div > div {
+padding: 5px 10px 5px 5px;
+border-bottom: 1px solid;
+border-right: 1px solid;
+border-color: #E0E0E0;
+}
+/* table cells last */
+.PlentyForumTableLayoutForum.PlentyForumTableLayout > div > div:last-child,
+.PlentyForumTableLayoutTopicOverview.PlentyForumTableLayout > div > div:last-child,
+.PlentyForumTableLayoutSearchResult.PlentyForumTableLayout > div > div:last-child {
+padding-right: 0;
+border-right: none;
+}
+/* table first row cells (header) */
+.PlentyForumTableLayoutForum.PlentyForumTableLayout > div:first-child > div,
+.PlentyForumTableLayoutTopicOverview.PlentyForumTableLayout > div:first-child > div,
+.PlentyForumTableLayoutSearchResult.PlentyForumTableLayout > div:first-child > div {
+background: #008EBD;
+border-bottom: 1px solid;
+border-right: 1px solid;
+border-color: #2299bc;
+font-size: 14px;
+font-weight: normal;
+color: #ffffff;
+line-height: 24px;
+-moz-box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2) inset, 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+/* table first row last cell */
+.PlentyForumTableLayoutForum.PlentyForumTableLayout > div:first-child > div:last-child,
+.PlentyForumTableLayoutTopicOverview.PlentyForumTableLayout > div:first-child > div:last-child,
+.PlentyForumTableLayoutSearchResult.PlentyForumTableLayout > div:first-child > div:last-child {
+border-right: none;
+}
+/* table last row cells */
+.PlentyForumTableLayoutForum.PlentyForumTableLayout > div:last-child > div,
+.PlentyForumTableLayoutTopicOverview.PlentyForumTableLayout > div:last-child > div,
+.PlentyForumTableLayoutSearchResult.PlentyForumTableLayout > div:last-child > div {
+border-bottom: none;
+}
+/* cell width category overview */
+.PlentyForumHeader { width: 70%; }
+.PlentyForumHeaderTopicCount { width: 5%; }
+.PlentyForumHeaderPostCount { width: 5%; }
+.PlentyForumHeaderLastPost { width: 20%; }
+
+/* cell width topic overview */
+.PlentyForumTopic { width: 75%; }
+.PlentyForumTopicLastPost { width: 20%; }
+.PlentyForumTopicTasks { width: 5%; padding-right: 5px !important; white-space: nowrap; }
+
+/* search result */
+.PlentyForumSearchResult { width: 60%; }
+.PlentyForumSearchResultForumName { width: 20%; }
+.PlentyForumSearchResultLastPost { width: 20%; }
+
+
+/* individual style */
+
+/* forum title */
+.PlentyForumDescription > div,
+.PlentyForumLastPost > div,
+.PlentyForumTopicLastPost > div {
+ font-size: 11px; 
+}
+.PlentyForumDescription > div:first-child,
+.PlentyForumLastPost > div:first-child,
+.PlentyForumTopicLastPost > div:first-child { 
+display: block; font-size: 13px; 
+}
+
+/* row hover */
+.PlentyForumContainer:hover,
+.PlentyForumTopicContent:hover,
+.PlentyForumSearchResultRow:hover { 
+background: #F4F4F4; 
+}
+/* row hover cell */
+.PlentyForumContainer:hover > div,
+.PlentyForumTopicContent:hover > div,
+.PlentyForumSearchResultRow:hover > div { 
+border-color: #C8C8C8 !important; 
+}
+
+
+
+/* SUB CONTAINER / PAGINATION (FORUM SEARCH / FORUM LOGIN / ADD TOPIC) */
+
+
+/* title sub container / pagination container */
+.PlentyForumTopicHeader,
+.PlentyForumPostHeader,
+.PlentyForumPostAdminPanel,
+.PlentyForumUserPageHeader,
+.PlentyForumSearchResultHeader {
+/*border-bottom: 1px solid #f0f0f0;
+border-top: 1px solid #f0f0f0;
+margin: 4px 0;*/
+padding: 0 0 8px;
+}
+/* title sub container / pagination container last */
+.PlentyForumTopicHeader:last-child,
+.PlentyForumPostHeader:last-child,
+.PlentyForumPostAdminPanel:last-child,
+.PlentyForumUserPageHeader:last-child,
+.PlentyForumSearchResultHeader:last-child,
+.PlentyForumNavigator + .PlentyForumPostAdminPanel {
+border-bottom: 1px solid #cccccc;
+}
+.PlentyForumNavigator + .PlentyForumPostAdminPanel {
+margin-bottom: 8px;
+}
+
+/* search / login */
+.PlentyForumTableLayoutSearch.PlentyForumTableLayout > div > div:first-child,
+.PlentyForumTableLayoutLogin.PlentyForumTableLayout > div > div:first-child {
+width: 120px;
+padding-right: 10px;
+padding-top: 6px;
+vertical-align: top;
+}
+
+/* cells with input / select / textarea */
+.PlentyForumSearchContent,
+.PlentyForumLoginEmailInput {
+padding: 1px 0;
+}
+
+/* container right (pagination) */
+.PlentyForumPageCounterMain { 
+float: right;
+position: relative;
+top: 0px;
+}
+.PlentyForumPageCounterMain div { 
+display: inline-block;
+vertical-align: middle;
+}
+.PlentyForumPageCounterRowElement select {
+width: auto;
+}
+
+
+/* MAIN CONTAINER */
+
+.PlentyForumTopicMain,
+.PlentyForumSearchResultContainer,
+.PlentyForumPostContent {
+margin-bottom: 9px;
+}
+
+
+/* TASKS */
+
+.PlentyForumTopicTasks > div {
+display: inline-block;
+}
+.PlentyForumTopicTasks > div a,
+.PlentyForumTopicTasks > div a:hover,
+.PlentyForumTopicTasks > div a:focus,
+.PlentyForumTopicTasks > div input[type=image],
+.PlentyForumTopicTasks > div input[type=image]:hover,
+.PlentyForumTopicTasks > div input[type=image]:focus {
+border: none;
+}
+
+/* LOGIN */
+.PlentyForumLoginMain {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+/* CREATE TOPIC */
+
+/* input container */
+.PlentyForumAddTopicInputContainer {
+float: left;
+}
+/* input / textarea */
+.PlentyForumAddTopicMain input[type=text],
+.PlentyForumAddTopicMain textarea,
+.PlentyForumPostReplyMain textarea {
+width: 542px !important;
+}
+.PlentyForumAddTopicMain textarea,
+.PlentyForumPostReplyMain textarea {
+height: 171px;
+min-height: 100px;
+resize: vertical;
+}
+/* label */
+.PlentyForumAddTopicSubjectHeader,
+.PlentyForumAddTopicMessageHeader {
+margin-top: 5px;
+}
+/* smily container */
+.PlentyForumAddTopicMain > .PlentyForumPostReplyBBCodeSmiley {
+margin-top: 10px;
+}
+
+/* BLOCK LINKS */
+.PlentyForumDescriptionName > a,
+.PlentyForumTopic > a,
+.PlentyForumPostReplyLinkContainer > a {
+display: block;
+}
+
+
+/* TABLE FORUM ITEM POSTS */
+
+/* main container */
+.PlentyForumPostMain {
+margin-bottom: 16px;
+}
+
+/* cell standard */
+.PlentyForumTableLayoutPost > div > div {
+border-color: #eeeeee;
+border-width: 1px;
+border-style: none solid solid none;
+}
+/* cell first-cell */
+.PlentyForumTableLayoutPost > div > div:first-child {
+border-left-style: solid;
+border-bottom-color: #ffffff;
+}
+/* cell first-row */
+.PlentyForumTableLayoutPost > div:first-child > div {
+border-top-style: solid;
+border-top-color: #eeeeee;
+}
+
+/* left cell */
+.PlentyForumTableLayoutPost > div > div:first-child { /* UPDATE REMOVE RADIUS */
+width: 250px;
+background: #E3EAF1;
+padding-bottom: 50px;
+/*
+-moz-border-radius: 5px 0 0 5px;
+-webkit-border-radius: 5px 0 0 5px;
+border-radius: 5px 0 0 5px;
+*/
+-moz-box-shadow: 4px 7px 10px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 4px 7px 10px 0 rgba(255, 255, 255, 0.5) inset;
+box-shadow: 4px 7px 10px 0 rgba(255, 255, 255, 0.5) inset;
+}
+/* right cell */
+.PlentyForumTableLayoutPost > div > div:last-child {
+vertical-align: top;
+}
+
+/* hover */
+
+/* row */
+.PlentyForumTableLayoutPost > div:hover,
+.PlentyForumTableLayoutPost > div.hover {
+}
+/* left */
+.PlentyForumTableLayoutPost > div:hover > div:first-child,
+.PlentyForumTableLayoutPost > div.hover > div:first-child {
+background: #dde4eb;
+}
+/* right */
+.PlentyForumTableLayoutPost > div:hover > div:last-child,
+.PlentyForumTableLayoutPost > div.hover > div:last-child {
+/*background: #F8F8F8;*/
+border-color: #cccccc;
+}
+/* right top */
+.PlentyForumTableLayoutPost > div:hover > div:last-child > div:first-child,
+.PlentyForumTableLayoutPost > div.hover > div:last-child > div:first-child {
+background: #0097c6;
+border-color: #bbbbbb;
+}
+/* right middle */
+.PlentyForumTableLayoutPost > div:hover > div:last-child > div.PlentyForumPostPath,
+.PlentyForumTableLayoutPost > div.hover > div:last-child > div.PlentyForumPostPath {
+border-color: #dddddd;
+}
+
+/* member name / number posts */
+.PlentyForumPostCustomerUsername,
+.PlentyForumPostCount {
+padding: 5px 10px 0;
+}
+
+.PlentyForumPostCustomerUsername {
+font-weight: bold;
+}
+
+/* invisible table containers */
+.PlentyForumTableLayoutPost > div > div.PlentyForumTableFixInvisible {
+padding: 0;
+border: none;
+overflow: visible;
+}
+/* relative wrapper */
+.PlentyForumTableLayoutPost > div > div.PlentyForumTableFixInvisible > .PlentyForumPostTasksContainer {
+position: relative;
+}
+/* absolute content */
+.PlentyForumTableLayoutPost > div > div.PlentyForumTableFixInvisible > .PlentyForumPostTasksContainer > .PlentyForumPostTasks {
+position: absolute;
+top: -50px;
+}
+
+/* buttons container */
+.PlentyForumPostTasks {
+/*position: absolute;
+left: 0;
+bottom: 0;*/
+padding: 10px;
+}
+/* buttons */
+.PlentyForumPostTasks > div {
+display: inline-block;
+}
+
+/* date */
+.PlentyForumPostDate {
+border-bottom: 1px solid #cccccc;
+padding: 5px 20px;
+font-weight: bold;
+background: #008EBD;
+color: #ffffff;
+-moz-box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2) inset;
+-webkit-box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2);
+box-shadow: 5px 5px 15px 2px rgba(255, 255, 255, 0.2) inset;
+}
+/* path */
+.PlentyForumPostPath {
+border-bottom: 1px solid #eeeeee;
+color: #444444;
+padding: 4px 20px;
+}
+/* message */
+.PlentyForumPostMessage {
+padding: 15px 20px;
+max-width: 725px;
+overflow: auto;
+}
+
+
+/* CREATE POST */
+
+/* main container */
+.PlentyForumPostReplyMain {
+margin-bottom: 16px;
+}
+.PlentyForumPostReplyMain > form > div {
+/*padding: 0 10px;*/
+}
+/* left */
+.PlentyForumPostReplyMessage {
+float: left;
+}
+/* right */
+.PlentyForumPostReplyBBCodeSmiley {
+float: left;
+margin-left: 20px;
+}
+
+/* create post */
+.PlentyForumPostReplyContent {
+padding: 10px;
+}
+/* textarea */
+.PlentyForumMain .PlentyForumPostReplyTextInput {
+margin-top: 0;
+}
+
+/* smilys containers */
+.PlentyForumPostReplyBBCodeSmiley {
+}
+.PlentyForumSmileySelectionMain,
+.PlentyForumBBCodeSelectionMain {
+width: 110px;
+float: left;
+border: 1px solid;
+border-color: #DDDDDD #CCCCCC #BBBBBB;
+margin-right: 20px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+/* smily containers hover */
+.PlentyForumSmileySelectionMain:hover,
+.PlentyForumBBCodeSelectionMain:hover {
+box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+/* smily containers hover a */
+.PlentyForumSmileySelectionMain:hover > a,
+.PlentyForumBBCodeSelectionMain:hover > a {
+color: #000000 !important;
+}
+.PlentyForumSmileySelectionMain > a,
+.PlentyForumBBCodeSelectionMain > a {
+display: block;
+height: 18px;
+background: #F8F8F8;
+color: #444444 !important;
+text-decoration: none !important;
+font-size: 12px;
+padding: 0 10px;
+cursor: pointer;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-moz-box-shadow: 0 1px 3px 0 #FFFFFF inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+-webkit-box-shadow: 0 1px 3px 0 #FFFFFF inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+box-shadow: 0 1px 3px 0 #FFFFFF inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.2) inset;
+}
+.PlentyForumSmileySelectionMain > div,
+.PlentyForumBBCodeSelectionMain > div {
+border-top: 1px solid #cccccc;
+padding: 5px 10px;
+}
+/* smilys */
+.PlentyForumSmiley > a {
+display: inline-block;
+padding: 2px;
+}
+/* code */
+.PlentyForumBBCode > a { display: block; font-size: 12px; line-height: 18px; color: #000000; text-decoration: none !important; }
+.PlentyForumBBCode > a:nth-child(1) { font-weight: bold; }
+.PlentyForumBBCode > a:nth-child(2) { font-style: italic; }
+.PlentyForumBBCode > a:nth-child(3) { text-decoration: underline !important; }
+.PlentyForumBBCode > a:nth-child(4) { font-weight: bold; letter-spacing: .15em; }
+.PlentyForumBBCode > a:nth-child(5):before { content: "<"; }
+.PlentyForumBBCode > a:nth-child(5):after { content: ">"; }
+.PlentyForumBBCode > a:nth-child(6) { color: #ff0000; }
+.PlentyForumBBCode > a:nth-child(7):before { content: '"'; }
+.PlentyForumBBCode > a:nth-child(7):after { content: '"'; }
+/* bbcode hover / focus */
+.PlentyForumBBCode > a:hover,
+.PlentyForumBBCode > a:focus {
+color: #666666;
+}
+
+/* send button container */
+.PlentyForumPostReplyButton {
+clear: both;
+}
+
+/* quote */
+.PlentyForumPostQuote {
+color: #999999;
+font-style: italic;
+}
+
+/* EDIT POST */
+
+/* textarea */
+.PlentyForumPostReplyTextInput {
+width: 518px;
+height: 296px;
+min-height: 100px;
+margin-right: 0;
+resize: vertical !important;
+}
+/* smilys */
+.PlentyForumPostMessageTextAreaHiddenContainer .PlentyForumPostReplyBBCodeSmiley {
+width: 110px;
+}
+/* bbcode */
+.PlentyForumPostMessageTextAreaHiddenContainer .PlentyForumPostReplyBBCodeSmiley .PlentyForumBBCodeSelectionMain {
+margin-top: 15px;
+}
+
+/* note edited by */
+.PlentyForumPostEditedContainer {
+border-top: 1px solid #CCCCCC;
+margin-top: 15px;
+padding: 5px 0 0;
+color: #999999;
+}
+.PlentyForumPostEditedContainer > div {
+display: inline-block;
+}
+
+
+/* ADMIN PANEL */
+
+.PlentyForumPostAdminPanel > div {
+display: inline-block;
+}
+
+
+/* SEARCH / LOGIN / CREATE TOPIC CONTAINERS */
+
+.PlentyForumLoginMain,
+.PlentyForumSearchMain,
+.PlentyForumAddTopicMain { /* UPDATE STANDARD CONTAINER */
+
+/*border: 1px solid #D4D4D4;
+box-shadow: 0 1px 1px #9D9D9D;*/
+padding: 10px;
+
+    border: 2px solid #FFFFFF;
+    -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+    border-radius: 5px;
+     -moz-box-shadow: 0 0 6px #CCCCCC;
+     -webkit-box-shadow: 0 0 6px #CCCCCC;
+    box-shadow: 0 0 6px #CCCCCC;
+    margin-bottom: 15px;
+
+    background-color: #FFFFFF;
+    /*padding: 20px 20px 0;*/
+}
+
+
+/* OVERLAY */
+
+/* overlay */
+.PlentyForumOverlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #000000;
+-moz-opacity: 0.5;
+-khtml-opacity: 0.5;
+filter: alpha(opacity=50);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+opacity: 0.5;
+z-index: 40000;
+}
+
+
+/* POPUP */
+
+/* popup container */
+
+.PlentyForumPopupWrapper {
+display: none;
+position: absolute;
+top: 25px;
+z-index: 40001;
+width: 328px; /* margin left is 1/2 of width */
+margin-left: -179px;
+left: 50%;
+
+background: #ffffff;
+border: 1px solid #008EBD;
+padding: 0 10px;
+
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+
+-moz-box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
+box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* popup container hover */
+
+.PlentyForumPopupWrapper:hover {
+-moz-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.45);
+-webkit-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.45);
+box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.45);
+}
+
+/* popup container inner */
+
+.PlentyForumPopupContainer {
+}
+
+/* popup header */
+
+.PlentyForumPopupHeader {
+color: #000000;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+border-bottom: 1px solid #cccccc;
+padding: 8px 1px 6px;
+}
+/* header title left */
+.PlentyForumPopupTitle {
+float: left;
+display: inline-block;
+font-size: 14px;
+}
+/* header icon right */
+.PlentyForumPopupClose {
+float: right;
+display: inline-block;
+}
+/* close icon */
+.PlentyForumPopupClose > a {
+display: inline-block;
+height: 19px; /*16px*/
+width: 19px; /*16px*/
+margin-right: -4px;
+position: relative;
+top: 1px;
+background: url(/images/icons/silk/close_tab.png ) left center no-repeat #cccccc; 
+cursor: pointer;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+/* close icon hover / focus */
+.PlentyForumPopupClose > a:hover,
+.PlentyForumPopupClose > a:focus {
+background-position: right center;
+}
+
+/* popup content */
+
+.PlentyForumPopupContent {
+padding: 10px 0;
+font-size: 12px;
+line-height: 12px;
+}
+
+/* popup buttons */
+
+/* left */
+.PlentyForumPopupButtonLeft {
+width: 50%;
+float: left;
+margin-top: 10px !important;
+}
+.PlentyForumPopupButtonLeft > input {
+float: right;
+margin-right: 4px;
+}
+/* right */
+.PlentyForumPopupButtonRight {
+width: 50%;
+float: right;
+margin-top: 10px !important;
+}
+.PlentyForumPopupButtonRight > input {
+float: left;
+margin-left: 4px;
+}
+.PlentyForumPopupButtonLeft > input,
+.PlentyForumPopupButtonRight > input {
+width: 100px;
+}
+
+/* fix status message */
+.PlentyForumPopupContainer .plentyMessageBox,
+.PlentyForumPopupContainer .plentyErrorBox {
+margin-bottom: 0;
+line-height: 15px;
+width: auto !important;
+}
+
+/* LATEST ACTIVE FORUMS */
+
+.PlentyForumActive .PlentyForumDescriptionName {
+font-weight: bold;
+}
+.PlentyForumActive a {
+color: #0097C6 !important;
+}
+
+/* LATEST ACTIVE TOPICS */
+
+.PlentyForumTopicActive .PlentyForumTopic {
+font-weight: bold;
+}
+.PlentyForumTopicActive a {
+color: #0097C6 !important;
+}
+
+
+/* OVERLAY */
+
+/* overlay */
+.PlentyForumOverlay,
+.PlentyPopupOverlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: #000000;
+-moz-opacity: 0.5;
+-khtml-opacity: 0.5;
+filter: alpha(opacity=50);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+opacity: 0.5;
+z-index: 40000;
+}
+
+
+/* POPUP */
+
+/* popup container */
+
+.PlentyForumPopupWrapper,
+.PlentyMessagePopupWrapper {
+display: none;
+position: absolute;
+top: 25px;
+z-index: 40200;
+width: 328px; /* margin left is 1/2 of width */
+margin-left: -177px;
+left: 50%;
+
+background: #ffffff;
+border: 3px solid #e0e0e0;
+padding: 0 10px;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+
+-moz-box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
+box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* popup container hover */
+
+.PlentyForumPopupWrapper:hover,
+.PlentyMessagePopupWrapper:hover {
+-moz-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.45);
+-webkit-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.45);
+box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.45);
+}
+
+/* popup container inner */
+
+.PlentyForumPopupContainer,
+.PlentyMessagePopupContainer {
+}
+
+/* popup header */
+
+.PlentyForumPopupHeader,
+.PlentyMessagePopupHeader {
+color: #000000;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+border-bottom: 1px solid #cccccc;
+padding: 8px 0 6px;
+}
+/* header title left */
+.PlentyForumPopupTitle,
+.PlentyMessagePopupTitle {
+float: left;
+display: inline-block;
+font-size: 14px;
+}
+/* header icon right */
+.PlentyForumPopupClose,
+.PlentyMessagePopupClose {
+float: right;
+display: inline-block;
+}
+
+/* popup close (includes tab close icon) */
+
+.PlentyForumPopupClose > a,
+.PlentyMessagePopupClose > a  {
+display: inline-block;
+width: 16px;
+height: 16px;
+vertical-align: top;
+cursor: pointer;
+text-indent: -10000px;
+background-color: #707173;
+background-image: url(/layout/pm/images/icon/button_icons_sprite.png);
+background-position: -16px 0;
+background-repeat: no-repeat;
+
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+/* hover / focus */
+.PlentyForumPopupClose > a:hover,
+.PlentyForumPopupClose > a:focus,
+.PlentyMessagePopupClose > a:hover,
+.PlentyMessagePopupClose > a:focus {
+background-color: #008ebd;
+background-position: 0 0;
+}
+
+
+/* popup content */
+
+.PlentyForumPopupContent,
+.PlentyMessagePopupContent {
+padding: 10px 0;
+font-size: 12px;
+line-height: 12px;
+}
+
+/* popup buttons */
+
+/* left */
+.PlentyForumPopupButtonLeft {
+width: 50%;
+float: left;
+margin-top: 10px !important;
+}
+.PlentyForumPopupButtonLeft > input {
+float: right;
+margin-right: 4px;
+}
+/* right */
+.PlentyForumPopupButtonRight {
+width: 50%;
+float: right;
+margin-top: 10px !important;
+}
+.PlentyForumPopupButtonRight > input {
+float: left;
+margin-left: 4px;
+}
+.PlentyForumPopupButtonLeft > input,
+.PlentyForumPopupButtonRight > input {
+width: 100px;
+}
+.PlentyClear {
+clear: both;
+}
+
+/* fix status message */
+.PlentyMessagePopupWrapper .plentyErrorBox, 
+.PlentyMessagePopupWrapper .plentyMessageBox { display: block; }
+/* popup advice message box */
+.PlentyMessagePopupWrapper .plentyMessageBox,
+.PlentyMessagePopupWrapper .plentyErrorBox {
+margin-bottom: 0;
+line-height: 15px;
+width: auto;
+}
+
+
+
+/* ERROR / STATUS MESSAGES */
+
+/* error / success box */
+.plentyMessageBox,
+.plentyErrorBox {
+width: auto;
+background: transparent;
+border: 1px solid;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+padding: 8px 10px;
+-moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+-webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+color: #444444;
+text-shadow: 0px 1px 1px #ffffff;
+filter: dropshadow(color=#ffffff, offx=0, offy=1);
+}
+/* success box */
+.plentyMessageBox {
+border-color: #49DD39;
+/*box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset, 0 -58px 40px -40px #49DD39 inset;*/
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.29) 0%, rgba(220,249,217,0.29) 19%, rgba(73,221,57,0.8) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.29)), color-stop(19%,rgba(220,249,217,0.29)), color-stop(100%,rgba(73,221,57,0.8))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.29) 0%,rgba(220,249,217,0.29) 19%,rgba(73,221,57,0.8) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.29) 0%,rgba(220,249,217,0.29) 19%,rgba(73,221,57,0.8) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.29) 0%,rgba(220,249,217,0.29) 19%,rgba(73,221,57,0.8) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.29) 0%,rgba(220,249,217,0.29) 19%,rgba(73,221,57,0.8) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4affffff', endColorstr='#cc49dd39',GradientType=0 ); /* IE6-9 */
+}
+/* error box */
+.plentyErrorBox {
+border-color: #ff1a1a;
+color: #000000;
+/*box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset, 0 -58px 40px -40px #ff1a1a inset;*/
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.29) 0%, rgba(255,211,211,0.29) 19%, rgba(255,26,26,0.8) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.29)), color-stop(19%,rgba(255,211,211,0.29)), color-stop(100%,rgba(255,26,26,0.8))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.29) 0%,rgba(255,211,211,0.29) 19%,rgba(255,26,26,0.8) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.29) 0%,rgba(255,211,211,0.29) 19%,rgba(255,26,26,0.8) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.29) 0%,rgba(255,211,211,0.29) 19%,rgba(255,26,26,0.8) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.29) 0%,rgba(255,211,211,0.29) 19%,rgba(255,26,26,0.8) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4affffff', endColorstr='#ccff1a1a',GradientType=0 ); /* IE6-9 */
+}
+
+/* error / success title */
+.plentyMessageBoxTitle,
+.plentyErrorBoxTitle {
+/*min-height: 32px;*/ /*show background img*/
+margin: -4px -2px 4px;
+padding: 0 0 0 36px;
+line-height: 32px;
+color: #444444;
+text-shadow: 0px 2px 2px #ffffff;
+filter: dropshadow(color=#ffffff, offx=0, offy=1);
+}
+/* success title */
+.plentyMessageBoxTitle {
+background: url("//www.plentymarkets.eu/layout/cyt-layout/images/success.png") no-repeat;
+}
+/* error title */
+.plentyErrorBoxTitle {
+background: url("//www.plentymarkets.eu/layout/cyt-layout/images/error.png") no-repeat;
+}
+
+/* box after box */
+.plentyMessageBox + .plentyErrorBox,
+.plentyErrorBox + .plentyMessageBox,
+.plentyMessageBox + .plentyMessageBox,
+.plentyErrorBox + .plentyErrorBox {
+margin-top: 10px;
+}
+
+
+/* FIX CONFLICTS WITH WEBSHOP CSS */
+
+/* buttons in line */
+.PlentyForumHeaderInformationContent > ul > li { margin-left: 0 !important; }
+
+/* pagination buttons */
+.PlentyForumTopicHeader input[type=button], 
+.PlentyForumPostHeader input[type=button], 
+.PlentyForumSearchResultHeader input[type=button], 
+.PlentyForumUserPageHeader input[type=button], 
+.PlentyForumPostTasksContainer input { background-image: none !important; }
+
+.PlentyForumPageCounterMain div { vertical-align: baseline !important; }
+
+
+/* POPUP */
+
+/* popup container */
+
+.pmPopup {
+display: none;
+position: absolute;
+z-index: 10000;
+background: #fff;
+border: 3px solid #E0E0E0;
+
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+
+-moz-box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* popup close */
+
+.pmPopupClose {
+display: inline-block;
+width: 16px; 
+height: 16px; 
+cursor: pointer;
+background-color: #707173;
+background-image: url(/layout/pm/images/icon/close_sprite.png); 
+background-position: right center; 
+background-repeat: no-repeat; 
+
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+/* hover / focus */
+.pmPopupClose:hover,
+.pmPopupClose:focus {
+background-color: #008ebd;
+background-position: left center;
+}
+
+/* SIMPLE POPUP */
+
+.pmSimplePopup {
+padding: 0 10px;
+}
+.pmSimplePopup > .pmPopupClose  {
+position: absolute;
+top: 5px;
+right: 5px;
+}
+
+/* RIGHT CLICK POPUP */
+
+.pmRightclickPopup {
+width: 250px;
+}
+.pmRightclickPopup h5,
+.pmRightclickPopup p {
+margin: 15px 0;
+}
+
+
+/* POPUP ABO TOPIC */
+
+/* row first */
+.PlentyForumAboActiveEmailRow:first-child {
+    margin-top: 5px;
+}
+/* row */
+.PlentyForumAboMessagePopUpContent > div:after {
+    clear: both;
+    content: "";
+    display: block;
+padding: 3px 0;
+}
+.PlentyForumAboActiveEmailRow > div:first-child {
+    float: left;
+}
+.PlentyForumAboActiveEmailRow > div:last-child {
+    float: right;
+}
+/* e-mail */
+.PlentyForumAboActiveEmailRow > .PlentyForumAboActiveEmailRowText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 310px;
+padding: 3px 0;
+}
+/* delete */
+.PlentyForumAboPopupActiveEmailRowCancelLink > img {
+    vertical-align: top;
+}
+/* input label */
+.PlentyForumTopicNewEmailLabel {
+    margin-top: 10px;
+}
+/* input container */
+.PlentyForumAboNewEmailRow:last-child {
+    margin-top: 2px;
+}
+.PlentyForumAboActiveEmailRow + .PlentyForumAboNewEmailRow:last-child {
+    border-top: 1px solid #ccc;
+}
+/* input */
+.PlentyForumTopicNewEmailInputContainer > input[type="text"].PlentyForumAboEmailInputText {
+    margin: 10px 0;
+    width: 318px;
+}
+
+/* link last page */
+.PlentyForumLastPageContainer {
+		text-align: right;
+}
+
+/* user post limitation */
+
+pre {
+max-height: 350px;
+overflow: auto;
+background: #F0F0F0;
+}
+.PlentyForumPostMessageText img {
+max-width: 667px;
+}
+
+/* file upload / file list */
+
+.PlentyFileContainer.Upload {
+clear: both;
+}
+.PlentyFileContainer {
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px solid #E0E0E0;
+}
+.PlentyFileHeader {
+margin-bottom: 5px;
+font-weight: bold;
+}
+.PlentyFileRow {
+position: relative;
+padding: 2px 0;
+white-space: nowrap;
+}
+.PlentyFileIconWrapper {
+position: absolute;
+top: 3px;
+}
+.PlentyFileName {
+display: inline-block;
+max-width: 575px;
+padding-left: 25px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+vertical-align: middle;
+}
+.PlentyFileSize {
+display: inline-block;
+padding-left: 5px;
+vertical-align: middle;
+color: #888;
+}
+
+
+/* fadeout content */
+
+.PlentyForumPostMessage.fadeoutContent {
+position: relative;
+max-height: 250px;
+overflow: hidden;
+min-height: 50px;
+}
+.PlentyForumPostMessage > .fadeoutOverlay {
+display: none;
+}
+.PlentyForumPostMessage.fadeoutContent > .fadeoutOverlay {
+position: absolute;
+display: block;
+height: 100px;
+bottom: 0;
+left: 0;
+right: 0;
+cursor: pointer;
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 75%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(75%,rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%);
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%);
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%);
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%);
+}
+.fadeoutOverlay > * {
+position: absolute;
+display: none;
+bottom: 7px;
+left: 20px;
+height: 16px;
+width: 16px;
+text-indent: -100000px;
+
+background: url(/images/icons/silk/add.png) center center no-repeat;
+}
+.fadeoutContent:hover > .fadeoutOverlay > * {
+display: block;
+}
+
+
+/* preview popup */
+
+.PlentyMessagePopupWrapper.PlentyPreviewPopup {
+width: 900px;
+margin-left: -463px;
+}
+.PlentyMessagePopupWrapper.PlentyPreviewPopup .PlentyMessagePopupContent > .PlentyForumTableLayout.PlentyForumTableLayoutPost {
+width: 100%;
+}
+
+/* invisible text for link elements with css-img */
+.pmNoText { text-indent: -100000px; }
+
+
+/* code spoiler */
+
+.PlentyForumPostMessageCode {
+	margin: 10px 0;
+}
+.PlentyForumPostMessageCodeHead {
+	display: block;
+	border: 1px solid #ccc;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	padding: 6px 9.5px 4px;
+	line-height: 1.42857;
+	font-size: 13px;
+	color: #333333;
+	cursor: pointer; 
+}
+.open > .PlentyForumPostMessageCodeHead {
+	display: none;
+}
+.PlentyForumPostMessageCodeContent {
+	display: none;
+}
+.open > .PlentyForumPostMessageCodeContent {
+	display: block;
+}
+.PlentyForumPostMessageCodeHead > .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -3px;
+    margin-right: 6px;
+    background: url("/images/icons/silk/add.png") no-repeat center center;
+}
+
+.forum  b,
+.forum  strong,
+.forum .bold {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}

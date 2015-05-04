@@ -1,0 +1,13 @@
+
+
+{% if $CurrentCategoryId[Level2]==522 %}
+<!-- ### CAT 457 = TEAM ### -->
+ <div class="col-sm-3 col-md-3 col-lg-3 center">
+	<div class="imageBox">
+    	<img class="id-$ID" src="$MiddleSizeImageURL[1]" alt="$Name[1]" />
+    </div>
+    <p class="h4"><b>$Name[2] $Name[1]</b><br>
+    $Name[3]
+    </p>
+</div>
+{% endif %}

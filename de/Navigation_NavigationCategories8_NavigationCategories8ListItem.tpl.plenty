@@ -1,0 +1,2 @@
+{% if $SubCategoryExists %}<span class="openCloseToggle"></span>{% endif %}
+		<a class="treeLink" href="$CategoryUrl">$CategoryName</a>
